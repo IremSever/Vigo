@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61190DEA2D537FE80070CA8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61190DE42D537FE80070CA8B /* Preview Assets.xcassets */; };
+		61190DEB2D537FE80070CA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61190DE62D537FE80070CA8B /* Assets.xcassets */; };
+		61190DEC2D537FE80070CA8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DE72D537FE80070CA8B /* ContentView.swift */; };
+		61190DED2D537FE80070CA8B /* VigoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DE82D537FE80070CA8B /* VigoApp.swift */; };
+		61190E042D537FF90070CA8B /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190E002D537FF90070CA8B /* ExploreVC.swift */; };
+		61190E052D537FF90070CA8B /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF92D537FF90070CA8B /* AlbumCell.swift */; };
+		61190E062D537FF90070CA8B /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF52D537FF90070CA8B /* DetailVC.swift */; };
+		61190E072D537FF90070CA8B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF02D537FF90070CA8B /* HomeViewModel.swift */; };
+		61190E082D537FF90070CA8B /* IndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF62D537FF90070CA8B /* IndicatorCell.swift */; };
+		61190E092D537FF90070CA8B /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF42D537FF90070CA8B /* HomeVC.swift */; };
+		61190E0A2D537FF90070CA8B /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190E022D537FF90070CA8B /* FavoritesVC.swift */; };
+		61190E0B2D537FF90070CA8B /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DFC2D537FF90070CA8B /* CardCell.swift */; };
+		61190E0C2D537FF90070CA8B /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF82D537FF90070CA8B /* StreamCell.swift */; };
+		61190E0D2D537FF90070CA8B /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DFB2D537FF90070CA8B /* ListCell.swift */; };
+		61190E0E2D537FF90070CA8B /* SeriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DFA2D537FF90070CA8B /* SeriesCell.swift */; };
+		61190E0F2D537FF90070CA8B /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF72D537FF90070CA8B /* HeaderCell.swift */; };
+		61190E102D537FF90070CA8B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF22D537FF90070CA8B /* TabBar.swift */; };
+		61190E112D537FF90070CA8B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DEE2D537FF90070CA8B /* HomeModel.swift */; };
+		61190E152D53814C0070CA8B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 61190E142D53814C0070CA8B /* SDWebImageSwiftUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		61190DD22D537FDA0070CA8B /* Vigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61190DE42D537FE80070CA8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		61190DE62D537FE80070CA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		61190DE72D537FE80070CA8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		61190DE82D537FE80070CA8B /* VigoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VigoApp.swift; sourceTree = "<group>"; };
+		61190DEE2D537FF90070CA8B /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		61190DF02D537FF90070CA8B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		61190DF22D537FF90070CA8B /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		61190DF42D537FF90070CA8B /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		61190DF52D537FF90070CA8B /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		61190DF62D537FF90070CA8B /* IndicatorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorCell.swift; sourceTree = "<group>"; };
+		61190DF72D537FF90070CA8B /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		61190DF82D537FF90070CA8B /* StreamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
+		61190DF92D537FF90070CA8B /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		61190DFA2D537FF90070CA8B /* SeriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesCell.swift; sourceTree = "<group>"; };
+		61190DFB2D537FF90070CA8B /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		61190DFC2D537FF90070CA8B /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		61190E002D537FF90070CA8B /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
+		61190E022D537FF90070CA8B /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61190DCF2D537FDA0070CA8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61190E152D53814C0070CA8B /* SDWebImageSwiftUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61190DC92D537FDA0070CA8B = {
+			isa = PBXGroup;
+			children = (
+				61190DE92D537FE80070CA8B /* Vigo */,
+				61190DD32D537FDA0070CA8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61190DD32D537FDA0070CA8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61190DD22D537FDA0070CA8B /* Vigo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61190DE52D537FE80070CA8B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				61190DE42D537FE80070CA8B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		61190DE92D537FE80070CA8B /* Vigo */ = {
+			isa = PBXGroup;
+			children = (
+				61190E122D5380030070CA8B /* App */,
+				61190DFF2D537FF90070CA8B /* Home */,
+				61190E012D537FF90070CA8B /* Explore */,
+				61190E032D537FF90070CA8B /* Favorites */,
+				61190DE52D537FE80070CA8B /* Preview Content */,
+				61190DE72D537FE80070CA8B /* ContentView.swift */,
+				61190DE82D537FE80070CA8B /* VigoApp.swift */,
+			);
+			path = Vigo;
+			sourceTree = "<group>";
+		};
+		61190DEF2D537FF90070CA8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				61190DEE2D537FF90070CA8B /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		61190DF12D537FF90070CA8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				61190DF02D537FF90070CA8B /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		61190DF32D537FF90070CA8B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				61190DF22D537FF90070CA8B /* TabBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		61190DFD2D537FF90070CA8B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				61190DF62D537FF90070CA8B /* IndicatorCell.swift */,
+				61190DF72D537FF90070CA8B /* HeaderCell.swift */,
+				61190DF82D537FF90070CA8B /* StreamCell.swift */,
+				61190DF92D537FF90070CA8B /* AlbumCell.swift */,
+				61190DFA2D537FF90070CA8B /* SeriesCell.swift */,
+				61190DFB2D537FF90070CA8B /* ListCell.swift */,
+				61190DFC2D537FF90070CA8B /* CardCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		61190DFE2D537FF90070CA8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61190DF32D537FF90070CA8B /* Navigation */,
+				61190DF42D537FF90070CA8B /* HomeVC.swift */,
+				61190DF52D537FF90070CA8B /* DetailVC.swift */,
+				61190DFD2D537FF90070CA8B /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61190DFF2D537FF90070CA8B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				61190DEF2D537FF90070CA8B /* Model */,
+				61190DF12D537FF90070CA8B /* ViewModel */,
+				61190DFE2D537FF90070CA8B /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		61190E012D537FF90070CA8B /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				61190E002D537FF90070CA8B /* ExploreVC.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		61190E032D537FF90070CA8B /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				61190E022D537FF90070CA8B /* FavoritesVC.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		61190E122D5380030070CA8B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				61190DE62D537FE80070CA8B /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61190DD12D537FDA0070CA8B /* Vigo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61190DE02D537FDC0070CA8B /* Build configuration list for PBXNativeTarget "Vigo" */;
+			buildPhases = (
+				61190DCE2D537FDA0070CA8B /* Sources */,
+				61190DCF2D537FDA0070CA8B /* Frameworks */,
+				61190DD02D537FDA0070CA8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vigo;
+			packageProductDependencies = (
+				61190E142D53814C0070CA8B /* SDWebImageSwiftUI */,
+			);
+			productName = Vigo;
+			productReference = 61190DD22D537FDA0070CA8B /* Vigo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61190DCA2D537FDA0070CA8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					61190DD12D537FDA0070CA8B = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 61190DCD2D537FDA0070CA8B /* Build configuration list for PBXProject "Vigo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 61190DC92D537FDA0070CA8B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				61190E132D53814C0070CA8B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 61190DD32D537FDA0070CA8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61190DD12D537FDA0070CA8B /* Vigo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61190DD02D537FDA0070CA8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61190DEA2D537FE80070CA8B /* Preview Assets.xcassets in Resources */,
+				61190DEB2D537FE80070CA8B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61190DCE2D537FDA0070CA8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61190DEC2D537FE80070CA8B /* ContentView.swift in Sources */,
+				61190DED2D537FE80070CA8B /* VigoApp.swift in Sources */,
+				61190E042D537FF90070CA8B /* ExploreVC.swift in Sources */,
+				61190E052D537FF90070CA8B /* AlbumCell.swift in Sources */,
+				61190E062D537FF90070CA8B /* DetailVC.swift in Sources */,
+				61190E072D537FF90070CA8B /* HomeViewModel.swift in Sources */,
+				61190E082D537FF90070CA8B /* IndicatorCell.swift in Sources */,
+				61190E092D537FF90070CA8B /* HomeVC.swift in Sources */,
+				61190E0A2D537FF90070CA8B /* FavoritesVC.swift in Sources */,
+				61190E0B2D537FF90070CA8B /* CardCell.swift in Sources */,
+				61190E0C2D537FF90070CA8B /* StreamCell.swift in Sources */,
+				61190E0D2D537FF90070CA8B /* ListCell.swift in Sources */,
+				61190E0E2D537FF90070CA8B /* SeriesCell.swift in Sources */,
+				61190E0F2D537FF90070CA8B /* HeaderCell.swift in Sources */,
+				61190E102D537FF90070CA8B /* TabBar.swift in Sources */,
+				61190E112D537FF90070CA8B /* HomeModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61190DDE2D537FDC0070CA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		61190DDF2D537FDC0070CA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61190DE12D537FDC0070CA8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vigo/Preview Content\"";
+				DEVELOPMENT_TEAM = Y8AG8C4D3X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iremsever.Vigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61190DE22D537FDC0070CA8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Vigo/Preview Content\"";
+				DEVELOPMENT_TEAM = Y8AG8C4D3X;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iremsever.Vigo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61190DCD2D537FDA0070CA8B /* Build configuration list for PBXProject "Vigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61190DDE2D537FDC0070CA8B /* Debug */,
+				61190DDF2D537FDC0070CA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61190DE02D537FDC0070CA8B /* Build configuration list for PBXNativeTarget "Vigo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61190DE12D537FDC0070CA8B /* Debug */,
+				61190DE22D537FDC0070CA8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61190E132D53814C0070CA8B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61190E142D53814C0070CA8B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61190E132D53814C0070CA8B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 61190DCA2D537FDA0070CA8B /* Project object */;
+}
