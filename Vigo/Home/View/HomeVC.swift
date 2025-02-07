@@ -8,13 +8,19 @@ import SwiftUI
 
 struct HomeVC: View {
     @StateObject private var viewModel = HomeViewModel()
-
+    @State var topInset: CGFloat = 0
+    @State var scrollOffsetY: CGFloat = 0
+    @State var scrollProgressX: CGFloat = 0
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 2) {
+                    LazyVStack(alignment: .leading, spacing: 2) {
+                        InfoTop()
+                   
+                            .zIndex(-1)
                         if let homeData = viewModel.homeModel?.data {
+                            
                             ForEach(homeData.indices, id: \.self) { index in
                                 let section = homeData[index]
 
@@ -27,7 +33,8 @@ struct HomeVC: View {
 
                                 switch section.config.widget.template {
                                 case "headlines":
-                                    DynamicCell(viewModel: viewModel)
+                                    AlbumCell(viewModel: viewModel)
+                                        .zIndex(-1)
                                 case "broadcast":
                                     StreamCell(viewModel: viewModel)
                                 case "cardFullImage1":
@@ -43,8 +50,15 @@ struct HomeVC: View {
                         }
                     }
                 }
+                .safeAreaPadding(15)
                 .frame(width: geometry.size.width, alignment: .leading)
-                .background(Color(.black))
+                .background {
+                    Rectangle()
+                        .fill(.black.gradient)
+                        .scaleEffect(y: -1)
+                        .ignoresSafeArea()
+                }
+         
             }
         }
         .edgesIgnoringSafeArea(.top)
@@ -53,11 +67,17 @@ struct HomeVC: View {
             viewModel.fetchHomeData{}
         }
     }
+    
+   
+    
 }
+
+
 struct DynamicCell: View {
     @ObservedObject var viewModel: HomeViewModel
 
     var body: some View {
+        
         ZStack {
             if let homeData = viewModel.homeModel?.data {
                 // If data count is 4 or fewer, show HeaderCell

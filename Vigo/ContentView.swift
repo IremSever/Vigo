@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             TabView(selection: $selectedTab) {
+
                 HomeVC()
                     .tag(Tab.home)
                 ExploreVC()

@@ -46,3 +46,9 @@ class HomeViewModel: ObservableObject {
        
     }
 }
+extension HomeViewModel {
+    func getBackdropImages() -> [String] {
+        guard let homeData = homeModel?.data else { return [] }
+        return homeData.flatMap { $0.news?.compactMap { $0.image } ?? [] }
+    }
+}
