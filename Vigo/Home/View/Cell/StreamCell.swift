@@ -29,7 +29,7 @@ struct StreamCell: View {
                                     
                                     Text("\(stream.hour):\(stream.minute)")
                                         .font(.subheadline)
-                                        .foregroundColor(.secondary)
+                                        .foregroundColor(.white)
                                         .padding(.bottom, 2)
                                     
                                     if stream.isLive {
@@ -45,7 +45,7 @@ struct StreamCell: View {
                                     }
                                 }
                                 .padding()
-                                .background(stream.isLive ? Color.yellow.opacity(0.1) : Color.gray.opacity(0.1))
+                                .background(stream.isLive ? Color.yellow.opacity(0.6) : Color.gray.opacity(0.6))
                                 .cornerRadius(12)
                                 .shadow(radius: 5)
                                 .frame(width: 260, height: 260)

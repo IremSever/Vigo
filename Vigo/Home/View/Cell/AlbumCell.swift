@@ -6,111 +6,71 @@
 //
 import SwiftUI
 import SDWebImageSwiftUI
+
+
 struct AlbumCell: View {
     @ObservedObject var viewModel: HomeViewModel
-    @State private var selectedIndex: Int = 2
-    @State private var dragOffset: CGFloat = 0
+    var widgetTitle: String?
+
+    @State private var currentIndex = 1
 
     var body: some View {
-        GeometryReader { proxy in
-            let screenWidth = proxy.size.width
+        VStack(alignment: .leading, spacing: 20) {
+            if let widgetTitle = widgetTitle {
+                Text(widgetTitle)
+                    .font(.title2)
+                    .bold()
+                    .foregroundColor(.white)
+                    .padding(.horizontal)
+            }
 
-            ZStack {
-                if let homeData = viewModel.homeModel?.data,
-                   let selectedNews = homeData[selectedIndex].videos?.first,
-                   let bgImageUrl = URL(string: selectedNews.image) {
-                    WebImage(url: bgImageUrl)
-                        .resizable()
-                        .scaledToFill()
-                        .edgesIgnoringSafeArea(.all)
-                        .blur(radius: 20)
-                        .opacity(0.4)
-                }
-                Spacer()
-                VStack {
-                    Spacer()
+            if let homeData = viewModel.homeModel?.data {
+                let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
+                let newsItems = filteredSections.flatMap { $0.news ?? [] }
 
-                    ZStack {
-                        if let homeData = viewModel.homeModel?.data {
-                            ForEach(homeData.indices, id: \.self) { index in
-                                if let newsItem = homeData[index].news?.first,
-                                   let imageUrl = URL(string: newsItem.image ?? "") {
+                let infiniteItems = [newsItems.last!] + newsItems + [newsItems.first!]
 
-                                    let offsetX = calculateOffset(index: index, selectedIndex: selectedIndex, dragOffset: dragOffset)
-                                    let scale = calculateScale(index: index, selectedIndex: selectedIndex, dragOffset: dragOffset)
-                                    let opacity = calculateOpacity(index: index, selectedIndex: selectedIndex)
-                                    let zIndex = calculateZIndex(index: index, selectedIndex: selectedIndex)
-
-                                    WebImage(url: imageUrl)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: screenWidth * 0.5)
-                                        .cornerRadius(20)
-                                        .shadow(radius: selectedIndex == index ? 15 : 5)
-                                        .scaleEffect(scale)
-                                        .opacity(opacity)
-                                        .offset(x: offsetX)
-                                        .animation(.easeInOut(duration: 0.3), value: selectedIndex)
-                                        .zIndex(zIndex)
-                                }
-                            }
-                        }
-                    }
-                    .frame(height: 400)
-                    .gesture(
-                        DragGesture()
-                            .onChanged { value in
-                                dragOffset = value.translation.width
-                            }
-                            .onEnded { value in
-                                let threshold: CGFloat = 50
-                                if value.translation.width < -threshold {
-                                    if selectedIndex < (viewModel.homeModel?.data.count ?? 1) - 1 {
-                                        selectedIndex += 1
-                                    }
-                                } else if value.translation.width > threshold {
-                                    if selectedIndex > 0 {
-                                        selectedIndex -= 1
-                                    }
-                                }
-                                dragOffset = 0
-                            }
-                    )
-
-                    if let homeData = viewModel.homeModel?.data,
-                       let selectedMovie = homeData[selectedIndex].news?.first {
+                TabView(selection: $currentIndex) {
+                    ForEach(0..<infiniteItems.count, id: \.self) { index in
                         VStack {
-                            Text(selectedMovie.title)
-                                .font(.system(size: 26, weight: .bold))
-                                .foregroundColor(.white)
+                            if let imageUrl = URL(string: infiniteItems[index].image ?? "") {
+                                WebImage(url: imageUrl)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 250, height: 350)
+                                    .cornerRadius(12)
+                            }
+                            VStack(alignment: .center, spacing: 5) {
+                                Text(infiniteItems[index].title)
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                    .multilineTextAlignment(.center)
+                                if let spot = infiniteItems[index].spot {
+                                    Text(spot)
+                                        .font(.subheadline)
+                                        .foregroundColor(.gray)
+                                        .multilineTextAlignment(.center)
+                                }
+                            }
+                            .padding(.horizontal)
                         }
-                        .padding(.top, 10)
+                        .frame(width: UIScreen.main.bounds.width * 0.7)
+                        .cornerRadius(12)
+                        .shadow(radius: 5)
+                        .tag(index)
                     }
-
-                    Spacer()
+                }
+                .frame(height: 400)
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                .onChange(of: currentIndex) { newIndex in
+                    if newIndex == 0 {
+                        currentIndex = infiniteItems.count - 2
+                    } else if newIndex == infiniteItems.count - 1 {
+                        currentIndex = 1
+                    }
                 }
             }
         }
-    }
-
-    func calculateOffset(index: Int, selectedIndex: Int, dragOffset: CGFloat) -> CGFloat {
-        let distance = index - selectedIndex
-        let baseOffset = CGFloat(distance * 40)
-        return baseOffset + (dragOffset / 10)
-    }
-
-    func calculateScale(index: Int, selectedIndex: Int, dragOffset: CGFloat) -> CGFloat {
-        let distance = abs(index - selectedIndex)
-        let baseScale = distance == 0 ? 1.2 : (distance == 1 ? 1.0 : 0.85)
-        return baseScale + (dragOffset / 1000)
-    }
-
-    func calculateOpacity(index: Int, selectedIndex: Int) -> Double {
-        let distance = abs(index - selectedIndex)
-        return distance == 0 ? 1.0 : (distance == 1 ? 0.6 : 0.3)
-    }
-
-    func calculateZIndex(index: Int, selectedIndex: Int) -> Double {
-        return index == selectedIndex ? 10 : Double(-abs(index - selectedIndex))
+        .background(Color.black.edgesIgnoringSafeArea(.all))
     }
 }

@@ -24,11 +24,13 @@ struct ContentView: View {
                 Spacer()
                 TabBar(selectedTab: $selectedTab)
             }
+           
         }
+        .ignoresSafeArea(.all, edges: .bottom)
     }
 }
-
 
 #Preview {
     ContentView()
 }
+

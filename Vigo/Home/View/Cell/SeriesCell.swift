@@ -4,6 +4,7 @@
 //
 //  Created by İrem Sever on 30.01.2025.
 //
+
 import SwiftUI
 import SDWebImageSwiftUI
 struct SeriesCell: View {

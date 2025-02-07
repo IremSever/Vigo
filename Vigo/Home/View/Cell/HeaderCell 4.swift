@@ -1,9 +1,11 @@
 //
-//  HeaderCell.swift
+//  HeaderCell 4.swift
 //  Vigo
 //
-//  Created by İrem Sever on 2.02.2025.
+//  Created by İrem Sever on 5.02.2025.
 //
+
+
 
 import SwiftUI
 import SDWebImageSwiftUI
