@@ -27,13 +27,19 @@ struct AlbumCell: View {
                 }
                 
                 if let homeData = viewModel.homeModel?.data {
+                    // Filtreleme işlemi: sadece URL içeren haberleri alıyoruz
                     let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
                     let newsItems = filteredSections.flatMap { $0.news ?? [] }
                     
-                    let infiniteNewsItems = Array(repeating: newsItems, count: 10).flatMap { $0 } 
+                    // URL içeren haberleri filtreleme
+                    let urlNewsItems = newsItems.filter { newsItem in
+                        return newsItem.external.starts(with: "video://")
+                    }
+                    
+                    let infiniteNewsItems = Array(repeating: urlNewsItems, count: 10).flatMap { $0 }
                     
                     ForEach(infiniteNewsItems.indices, id: \.self) { index in
-                        let newsItem = infiniteNewsItems[index % newsItems.count]
+                        let newsItem = infiniteNewsItems[index % urlNewsItems.count]
                         
                         NavigationLink(destination: DetailVC(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle ?? "")) {
                             VStack(alignment: .center) {
