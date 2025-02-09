@@ -14,7 +14,7 @@ struct AlbumCell: View {
     @State private var currentIndex = 1
     @State private var scrollProgressX: CGFloat = 0
     @State private var scrollOffsetY: CGFloat = 0
-
+    
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack(spacing: 20) {
@@ -30,10 +30,10 @@ struct AlbumCell: View {
                     let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
                     let newsItems = filteredSections.flatMap { $0.news ?? [] }
                     
-                    let infiniteItems = [newsItems.last!] + newsItems + [newsItems.first!]
+                    let infiniteNewsItems = Array(repeating: newsItems, count: 10).flatMap { $0 } 
                     
-                    ForEach(infiniteItems.indices, id: \.self) { index in
-                        let newsItem = infiniteItems[index]
+                    ForEach(infiniteNewsItems.indices, id: \.self) { index in
+                        let newsItem = infiniteNewsItems[index % newsItems.count]
                         
                         NavigationLink(destination: DetailVC(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle ?? "")) {
                             VStack(alignment: .center) {
