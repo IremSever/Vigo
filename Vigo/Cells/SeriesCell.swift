@@ -4,53 +4,38 @@
 //
 //  Created by İrem Sever on 30.01.2025.
 //
-
 import SwiftUI
 import SDWebImageSwiftUI
+
 struct SeriesCell: View {
     @ObservedObject var viewModel: HomeViewModel
-    var widgetTitle: String?
+    var widgetTitle: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            if let widgetTitle = widgetTitle {
-                Text(widgetTitle)
-                    .font(.title2)
-                    .bold()
-                    .padding(.horizontal)
-            }
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                if let homeData = viewModel.homeModel?.data {
+                    // Burada widgetTitle'a göre filtreleme yapıyoruz
+                    let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
+                    let newsItems = filteredSections.flatMap { $0.news ?? [] }
 
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
-                    if let homeData = viewModel.homeModel?.data {
-                        let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
-                        let newsItems = filteredSections.flatMap { $0.news ?? [] }
-
-                        ForEach(newsItems, id: \.external) { newsItem in
+                    ForEach(newsItems.indices, id: \.self) { index in
+                        let newsItem = newsItems[index]
+                        
+                        NavigationLink(destination: DetailVC(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle)) {
                             VStack {
                                 if let imageUrl = URL(string: newsItem.image ?? "") {
                                     WebImage(url: imageUrl)
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 200, height: 200)
-                                        .cornerRadius(12)
-                                }
-                                VStack(alignment: .leading) {
-                                    Text(newsItem.title)
-                                        .font(.headline)
-                                        .foregroundColor(.primary)
-                                    if let spot = newsItem.spot {
-                                        Text(spot)
-                                            .font(.subheadline)
-                                            .foregroundColor(.secondary)
-                                    }
+                                        .frame(height: 300)
+                                        .cornerRadius(20)
+                                        .shadow(color: .orange.opacity(0.35), radius: 8)
                                 }
                             }
                             .padding()
-                            .frame(width: 200, height: 200)
-                            .cornerRadius(12)
-                            .shadow(radius: 5)
-                            .padding(.horizontal, 5)
+                            .frame(height: 350)
+                            .cornerRadius(20)
                         }
                     }
                 }

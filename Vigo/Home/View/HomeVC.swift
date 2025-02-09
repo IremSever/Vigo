@@ -8,7 +8,7 @@ import SwiftUI
 
 struct HomeVC: View {
     @StateObject private var viewModel = HomeViewModel()
-    @State var topInset: CGFloat = 0
+  
     @State var scrollOffsetY: CGFloat = 0
     @State var scrollProgressX: CGFloat = 0
     var body: some View {
@@ -17,8 +17,7 @@ struct HomeVC: View {
                 ScrollView {
                     LazyVStack(alignment: .leading, spacing: 2) {
                         InfoTop()
-                   
-                            .zIndex(-1)
+                            .zIndex(1)
                         if let homeData = viewModel.homeModel?.data {
                             
                             ForEach(homeData.indices, id: \.self) { index in
@@ -38,31 +37,30 @@ struct HomeVC: View {
                                 case "broadcast":
                                     StreamCell(viewModel: viewModel)
                                 case "cardFullImage1":
-                                    SeriesCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text)
+                                    SeriesCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text ?? "")
                                 case "cardFullImage3":
                                     CardCell(viewModel: viewModel)
                                 case "cardTopImage1":
                                     CardCell(viewModel: viewModel)
                                 default:
-                                    SeriesCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text)
+                                    SeriesCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text ?? "")
                                 }
                             }
                         }
                     }
                 }
-                .safeAreaPadding(15)
                 .frame(width: geometry.size.width, alignment: .leading)
+                
                 .background {
                     Rectangle()
                         .fill(.black.gradient)
                         .scaleEffect(y: -1)
-                        .ignoresSafeArea()
+                        .ignoresSafeArea(edges: .all)
                 }
+                
          
             }
         }
-        .edgesIgnoringSafeArea(.top)
-
         .onAppear {
             viewModel.fetchHomeData{}
         }

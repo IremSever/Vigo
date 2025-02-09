@@ -13,25 +13,26 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             TabView(selection: $selectedTab) {
-
                 HomeVC()
                     .tag(Tab.home)
+                    .toolbar(.hidden, for: .tabBar) 
+                
                 ExploreVC()
                     .tag(Tab.explore)
+                    .toolbar(.hidden, for: .tabBar)
+
                 FavoritesVC()
                     .tag(Tab.favorites)
+                    .toolbar(.hidden, for: .tabBar)
             }
+            
             VStack {
                 Spacer()
                 TabBar(selectedTab: $selectedTab)
             }
-           
         }
         .ignoresSafeArea(.all, edges: .bottom)
     }
 }
 
-#Preview {
-    ContentView()
-}
 

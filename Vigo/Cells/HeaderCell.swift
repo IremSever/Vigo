@@ -23,32 +23,32 @@ struct HeaderCell: View {
                 }
 
                 TabView(selection: $pageSelected) {
-                    ForEach(loopingData.indices, id: \.self) { index in
-                        let item = loopingData[index]
-                        let imageUrl = item.news?.first?.image ?? ""
-                        let url = URL(string: imageUrl)
-
-                        ZStack {
-                            if let url = url {
-                                WebImage(url: url)
-                                    .resizable()
-                                    .frame(height: 600)
-                            }
-                        }
-                        .tag(index)
-                        .overlay(
-                            NavigationLink(
-                                destination: DetailVC(
-                                    viewModel: viewModel,
-                                    selectedIndex: (index == 0) ? validData.count - 1 :
-                                                   (index == loopingData.count - 1) ? 0 : index - 1
-                                )
-                            ) {
-                                Color.black
-                            }
-                        )
-
-                    }
+//                    ForEach(loopingData.indices, id: \.self) { index in
+//                        let item = loopingData[index]
+//                        let imageUrl = item.news?.first?.image ?? ""
+//                        let url = URL(string: imageUrl)
+//
+//                        ZStack {
+//                            if let url = url {
+//                                WebImage(url: url)
+//                                    .resizable()
+//                                    .frame(height: 600)
+//                            }
+//                        }
+//                        .tag(index)
+//                        .overlay(
+//                            NavigationLink(
+//                                destination: DetailVC(
+//                                    viewModel: viewModel,
+//                                    selectedIndex: (index == 0) ? validData.count - 1 :
+//                                                   (index == loopingData.count - 1) ? 0 : index - 1
+//                                )
+//                            ) {
+//                                Color.black
+//                            }
+//                        )
+//
+//                    }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .frame(height: 600)

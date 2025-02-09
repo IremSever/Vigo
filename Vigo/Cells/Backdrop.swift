@@ -12,7 +12,6 @@ struct Backdrop: View {
     let images: [String]
     @Binding var scrollProgressX: CGFloat
     @Binding var scrollOffsetY: CGFloat
-    @Binding var topInset: CGFloat
     
     var body: some View {
         GeometryReader { geometry in
@@ -27,7 +26,7 @@ struct Backdrop: View {
                 }
             }
             .compositingGroup()
-            .blur(radius: 30, opaque: true)
+            .blur(radius: 10, opaque: true)
             .overlay {
                 Rectangle()
                     .fill(Color.black.opacity(0.35))
@@ -40,6 +39,6 @@ struct Backdrop: View {
             .offset(y: scrollOffsetY < 0 ? -scrollOffsetY : 0)
         }
         .padding(.bottom, -60)
-        .padding(.top, -topInset)
+        .padding(.top, -250)
     }
 }

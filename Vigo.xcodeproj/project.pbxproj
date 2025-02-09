@@ -100,6 +100,7 @@
 				61190DFF2D537FF90070CA8B /* Home */,
 				61190E012D537FF90070CA8B /* Explore */,
 				61190E032D537FF90070CA8B /* Favorites */,
+				612850A82D58A72C00582BC6 /* Detail */,
 				61190DFD2D537FF90070CA8B /* Cells */,
 			);
 			path = Vigo;
@@ -150,7 +151,6 @@
 			children = (
 				61190DF32D537FF90070CA8B /* Navigation */,
 				61190DF42D537FF90070CA8B /* HomeVC.swift */,
-				61190DF52D537FF90070CA8B /* DetailVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +187,14 @@
 				61190DE62D537FE80070CA8B /* Assets.xcassets */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		612850A82D58A72C00582BC6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				61190DF52D537FF90070CA8B /* DetailVC.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

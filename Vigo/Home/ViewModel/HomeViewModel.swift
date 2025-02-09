@@ -10,7 +10,7 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     @Published var homeModel: HomeModel?
-    
+    @Published var widgetTitle: String = "" 
     func fetchHomeData(completion: @escaping () -> Void) {
         guard let url = URL(string: "https://api.tmgrup.com.tr/v2/link/c8b4449a37") else {
             print("invalid url")
