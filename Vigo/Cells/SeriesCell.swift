@@ -15,7 +15,6 @@ struct SeriesCell: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
                 if let homeData = viewModel.homeModel?.data {
-                    // Burada widgetTitle'a göre filtreleme yapıyoruz
                     let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
                     let newsItems = filteredSections.flatMap { $0.news ?? [] }
 
