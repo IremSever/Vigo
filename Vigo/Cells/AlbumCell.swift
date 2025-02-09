@@ -15,7 +15,6 @@ struct AlbumCell: View {
     @State private var scrollProgressX: CGFloat = 0
     @State private var scrollOffsetY: CGFloat = 0
 
-    
     var body: some View {
         ScrollView(.horizontal) {
             LazyHStack(spacing: 20) {
@@ -33,7 +32,7 @@ struct AlbumCell: View {
                     
                     let infiniteItems = [newsItems.last!] + newsItems + [newsItems.first!]
                     
-                    ForEach(0..<infiniteItems.count, id: \.self) { index in
+                    ForEach(infiniteItems.indices, id: \.self) { index in
                         let newsItem = infiniteItems[index]
                         
                         NavigationLink(destination: DetailVC(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle ?? "")) {
@@ -47,7 +46,6 @@ struct AlbumCell: View {
                                         .cornerRadius(12)
                                         .clipShape(RoundedRectangle(cornerRadius: 20))
                                         .shadow(color: .black.opacity(0.4), radius: 5, x: 5, y: 5)
-                                    
                                 }
                                 
                                 VStack(alignment: .center, spacing: 5) {
@@ -66,17 +64,34 @@ struct AlbumCell: View {
                                 }
                             }
                         }
-                 
                     }
                 }
-                
             }
             .scrollTargetLayout()
         }
         .safeAreaPadding(15)
         .frame(height: 550)
-        .background(Backdrop(images: viewModel.getBackdropImages(), scrollProgressX: $scrollProgressX, scrollOffsetY: $scrollOffsetY))
+        .background(
+            Backdrop(
+                images: viewModel.getBackdropImages(),
+                scrollProgressX: $scrollProgressX,
+                scrollOffsetY: $scrollOffsetY
+            )
+        )
         .scrollTargetBehavior(.viewAligned(limitBehavior: .always))
         .scrollIndicators(.hidden)
+        .onAppear {
+            scrollProgressX = 1
+        }
+        .onChange(of: scrollProgressX) { newIndex in
+            currentIndex = Int(newIndex.rounded())
+        }
+        .onScrollGeometryChange(for: CGFloat.self) {
+            let offset = $0.contentOffset.x + $0.contentInsets.leading
+            let width = $0.containerSize.width + 10
+            return offset / width
+        } action: { oldValue, newValue in
+            scrollProgressX = newValue
+        }
     }
 }
