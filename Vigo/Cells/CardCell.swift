@@ -14,7 +14,7 @@ struct CardCell: View {
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack {
+            HStack(spacing: 15) {
                 if let homeData = viewModel.homeModel?.data {
                     let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
                     let newsItems = filteredSections.flatMap { $0.videos ?? [] }
@@ -28,8 +28,8 @@ struct CardCell: View {
                                     WebImage(url: imageUrl)
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(height: 100)
-                                        .cornerRadius(20)
+                                        .frame(height: 120)
+                                        .cornerRadius(25)
                                         .shadow(color: .purple.opacity(0.35), radius: 5)
                                         .padding(.top)
                                 }
@@ -38,18 +38,20 @@ struct CardCell: View {
                                     Text(newsItem.title)
                                         .font(.headline)
                                         .foregroundColor(.purple)
+                                        .frame(width: 150)
                                     
                                     if let spot = newsItem.spot {
                                         Text(spot)
                                             .font(.subheadline)
                                             .foregroundColor(.gray)
+                                            .frame(width: 150)
                                     }
                                 }.padding(.bottom)
                                 
                             }
 //                            .frame(height: newsItem.spot != nil ? 160 : 140)
-                            .frame(height: 160)
-                            .cornerRadius(20)
+                            .frame(height: 180)
+                            .cornerRadius(25)
                         }
                     }
                 }

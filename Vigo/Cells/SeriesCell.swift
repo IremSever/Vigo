@@ -29,11 +29,11 @@ struct SeriesCell: View {
                                         .scaledToFit()
                                         .frame(height: 150)
                                         .cornerRadius(20)
-                                        .shadow(color: .purple.opacity(0.35), radius: 5)
+                                        .shadow(color: .purple.opacity(0.35), radius: 8)
                                 }
                             }
-                          
-                            .frame(height: 180)
+                         
+                            .frame(height: 185)
                             .cornerRadius(20)
                         }
                     }
