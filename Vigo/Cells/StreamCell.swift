@@ -6,7 +6,7 @@ struct StreamCell: View {
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 10) {
+            HStack {
                 if let homeData = viewModel.homeModel?.data {
                     ForEach(homeData.indices, id: \.self) { index in
                         let section = homeData[index]

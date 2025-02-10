@@ -27,13 +27,13 @@ struct SeriesCell: View {
                                     WebImage(url: imageUrl)
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(height: 300)
+                                        .frame(height: 150)
                                         .cornerRadius(20)
-                                        .shadow(color: .purple.opacity(0.35), radius: 8)
+                                        .shadow(color: .purple.opacity(0.35), radius: 5)
                                 }
                             }
-                            .padding()
-                            .frame(height: 350)
+                          
+                            .frame(height: 180)
                             .cornerRadius(20)
                         }
                     }

@@ -32,10 +32,7 @@ struct InfoTop: View {
                 .foregroundStyle(.white, .fill)
             
         }
+        .padding(.horizontal)
+        
     }
 }
-//
-//#Preview {
-//    InfoTop()
-//}
-

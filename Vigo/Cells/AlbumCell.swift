@@ -49,13 +49,13 @@ struct AlbumCell: View {
                                         .frame(height: 450)
                                         .cornerRadius(12)
                                         .clipShape(RoundedRectangle(cornerRadius: 20))
-                                        .shadow(color: .black.opacity(0.4), radius: 5, x: 5, y: 5)
+                                        .shadow(color: .purple.opacity(0.35), radius: 5)
                                 }
                                 
                                 VStack(alignment: .center, spacing: 5) {
                                     Text(newsItem.title)
                                         .font(.headline)
-                                        .foregroundColor(.white)
+                                        .foregroundColor(.purple)
                                         .multilineTextAlignment(.center)
                                         .padding(.top, 8)
                                     

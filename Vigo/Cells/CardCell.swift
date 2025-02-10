@@ -28,9 +28,9 @@ struct CardCell: View {
                                     WebImage(url: imageUrl)
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(height: 150)
+                                        .frame(height: 100)
                                         .cornerRadius(20)
-                                        .shadow(color: .purple.opacity(0.35), radius: 8)
+                                        .shadow(color: .purple.opacity(0.35), radius: 5)
                                         .padding(.top)
                                 }
                                 VStack {
@@ -47,7 +47,8 @@ struct CardCell: View {
                                 }.padding(.bottom)
                                 
                             }
-                            .frame(height: 210)
+//                            .frame(height: newsItem.spot != nil ? 160 : 140)
+                            .frame(height: 160)
                             .cornerRadius(20)
                         }
                     }

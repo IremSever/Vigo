@@ -3,6 +3,8 @@
 //  Vigo
 //
 //  Created by İrem Sever on 31.01.2025.
+
+
 import SwiftUI
 
 struct HomeVC: View {
@@ -73,13 +75,16 @@ struct RowView: View {
                 }
             case "broadcast":
                 StreamCell(viewModel: viewModel)
-
             case "cardFullImage1":
                 SeriesCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
-
-            case "cardFullImage3", "cardTopImage1":
+                    .padding(.horizontal, 16)
+            case "cardFullImage3":
                 CardCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
-
+                    .padding(.horizontal, 16)
+            case "cardTopImage1":
+                CardCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
+                    .padding(.bottom, 60)
+                    .padding(.horizontal, 16)
             default:
                 SeriesCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
             }
