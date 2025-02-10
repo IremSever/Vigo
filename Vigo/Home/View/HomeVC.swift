@@ -32,25 +32,26 @@ struct HomeVC: View {
 
                                 switch section.config.widget.template {
                                 case "headlines":
-                                    AlbumCell(viewModel: viewModel)
-                                        .zIndex(-1)
+                                    AlbumCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text ?? "")
+
                                 case "broadcast":
                                     StreamCell(viewModel: viewModel)
                                 case "cardFullImage1":
                                     SeriesCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text ?? "")
                                 case "cardFullImage3":
-                                    CardCell(viewModel: viewModel)
+                                    CardCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text ?? "")
                                 case "cardTopImage1":
-                                    CardCell(viewModel: viewModel)
+                                    CardCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text ?? "")
+                                        .padding(.bottom, 50)
                                 default:
                                     SeriesCell(viewModel: viewModel, widgetTitle: section.config.widgetTitle?.text ?? "")
+                                        
                                 }
                             }
                         }
                     }
                 }
                 .frame(width: geometry.size.width, alignment: .leading)
-                
                 .background {
                     Rectangle()
                         .fill(.black.gradient)
@@ -69,27 +70,27 @@ struct HomeVC: View {
    
     
 }
-
-
 struct DynamicCell: View {
     @ObservedObject var viewModel: HomeViewModel
 
     var body: some View {
-        
-        ZStack {
+        Group {
             if let homeData = viewModel.homeModel?.data {
-                // If data count is 4 or fewer, show HeaderCell
-                if homeData.count <= 4 {
-                    HeaderCell(viewModel: viewModel)
-                }
-                // If data count is greater than 4, show AlbumCell
-                else {
+                let newsItems = homeData.flatMap { $0.news ?? [] }
+
+                switch (newsItems.first(where: { $0.external.starts(with: "video://") }), newsItems.first(where: { $0.external.starts(with: "external://https:") })) {
+                case (nil, let nonVideoItem?):
+                    AchiveCell(viewModel: viewModel)
+                        .zIndex(-1)
+                case (let videoItem?, _):
                     AlbumCell(viewModel: viewModel)
+                        .zIndex(-1)
+                
+                default:
+                    EmptyView() // veya başka bir default view
                 }
             }
         }
-        .onAppear {
-            viewModel.fetchHomeData(completion: {})
-        }
+        .onAppear()
     }
 }

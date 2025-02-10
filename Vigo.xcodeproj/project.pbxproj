@@ -26,6 +26,7 @@
 		61190E102D537FF90070CA8B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF22D537FF90070CA8B /* TabBar.swift */; };
 		61190E112D537FF90070CA8B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DEE2D537FF90070CA8B /* HomeModel.swift */; };
 		61190E152D53814C0070CA8B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 61190E142D53814C0070CA8B /* SDWebImageSwiftUI */; };
+		61A328912D5946D2004C384F /* AchiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A328902D5946D2004C384F /* AchiveCell.swift */; };
 		668188492D564E8800333EAB /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668188482D564E8800333EAB /* Backdrop.swift */; };
 		66D7C4F92D562EB400D0D9DA /* InfoTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7C4F82D562EB400D0D9DA /* InfoTop.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		61190DFC2D537FF90070CA8B /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		61190E002D537FF90070CA8B /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		61190E022D537FF90070CA8B /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		61A328902D5946D2004C384F /* AchiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchiveCell.swift; sourceTree = "<group>"; };
 		668188482D564E8800333EAB /* Backdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdrop.swift; sourceTree = "<group>"; };
 		66D7C4F82D562EB400D0D9DA /* InfoTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				61190DF82D537FF90070CA8B /* StreamCell.swift */,
 				61190DF92D537FF90070CA8B /* AlbumCell.swift */,
 				61190DFA2D537FF90070CA8B /* SeriesCell.swift */,
+				61A328902D5946D2004C384F /* AchiveCell.swift */,
 				61190DFB2D537FF90070CA8B /* ListCell.swift */,
 				61190DFC2D537FF90070CA8B /* CardCell.swift */,
 				66D7C4F82D562EB400D0D9DA /* InfoTop.swift */,
@@ -283,6 +286,7 @@
 				61190E072D537FF90070CA8B /* HomeViewModel.swift in Sources */,
 				61190E082D537FF90070CA8B /* IndicatorCell.swift in Sources */,
 				61190E092D537FF90070CA8B /* HomeVC.swift in Sources */,
+				61A328912D5946D2004C384F /* AchiveCell.swift in Sources */,
 				668188492D564E8800333EAB /* Backdrop.swift in Sources */,
 				61190E0A2D537FF90070CA8B /* FavoritesVC.swift in Sources */,
 				61190E0B2D537FF90070CA8B /* CardCell.swift in Sources */,

@@ -25,7 +25,7 @@ struct TabBar: View {
         .padding(.vertical, 15)
         .background(Color.black)
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-        .shadow(color: Color.orange.opacity(0.5), radius: 5, x: 0, y: 0)
+        .shadow(color: Color.white.opacity(0.5), radius: 5, x: 0, y: 0)
         .padding(.horizontal, 40)
         .padding(.vertical, 30)
         .opacity(1)

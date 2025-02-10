@@ -27,11 +27,9 @@ struct AlbumCell: View {
                 }
                 
                 if let homeData = viewModel.homeModel?.data {
-                    // Filtreleme işlemi: sadece URL içeren haberleri alıyoruz
                     let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
                     let newsItems = filteredSections.flatMap { $0.news ?? [] }
                     
-                    // URL içeren haberleri filtreleme
                     let urlNewsItems = newsItems.filter { newsItem in
                         return newsItem.external.starts(with: "video://")
                     }
@@ -71,6 +69,8 @@ struct AlbumCell: View {
                             }
                         }
                     }
+                    
+                    
                 }
             }
             .scrollTargetLayout()

@@ -29,7 +29,7 @@ struct SeriesCell: View {
                                         .scaledToFit()
                                         .frame(height: 300)
                                         .cornerRadius(20)
-                                        .shadow(color: .orange.opacity(0.35), radius: 8)
+                                        .shadow(color: .purple.opacity(0.35), radius: 8)
                                 }
                             }
                             .padding()
