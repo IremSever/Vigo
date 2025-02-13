@@ -38,6 +38,7 @@ struct Backdrop: View {
             .offset(y: scrollOffsetY < 0 ? scrollOffsetY : 0)
         }
         .padding(.bottom, -60)
-        .padding(.top, -100)
+        .padding(.top, -120)
+        
     }
 }

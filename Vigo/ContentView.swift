@@ -13,15 +13,15 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             TabView(selection: $selectedTab) {
-                HomeVC()
+                HomeView()
                     .tag(Tab.home)
                     .toolbar(.hidden, for: .tabBar) 
                 
-                ExploreVC()
+                ExploreView()
                     .tag(Tab.explore)
                     .toolbar(.hidden, for: .tabBar)
 
-                FavoritesVC()
+                FavoritesView()
                     .tag(Tab.favorites)
                     .toolbar(.hidden, for: .tabBar)
             }

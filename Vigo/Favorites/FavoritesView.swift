@@ -1,5 +1,5 @@
 //
-//  ExploreVC.swift
+//  FavoritesVC.swift
 //  Vigo
 //
 //  Created by İrem Sever on 5.02.2025.
@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct ExploreVC: View {
+struct FavoritesView: View {
     var body: some View {
-        Text("Explore Page")
+        Text("Favorites Page")
             .foregroundColor(.white)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color.black)
@@ -17,5 +17,5 @@ struct ExploreVC: View {
 }
 
 #Preview {
-    ExploreVC()
+    FavoritesView()
 }
