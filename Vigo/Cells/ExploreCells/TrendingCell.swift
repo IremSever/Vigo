@@ -188,9 +188,9 @@ struct TrendingCell: View {
                                                 .foregroundColor(.white)
                                                 .lineLimit(1)
                                         }
-                                        .frame(width: 100, height: 100) // Consistent frame for layout
-                                        .offset(y: yOffset) // Apply vertical offset
-                                        .clipped() // Clip to frame to hide overflow
+                                        .frame(width: 100, height: 300)
+                                        .offset(y: yOffset)
+                                        .clipped()
 
                                     }
                                 }
@@ -236,7 +236,8 @@ struct TrendingCell: View {
         let diff = abs(index - selectedIndex)
         switch diff {
         case 0: return 100
-        case 1, 2: return 70
+        case 1: return 70
+        case 2: return 30
         default: return 45
         }
     }
@@ -244,8 +245,9 @@ struct TrendingCell: View {
     private func getYOffsetForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
         let diff = abs(index - selectedIndex)
         switch diff {
-        case 0: return -50
-        case 1, 2: return -25
+        case 0: return -80
+        case 1: return -45
+        case 2: return 0
         default: return 0
         }
     }
