@@ -39,7 +39,7 @@ struct AlbumCell: View {
                     ForEach(infiniteNewsItems.indices, id: \.self) { index in
                         let newsItem = infiniteNewsItems[index % urlNewsItems.count]
                         
-                        NavigationLink(destination: DetailVC(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle ?? "")) {
+//                        NavigationLink(destination: DetailView(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle ?? "")) {
                             VStack(alignment: .center) {
                                 if let imageUrl = URL(string: newsItem.image ?? "") {
                                     WebImage(url: imageUrl)
@@ -67,7 +67,7 @@ struct AlbumCell: View {
                                     }
                                 }
                             }
-                        }
+//                        }
                     }
                     
                     

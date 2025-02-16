@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-
-struct CustomNav<Content: View > : View {
+struct CustomNav<Content: View>: View {
     var title, icon: String
     let content: Content
     @State private var scrollOffset: CGFloat = 0
@@ -17,6 +16,7 @@ struct CustomNav<Content: View > : View {
         self.icon = icon
         self.content = content()
     }
+    
     var body: some View {
         GeometryReader { geo in
             ScrollView {
@@ -26,22 +26,19 @@ struct CustomNav<Content: View > : View {
                 .frame(height: 0)
                 content
             }
-            .padding(.top, 100)
-            .background(Color.clear)
-            .ignoresSafeArea()
+            .background {
+                Rectangle()
+                    .fill(.black.gradient)
+                    .scaleEffect(y: -1)
+                    .ignoresSafeArea(edges: .all)
+            }
             .safeAreaInset(edge: .top, content: {
-                Color.clear
-                    .frame(height: 40)
+                Color.clear.frame(height: 40)
             })
             .overlay {
-                NavHeader(scrollOffset: scrollOffset, title: title, icon: icon).zIndex(1)
+                NavHeader(scrollOffset: scrollOffset, title: title, icon: icon)
+                    .zIndex(1)
             }
         }
-
-                      
     }
 }
-
-//#Preview {
-//    CustomNav()
-//}
