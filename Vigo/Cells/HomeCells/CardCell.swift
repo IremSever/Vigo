@@ -14,7 +14,7 @@ struct CardCell: View {
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 15) {
+            HStack {
                 if let homeData = viewModel.homeModel?.data {
                     let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
                     let newsItems = filteredSections.flatMap { $0.videos ?? [] }
@@ -38,24 +38,26 @@ struct CardCell: View {
                                     Text(newsItem.title)
                                         .font(.headline)
                                         .foregroundColor(.purple)
-                                        .frame(width: 150)
+                                        .frame(width: 190)
+                                        .lineLimit(1)
                                     
                                     if let spot = newsItem.spot {
                                         Text(spot)
                                             .font(.subheadline)
-                                            .foregroundColor(.gray)
+                                            .foregroundColor(.white.opacity(0.5))
                                             .frame(width: 150)
+                                            .lineLimit(1)
                                     }
-                                }.padding(.bottom)
+                                }
                                 
                             }
-//                            .frame(height: newsItem.spot != nil ? 160 : 140)
-                            .frame(height: 180)
-                            .cornerRadius(25)
+                            .frame(width: 200, height: newsItem.spot != nil ? 190 : 170)
+//                            .frame(height: 180)
+               
 //                        }
                     }
                 }
-            }
+            }.padding(.horizontal, 12)
         }
     }
 }

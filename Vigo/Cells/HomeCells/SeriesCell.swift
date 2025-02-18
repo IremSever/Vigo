@@ -21,7 +21,6 @@ struct SeriesCell: View {
                     ForEach(newsItems.indices, id: \.self) { index in
                         let newsItem = newsItems[index]
                         
-                        // Directly check external as it's not Optional
                         if newsItem.external.hasPrefix("apilink:///") {
                             let urlString = createDetailURL(from: newsItem.external)
                             NavigationLink(destination: DetailView(viewModel: DetailViewModel(urlString: urlString))) {
@@ -30,28 +29,28 @@ struct SeriesCell: View {
                                         WebImage(url: imageUrl)
                                             .resizable()
                                             .scaledToFit()
-                                            .frame(height: 150)
+                                            .frame(height: 200)
                                             .cornerRadius(20)
                                             .shadow(color: .purple.opacity(0.35), radius: 8)
                                     }
                                 }
-                                .frame(height: 185)
+                                .frame(width: 150, height: 220)
                                 .cornerRadius(20)
                             }
                         }
                     }
                 }
-            }
+            }.padding(.horizontal, 12)
         }
+        
     }
 
-    // Helper function to create the final URL
     private func createDetailURL(from external: String) -> String {
         let baseURL = "https://api.tmgrup.com.tr/"
         if let range = external.range(of: "apilink:///") {
-            let path = external[range.upperBound...] // Extract everything after "apilink:///"
+            let path = external[range.upperBound...]
             return baseURL + path
         }
-        return baseURL // Default fallback
+        return baseURL
     }
 }
