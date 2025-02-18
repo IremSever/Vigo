@@ -12,7 +12,7 @@ struct DetailModel: Codable {
     let data: [DetailData]
 }
 
-// MARK: - Datum
+// MARK: - DetailData
 struct DetailData: Codable {
     let config: DetailConfig
     let singleImage: DetailSingleImage?
@@ -20,7 +20,7 @@ struct DetailData: Codable {
     let videos: [DetailVideo]?
 }
 
-// MARK: - DatumConfig
+// MARK: - DetailConfig
 struct DetailConfig: Codable {
     let cell: DetailCell?
     let image: DetailImage?
@@ -41,7 +41,7 @@ struct DetailCell: Codable {
     let itemSpacer: Int?
 }
 
-// MARK: - Description
+// MARK: - DetailDescription
 struct DetailDescription: Codable {
     let fontColorDark, fontColorLight: String
     let fontSize: Int
@@ -49,14 +49,14 @@ struct DetailDescription: Codable {
     let maxLines: Int
 }
 
-// MARK: - Image
+// MARK: - DetailImage
 struct DetailImage: Codable {
     let radius: Int
     let size: String
     let weight: Double
 }
 
-// MARK: - Spot
+// MARK: - DetailSpot
 struct DetailSpot: Codable {
     let align: String?
     let fontColorDark, fontColorLight: String
@@ -67,7 +67,7 @@ struct DetailSpot: Codable {
     let isDynamicLines: Bool?
 }
 
-// MARK: - Widget
+// MARK: -  DetailWidget
 struct DetailWidget: Codable {
     let bgColorDark, bgColorLight: String?
     let columnCount: Int?
@@ -77,7 +77,7 @@ struct DetailWidget: Codable {
     let type: String?
 }
 
-// MARK: - WidgetMore
+// MARK: - DetailWidgetMore
 struct DetailWidgetMore: Codable {
     let bgColorDark, bgColorLight, external, fontColorDark: String
     let fontColorLight: String
@@ -87,7 +87,7 @@ struct DetailWidgetMore: Codable {
     let text: String
 }
 
-// MARK: - WidgetTitle
+// MARK: - DetailWidgetTitle
 struct DetailWidgetTitle: Codable {
     let fontColorDark, fontColorLight: String
     let fontSize: Int
@@ -98,7 +98,7 @@ struct DetailWidgetTitle: Codable {
 
 // MARK: - DetailDescription
 struct DetailDescriptionData: Codable {
-    let description: String
+    let description: String?
 }
 
 // MARK: - DetailSingleImage
@@ -106,7 +106,7 @@ struct DetailSingleImage: Codable {
     let src: String
 }
 
-// MARK: - Video
+// MARK: - DetailVideo
 struct DetailVideo: Codable {
     let external, id: String
     let image: String
@@ -116,7 +116,7 @@ struct DetailVideo: Codable {
     let title: String
 }
 
-// MARK: - Meta
+// MARK: - DetailMeta
 struct DetailMeta: Codable {
     let statusCode: Int
     let message, description, brand, redirect: String

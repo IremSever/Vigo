@@ -4,167 +4,58 @@
 //
 //  Created by IREM SEVER on 13.02.2025.
 //
-//import SwiftUI
-//import SDWebImageSwiftUI
-//
-//struct TrendingCell: View {
-//    @ObservedObject var viewModel: ExploreViewModel
-//    @State private var selectedIndex: Int = 0
-//    @State private var scrollProxy: ScrollViewProxy?
-//
-//    var body: some View {
-//        GeometryReader { geometry in
-//            ZStack {
-//                if let exploreData = viewModel.exploreModel?.data {
-//                    let allNewsItems = exploreData.flatMap { $0.news ?? [] }
-//
-//                    if allNewsItems.indices.contains(selectedIndex) {
-//                        let selectedItem = allNewsItems[selectedIndex]
-//
-//                        if let imageUrl = selectedItem.image, let validUrl = URL(string: imageUrl) {
-//                            WebImage(url: validUrl)
-//                                .resizable()
-//                                .aspectRatio(contentMode: .fill)
-//                                .frame(width: geometry.size.width, height: geometry.size.height)
-//                                .clipped()
-//                                .overlay(
-//                                    LinearGradient(gradient: Gradient(colors: [.black.opacity(0.8), .clear]), startPoint: .top, endPoint: .bottom)
-//                                )
-//                        }
-//                    }
-//
-//                    VStack {
-//                        Spacer()
-//
-//                        ScrollView(.horizontal, showsIndicators: false) {
-//                            ScrollViewReader { proxy in
-//                                HStack(spacing: 15) {
-//                                    ForEach(allNewsItems.indices, id: \.self) { index in
-//                                        let newsItem = allNewsItems[index]
-//                                        let size: CGFloat = getSizeForIndex(index, selectedIndex: selectedIndex)
-//
-//                                        VStack {
-//                                            if let imageUrl = newsItem.image, let validUrl = URL(string: imageUrl) {
-//                                                WebImage(url: validUrl)
-//                                                    .resizable()
-//                                                    .scaledToFill()
-//                                                    .frame(width: size, height: size)
-//                                                    .clipShape(Circle())
-//                                                    .overlay(
-//                                                        Circle()
-//                                                            .stroke(selectedIndex == index ? Color.blue : Color.clear, lineWidth: 3)
-//                                                    )
-//                                                    .onTapGesture {
-//                                                        withAnimation {
-//                                                            selectedIndex = index
-//                                                            scrollToIndex(index, proxy: proxy)
-//                                                        }
-//                                                    }
-//                                            }
-//                                            Text(newsItem.title ?? "")
-//                                                .font(.caption)
-//                                                .foregroundColor(.white)
-//                                                .lineLimit(1)
-//                                        }
-//                                        .id(index)
-//                                    }
-//                                }
-//                                .padding(.horizontal)
-//                                .frame(minWidth: geometry.size.width,
-//                                       idealWidth: CGFloat(allNewsItems.count) * 100,
-//                                       maxWidth: .infinity,
-//                                       alignment: .center)
-//                                .onAppear {
-//                                    scrollProxy = proxy
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
-//            .gesture(
-//                DragGesture()
-//                    .onEnded { value in
-//                        let threshold: CGFloat = 50
-//                        let allNewsItemsCount = viewModel.exploreModel?.data.flatMap { $0.news ?? [] }.count ?? 1
-//
-//                        if value.translation.width < -threshold, selectedIndex < allNewsItemsCount - 1 {
-//                            withAnimation {
-//                                selectedIndex += 1
-//                                scrollToIndex(selectedIndex, proxy: scrollProxy)
-//                            }
-//                        } else if value.translation.width > threshold, selectedIndex > 0 {
-//                            withAnimation {
-//                                selectedIndex -= 1
-//                                scrollToIndex(selectedIndex, proxy: scrollProxy)
-//                            }
-//                        }
-//                    }
-//            )
-//            .frame(width: geometry.size.width, height: geometry.size.height)
-//            .edgesIgnoringSafeArea(.top)
-//            .edgesIgnoringSafeArea(.bottom)
-//        }
-//    }
-//
-//    private func getSizeForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
-//        if index == selectedIndex {
-//            return 80
-//        } else if abs(index - selectedIndex) <= 2 {
-//            return 50
-//        } else {
-//            return 30
-//        }
-//    }
-//
-//    private func scrollToIndex(_ index: Int, proxy: ScrollViewProxy?) {
-//        DispatchQueue.main.async {
-//            withAnimation {
-//                proxy?.scrollTo(index, anchor: .center)
-//            }
-//        }
-//    }
-//}
 import SwiftUI
 import SDWebImageSwiftUI
 
 struct TrendingCell: View {
     @ObservedObject var viewModel: ExploreViewModel
-    @State private var selectedIndex: Int = 0
+    @State private var selectedIndex: Int = 1
     @State private var scrollProxy: ScrollViewProxy?
-
+    
+    private var loopingData: [ExploreNews] {
+        guard let exploreData = viewModel.exploreModel?.data else { return [] }
+        let allNewsItems = exploreData.flatMap { $0.news ?? [] }
+        
+        guard allNewsItems.count > 1 else { return allNewsItems }
+        
+        return [allNewsItems.last!] + allNewsItems + [allNewsItems.first!]
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                if let exploreData = viewModel.exploreModel?.data {
-                    let allNewsItems = exploreData.flatMap { $0.news ?? [] }
-
-                    if allNewsItems.indices.contains(selectedIndex) {
-                        let selectedItem = allNewsItems[selectedIndex]
-
+                if !loopingData.isEmpty {
+                    if loopingData.indices.contains(selectedIndex) {
+                        let selectedItem = loopingData[selectedIndex]
+                        
                         if let imageUrl = selectedItem.image, let validUrl = URL(string: imageUrl) {
                             WebImage(url: validUrl)
                                 .resizable()
-                                .aspectRatio(contentMode: .fill)
+                                .scaledToFill()
                                 .frame(width: geometry.size.width, height: geometry.size.height)
                                 .clipped()
-                                .overlay(
-                                    LinearGradient(gradient: Gradient(colors: [.black.opacity(0.8), .clear]), startPoint: .top, endPoint: .bottom)
-                                )
+                                .blur(radius: 30, opaque: true)
+                                .overlay {
+                                    Rectangle()
+                                        .fill(Color.black.opacity(0.35))
+                                }
+                                .mask {
+                                    LinearGradient(gradient: Gradient(colors: [
+                                        .black, .black, .black, .black, .black.opacity(0.5), .clear
+                                    ]), startPoint: .top, endPoint: .bottom)
+                                }
                         }
                     }
-
+                    
                     VStack {
-                        Spacer()
-
                         ScrollView(.horizontal, showsIndicators: false) {
                             ScrollViewReader { proxy in
                                 HStack(spacing: 15) {
-                                    ForEach(allNewsItems.indices, id: \.self) { index in
-                                        let newsItem = allNewsItems[index]
+                                    ForEach(loopingData.indices, id: \.self) { index in
+                                        let newsItem = loopingData[index]
                                         let size = getSizeForIndex(index, selectedIndex: selectedIndex)
                                         let yOffset = getYOffsetForIndex(index, selectedIndex: selectedIndex)
-
+                                        
                                         VStack {
                                             if let imageUrl = newsItem.image, let validUrl = URL(string: imageUrl) {
                                                 WebImage(url: validUrl)
@@ -174,31 +65,37 @@ struct TrendingCell: View {
                                                     .clipShape(Circle())
                                                     .overlay(
                                                         Circle()
-                                                            .stroke(selectedIndex == index ? Color.blue : Color.clear, lineWidth: 3)
+                                                            .stroke(selectedIndex == index ? Color.orange.opacity(0.3) : Color.purple.opacity(0.1), lineWidth: 5)
+                                                            .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 5 : 2)
                                                     )
-                                                    .onTapGesture {
-                                                        withAnimation {
-                                                            selectedIndex = index
-                                                            scrollToIndex(index, proxy: proxy)
-                                                        }
-                                                    }
+                                                    .padding(.bottom, 10)
+                                                    .opacity(selectedIndex == index ? 1 : 0.7)
                                             }
+                                            
+                                            
                                             Text(newsItem.title ?? "")
-                                                .font(.caption)
-                                                .foregroundColor(.white)
-                                                .lineLimit(1)
+                                                .font(.system(size: selectedIndex == index ? 21 : 15, weight: selectedIndex == index ? .bold : .regular))
+                                                .foregroundColor(selectedIndex == index ? .orange : .purple.opacity(0.5))
+                                                .lineLimit(2)
+                                                .padding(.bottom, 8)
+
+                                            
+                                            if selectedIndex == index {
+                                                Text(newsItem.spot ?? "")
+                                                    .font(.system(size: 18))
+                                                    .foregroundColor(.white.opacity(0.8))
+                                                    .lineLimit(12)
+                                                    .multilineTextAlignment(.center)
+                                                    .frame(alignment: .center)
+                                            }
                                         }
-                                        .frame(width: 100, height: 300)
+                                        .frame(width: selectedIndex == index ? 250 : 150, height: 450)
                                         .offset(y: yOffset)
                                         .clipped()
-
                                     }
                                 }
                                 .padding(.horizontal)
-                                .frame(minWidth: geometry.size.width,
-                                       idealWidth: CGFloat(allNewsItems.count) * 100,
-                                       maxWidth: .infinity,
-                                       alignment: .center)
+                                .frame(minWidth: geometry.size.width, alignment: .center)
                                 .onAppear {
                                     scrollProxy = proxy
                                 }
@@ -211,18 +108,21 @@ struct TrendingCell: View {
                 DragGesture()
                     .onEnded { value in
                         let threshold: CGFloat = 50
-                        let allNewsItemsCount = viewModel.exploreModel?.data.flatMap { $0.news ?? [] }.count ?? 1
-
-                        if value.translation.width < -threshold, selectedIndex < allNewsItemsCount - 1 {
-                            withAnimation {
+                        
+                        withAnimation {
+                            if value.translation.width < -threshold {
                                 selectedIndex += 1
-                                scrollToIndex(selectedIndex, proxy: scrollProxy)
-                            }
-                        } else if value.translation.width > threshold, selectedIndex > 0 {
-                            withAnimation {
+                            } else if value.translation.width > threshold {
                                 selectedIndex -= 1
-                                scrollToIndex(selectedIndex, proxy: scrollProxy)
                             }
+                            
+                            if selectedIndex == loopingData.count - 1 {
+                                selectedIndex = 1
+                            } else if selectedIndex == 0 {
+                                selectedIndex = loopingData.count - 2
+                            }
+                            
+                            scrollToIndex(selectedIndex, proxy: scrollProxy)
                         }
                     }
             )
@@ -231,28 +131,25 @@ struct TrendingCell: View {
             .edgesIgnoringSafeArea(.bottom)
         }
     }
-
+    
     private func getSizeForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
         let diff = abs(index - selectedIndex)
         switch diff {
-        case 0: return 100
-        case 1: return 70
-        case 2: return 30
-        default: return 45
-        }
-    }
-
-    private func getYOffsetForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
-        let diff = abs(index - selectedIndex)
-        switch diff {
-        case 0: return -80
-        case 1: return -45
-        case 2: return 0
+        case 0: return 200
+        case 1: return 100
         default: return 0
         }
     }
-
-
+    
+    private func getYOffsetForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
+        let diff = abs(index - selectedIndex)
+        switch diff {
+        case 0: return -0
+        case 1: return -0
+        default: return 0
+        }
+    }
+    
     private func scrollToIndex(_ index: Int, proxy: ScrollViewProxy?) {
         DispatchQueue.main.async {
             withAnimation {

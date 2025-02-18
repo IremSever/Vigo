@@ -41,6 +41,9 @@
 		66CB54542D5DE23C001166F4 /* TrendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB54532D5DE23C001166F4 /* TrendingCell.swift */; };
 		66CB54562D5E0193001166F4 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB54552D5E0193001166F4 /* SectionHeader.swift */; };
 		66CB54582D5E19D8001166F4 /* BackgroundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB54572D5E19D8001166F4 /* BackgroundCell.swift */; };
+		66CB545E2D63668F001166F4 /* trending.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CB545D2D63668F001166F4 /* trending.json */; };
+		66CB54612D63790F001166F4 /* classics.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CB54602D63790F001166F4 /* classics.json */; };
+		66CB54632D637925001166F4 /* shows.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CB54622D637925001166F4 /* shows.json */; };
 		66D7C4F92D562EB400D0D9DA /* InfoTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7C4F82D562EB400D0D9DA /* InfoTop.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +82,9 @@
 		66CB54532D5DE23C001166F4 /* TrendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCell.swift; sourceTree = "<group>"; };
 		66CB54552D5E0193001166F4 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		66CB54572D5E19D8001166F4 /* BackgroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCell.swift; sourceTree = "<group>"; };
+		66CB545D2D63668F001166F4 /* trending.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trending.json; sourceTree = "<group>"; };
+		66CB54602D63790F001166F4 /* classics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = classics.json; sourceTree = "<group>"; };
+		66CB54622D637925001166F4 /* shows.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shows.json; sourceTree = "<group>"; };
 		66D7C4F82D562EB400D0D9DA /* InfoTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +200,7 @@
 		61190E012D537FF90070CA8B /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				66CB545C2D63666A001166F4 /* JSON */,
 				66CB54452D5DC27B001166F4 /* Model */,
 				66CB54462D5DC281001166F4 /* ViewModel */,
 				66CB544E2D5DE053001166F4 /* View */,
@@ -220,9 +227,9 @@
 		612850A82D58A72C00582BC6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				616974DA2D628DB600803C5A /* DetailViewModel.swift */,
-				616974D82D628DAD00803C5A /* DetailModel.swift */,
-				61190DF52D537FF90070CA8B /* DetailView.swift */,
+				66CB54592D6305F7001166F4 /* Model */,
+				66CB545A2D630603001166F4 /* ViewModel */,
+				66CB545B2D630614001166F4 /* View */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -311,6 +318,40 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		66CB54592D6305F7001166F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				616974D82D628DAD00803C5A /* DetailModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66CB545A2D630603001166F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				616974DA2D628DB600803C5A /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		66CB545B2D630614001166F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61190DF52D537FF90070CA8B /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		66CB545C2D63666A001166F4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				66CB545D2D63668F001166F4 /* trending.json */,
+				66CB54602D63790F001166F4 /* classics.json */,
+				66CB54622D637925001166F4 /* shows.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -376,7 +417,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66CB54632D637925001166F4 /* shows.json in Resources */,
+				66CB545E2D63668F001166F4 /* trending.json in Resources */,
 				61190DEA2D537FE80070CA8B /* Preview Assets.xcassets in Resources */,
+				66CB54612D63790F001166F4 /* classics.json in Resources */,
 				61190DEB2D537FE80070CA8B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

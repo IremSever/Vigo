@@ -1,0 +1,61 @@
+{
+    "meta": {
+        "status_code": 200,
+        "message": "",
+        "description": "Core V2 - Keşfet - Güncel Diziler",
+        "brand": "Atv",
+        "redirect": ""
+    },
+    "data": [
+        {
+            
+        },
+        {
+            "news": [
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
+                    "image": "https://iatv.tmgrup.com.tr/2024/09/05/640x400/1725545493398.jpg",
+                    "title": "Bir Gece Masalı",
+                    "spot": "Babası görev yeri Denizli'de bir suikast sonucunda şehit edilen Mahir, yirmi yıl sonra bir komiser olarak babasının katilinden intikam almak için şehre döner. Ancak şehre geldiği ilk gün mistik bir şekilde tanıştığı güzeller güzeli bir Yörük kızına aşık olur. Adını bir türlü öğrenemediği bu masal perisi gibi kıza Şehrazad ismini takar. Bir yandan aşık olduğu Şehrazad'ı ararken bir yandan babasının katili Kürşat Kilimci'nin açık vermesini bekleyen Mahir beklediği fırsatı Kürşat'ın kızının düğününde yakalayacağını anlar. Ancak henüz bilmese de bu düğün Mahir'in hayatının sonsuza kadar değişeceği ve bir gece masalının başlayacağı yerdir."
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
+                    "image": "https://iatv.tmgrup.com.tr/2024/09/24/640x400/1727165948010.jpg",
+                    "title": "Kuruluş Osman",
+                    "spot": "Obasını, Yenişehir'e taşıyan Osman Bey, bu şehirde kuracağı devletin temellerini atacaktır. Bu uğurda atılan adımlardan biri 'divan' kurmak olacaktır. Artık mesele anında toplanan 'toy' geride kalmıştır. Osman Bey, Bey'leri ile 'divan' kuracak burada istişarelerde bulunacaktır. Ancak bu 'divan' aynı zamanda, Osman Bey'i içeriden zayıflatmak isteyen dost görünen düşmanlar için kendilerini gösterme alanı olacaktır. Osman Bey devlet kurma hedefi ile büyüdükçe, daha büyük düşmanlarla mücadele etmek zorunda kalacaktır. İçeride dost gibi görünen düşmanla mücadele eden Osman Bey, dışarıda Bizans ile bir mücadele içine girecektir. Osman Bey, hedefini koymuştur, Bursa ve İznik'in yolunu açacak olan Marmara Hisarı'nın fethi!"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
+                    "image": "https://iatv.tmgrup.com.tr/2025/01/24/640x400/1737750306552.jpg",
+                    "title": "Başka Bir Gün",
+                    "spot": " "
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=13d19b42-519a-46f0-9fd7-606a9fcdec3b",
+                    "image": "https://iatv.tmgrup.com.tr/2024/12/26/640x400/1735234849259.jpg",
+                    "title": "Zembilli",
+                    "spot": " "
+                    
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=4a8459e8-ba0c-4eb8-a7d3-3982cea3a8a2",
+                    "image": "https://iatv.tmgrup.com.tr/2024/12/11/640x400/1733939186295.jpg",
+                    "title": "Can Borcu",
+                    "spot": " "
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=c1b98ccb-7b8f-454d-8310-01630af904ca",
+                    "image": "https://iatv.tmgrup.com.tr/2025/01/06/640x400/1736187075590.jpg",
+                    "title": "Kardelenler",
+                    "spot": " "
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=a65a5c3d-1a33-46b1-8ff9-fb1a855808e4",
+                    "image": "https://iatv.tmgrup.com.tr/2025/01/09/640x400/1736422746716.jpg",
+                    "title": "Sustalı Ceylan",
+                    "spot": " "
+                }
+            ]
+        }
+    ]
+}

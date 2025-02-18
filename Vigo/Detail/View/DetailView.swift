@@ -16,48 +16,30 @@ struct DetailView: View {
                     
                     if let firstData = detailModel.data.first {
                         
-                        // Görsel yükleme kısmı
+     
                         if let imageUrlString = firstData.singleImage?.src, let imageUrl = URL(string: imageUrlString) {
                             AsyncImage(url: imageUrl) { image in
                                 image
                                     .resizable()
-                                    .scaledToFit()
+                                    .scaledToFill()
                                     .cornerRadius(10)
                                     .shadow(radius: 5)
                             } placeholder: {
                                 ProgressView()
                             }
-                            .frame(maxWidth: .infinity, maxHeight: 250)
+                            .frame(maxWidth: .infinity, maxHeight: 500)
                         }
-                        
-                        // Açıklama kontrolü
-                        if let description = detailModel.data.first?.description?.description {
+                        if let description = firstData.description?.description {
                             Text(description)
                                 .font(.body)
                                 .foregroundColor(.gray)
-                                .padding()
-                        } else {
-                            Text("Description not available")
-                                .font(.body)
-                                .foregroundColor(.red)
+                                
                                 .padding()
                         }
-                    } else {
-                        Text("No detail data available")
-                            .font(.headline)
-                            .foregroundColor(.red)
-                            .padding()
                     }
-                } else {
-                    ProgressView("Loading...")
-                        .onAppear {
-                            viewModel.fetchDetailData {}
-                        }
                 }
             }
-            .padding()
-        }
-        .navigationTitle("Detail View")
+        }.padding()
     }
 }
 

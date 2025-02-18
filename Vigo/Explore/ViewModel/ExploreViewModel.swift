@@ -7,39 +7,65 @@
 
 import SwiftUI
 import Foundation
+//
+//class ExploreViewModel: ObservableObject {
+//    @Published var exploreModel: ExploreModel?
+//
+//    func fetchExploreData(for category: CategoryType, completion: @escaping () -> Void) {
+//        let urlString = category.url
+//
+//        guard let url = URL(string: urlString) else {
+//            print("Invalid URL")
+//            return
+//        }
+//
+//        URLSession.shared.dataTask(with: url) { data, _, error in
+//            if let error = error {
+//                print("Error: \(error)")
+//                return
+//            }
+//
+//            guard let data = data else {
+//                print("No data received")
+//                return
+//            }
+//
+//            do {
+//                let decodeData = try JSONDecoder().decode(ExploreModel.self, from: data)
+//
+//                DispatchQueue.main.async {
+//                    self.exploreModel = decodeData
+//                    completion()
+//                }
+//            } catch {
+//                print("Error decoding data: \(error)")
+//            }
+//        }.resume()
+//    }
+//}
+import SwiftUI
+import Foundation
 
 class ExploreViewModel: ObservableObject {
     @Published var exploreModel: ExploreModel?
 
     func fetchExploreData(for category: CategoryType, completion: @escaping () -> Void) {
-        let urlString = category.url
-
-        guard let url = URL(string: urlString) else {
-            print("Invalid URL")
+        guard let url = Bundle.main.url(forResource: category.jsonFileName, withExtension: "json") else {
+            print("JSON file not found: \(category.jsonFileName).json")
             return
         }
 
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            if let error = error {
-                print("Error: \(error)")
-                return
-            }
+        do {
+            let data = try Data(contentsOf: url)
+            let decodedData = try JSONDecoder().decode(ExploreModel.self, from: data)
 
-            guard let data = data else {
-                print("No data received")
-                return
+            DispatchQueue.main.async {
+                self.exploreModel = decodedData
+                completion()
             }
-
-            do {
-                let decodeData = try JSONDecoder().decode(ExploreModel.self, from: data)
-
-                DispatchQueue.main.async {
-                    self.exploreModel = decodeData
-                    completion()
-                }
-            } catch {
-                print("Error decoding data: \(error)")
-            }
-        }.resume()
+        } catch {
+            print("Error decoding JSON: \(error)")
+        }
     }
 }
+

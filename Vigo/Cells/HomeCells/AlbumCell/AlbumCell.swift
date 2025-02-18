@@ -4,6 +4,7 @@
 //
 //  Created by İrem Sever on 2.02.2025.
 //
+
 import SwiftUI
 import SDWebImageSwiftUI
 
@@ -27,6 +28,7 @@ struct AlbumCell: View {
                 }
                 
                 if let homeData = viewModel.homeModel?.data {
+                    
                     let filteredSections = homeData.filter { $0.config.widgetTitle?.text == widgetTitle }
                     let newsItems = filteredSections.flatMap { $0.news ?? [] }
                     
@@ -39,38 +41,34 @@ struct AlbumCell: View {
                     ForEach(infiniteNewsItems.indices, id: \.self) { index in
                         let newsItem = infiniteNewsItems[index % urlNewsItems.count]
                         
-//                        NavigationLink(destination: DetailView(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle ?? "")) {
-                            VStack(alignment: .center) {
-                                if let imageUrl = URL(string: newsItem.image ?? "") {
-                                    WebImage(url: imageUrl)
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .containerRelativeFrame(.horizontal)
-                                        .frame(height: 450)
-                                        .cornerRadius(12)
-                                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                                        .shadow(color: .purple.opacity(0.35), radius: 5)
-                                }
+                        VStack(alignment: .center) {
+                            if let imageUrl = URL(string: newsItem.image ?? "") {
+                                WebImage(url: imageUrl)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .containerRelativeFrame(.horizontal)
+                                    .frame(height: 450)
+                                    .cornerRadius(12)
+                                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                                    .shadow(color: .purple.opacity(0.35), radius: 5)
+                            }
+                            
+                            VStack(alignment: .center, spacing: 5) {
+                                Text(newsItem.title)
+                                    .font(.headline)
+                                    .foregroundColor(.purple)
+                                    .multilineTextAlignment(.center)
+                                    .padding(.top, 8)
                                 
-                                VStack(alignment: .center, spacing: 5) {
-                                    Text(newsItem.title)
-                                        .font(.headline)
-                                        .foregroundColor(.purple)
+                                if let spot = newsItem.spot {
+                                    Text(spot)
+                                        .font(.subheadline)
+                                        .foregroundColor(.gray)
                                         .multilineTextAlignment(.center)
-                                        .padding(.top, 8)
-                                    
-                                    if let spot = newsItem.spot {
-                                        Text(spot)
-                                            .font(.subheadline)
-                                            .foregroundColor(.gray)
-                                            .multilineTextAlignment(.center)
-                                    }
                                 }
                             }
-//                        }
+                        }
                     }
-                    
-                    
                 }
             }
             .scrollTargetLayout()

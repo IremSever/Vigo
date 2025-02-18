@@ -1,0 +1,61 @@
+{
+    "meta": {
+        "status_code": 200,
+        "message": "",
+        "description": "Core V2 - Keşfet - Programlar",
+        "brand": "Atv",
+        "redirect": ""
+    },
+    "data": [
+        {
+            
+        },
+        {
+            "news": [
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=114a51ee-ff4f-43f6-a557-38d4e169d67d",
+                    "image": "https://iatv.tmgrup.com.tr/2021/08/24/435x287/1629808935821.jpg",
+                    "title": "Müge Anlı ile Tatlı Sert",
+                    "spot": "hghfghghfgfhgfhfhfghgh"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=9fe6a82c-f95c-4b03-ad40-25edf101ab18",
+                    "image": "https://iatv.tmgrup.com.tr/2024/08/30/435x287/1725043501135.jpg",
+                    "title": "Esra Erol'da",
+                    "spot": "hghfghghfgfhgfhfhfghgh"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=c79f4908-5896-45d6-aa90-1248b4d4934e",
+                    "image": "https://iatv.tmgrup.com.tr/2024/09/09/435x287/1725861580441.jpg",
+                    "title": "Kim Milyoner Olmak İster?",
+                    "spot": "hghfghghfgfhgfhfhfghgh"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=2b887db6-4ac7-43b2-abc7-bc7f6d57050e",
+                    "image": "https://iatv.tmgrup.com.tr/2021/05/31/435x287/1622473211991.jpg",
+                    "title": "Nihat Hatipoğlu ile Dosta Doğru"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=9e142aa5-67c1-49a9-9677-3b074c30590b",
+                    "image": "https://iatv.tmgrup.com.tr/2021/05/31/435x287/1622473082181.jpg",
+                    "title": "Nihat Hatipoğlu Sorularınızı Cevaplıyor"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=f09ca990-5f30-452c-b500-08741d68ddf7",
+                    "image": "https://iatv.tmgrup.com.tr/2024/06/04/640x400/1717493555218.jpg",
+                    "title": "Dizi TV"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=7ab560e4-2a7f-43cf-862f-fb8083076120",
+                    "image": "https://iatv.tmgrup.com.tr/2021/05/31/435x287/1622473355841.jpg",
+                    "title": "Nihat Hatipoğlu ile Kur'an ve Sünnet"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=780e11de-70f1-4cac-a822-5056af2a4648",
+                    "image": "https://iatv.tmgrup.com.tr/2024/04/09/640x400/1712643689869.jpg",
+                    "title": "Filmler"
+                }
+            ]
+        }
+    ]
+}

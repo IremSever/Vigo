@@ -4,7 +4,7 @@
 //
 //  Created by İrem Sever on 2.02.2025.
 //
-
+//burada
 import SwiftUI
 import SDWebImageSwiftUI
 

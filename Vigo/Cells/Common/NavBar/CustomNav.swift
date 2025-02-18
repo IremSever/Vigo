@@ -7,7 +7,7 @@
 
 import SwiftUI
 struct CustomNav<Content: View>: View {
-    var title, icon: String
+    var title, icon: String?
     let content: Content
     @State private var scrollOffset: CGFloat = 0
     
@@ -36,7 +36,7 @@ struct CustomNav<Content: View>: View {
                 Color.clear.frame(height: 40)
             })
             .overlay {
-                NavHeader(scrollOffset: scrollOffset, title: title, icon: icon)
+                NavHeader(scrollOffset: scrollOffset, title: title ?? "", icon: icon ?? "")
                     .zIndex(1)
             }
         }
