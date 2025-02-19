@@ -52,21 +52,8 @@ struct AlbumCell: View {
                                     .clipShape(RoundedRectangle(cornerRadius: 20))
                                     .shadow(color: .purple.opacity(0.35), radius: 5)
                             }
-                            
-                            VStack(alignment: .center, spacing: 5) {
-                                Text(newsItem.title)
-                                    .font(.headline)
-                                    .foregroundColor(.purple)
-                                    .multilineTextAlignment(.center)
-                                    .padding(.top, 8)
-                                
-                                if let spot = newsItem.spot {
-                                    Text(spot)
-                                        .font(.subheadline)
-                                        .foregroundColor(.gray)
-                                        .multilineTextAlignment(.center)
-                                }
-                            }
+                            BottomButton()
+                    
                         }
                     }
                 }
@@ -74,7 +61,7 @@ struct AlbumCell: View {
             .scrollTargetLayout()
         }
         .safeAreaPadding(15)
-        .frame(height: 550)
+        .frame(height: 520)
         .background(
             Backdrop(
                 images: viewModel.getBackdropImages(),

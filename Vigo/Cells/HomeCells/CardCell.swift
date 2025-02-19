@@ -21,39 +21,41 @@ struct CardCell: View {
 
                     ForEach(newsItems.indices, id: \.self) { index in 
                         let newsItem = newsItems[index]
-//                        
+//
 //                        NavigationLink(destination: DetailView(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle)) {
                             VStack {
                                 if let imageUrl = URL(string: newsItem.image) {
                                     WebImage(url: imageUrl)
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(height: 120)
-                                        .cornerRadius(25)
-                                        .shadow(color: .purple.opacity(0.35), radius: 5)
-                                        .padding(.top)
+                                        .frame(height: 110)
+                                        .cornerRadius(20)
+                                        .shadow(color: .purple.opacity(0.35), radius: 10)
                                 }
                                 VStack {
-                                    
                                     Text(newsItem.title)
                                         .font(.headline)
                                         .foregroundColor(.purple)
-                                        .frame(width: 190)
+                                        .frame(width: 150)
                                         .lineLimit(1)
                                     
                                     if let spot = newsItem.spot {
                                         Text(spot)
                                             .font(.subheadline)
-                                            .foregroundColor(.white.opacity(0.5))
+                                            .foregroundColor(.white.opacity(1))
                                             .frame(width: 150)
                                             .lineLimit(1)
+                                    } else {
+                                        Text(" ")
+                                            .font(.subheadline)
+                                            .frame(width: 150, height: 18)
                                     }
                                 }
                                 
                             }
-                            .frame(width: 200, height: newsItem.spot != nil ? 190 : 170)
+                            .frame(width: 200, height: 190 )
 //                            .frame(height: 180)
-               
+                
 //                        }
                     }
                 }
