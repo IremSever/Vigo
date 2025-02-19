@@ -15,7 +15,7 @@ struct ExploreView: View {
         NavigationView {
             ZStack {
                 TrendingCell(viewModel: viewModel)
-                    .ignoresSafeArea(edges: .bottom)
+                    .ignoresSafeArea(edges: .all)
                     .frame(maxHeight: .infinity, alignment: .center)
                     .background(Color.black)
                 

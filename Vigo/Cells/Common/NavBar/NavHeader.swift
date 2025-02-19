@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct NavHeader: View {
-    
     var scrollOffset: CGFloat
     var title: String
     var icon: String
@@ -17,8 +16,7 @@ struct NavHeader: View {
         ZStack {
             Color.clear
                 .frame(height: interpolatedHeight())
-                .background(Color(.darkText).opacity(opacityView()))
-                .blur(radius: 0.5)
+                .background(Color(.black).opacity(opacityView()))
                 .edgesIgnoringSafeArea(.top)
             
             HStack {
@@ -59,8 +57,8 @@ struct NavHeader: View {
         //if progress is 0, the height is startH. If progress is 1, the height is endH
         //It interpolates between these two heights based on the progress
         return endHeight + (startHeight - endHeight) * progress
-        
     }
+    
     private func iconSize() -> CGFloat {
         let startHeight: CGFloat = 20
         
@@ -71,8 +69,8 @@ struct NavHeader: View {
         let progress = min(max(scrollOffset / transtionOffset, 0), 1)
         
         return endHeight + (startHeight - endHeight) * progress
-        
     }
+    
     private func pushupOffset() -> CGFloat {
         let startHeight: CGFloat = -40
         
@@ -83,8 +81,8 @@ struct NavHeader: View {
         let progress = min(max(scrollOffset / transtionOffset, 0), 1)
         
         return endHeight + (startHeight - endHeight) * progress
-        
     }
+    
     private func interpolatedText() -> CGFloat {
         let startHeight: CGFloat = 40
         
@@ -95,8 +93,8 @@ struct NavHeader: View {
         let progress = min(max(scrollOffset / transtionOffset, 0), 1)
         
         return endHeight + (startHeight - endHeight) * progress
-        
     }
+    
     private func opacityView() -> CGFloat {
         let startOffset: CGFloat = 0
         
@@ -107,6 +105,5 @@ struct NavHeader: View {
         let progress = min(max(scrollOffset / transtionOffset, 0), 1)
         
         return endOffset + (startOffset - endOffset) * progress
-        
     }
 }

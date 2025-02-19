@@ -31,7 +31,9 @@ struct CustomNav<Content: View>: View {
                     .fill(.black.gradient)
                     .scaleEffect(y: -1)
                     .ignoresSafeArea(edges: .all)
+                
             }
+            
             .safeAreaInset(edge: .top, content: {
                 Color.clear.frame(height: 40)
             })
@@ -39,6 +41,7 @@ struct CustomNav<Content: View>: View {
                 NavHeader(scrollOffset: scrollOffset, title: title ?? "", icon: icon ?? "")
                     .zIndex(1)
             }
+            
         }
     }
 }

@@ -20,7 +20,7 @@ struct StreamCell: View {
                                         .foregroundColor(stream.isLive ? .orange.opacity(0.85) : .purple.opacity(0.5))
                                         .shadow(radius: 10)
                                         .rotationEffect(.degrees(270))
-                                        .position(x: 18, y: 105)
+                                        .position(x: 18, y: 110)
                                     
                                     if let imageUrl = URL(string: stream.image) {
                                         WebImage(url: imageUrl)
@@ -30,14 +30,15 @@ struct StreamCell: View {
                                             .cornerRadius(20)
 //                                            .shadow(color: .black.opacity(0.8), radius: 50)
                                             .clipped()
-//                                            .overlay(
-//                                                LinearGradient(
-//                                                    gradient: Gradient(colors: stream.isLive ? [Color.black.opacity(0), Color.clear] : [Color.black.opacity(0.6), Color.clear]),
-//                                                    startPoint: .bottom,
-//                                                    endPoint: .top
-//                                                )
-//                                                .cornerRadius(20)
-//                                            )
+                                            .overlay(
+                                                LinearGradient(
+                                                    gradient: Gradient(colors: stream.isLive ? [Color.black.opacity(0.5), Color.clear] : [Color.black.opacity(0.5), Color.clear]),
+                                                    startPoint: .bottom,
+                                                    endPoint: stream.isLive ? UnitPoint(x: 0.5, y: 0.5) : .top
+                                                )
+                                                .cornerRadius(20)
+                                            )
+                                           
 //                                            .overlay(
 //                                                Rectangle()
 //                                                    .stroke(LinearGradient(
@@ -50,14 +51,17 @@ struct StreamCell: View {
                                     }
                                     if stream.isLive {
                                         Text("LIVE")
-                                            .font(.system(size: 12))
-                                            .foregroundColor(.purple)
+                                            .font(.system(size: 12).bold())
+                                            .foregroundColor(.white)
+                                            .padding(.vertical, 3)
+                                            .padding(.horizontal, 8)
                                             .background(
-                                                Capsule()
-                                                    .fill(Color.orange)
+                                                Rectangle()
+                                                    .fill(Color.orange.opacity(0.75))
+                                                   
                                             )
-                                            .position(x: 100, y: 180)
-                                            .frame(width: 50, height: 30, alignment: .center)
+                                            .position(x: 50, y: 110)
+                                            .frame(width: 100, height: 40, alignment: .center)
                                     }
                                     
                                 }

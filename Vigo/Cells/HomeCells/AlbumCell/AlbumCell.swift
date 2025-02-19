@@ -50,7 +50,7 @@ struct AlbumCell: View {
                                     .frame(height: 450)
                                     .cornerRadius(12)
                                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                                    .shadow(color: .purple.opacity(0.35), radius: 5)
+                                    .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
                             }
                             BottomButton()
                     

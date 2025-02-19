@@ -22,10 +22,10 @@ struct SectionHeader: View {
                             Text(category.displayName)
                                 .padding(.horizontal, 10)
                                 .padding(.vertical, 10)
-                                .foregroundColor(selectedCategory == category ? Color.white : Color.gray)
+                                .foregroundColor(selectedCategory == category ? Color.orange : Color.white)
                                 .overlay(
                                     Capsule()
-                                        .stroke(selectedCategory == category ? Color.white : Color.gray, lineWidth: 2)
+                                        .stroke(selectedCategory == category ? Color.orange : Color.white, lineWidth: 3)
                                 )
                                 .clipShape(Capsule())
                                 .onTapGesture {

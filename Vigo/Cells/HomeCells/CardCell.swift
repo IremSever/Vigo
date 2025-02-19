@@ -30,7 +30,7 @@ struct CardCell: View {
                                         .scaledToFit()
                                         .frame(height: 110)
                                         .cornerRadius(20)
-                                        .shadow(color: .purple.opacity(0.35), radius: 10)
+                                        .shadow(color: .purple.opacity(0.35), radius: 4)
                                 }
                                 VStack {
                                     Text(newsItem.title)

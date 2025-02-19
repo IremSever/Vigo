@@ -41,7 +41,7 @@ struct TrendingCell: View {
                                 }
                                 .mask {
                                     LinearGradient(gradient: Gradient(colors: [
-                                        .black, .black, .black, .black, .black.opacity(0.5), .clear
+                                        .black, .gray, .gray, .gray, .white.opacity(0.5), .clear
                                     ]), startPoint: .top, endPoint: .bottom)
                                 }
                         }
@@ -50,7 +50,7 @@ struct TrendingCell: View {
                     VStack {
                         ScrollView(.horizontal, showsIndicators: false) {
                             ScrollViewReader { proxy in
-                                HStack(spacing: 15) {
+                                HStack {
                                     ForEach(loopingData.indices, id: \.self) { index in
                                         let newsItem = loopingData[index]
                                         let size = getSizeForIndex(index, selectedIndex: selectedIndex)
@@ -65,16 +65,16 @@ struct TrendingCell: View {
                                                     .clipShape(Circle())
                                                     .overlay(
                                                         Circle()
-                                                            .stroke(selectedIndex == index ? Color.orange.opacity(0.3) : Color.purple.opacity(0.1), lineWidth: 5)
+                                                            .stroke(selectedIndex == index ? Color.orange.opacity(0.5) : Color.purple.opacity(0.3), lineWidth: 5)
                                                             .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 5 : 2)
                                                     )
-                                                    .padding(.bottom, 10)
-                                                    .opacity(selectedIndex == index ? 1 : 0.7)
+                                                    .padding(.bottom, 12)
+                                                    .opacity(selectedIndex == index ? 1 : 0.8)
                                             }
                                             
                                             
                                             Text(newsItem.title ?? "")
-                                                .font(.system(size: selectedIndex == index ? 21 : 15, weight: selectedIndex == index ? .bold : .regular))
+                                                .font(.system(size: selectedIndex == index ? 24 : 15, weight: selectedIndex == index ? .bold : .regular))
                                                 .foregroundColor(selectedIndex == index ? .orange : .purple.opacity(0.5))
                                                 .lineLimit(2)
                                                 .padding(.bottom, 8)
@@ -87,9 +87,23 @@ struct TrendingCell: View {
                                                     .lineLimit(12)
                                                     .multilineTextAlignment(.center)
                                                     .frame(alignment: .center)
+                                                    .padding(.bottom, 12)
+                                                
+                                                Button(action: { print("Episodes tapped") }) {
+                                           
+                                                        SwiftUI.Image(systemName: "chevron.down")
+                                                        .font(.headline).bold()
+                                                    
+                                                    .frame(width: 40, height: 40)
+                                                    .background(Color.orange)
+                                                    .foregroundColor(.white)
+                                                    .cornerRadius(20)
+                                                }
+                                        
+                                                
                                             }
                                         }
-                                        .frame(width: selectedIndex == index ? 250 : 150, height: 450)
+                                        .frame(width: selectedIndex == index ? 250 : 150, height: 455)
                                         .offset(y: yOffset)
                                         .clipped()
                                     }
