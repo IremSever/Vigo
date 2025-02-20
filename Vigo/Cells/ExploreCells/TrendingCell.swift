@@ -7,7 +7,7 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct TrendingCell: View {
+struct TrendingCell: View, ScrollingHelper {
     @ObservedObject var viewModel: ExploreViewModel
     @State private var selectedIndex: Int = 1
     @State private var scrollProxy: ScrollViewProxy?
@@ -103,7 +103,7 @@ struct TrendingCell: View {
                                                 
                                             }
                                         }
-                                        .frame(width: selectedIndex == index ? 250 : 150, height: 455)
+                                        .frame(width: selectedIndex == index ? 250 : 150, height: 470)
                                         .offset(y: yOffset)
                                         .clipped()
                                     }
@@ -146,29 +146,29 @@ struct TrendingCell: View {
         }
     }
     
-    private func getSizeForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
-        let diff = abs(index - selectedIndex)
-        switch diff {
-        case 0: return 200
-        case 1: return 100
-        default: return 0
-        }
-    }
-    
-    private func getYOffsetForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
-        let diff = abs(index - selectedIndex)
-        switch diff {
-        case 0: return -0
-        case 1: return -0
-        default: return 0
-        }
-    }
-    
-    private func scrollToIndex(_ index: Int, proxy: ScrollViewProxy?) {
-        DispatchQueue.main.async {
-            withAnimation {
-                proxy?.scrollTo(index, anchor: .center)
-            }
-        }
-    }
+//    private func getSizeForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
+//        let diff = abs(index - selectedIndex)
+//        switch diff {
+//        case 0: return 200
+//        case 1: return 100
+//        default: return 0
+//        }
+//    }
+//    
+//    private func getYOffsetForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
+//        let diff = abs(index - selectedIndex)
+//        switch diff {
+//        case 0: return -0
+//        case 1: return -0
+//        default: return 0
+//        }
+//    }
+//    
+//    private func scrollToIndex(_ index: Int, proxy: ScrollViewProxy?) {
+//        DispatchQueue.main.async {
+//            withAnimation {
+//                proxy?.scrollTo(index, anchor: .center)
+//            }
+//        }
+//    }
 }

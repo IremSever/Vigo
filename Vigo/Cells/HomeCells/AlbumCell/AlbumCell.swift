@@ -43,17 +43,43 @@ struct AlbumCell: View {
                         
                         VStack(alignment: .center) {
                             if let imageUrl = URL(string: newsItem.image ?? "") {
-                                WebImage(url: imageUrl)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .containerRelativeFrame(.horizontal)
-                                    .frame(height: 450)
-                                    .cornerRadius(12)
-                                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                                    .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
+                                ZStack{
+                                    WebImage(url: imageUrl)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .containerRelativeFrame(.horizontal)
+                                        .frame(height: 450)
+                                        .cornerRadius(12)
+                                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                                        .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
+                                        .overlay(
+                                            LinearGradient(
+                                                gradient: Gradient(colors: [Color.black.opacity(0.7), Color.clear]),
+                                                startPoint: .bottom,
+                                                endPoint: UnitPoint(x: 0.5, y: 0.5)
+                                            )
+                                            .cornerRadius(20)
+                                        )
+                                    VStack {
+                                        Spacer()
+                                        Text(newsItem.title)
+                                            .font(.headline.bold())
+                                            .foregroundColor(.purple)
+                                            .frame(width: 300)
+                                            .lineLimit(1)
+                                        
+                                        Text(newsItem.spot ?? "")
+                                            .font(.subheadline)
+                                            .foregroundColor(.white)
+                                            .frame(width: 300)
+                                            .lineLimit(1)
+                                            .padding(.bottom, 16)
+                                    }
+                                    
+                                    
+                                }
                             }
                             BottomButton()
-                    
                         }
                     }
                 }

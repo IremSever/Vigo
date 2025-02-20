@@ -29,6 +29,8 @@
 		616974D92D628DAD00803C5A /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616974D82D628DAD00803C5A /* DetailModel.swift */; };
 		616974DB2D628DB600803C5A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616974DA2D628DB600803C5A /* DetailViewModel.swift */; };
 		61938F722D658EBE00D5E866 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61938F712D658EBE00D5E866 /* BottomButton.swift */; };
+		61938F752D667FD100D5E866 /* ScrollingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61938F742D667FD100D5E866 /* ScrollingHelper.swift */; };
+		61938F772D67523400D5E866 /* NavAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61938F762D67523400D5E866 /* NavAnimation.swift */; };
 		61A328912D5946D2004C384F /* AchiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A328902D5946D2004C384F /* AchiveCell.swift */; };
 		668188492D564E8800333EAB /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668188482D564E8800333EAB /* Backdrop.swift */; };
 		66CB543C2D5C88D4001166F4 /* NavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB543B2D5C88D4001166F4 /* NavHeader.swift */; };
@@ -71,6 +73,8 @@
 		616974D82D628DAD00803C5A /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		616974DA2D628DB600803C5A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		61938F712D658EBE00D5E866 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		61938F742D667FD100D5E866 /* ScrollingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingHelper.swift; sourceTree = "<group>"; };
+		61938F762D67523400D5E866 /* NavAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAnimation.swift; sourceTree = "<group>"; };
 		61A328902D5946D2004C384F /* AchiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchiveCell.swift; sourceTree = "<group>"; };
 		668188482D564E8800333EAB /* Backdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdrop.swift; sourceTree = "<group>"; };
 		66CB543B2D5C88D4001166F4 /* NavHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavHeader.swift; sourceTree = "<group>"; };
@@ -236,6 +240,14 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		61938F732D667FB700D5E866 /* Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				61938F742D667FD100D5E866 /* ScrollingHelper.swift */,
+			);
+			path = Scroll;
+			sourceTree = "<group>";
+		};
 		66CB54362D5C87B1001166F4 /* AlbumCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +266,7 @@
 				66CB543D2D5C914B001166F4 /* CustomNav.swift */,
 				66CB543F2D5C9359001166F4 /* ScrollOffsetBg.swift */,
 				66CB54412D5C93E7001166F4 /* ViewOffsetKey.swift */,
+				61938F762D67523400D5E866 /* NavAnimation.swift */,
 			);
 			path = NavBar;
 			sourceTree = "<group>";
@@ -314,6 +327,7 @@
 		66CB54512D5DE0D1001166F4 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				61938F732D667FB700D5E866 /* Scroll */,
 				66CB54382D5C87D9001166F4 /* NavBar */,
 				61190DF32D537FF90070CA8B /* TabBar */,
 				66CB54552D5E0193001166F4 /* SectionHeader.swift */,
@@ -444,6 +458,7 @@
 				66D7C4F92D562EB400D0D9DA /* InfoTop.swift in Sources */,
 				61190E042D537FF90070CA8B /* ExploreView.swift in Sources */,
 				66CB54582D5E19D8001166F4 /* BackgroundCell.swift in Sources */,
+				61938F752D667FD100D5E866 /* ScrollingHelper.swift in Sources */,
 				61190E052D537FF90070CA8B /* AlbumCell.swift in Sources */,
 				61190E062D537FF90070CA8B /* DetailView.swift in Sources */,
 				66CB544C2D5DD0FC001166F4 /* CategoryType.swift in Sources */,
@@ -461,6 +476,7 @@
 				61190E0B2D537FF90070CA8B /* CardCell.swift in Sources */,
 				61190E0C2D537FF90070CA8B /* StreamCell.swift in Sources */,
 				61190E0D2D537FF90070CA8B /* ListCell.swift in Sources */,
+				61938F772D67523400D5E866 /* NavAnimation.swift in Sources */,
 				61190E0E2D537FF90070CA8B /* SeriesCell.swift in Sources */,
 				66CB54442D5C96EB001166F4 /* RowView.swift in Sources */,
 				66CB543E2D5C914B001166F4 /* CustomNav.swift in Sources */,
