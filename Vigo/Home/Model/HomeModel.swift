@@ -12,35 +12,6 @@ import SwiftUI
 struct HomeModel: Codable {
     let meta: Meta
     let data: [HomeData]
-    let config: WelcomeConfig
-}
-
-// MARK: - WelcomeConfig
-struct WelcomeConfig: Codable {
-    let navbarConfig: NavbarConfig
-    let layoutConfig: LayoutConfig
-
-}
-
-// MARK: - LayoutConfig
-struct LayoutConfig: Codable {
-    let bgColorLight, bgColorDark: String
-}
-
-// MARK: - NavbarConfig
-struct NavbarConfig: Codable {
-    let tintColorLight, tintColorDark, bgColorLight, bgColorDark: String
-    let isTopbarTransparent: Bool
-    let topBarLeftItems, topBarRightItems: [TopBarTItem]
-}
-
-// MARK: - TopBarTItem
-struct TopBarTItem: Codable {
-    let isActive: Bool
-    let image: String
-    let size, type: String
-    let isColorFilter: Bool?
-    let external: String?
 }
 
 // MARK: - HomeData

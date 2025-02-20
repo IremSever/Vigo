@@ -1,0 +1,1117 @@
+{
+  "meta": {
+    "status_code": 200,
+    "message": "",
+    "description": "Core V2 - Anasayfa",
+    "brand": "Atv",
+    "redirect": ""
+  },
+  "data": [
+    {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF383A40",
+          "bgColorLight": "FF172338",
+          "borderColor": "1AFFFFFF",
+          "borderIsActive": false,
+          "radius": 0,
+          "ratio": 1
+        },
+        "icon": {
+          "isActive": true,
+          "position": "center",
+          "size": 60,
+          "type": "play"
+        },
+        "image": {
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "radius": 0,
+          "size": "752x1000",
+          "weight": 1
+        },
+        "indicator": {
+          "borderColor": "00FFFFFF",
+          "borderColorDark": "00FFFFFF",
+          "height": 28,
+          "isActive": true,
+          "isOverImage": true,
+          "selectedColor": "FFCB2C1E",
+          "showIndex": false,
+          "type": "ellipse",
+          "unselectedColor": "FFA2A3A5",
+          "unselectedColorDark": "FFA2A3A5"
+        },
+        "spot": {
+          "align": "center",
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 20,
+          "fontType": "Overpass-bold",
+          "gradient": true,
+          "isActive": true,
+          "maxLines": 1,
+          "scrollBehaviour": "paging"
+        },
+        "title": {
+          "align": "center",
+          "checkShowTitle": false,
+          "fontColorDark": "FFCB2C1E",
+          "fontColorLight": "FFCB2C1E",
+          "fontSize": 25,
+          "fontType": "Overpass-bold",
+          "gradient": true,
+          "isActive": true,
+          "isDynamicLines": true,
+          "maxLines": 2,
+          "scrollBehaviour": "paging"
+        },
+        "widget": {
+          "autoSlide": false,
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "infinityLoop": true,
+          "interval": 8,
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "scrollBehaviour": "paging",
+          "template": "headlines",
+          "type": "horizontal"
+        }
+      },
+      "news": [
+        {
+          "external": "video://f9e87488-0461-41b8-bdee-91a92e273da7",
+          "image": "https://iaatv.tmgrup.com.tr/9d96c7/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/25/zembilli-1737797680815.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/zembilli-1737797680815.jpg",
+          "spot": "Yeni Bölüm I Bu Akşam 20.00",
+          "title": "Zembilli"
+        },
+        {
+          "external": "video://dd4117f6-0b35-482e-80cd-c1ace8475b53",
+          "image": "https://iaatv.tmgrup.com.tr/e5cb04/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/12/11/can-borcu-1733931859587.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2024/12/11/can-borcu-1733931859587.jpg",
+          "spot": "Yeni Bölüm I Cumartesi 20.00",
+          "title": "Can Borcu"
+        },
+        {
+          "external": "video://f20a85dd-f34c-4a13-9116-5224004828e6",
+          "image": "https://iaatv.tmgrup.com.tr/bed332/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/06/kardelenler-1736186633875.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/06/kardelenler-1736186633875.jpg",
+          "spot": "Yeni Bölüm I Pazar 20.00",
+          "title": "Kardelenler"
+        },
+        {
+          "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+          "image": "https://iaatv.tmgrup.com.tr/2f3435/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/10/21/bir-gece-masali-1729501115912.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2024/10/21/bir-gece-masali-1729501115912.jpg",
+          "spot": "Yeni Bölüm I Salı 20.00",
+          "title": "Bir Gece Masalı"
+        },
+        {
+          "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
+          "image": "https://iaatv.tmgrup.com.tr/eef9ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
+          "spot": "Yeni Bölüm | Çarşamba 20.00",
+          "title": "Kuruluş Osman"
+        },
+        {
+          "external": "video://74f48b37-6773-49aa-a3d9-edc42357edd8",
+          "image": "https://iaatv.tmgrup.com.tr/2307ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
+          "spot": "Yeni Bölüm | Perşembe 20.00",
+          "title": "Başka Bir Gün"
+        },
+        {
+          "external": "video://46af6954-4826-4f50-a576-99eec9fe1f7e",
+          "image": "https://iaatv.tmgrup.com.tr/1510be/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/02/20/sustali-ceylan-1740062036075.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/20/sustali-ceylan-1740062036075.jpg",
+          "spot": "Yakında atv'de",
+          "title": "Sustalı Ceylan"
+        }
+      ]
+    },
+    {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF0E0F14",
+          "bgColorDarkDeselect": "FF0E0F14",
+          "bgColorLight": "FF0E0F14",
+          "bgColorLightDeselect": "FF0E0F14",
+          "borderColor": "1AFFFFFF",
+          "borderIsActive": false,
+          "itemSpacer": 0,
+          "radius": 0,
+          "ratio": 0.5,
+          "shadowIsActive": true
+        },
+        "date": {
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 16,
+          "fontType": "Overpass-semibold",
+          "isActive": true,
+          "maxLines": 1
+        },
+        "image": {
+          "padding": {
+            "bottom": 10,
+            "left": 10,
+            "right": 8,
+            "top": 10
+          },
+          "radius": 6,
+          "size": "295x410",
+          "weight": 0.45
+        },
+        "title": {
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 12,
+          "fontType": "Overpass-semibold",
+          "isActive": true,
+          "isDynamicLines": true,
+          "maxLines": 4
+        },
+        "widget": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "decorationView": {
+            "isActive": false,
+            "type": "first"
+          },
+          "padding": {
+            "bottom": 24,
+            "left": 16,
+            "right": 0,
+            "top": 24
+          },
+          "template": "broadcast",
+          "type": "horizontal"
+        },
+        "widgetTitle": {
+          "fontColorDark": "FFA2A3A5",
+          "fontColorLight": "FFA2A3A5",
+          "fontSize": 18,
+          "fontType": "Overpass-bold",
+          "spacer": 12,
+          "text": "YAYIN AKIŞI"
+        }
+      },
+      "streams": [
+        {
+          "dayName": "Perşembe",
+          "external": "selected://broadcast",
+          "hour": "08",
+          "isLive": false,
+          "image": "https://iaatv.tmgrup.com.tr/98a93b/295/410/852/0/1628/1080?u=https://iatv.tmgrup.com.tr/2025/02/20/kahvalti-haberleri-1740038904487.jpg",
+          "minute": "00",
+          "text": "08:00",
+          "title": "Kahvaltı Haberleri"
+        },
+        {
+          "dayName": "Perşembe",
+          "external": "selected://broadcast",
+          "hour": "10",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661956802814.jpg",
+          "minute": "00",
+          "text": "10:00",
+          "title": "Müge Anlı ile Tatlı Sert"
+        },
+        {
+          "dayName": "Perşembe",
+          "external": "selected://broadcast",
+          "hour": "13",
+          "isLive": false,
+          "image": "https://iaatv.tmgrup.com.tr/a1dcf0/295/410/572/0/1347/1080?u=https://iatv.tmgrup.com.tr/2025/02/20/atv-gun-ortasi-1740050584684.jpg",
+          "minute": "00",
+          "text": "13:00",
+          "title": "atv Gün Ortası"
+        },
+        {
+          "dayName": "Perşembe",
+          "external": "selected://broadcast",
+          "hour": "14",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2024/12/26/295x410/1735234804084.jpg",
+          "minute": "00",
+          "text": "14:00",
+          "title": "Zembilli"
+        },
+        {
+          "dayName": "Perşembe",
+          "external": "selected://broadcast",
+          "hour": "16",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2024/08/30/295x410/1725043866987.jpg",
+          "minute": "00",
+          "text": "16:00",
+          "title": "Esra Erol'da"
+        },
+        {
+          "dayName": "Perşembe",
+          "external": "selected://broadcast",
+          "hour": "19",
+          "isLive": false,
+          "image": "https://iaatv.tmgrup.com.tr/a7132e/295/410/557/0/1142/813?u=https://iatv.tmgrup.com.tr/2025/02/20/atv-ana-haber-1740073945559.jpg",
+          "minute": "00",
+          "text": "19:00",
+          "title": "atv Ana Haber"
+        },
+        {
+          "dayName": "Perşembe",
+          "external": "selected://broadcast",
+          "hour": "20",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
+          "minute": "00",
+          "text": "20:00",
+          "title": "Başka Bir Gün"
+        },
+        {
+          "dayName": "Perşembe",
+          "external": "selected://livestream",
+          "hour": "23",
+          "isLive": true,
+          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
+          "minute": "45",
+          "text": "23:45",
+          "title": "Başka Bir Gün"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "02",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2024/09/05/295x410/1725545448317.jpg",
+          "minute": "30",
+          "text": "02:30",
+          "title": "Bir Gece Masalı"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "05",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2021/06/04/295x410/1622803859586.jpg",
+          "minute": "20",
+          "text": "05:20",
+          "title": "Hercai"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "07",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2023/09/14/295x410/1694690182502.jpg",
+          "minute": "00",
+          "text": "07:00",
+          "title": "Kahvaltı Haberleri"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "08",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2022/08/30/295x410/1661875829987.jpg",
+          "minute": "30",
+          "text": "08:30",
+          "title": "Nihat Hatipoğlu Sorularınızı Cevaplıyor"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "10",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661956802814.jpg",
+          "minute": "00",
+          "text": "10:00",
+          "title": "Müge Anlı ile Tatlı Sert"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "13",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2024/08/22/295x410/1724334019089.jpg",
+          "minute": "00",
+          "text": "13:00",
+          "title": "atv Gün Ortası"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "14",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2025/01/06/295x410/1736186866547.jpg",
+          "minute": "00",
+          "text": "14:00",
+          "title": "Kardelenler"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "16",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2024/08/30/295x410/1725043866987.jpg",
+          "minute": "00",
+          "text": "16:00",
+          "title": "Esra Erol'da"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "19",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2023/09/15/295x410/1694770645150.jpg",
+          "minute": "00",
+          "text": "19:00",
+          "title": "atv Ana Haber"
+        },
+        {
+          "dayName": "Cuma",
+          "external": "selected://broadcast",
+          "hour": "20",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2024/12/26/295x410/1735234804084.jpg",
+          "minute": "00",
+          "text": "20:00",
+          "title": "Zembilli"
+        },
+        {
+          "dayName": "Cumartesi",
+          "external": "selected://broadcast",
+          "hour": "00",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2024/12/11/295x410/1733939159777.jpg",
+          "minute": "20",
+          "text": "00:20",
+          "title": "Can Borcu"
+        },
+        {
+          "dayName": "Cumartesi",
+          "external": "selected://broadcast",
+          "hour": "03",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
+          "minute": "00",
+          "text": "03:00",
+          "title": "Başka Bir Gün"
+        },
+        {
+          "dayName": "Cumartesi",
+          "external": "selected://broadcast",
+          "hour": "05",
+          "isLive": false,
+          "image": "https://iatv.tmgrup.com.tr/2021/06/04/295x410/1622803859586.jpg",
+          "minute": "30",
+          "text": "05:30",
+          "title": "Hercai"
+        }
+      ]
+    },
+    {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "borderColor": "1AFFFFFF",
+          "borderIsActive": false,
+          "itemSpacer": 12,
+          "radius": 8,
+          "ratio": 0.41
+        },
+        "image": {
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "radius": 0,
+          "size": "295x410",
+          "weight": 1
+        },
+        "title": {
+          "align": "left",
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 16,
+          "fontType": "Overpass-bold",
+          "isActive": false,
+          "maxLines": 2
+        },
+        "widget": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "padding": {
+            "bottom": 24,
+            "left": 16,
+            "right": 16,
+            "top": 0
+          },
+          "rowCount": 1,
+          "template": "cardFullImage1",
+          "type": "horizontal"
+        },
+        "widgetTitle": {
+          "fontColorDark": "FFA2A3A5",
+          "fontColorLight": "FFA2A3A5",
+          "fontSize": 18,
+          "fontType": "Overpass-semibold",
+          "spacer": 12,
+          "text": "DİZİLER"
+        }
+      },
+      "news": [
+        {
+          "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
+          "image": "https://iatv.tmgrup.com.tr/2024/09/05/295x410/1725545448317.jpg",
+          "title": "Bir Gece Masalı"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
+          "image": "https://iatv.tmgrup.com.tr/2024/09/24/295x410/1727165971183.jpg",
+          "title": "Kuruluş Osman"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
+          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
+          "title": "Başka Bir Gün"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=13d19b42-519a-46f0-9fd7-606a9fcdec3b",
+          "image": "https://iatv.tmgrup.com.tr/2024/12/26/295x410/1735234804084.jpg",
+          "title": "Zembilli"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=4a8459e8-ba0c-4eb8-a7d3-3982cea3a8a2",
+          "image": "https://iatv.tmgrup.com.tr/2024/12/11/295x410/1733939159777.jpg",
+          "title": "Can Borcu"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=c1b98ccb-7b8f-454d-8310-01630af904ca",
+          "image": "https://iatv.tmgrup.com.tr/2025/01/06/295x410/1736186866547.jpg",
+          "title": "Kardelenler"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=a65a5c3d-1a33-46b1-8ff9-fb1a855808e4",
+          "image": "https://iaatv.tmgrup.com.tr/6bd7dc/295/410/0/0/295/410?u=https://iatv.tmgrup.com.tr/2025/02/20/1740062377419.jpg",
+          "title": "Sustalı Ceylan"
+        }
+      ]
+    },
+    {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "borderColor": "1AFFFFFF",
+          "borderIsActive": false,
+          "itemSpacer": 12,
+          "radius": 8,
+          "ratio": 0.41
+        },
+        "image": {
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "radius": 0,
+          "size": "295x410",
+          "weight": 1
+        },
+        "title": {
+          "align": "left",
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 16,
+          "fontType": "Overpass-bold",
+          "isActive": false,
+          "maxLines": 2
+        },
+        "widget": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "padding": {
+            "bottom": 24,
+            "left": 16,
+            "right": 16,
+            "top": 0
+          },
+          "rowCount": 1,
+          "template": "cardFullImage1",
+          "type": "horizontal"
+        },
+        "widgetTitle": {
+          "fontColorDark": "FFA2A3A5",
+          "fontColorLight": "FFA2A3A5",
+          "fontSize": 18,
+          "fontType": "Overpass-bold",
+          "spacer": 12,
+          "text": "PROGRAMLAR"
+        }
+      },
+      "news": [
+        {
+          "external": "apilink:///v2/link/105099330a?cid=114a51ee-ff4f-43f6-a557-38d4e169d67d",
+          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661956802814.jpg",
+          "title": "Müge Anlı ile Tatlı Sert"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=9fe6a82c-f95c-4b03-ad40-25edf101ab18",
+          "image": "https://iatv.tmgrup.com.tr/2024/08/30/295x410/1725043866987.jpg",
+          "title": "Esra Erol'da"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=c79f4908-5896-45d6-aa90-1248b4d4934e",
+          "image": "https://iatv.tmgrup.com.tr/2024/09/06/295x410/1725655689063.jpg",
+          "title": "Kim Milyoner Olmak İster?"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=2b887db6-4ac7-43b2-abc7-bc7f6d57050e",
+          "image": "https://iatv.tmgrup.com.tr/2022/08/30/295x410/1661875893876.jpg",
+          "title": "Nihat Hatipoğlu ile Dosta Doğru"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=9e142aa5-67c1-49a9-9677-3b074c30590b",
+          "image": "https://iatv.tmgrup.com.tr/2022/08/30/295x410/1661875829987.jpg",
+          "title": "Nihat Hatipoğlu Sorularınızı Cevaplıyor"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=f09ca990-5f30-452c-b500-08741d68ddf7",
+          "image": "https://iatv.tmgrup.com.tr/2024/06/04/295x410/1717493399832.jpg",
+          "title": "Dizi TV"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=7ab560e4-2a7f-43cf-862f-fb8083076120",
+          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661941969908.jpg",
+          "title": "Nihat Hatipoğlu ile Kur'an ve Sünnet"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=780e11de-70f1-4cac-a822-5056af2a4648",
+          "image": "https://iatv.tmgrup.com.tr/2024/04/09/295x410/1712643832543.jpg",
+          "title": "Filmler"
+        }
+      ]
+    },
+    {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF383A40",
+          "bgColorLight": "FF172338",
+          "borderColor": "1AFFFFFF",
+          "borderIsActive": false,
+          "radius": 0,
+          "ratio": 1
+        },
+        "icon": {
+          "isActive": true,
+          "position": "center",
+          "size": 60,
+          "type": "play"
+        },
+        "image": {
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "radius": 0,
+          "size": "752x1000",
+          "weight": 1
+        },
+        "indicator": {
+          "borderColor": "00FFFFFF",
+          "borderColorDark": "00FFFFFF",
+          "height": 28,
+          "isActive": true,
+          "isOverImage": true,
+          "selectedColor": "FFCB2C1E",
+          "showIndex": false,
+          "type": "ellipse",
+          "unselectedColor": "FFA2A3A5",
+          "unselectedColorDark": "FFA2A3A5"
+        },
+        "spot": {
+          "align": "center",
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 20,
+          "fontType": "Overpass-bold",
+          "gradient": true,
+          "isActive": true,
+          "maxLines": 1,
+          "scrollBehaviour": "paging"
+        },
+        "title": {
+          "align": "center",
+          "checkShowTitle": false,
+          "fontColorDark": "FFCB2C1E",
+          "fontColorLight": "FFCB2C1E",
+          "fontSize": 25,
+          "fontType": "Overpass-bold",
+          "gradient": true,
+          "isActive": true,
+          "isDynamicLines": true,
+          "maxLines": 2,
+          "scrollBehaviour": "paging"
+        },
+        "widget": {
+          "autoSlide": false,
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "infinityLoop": true,
+          "interval": 8,
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "scrollBehaviour": "paging",
+          "template": "headlines",
+          "type": "horizontal"
+        }
+      },
+      "news": [
+        {
+          "external": "external://https://f9e87488-0461-41b8-bdee-91a92e273da7",
+          "image": " ",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/zembilli-1737797680815.jpg",
+          "spot": " ",
+          "title": " "
+        },
+        {
+          "external": "external://https://dd4117f6-0b35-482e-80cd-c1ace8475b53",
+          "image": " ",
+          "imageBig": "https://iatv.tmgrup.com.tr/2024/12/11/can-borcu-1733931859587.jpg",
+          "spot": " ",
+          "title": " "
+        }
+      ]
+    },
+   {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "borderColor": "1AFFFFFF",
+          "borderIsActive": false,
+          "itemSpacer": 12,
+          "radius": 8,
+          "ratio": 0.41
+        },
+        "image": {
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "radius": 0,
+          "size": "295x410",
+          "weight": 1
+        },
+        "title": {
+          "align": "left",
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 16,
+          "fontType": "Overpass-bold",
+          "isActive": false,
+          "maxLines": 2
+        },
+        "widget": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "padding": {
+            "bottom": 24,
+            "left": 16,
+            "right": 16,
+            "top": 0
+          },
+          "rowCount": 1,
+          "template": "cardFullImage1",
+          "type": "horizontal"
+        },
+        "widgetTitle": {
+          "fontColorDark": "FFA2A3A5",
+          "fontColorLight": "FFA2A3A5",
+          "fontSize": 18,
+          "fontType": "Overpass-bold",
+          "spacer": 12,
+          "text": "atv KLASİKLERİ"
+        }
+      },
+      "news": [
+        {
+          "external": "apilink:///v2/link/105099330a?cid=95d098f3-b364-4f97-9fff-e92d1928f2dd",
+          "image": "https://iatv.tmgrup.com.tr/2021/03/25/295x410/1616672071318.jpg",
+          "title": "Sen Anlat Karadeniz"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=075e6976-b2e3-4996-a93c-f1f44d4796eb",
+          "image": "https://iatv.tmgrup.com.tr/2021/10/26/295x410/1635252285226.jpg",
+          "title": "Eşkıya Dünyaya Hükümdar Olmaz"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=96cc82ab-fc20-4cd4-8be1-9266434ef754",
+          "image": "https://iatv.tmgrup.com.tr/2021/03/25/295x410/1616673694917.jpg",
+          "title": "Karadayı"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=b154ab4a-b910-4397-b49c-7a02a3aa36b5",
+          "image": "https://iatv.tmgrup.com.tr/2021/06/04/295x410/1622803859586.jpg",
+          "title": "Hercai"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=3e6f97ea-ad61-4629-9927-16e63e97d0df",
+          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622730381231.jpg",
+          "title": "Ezel"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=64c31827-2fb9-43e3-9e3c-1666ffc2d846",
+          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622729644120.jpg",
+          "title": "Kara Para Aşk"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=de68e8b2-4ec5-4321-8e81-1bfa2cef2a3f",
+          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622731252683.jpg",
+          "title": "Avrupa Yakası"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=459ef907-b5d8-4d72-aa7f-fc1d289ef93d",
+          "image": "https://iatv.tmgrup.com.tr/2024/02/21/295x410/1708517624712.jpg",
+          "title": "Kardeşlerim"
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=6c756a59-bea8-4de3-974a-7fc1c5d4fb9d",
+          "image": "https://iatv.tmgrup.com.tr/2021/07/28/295x410/1627473372309.jpg",
+          "title": "Kertenkele "
+        },
+        {
+          "external": "apilink:///v2/link/105099330a?cid=58b8a11c-dfb3-4907-82c8-f27727cfe4c5",
+          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622733692103.jpg",
+          "title": "Kara Ekmek"
+        }
+      ]
+    },
+    {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "borderColor": "1AFFFFFF",
+          "borderIsActive": false,
+          "itemSpacer": 12,
+          "radius": 8,
+          "ratio": 0.76
+        },
+        "date": {
+          "fontColorDark": "99ffffff",
+          "fontColorLight": "99ffffff",
+          "fontSize": 12,
+          "fontType": "Overpass-regular",
+          "isActive": false,
+          "maxLines": 1
+        },
+        "icon": {
+          "isActive": true,
+          "position": "topRight",
+          "size": 40,
+          "type": "play"
+        },
+        "image": {
+          "padding": {
+            "bottom": 0,
+            "left": 0,
+            "right": 0,
+            "top": 0
+          },
+          "radius": 8,
+          "size": "500x281",
+          "weight": 1
+        },
+        "spot": {
+          "align": "center",
+          "fontColorDark": "FFFFFFFF",
+          "fontColorLight": "FFFFFFFF",
+          "fontSize": 15,
+          "fontType": "Overpass-bold",
+          "gradient": true,
+          "isActive": true,
+          "isDynamicLines": true,
+          "maxLines": 1
+        },
+        "title": {
+          "align": "center",
+          "fontColorDark": "FFE97B40",
+          "fontColorLight": "FFE97B40",
+          "fontSize": 18,
+          "fontType": "Overpass-bold",
+          "gradient": true,
+          "isActive": true,
+          "isDynamicLines": true,
+          "maxLines": 2
+        },
+        "widget": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "isPlaylist": true,
+          "padding": {
+            "bottom": 24,
+            "left": 16,
+            "right": 16,
+            "top": 0
+          },
+          "rowCount": 1,
+          "template": "cardFullImage3",
+          "type": "horizontal"
+        },
+        "widgetTitle": {
+          "fontColorDark": "FFA2A3A5",
+          "fontColorLight": "FFA2A3A5",
+          "fontSize": 18,
+          "fontType": "Overpass-bold",
+          "text": "EN ÇOK İZLENENLER"
+        }
+      },
+      "videos": [
+        {
+          "episode": 182,
+          "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
+          "image": "https://iaatv.tmgrup.com.tr/1397ff/500/281/0/0/1596/897?u=https://iatv.tmgrup.com.tr/2025/02/19/kurulus-osman-1739995185926.jpeg",
+          "season": 6,
+          "showAd": false,
+          "spot": "182. Bölüm Fragmanı",
+          "title": "Kuruluş Osman",
+          "videoTypeId": 11
+        },
+        {
+          "episode": 181,
+          "external": "video://f7c54da7-6978-44b9-84bc-47691d056728",
+          "image": "https://iaatv.tmgrup.com.tr/d8d016/500/281/0/0/1596/897?u=https://iatv.tmgrup.com.tr/2025/02/17/kurulus-osman-2-fragman-1739783422206.jpeg",
+          "season": 6,
+          "showAd": true,
+          "spot": "181. Bölüm Fragmanı",
+          "title": "Kuruluş Osman - 2. Fragman",
+          "videoTypeId": 11
+        },
+        {
+          "episode": 4,
+          "external": "video://d4532d9d-5914-4b29-bedb-3d4e1b9c561c",
+          "image": "https://iaatv.tmgrup.com.tr/0ce7f0/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/14/baska-bir-gun-1739559420191.jpg",
+          "season": 1,
+          "showAd": true,
+          "spot": "4. Bölüm Fragmanı",
+          "title": "Başka Bir Gün",
+          "videoTypeId": 11
+        },
+        {
+          "episode": 22,
+          "external": "video://76ad9b99-ca46-4426-abbe-a61c92f733d7",
+          "image": "https://iaatv.tmgrup.com.tr/fe9014/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/14/bir-gece-masali-2-fragman-1739559125396.jpg",
+          "season": 1,
+          "showAd": true,
+          "spot": "22. Bölüm Fragmanı",
+          "title": "Bir Gece Masalı - 2. Fragman",
+          "videoTypeId": 11
+        },
+        {
+          "episode": 181,
+          "external": "video://695739fc-651e-4afe-8796-0f81775c2cb6",
+          "image": "https://iaatv.tmgrup.com.tr/7b7f60/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/18/kurulus-osman-1739867376773.jpg",
+          "season": 6,
+          "showAd": true,
+          "spot": "181. Bölüm",
+          "title": "Kuruluş Osman",
+          "videoTypeId": 10
+        },
+        {
+          "episode": 3491,
+          "external": "video://e3e00d9b-260e-4369-9f34-98932acf757b",
+          "image": "https://iaatv.tmgrup.com.tr/f5435b/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/19/muge-anli-ile-tatli-sert-1739953260002.jpg",
+          "season": 17,
+          "showAd": true,
+          "spot": "3491. Bölüm",
+          "title": "Müge Anlı ile Tatlı Sert",
+          "videoTypeId": 10
+        },
+        {
+          "episode": 22,
+          "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+          "image": "https://iaatv.tmgrup.com.tr/a8420b/500/281/0/0/1280/719?u=https://iatv.tmgrup.com.tr/2025/02/17/bir-gece-masali-1739779663101.jpg",
+          "season": 1,
+          "showAd": true,
+          "spot": "22. Bölüm",
+          "title": "Bir Gece Masalı",
+          "videoTypeId": 10
+        },
+        {
+          "episode": 3490,
+          "external": "video://7472d876-4fc5-48e0-9571-ed916cbe864e",
+          "image": "https://iaatv.tmgrup.com.tr/d924de/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/muge-anli-ile-tatli-sert-1739867864951.jpg",
+          "season": 17,
+          "showAd": true,
+          "spot": "3490. Bölüm",
+          "title": "Müge Anlı İle Tatlı Sert",
+          "videoTypeId": 10
+        },
+        {
+          "episode": 2046,
+          "external": "video://c3194c10-a636-4a77-84c8-9ef16ba5fb63",
+          "image": "https://iaatv.tmgrup.com.tr/316709/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/17/esra-erolda-1739812756337.jpg",
+          "season": 10,
+          "showAd": true,
+          "spot": "2046. Bölüm",
+          "title": "Esra Erol'da",
+          "videoTypeId": 10
+        },
+        {
+          "episode": 3489,
+          "external": "video://729adc96-94ad-44c6-b119-21a78e44ecdf",
+          "image": "https://iaatv.tmgrup.com.tr/0c5d19/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/17/muge-anli-ile-tatli-sert-1739777170866.jpg",
+          "season": 17,
+          "showAd": true,
+          "spot": "3489. Bölüm",
+          "title": "Müge Anlı ile Tatlı Sert",
+          "videoTypeId": 10
+        }
+      ]
+    },
+    {
+      "config": {
+        "cell": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "borderColor": "0AFFFFFF",
+          "borderIsActive": false,
+          "itemSpacer": 12,
+          "radius": 0,
+          "ratio": 0.46
+        },
+        "image": {
+          "padding": {
+            "bottom": 9,
+            "left": 1,
+            "right": 1,
+            "top": 1
+          },
+          "radius": 8,
+          "size": "500x281",
+          "weight": 1
+        },
+        "title": {
+          "align": "left",
+          "fontColorDark": "FFE97B40",
+          "fontColorLight": "FFE97B40",
+          "fontSize": 16,
+          "fontType": "Overpass-bold",
+          "isActive": true,
+          "maxLines": 3,
+          "verticalAlignment": "top"
+        },
+        "widget": {
+          "bgColorDark": "FF171920",
+          "bgColorLight": "FF171920",
+          "columnCount": 1,
+          "padding": {
+            "bottom": 16,
+            "left": 16,
+            "right": 16,
+            "top": 0
+          },
+          "rowCount": 1,
+          "template": "cardTopImage1",
+          "type": "horizontal"
+        },
+        "widgetTitle": {
+          "fontColorDark": "FFA2A3A5",
+          "fontColorLight": "FFA2A3A5",
+          "fontSize": 18,
+          "fontType": "Overpass-bold",
+          "text": "EDİTÖRÜN SEÇTİKLERİ"
+        }
+      },
+      "videos": [
+        {
+          "external": "video://518c3074-63ce-4c0c-9231-9317d79dc501",
+          "image": "https://iaatv.tmgrup.com.tr/ce3c4b/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/20/serdar-katil-mi-1740075390649.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/20/serdar-katil-mi-1740075390649.jpg",
+          "showAd": true,
+          "title": "’'Serdar katil mi?''"
+        },
+        {
+          "external": "video://a5460702-4989-4a82-842a-900d00a1f253",
+          "image": "https://iaatv.tmgrup.com.tr/79c2b4/500/281/0/0/834/468?u=https://iatv.tmgrup.com.tr/2025/02/14/ortalik-karisti-1739561008134.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/14/ortalik-karisti-1739561008134.jpg",
+          "showAd": true,
+          "title": "Ortalık karıştı"
+        },
+        {
+          "external": "video://f4d5d15c-100d-4486-845e-85ce024c0972",
+          "image": "https://iaatv.tmgrup.com.tr/0aace0/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/16/raci-korayin-oyununa-ortak-oldu-1739735721216.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/16/raci-korayin-oyununa-ortak-oldu-1739735721216.jpg",
+          "showAd": true,
+          "title": "Raci, Koray'ın oyununa ortak oldu!"
+        },
+        {
+          "external": "video://23510956-9ba3-46c0-bdff-12aa2cf68cc4",
+          "image": "https://iaatv.tmgrup.com.tr/eaa62a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/16/yankinin-aysele-surprizi-1739735191764.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/16/yankinin-aysele-surprizi-1739735191764.jpg",
+          "showAd": true,
+          "title": "Yankı'nın, Aysel'e sürprizi..."
+        },
+        {
+          "external": "video://4e8e2804-4f38-42c5-a23a-c8029c6f2952",
+          "image": "https://iaatv.tmgrup.com.tr/74875c/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/13/nehir-tunayla-yuzlesiyor-1739469480481.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/13/nehir-tunayla-yuzlesiyor-1739469480481.jpg",
+          "showAd": true,
+          "title": "Kocama ne yaptın söyle?"
+        },
+        {
+          "external": "video://9b5079a3-1675-4c70-9165-bd00208b8b15",
+          "image": "https://iaatv.tmgrup.com.tr/c2a157/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/13/nehir-serdarin-ailesinden-hesap-soruyor-1739469022252.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/13/nehir-serdarin-ailesinden-hesap-soruyor-1739469022252.jpg",
+          "showAd": true,
+          "title": "Nehir, Serdar’ın ailesinden hesap soruyor"
+        },
+        {
+          "external": "video://f13da9b2-2fe2-4758-8864-75d60fb9dd44",
+          "image": "https://iaatv.tmgrup.com.tr/9a9f58/500/281/0/0/834/469?u=https://iatv.tmgrup.com.tr/2025/02/11/gergin-anlar-1739301430759.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/11/gergin-anlar-1739301430759.jpg",
+          "showAd": true,
+          "title": "Gergin anlar"
+        },
+        {
+          "external": "video://00295c56-dc47-4ef8-8b80-2d07e31e24da",
+          "image": "https://iaatv.tmgrup.com.tr/ed2fdf/500/281/0/0/883/495?u=https://iatv.tmgrup.com.tr/2025/02/11/koz-verme-1739301527618.jpg",
+          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/11/koz-verme-1739301527618.jpg",
+          "showAd": true,
+          "title": "Koz verme"
+        }
+      ]
+    }
+  ]
+
+}

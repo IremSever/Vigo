@@ -4,8 +4,8 @@
 //
 //  Created by IREM SEVER on 12.02.2025.
 //
-
 import SwiftUI
+
 struct NavHeader: View, NavAnimation {
     @Binding var scrollOffset: CGFloat
     var app: String
@@ -14,26 +14,30 @@ struct NavHeader: View, NavAnimation {
 
     var body: some View {
         ZStack {
-            Color.clear
-                .frame(height: interpolatedHeight())
-                .background(Color(.black).opacity(opacityView()))
-                .edgesIgnoringSafeArea(.top)
+            SwiftUI.Image("navbar")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(height: interpolatedHeight() + 30)
+                .blur(radius: 50)
+                .opacity(opacityView())
+                .clipped()
+                .ignoresSafeArea(.all)
 
             HStack {
                 SwiftUI.Image(app)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: brandIconSize(), height: brandIconSize())
-                    .padding(.leading, 16)
-               
-          
+                    .padding(.leading, 8)
                 Spacer()
-                VStack{
+                
+                HStack {
                     SwiftUI.Image(live)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: liveIconSize(), height: liveIconSize())
-
+                        .padding(16)
+                   
 
                     SwiftUI.Image(systemName: icon)
                         .resizable()
@@ -41,11 +45,10 @@ struct NavHeader: View, NavAnimation {
                         .foregroundColor(.white)
                         .frame(width: iconSize(), height: iconSize())
                 }
-                .padding(.trailing, 16)
-
             }
             .offset(y: pushupOffset())
-            .padding(.top, 10) 
+            .padding(.top, 10)
+            .padding(.horizontal, 16)
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .animation(.easeIn, value: scrollOffset)

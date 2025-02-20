@@ -35,7 +35,6 @@ struct RowView: View {
                 SeriesCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
             case "cardFullImage3":
                 CardCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
-      
             case "cardTopImage1":
                 CardCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
                     .padding(.bottom, 40)

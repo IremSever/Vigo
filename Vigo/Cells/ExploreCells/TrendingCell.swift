@@ -112,6 +112,7 @@ struct TrendingCell: View, ScrollingHelper {
                                 .frame(minWidth: geometry.size.width, alignment: .center)
                                 .onAppear {
                                     scrollProxy = proxy
+                                    scrollToIndex(selectedIndex, proxy: scrollProxy)
                                 }
                             }
                         }
@@ -145,30 +146,4 @@ struct TrendingCell: View, ScrollingHelper {
             .edgesIgnoringSafeArea(.bottom)
         }
     }
-    
-//    private func getSizeForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
-//        let diff = abs(index - selectedIndex)
-//        switch diff {
-//        case 0: return 200
-//        case 1: return 100
-//        default: return 0
-//        }
-//    }
-//    
-//    private func getYOffsetForIndex(_ index: Int, selectedIndex: Int) -> CGFloat {
-//        let diff = abs(index - selectedIndex)
-//        switch diff {
-//        case 0: return -0
-//        case 1: return -0
-//        default: return 0
-//        }
-//    }
-//    
-//    private func scrollToIndex(_ index: Int, proxy: ScrollViewProxy?) {
-//        DispatchQueue.main.async {
-//            withAnimation {
-//                proxy?.scrollTo(index, anchor: .center)
-//            }
-//        }
-//    }
 }

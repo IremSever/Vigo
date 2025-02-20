@@ -18,13 +18,13 @@ protocol NavAnimation {
 }
     
     extension NavAnimation {
-    func interpolatedHeight() -> CGFloat {
-        let startHeight: CGFloat = 100
-        let endHeight: CGFloat = 85
-        let transtionOffset: CGFloat = 35
-        let progress = min(max(scrollOffset / transtionOffset, 0), 1)
-        return endHeight + (startHeight - endHeight) * progress
-    }
+        func interpolatedHeight() -> CGFloat {
+            let startHeight: CGFloat = 100 
+            let endHeight: CGFloat = 85
+            let transtionOffset: CGFloat = 35
+            let progress = min(max(scrollOffset / transtionOffset, 0), 1)
+            return endHeight + (startHeight - endHeight) * progress
+        }
     
     func brandIconSize() -> CGFloat {
         let startHeight: CGFloat = 40
