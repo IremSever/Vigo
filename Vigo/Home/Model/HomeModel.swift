@@ -144,7 +144,7 @@ struct News: Codable {
     let image: String?
     let imageBig: String?
     let spot: String?
-    let title: String
+    let title: String?
 }
 
 // MARK: - Stream

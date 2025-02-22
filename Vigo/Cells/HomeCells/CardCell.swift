@@ -30,21 +30,22 @@ struct CardCell: View {
                                         .scaledToFit()
                                         .frame(height: 110)
                                         .cornerRadius(20)
-                                        .shadow(color: .purple.opacity(0.35), radius: 4)
+                                        .shadow(color: .purple.opacity(0.35), radius: 3)
                                 }
                                 VStack {
                                     Text(newsItem.title)
-                                        .font(.headline)
+                                        .font(.system(size: 19))
                                         .foregroundColor(.purple)
                                         .frame(width: 150)
                                         .lineLimit(1)
                                     
                                     if let spot = newsItem.spot {
                                         Text(spot)
-                                            .font(.subheadline)
+                                            .font(.system(size: 12))
                                             .foregroundColor(.white.opacity(1))
                                             .frame(width: 150)
                                             .lineLimit(1)
+                                        
                                     } else {
                                         Text(" ")
                                             .font(.subheadline)

@@ -16,88 +16,22 @@ struct DetailModel: Codable {
 struct DetailData: Codable {
     let config: DetailConfig
     let singleImage: DetailSingleImage?
-    let description: DetailDescriptionData?
+    let detailDescription: DetailDescription?
     let videos: [DetailVideo]?
 }
 
 // MARK: - DetailConfig
 struct DetailConfig: Codable {
-    let cell: DetailCell?
-    let image: DetailImage?
-    let widget: DetailWidget
-    let detailDescription: DetailDescription?
-    let spot, title: DetailSpot?
-    let widgetMore: DetailWidgetMore?
     let widgetTitle: DetailWidgetTitle?
-}
-
-// MARK: - DetailCell
-struct DetailCell: Codable {
-    let bgColorDark, bgColorLight: String
-    let borderColor: String?
-    let borderIsActive: Bool?
-    let radius: Int
-    let ratio: Double
-    let itemSpacer: Int?
-}
-
-// MARK: - DetailDescription
-struct DetailDescription: Codable {
-    let fontColorDark, fontColorLight: String
-    let fontSize: Int
-    let fontType: String
-    let maxLines: Int
-}
-
-// MARK: - DetailImage
-struct DetailImage: Codable {
-    let radius: Int
-    let size: String
-    let weight: Double
-}
-
-// MARK: - DetailSpot
-struct DetailSpot: Codable {
-    let align: String?
-    let fontColorDark, fontColorLight: String
-    let fontSize: Int
-    let fontType: String
-    let isActive: Bool
-    let maxLines: Int
-    let isDynamicLines: Bool?
-}
-
-// MARK: -  DetailWidget
-struct DetailWidget: Codable {
-    let bgColorDark, bgColorLight: String?
-    let columnCount: Int?
-    let template: String
-    let isPlaylist: Bool?
-    let rowCount: Int?
-    let type: String?
-}
-
-// MARK: - DetailWidgetMore
-struct DetailWidgetMore: Codable {
-    let bgColorDark, bgColorLight, external, fontColorDark: String
-    let fontColorLight: String
-    let fontSize: Int
-    let fontType: String
-    let isDynamicExternal: Bool
-    let text: String
 }
 
 // MARK: - DetailWidgetTitle
 struct DetailWidgetTitle: Codable {
-    let fontColorDark, fontColorLight: String
-    let fontSize: Int
-    let fontType: String
-    let spacer: Int
     let text: String
 }
 
 // MARK: - DetailDescription
-struct DetailDescriptionData: Codable {
+struct DetailDescription: Codable {
     let description: String?
 }
 

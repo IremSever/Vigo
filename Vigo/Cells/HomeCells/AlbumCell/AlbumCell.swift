@@ -54,7 +54,7 @@ struct AlbumCell: View {
                                         .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
                                         .overlay(
                                             LinearGradient(
-                                                gradient: Gradient(colors: [Color.black.opacity(0.7), Color.clear]),
+                                                gradient: Gradient(colors: [Color.black.opacity(0.9), Color.clear]),
                                                 startPoint: .bottom,
                                                 endPoint: UnitPoint(x: 0.5, y: 0.5)
                                             )
@@ -62,16 +62,16 @@ struct AlbumCell: View {
                                         )
                                     VStack {
                                         Spacer()
-                                        Text(newsItem.title)
-                                            .font(.headline.bold())
+                                        Text(newsItem.title ?? " ")
+                                            .font(.system(size: 24, weight: .medium))
                                             .foregroundColor(.purple)
-                                            .frame(width: 300)
+                                            .frame(width: 300, height: 22)
                                             .lineLimit(1)
                                         
                                         Text(newsItem.spot ?? "")
-                                            .font(.subheadline)
+                                            .font(.system(size: 14, weight: .medium))
                                             .foregroundColor(.white)
-                                            .frame(width: 300)
+                                            .frame(width: 300, height: 16)
                                             .lineLimit(1)
                                             .padding(.bottom, 16)
                                     }

@@ -27,7 +27,7 @@ struct ListCell: View {
                                             .cornerRadius(10)
                                     }
                                     VStack {
-                                        Text(newsItem.title)
+                                        Text(newsItem.title ?? " ")
                                             .font(.headline)
                                             .foregroundColor(.primary)
                                         if let spot = newsItem.spot {

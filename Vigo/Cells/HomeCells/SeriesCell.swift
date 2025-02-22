@@ -31,7 +31,7 @@ struct SeriesCell: View {
                                             .scaledToFit()
                                             .frame(height: 200)
                                             .cornerRadius(20)
-                                            .shadow(color: .purple.opacity(0.35), radius: 8)
+                                            .shadow(color: .purple.opacity(0.35), radius: 3)
                                     }
                                 }
                                 .frame(width: 150, height: 220)
