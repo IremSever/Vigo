@@ -118,18 +118,18 @@
           "title": "Bir Gece Masalı"
         },
         {
-          "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
-          "image": "https://iaatv.tmgrup.com.tr/eef9ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
-          "spot": "Yeni Bölüm | Çarşamba 20.00",
-          "title": "Kuruluş Osman"
+            "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
+            "image": "https://iaatv.tmgrup.com.tr/eef9ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
+            "imageBig": "https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
+            "spot": "Yeni Bölüm | Çarşamba 20.00",
+            "title": "Kuruluş Osman"
         },
         {
-          "external": "video://74f48b37-6773-49aa-a3d9-edc42357edd8",
-          "image": "https://iaatv.tmgrup.com.tr/2307ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
-          "spot": "Yeni Bölüm | Perşembe 20.00",
-          "title": "Başka Bir Gün"
+            "external": "video://74f48b37-6773-49aa-a3d9-edc42357edd8",
+            "image": "https://iaatv.tmgrup.com.tr/2307ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
+            "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
+            "spot": "Yeni Bölüm | Perşembe 20.00",
+            "title": "Başka Bir Gün"
         },
         {
           "external": "video://46af6954-4826-4f50-a576-99eec9fe1f7e",
@@ -476,11 +476,155 @@
         }
       },
       "news": [
-        {
-          "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
-          "image": "https://iatv.tmgrup.com.tr/2024/09/05/295x410/1725545448317.jpg",
-          "title": "Bir Gece Masalı"
-        },
+          {
+              "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
+              "image": "https://iatv.tmgrup.com.tr/2024/09/05/295x410/1725545448317.jpg",
+              "title": "Bir Gece Masalı",
+              "detailDescription": "\u003Cp\u003EBir Gece Masalı, komiser Mahir (Burak Deniz) ile Yörük kızı Canfeza'nın (Su Burcu Yazgı Coşkun) Pamukkale'nin büyülü atmosferinde başlayıp İstanbul'da Asaf Bey konağına uzanan imkânsız aşklarını masalsı bir anlatımla ekrana taşıyor.\u003C/p\u003E\r\n\r\n\u003Cp\u003EYapımcı : Nazlı Heptürk\u003C/p\u003E\r\n\r\n\u003Cp\u003EYönetmen : Emre Kabakuşak\u003C/p\u003E\r\n\r\n\u003Cp\u003EOyuncular: Burak Deniz (Mahir Yılmaz), Su Burcu Yazgı Coşkun (Canfeza Kilimci), Gürkan Uygun (Kürşat Kilimci), Mesut Akusta (Raşit Kara), Rüçhan Çalışkur (Afet Yılmaz), Kenan Bal (Asaf Yılmaz), Yıldız Kültür (Ezra Nene), Özlem Türkad (Süreyya Yılmaz), Eren Vurdem (Selim Allame), İrem Altuğ (Sevde Yılmaz), Kerem Aslanoğlu (Ferman Yılmaz), Emel Çölgeçen (Gülizar Yılmaz), Nazan Diper (Maviş Dadı).\u003C/p\u003E\r\n\r\n\u003Cp\u003E \u003C/p\u003E\r\n",
+              "artist": [
+                  {
+                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214455571.jpg",
+                      "spot": "Mahir Yılmaz",
+                      "title": "Burak Deniz"
+                  },
+                  {
+                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214343274.jpg",
+                      "spot": "Canfeza Kilimci",
+                      "title": "Su Burcu Yazgı Coşkun"
+                  },
+                  {
+                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214543042.jpg",
+                      "spot": "Kürşat Kilimci ",
+                      "title": "Gürkan Uygun"
+                  },
+                  {
+                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214754574.jpg",
+                      "spot": "Raşit Kara",
+                      "title": "Mesut Akusta"
+                  },
+                  {
+                      "image": "https://iatv.tmgrup.com.tr/2024/08/29/288x401/1724934311787.jpg",
+                      "spot": "Süreyya Yılmaz",
+                      "title": "Özlem Türkad"
+                  },
+                  {
+                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214872069.jpg",
+                      "spot": "Selim Allame",
+                      "title": "Eren Vurdem"
+                  },
+                  {
+                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723215189301.jpg",
+                      "spot": "Sevde Yılmaz",
+                      "title": "İrem Altuğ"
+                  }
+              ],
+              "episode": [
+                  {
+                      "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                      "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                      "image": "https://iaatv.tmgrup.com.tr/a8420b/500/281/0/0/1280/719?u=https://iatv.tmgrup.com.tr/2025/02/17/bir-gece-masali-1739779663101.jpg",
+                      "spot": "22. Bölüm",
+                      "title": "Bir Gece Masalı"
+                  },
+                  {
+                      "external": "video://6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                      "id": "6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                      "image": "https://iaatv.tmgrup.com.tr/9b8ac8/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/10/bir-gece-masali-1739174632960.jpg",
+                      "spot": "21. Bölüm",
+                      "title": "Bir Gece Masalı"
+                  },
+                  {
+                      "external": "video://27deb789-e7d1-4e26-9448-e96d6239eb08",
+                      "id": "27deb789-e7d1-4e26-9448-e96d6239eb08",
+                      "image": "https://iaatv.tmgrup.com.tr/0a1a77/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/03/bir-gece-masali-1738570678624.jpg",
+                      "spot": "20. Bölüm",
+                      "title": "Bir Gece Masalı"
+                  },
+                  {
+                      "external": "video://d3de77b3-cfd3-4add-be59-233db3cf3015",
+                      "id": "d3de77b3-cfd3-4add-be59-233db3cf3015",
+                      "image": "https://iaatv.tmgrup.com.tr/c41388/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/01/29/bir-gece-masali-1738099134048.jpg",
+                      "spot": "19. Bölüm",
+                      "title": "Bir Gece Masalı"
+                  },
+                  {
+                      "external": "video://3ee3ea94-e207-427f-8b01-164fbf574165",
+                      "id": "3ee3ea94-e207-427f-8b01-164fbf574165",
+                      "image": "https://iaatv.tmgrup.com.tr/b59694/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/01/13/bir-gece-masali-1736756841160.jpg",
+                      "spot": "18. Bölüm",
+                      "title": "Bir Gece Masalı"
+                  }
+              ],
+              "trailer": [
+                  {
+                      "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                      "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                      "image": "https://iaatv.tmgrup.com.tr/a40605/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/19/bir-gece-masali-1739947039195.jpg",
+                      "spot": "23. Bölüm Fragmanı",
+                      "title": "Bir Gece Masalı"
+                  },
+                  {
+                      "external": "video://76ad9b99-ca46-4426-abbe-a61c92f733d7",
+                      "id": "76ad9b99-ca46-4426-abbe-a61c92f733d7",
+                      "image": "https://iaatv.tmgrup.com.tr/fe9014/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/14/bir-gece-masali-2-fragman-1739559125396.jpg",
+                      "spot": "22. Bölüm Fragmanı",
+                      "title": "Bir Gece Masalı - 2. Fragman"
+                  },
+                  {
+                      "external": "video://554e46be-f56f-430a-becb-06c35170392a",
+                      "id": "554e46be-f56f-430a-becb-06c35170392a",
+                      "image": "https://iaatv.tmgrup.com.tr/6be4a2/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/12/bir-gece-masali-1739308463358.jpg",
+                      "spot": "22. Bölüm Fragmanı",
+                      "title": "Bir Gece Masalı"
+                  },
+                  {
+                      "external": "video://d37eb2ec-40b2-483f-bbc5-b751aa22ab86",
+                      "id": "d37eb2ec-40b2-483f-bbc5-b751aa22ab86",
+                      "image": "https://iaatv.tmgrup.com.tr/06ccbd/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/09/bir-gece-masali-2-fragmani-1739132220778.jpg",
+                      "spot": "21. Bölüm Fragmanı",
+                      "title": "Bir Gece Masalı - 2. Fragman"
+                  },
+                  {
+                      "external": "video://27d1ef66-f348-4023-9b6a-8c2332c0cff4",
+                      "id": "27d1ef66-f348-4023-9b6a-8c2332c0cff4",
+                      "image": "https://iaatv.tmgrup.com.tr/fe0c30/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/05/bir-gece-masali-1738703520719.jpg",
+                      "spot": "21. Bölüm Fragmanı",
+                      "title": "Bir Gece Masalı"
+                  }
+              ],
+              "bestMoments": [
+                  {
+                      "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                      "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                      "image": "https://iaatv.tmgrup.com.tr/cc371f/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/22/bir-gece-masali-on-izleme-1740247046958.jpg",
+                      "title": "Bir Gece Masalı - Ön İzleme"
+                  },
+                  {
+                      "external": "video://8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                      "id": "8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                      "image": "https://iaatv.tmgrup.com.tr/18812a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/kim-oldu-1739910442969.jpg",
+                      "title": "Kim öldü?"
+                  },
+                  {
+                      "external": "video://f75e221c-5c21-47e3-8c32-e5fe90835461",
+                      "id": "f75e221c-5c21-47e3-8c32-e5fe90835461",
+                      "image": "https://iaatv.tmgrup.com.tr/2553e3/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/ruh-esi-1739909284943.jpg",
+                      "title": "Ruh eşi"
+                  },
+                  {
+                      "external": "video://4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                      "id": "4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                      "image": "https://iaatv.tmgrup.com.tr/6ddffe/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/yaziklar-olsun-1739909120706.jpg",
+                      "title": "Yazıklar olsun"
+                  },
+                  {
+                      "external": "video://fc7aeb4c-3ba8-47c1-bbea-0f2f73dfd8fc",
+                      "id": "fc7aeb4c-3ba8-47c1-bbea-0f2f73dfd8fc",
+                      "image": "https://iaatv.tmgrup.com.tr/ff0b5a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/16/bir-gece-masali-22-bolum-on-izleme-1739737669460.jpg",
+                      "title": "Bir Gece Masalı 22.⁠ ⁠⁠Bölüm Ön İzleme"
+                  }
+              ]
+          },
         {
           "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
           "image": "https://iatv.tmgrup.com.tr/2024/09/24/295x410/1727165971183.jpg",

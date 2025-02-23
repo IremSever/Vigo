@@ -23,7 +23,7 @@ struct SeriesCell: View {
                         
                         if newsItem.external.hasPrefix("apilink:///") {
                             let urlString = createDetailURL(from: newsItem.external)
-                            NavigationLink(destination: DetailView(viewModel: DetailViewModel(urlString: urlString))) {
+                            NavigationLink(destination: DetailView(viewModel: viewModel, newsItem: newsItem)) {
                                 VStack {
                                     if let imageUrl = URL(string: newsItem.image ?? "") {
                                         WebImage(url: imageUrl)
@@ -37,6 +37,7 @@ struct SeriesCell: View {
                                 .frame(width: 150, height: 220)
                                 .cornerRadius(20)
                             }
+
                         }
                     }
                 }

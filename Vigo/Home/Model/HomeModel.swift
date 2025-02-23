@@ -145,6 +145,40 @@ struct News: Codable {
     let imageBig: String?
     let spot: String?
     let title: String?
+    let detailDescription: String?
+    let artist: [Artist]?
+    let episode: [Episode]?
+    let trailer: [Trailer]?
+    let bestMoments: [BestMoments]?
+}
+
+struct Artist: Codable {
+    let image: String?
+    let spot: String?
+    let title: String?
+}
+
+struct Episode: Codable {
+    let external: String?
+    let id: String?
+    let image: String?
+    let spot: String?
+    let title: String?
+}
+
+struct Trailer: Codable {
+    let external: String?
+    let id: String?
+    let image: String?
+    let spot: String?
+    let title: String?
+}
+struct BestMoments: Codable {
+    let external: String?
+    let id: String?
+    let image: String?
+    let spot: String?
+    let title: String?
 }
 
 // MARK: - Stream
