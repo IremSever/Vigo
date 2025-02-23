@@ -33,6 +33,14 @@
 		61938F772D67523400D5E866 /* NavAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61938F762D67523400D5E866 /* NavAnimation.swift */; };
 		61938F7A2D67CECF00D5E866 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 61938F792D67CECF00D5E866 /* home.json */; };
 		61A328912D5946D2004C384F /* AchiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A328902D5946D2004C384F /* AchiveCell.swift */; };
+		61E4D8982D6B70E200D84412 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8972D6B70E200D84412 /* CustomBackButton.swift */; };
+		61E4D89A2D6B71BB00D84412 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8992D6B71BB00D84412 /* ArtistCell.swift */; };
+		61E4D89C2D6B71F300D84412 /* TrailerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D89B2D6B71F300D84412 /* TrailerCell.swift */; };
+		61E4D89E2D6B720600D84412 /* CoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D89D2D6B720600D84412 /* CoverCell.swift */; };
+		61E4D8A02D6B724800D84412 /* InfoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D89F2D6B724800D84412 /* InfoCardCell.swift */; };
+		61E4D8A32D6B861500D84412 /* ClearNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8A22D6B861500D84412 /* ClearNavBar.swift */; };
+		61E4D8A82D6B86A400D84412 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8A72D6B86A400D84412 /* IconButton.swift */; };
+		61E4D8AA2D6B86C300D84412 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8A92D6B86C300D84412 /* TagView.swift */; };
 		668188492D564E8800333EAB /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668188482D564E8800333EAB /* Backdrop.swift */; };
 		66CB543C2D5C88D4001166F4 /* NavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB543B2D5C88D4001166F4 /* NavHeader.swift */; };
 		66CB543E2D5C914B001166F4 /* CustomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB543D2D5C914B001166F4 /* CustomNav.swift */; };
@@ -78,6 +86,14 @@
 		61938F762D67523400D5E866 /* NavAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavAnimation.swift; sourceTree = "<group>"; };
 		61938F792D67CECF00D5E866 /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		61A328902D5946D2004C384F /* AchiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchiveCell.swift; sourceTree = "<group>"; };
+		61E4D8972D6B70E200D84412 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		61E4D8992D6B71BB00D84412 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
+		61E4D89B2D6B71F300D84412 /* TrailerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerCell.swift; sourceTree = "<group>"; };
+		61E4D89D2D6B720600D84412 /* CoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverCell.swift; sourceTree = "<group>"; };
+		61E4D89F2D6B724800D84412 /* InfoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardCell.swift; sourceTree = "<group>"; };
+		61E4D8A22D6B861500D84412 /* ClearNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearNavBar.swift; sourceTree = "<group>"; };
+		61E4D8A72D6B86A400D84412 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		61E4D8A92D6B86C300D84412 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		668188482D564E8800333EAB /* Backdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdrop.swift; sourceTree = "<group>"; };
 		66CB543B2D5C88D4001166F4 /* NavHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavHeader.swift; sourceTree = "<group>"; };
 		66CB543D2D5C914B001166F4 /* CustomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNav.swift; sourceTree = "<group>"; };
@@ -259,6 +275,27 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		61E4D8962D6B637300D84412 /* DetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				61E4D8A42D6B868500D84412 /* CoverCell */,
+				61E4D89B2D6B71F300D84412 /* TrailerCell.swift */,
+				61E4D8992D6B71BB00D84412 /* ArtistCell.swift */,
+				61E4D89F2D6B724800D84412 /* InfoCardCell.swift */,
+			);
+			path = DetailCell;
+			sourceTree = "<group>";
+		};
+		61E4D8A42D6B868500D84412 /* CoverCell */ = {
+			isa = PBXGroup;
+			children = (
+				61E4D8A72D6B86A400D84412 /* IconButton.swift */,
+				61E4D8A92D6B86C300D84412 /* TagView.swift */,
+				61E4D89D2D6B720600D84412 /* CoverCell.swift */,
+			);
+			path = CoverCell;
+			sourceTree = "<group>";
+		};
 		66CB54362D5C87B1001166F4 /* AlbumCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +359,7 @@
 				66CB54512D5DE0D1001166F4 /* Common */,
 				66CB54502D5DE0BD001166F4 /* ExploreCells */,
 				61190DFD2D537FF90070CA8B /* HomeCells */,
+				61E4D8962D6B637300D84412 /* DetailCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -342,6 +380,8 @@
 				66CB54382D5C87D9001166F4 /* NavBar */,
 				61190DF32D537FF90070CA8B /* TabBar */,
 				66CB54552D5E0193001166F4 /* SectionHeader.swift */,
+				61E4D8972D6B70E200D84412 /* CustomBackButton.swift */,
+				61E4D8A22D6B861500D84412 /* ClearNavBar.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -465,18 +505,24 @@
 				61190DEC2D537FE80070CA8B /* ContentView.swift in Sources */,
 				616974D92D628DAD00803C5A /* DetailModel.swift in Sources */,
 				66CB54422D5C93E7001166F4 /* ViewOffsetKey.swift in Sources */,
+				61E4D8A32D6B861500D84412 /* ClearNavBar.swift in Sources */,
 				61190DED2D537FE80070CA8B /* VigoApp.swift in Sources */,
 				66CB54402D5C9359001166F4 /* ScrollOffsetBg.swift in Sources */,
 				66D7C4F92D562EB400D0D9DA /* InfoTop.swift in Sources */,
 				61190E042D537FF90070CA8B /* ExploreView.swift in Sources */,
 				66CB54582D5E19D8001166F4 /* BackgroundCell.swift in Sources */,
 				61938F752D667FD100D5E866 /* ScrollingHelper.swift in Sources */,
+				61E4D8982D6B70E200D84412 /* CustomBackButton.swift in Sources */,
+				61E4D8AA2D6B86C300D84412 /* TagView.swift in Sources */,
 				61190E052D537FF90070CA8B /* AlbumCell.swift in Sources */,
 				61190E062D537FF90070CA8B /* DetailView.swift in Sources */,
 				66CB544C2D5DD0FC001166F4 /* CategoryType.swift in Sources */,
 				61190E072D537FF90070CA8B /* HomeViewModel.swift in Sources */,
 				66CB54562D5E0193001166F4 /* SectionHeader.swift in Sources */,
+				61E4D89A2D6B71BB00D84412 /* ArtistCell.swift in Sources */,
+				61E4D89C2D6B71F300D84412 /* TrailerCell.swift in Sources */,
 				61190E082D537FF90070CA8B /* IndicatorCell.swift in Sources */,
+				61E4D89E2D6B720600D84412 /* CoverCell.swift in Sources */,
 				616974DB2D628DB600803C5A /* DetailViewModel.swift in Sources */,
 				61190E092D537FF90070CA8B /* HomeView.swift in Sources */,
 				66CB544A2D5DC32F001166F4 /* ExploreModel.swift in Sources */,
@@ -484,7 +530,9 @@
 				61A328912D5946D2004C384F /* AchiveCell.swift in Sources */,
 				668188492D564E8800333EAB /* Backdrop.swift in Sources */,
 				61190E0A2D537FF90070CA8B /* FavoritesView.swift in Sources */,
+				61E4D8A02D6B724800D84412 /* InfoCardCell.swift in Sources */,
 				66CB543C2D5C88D4001166F4 /* NavHeader.swift in Sources */,
+				61E4D8A82D6B86A400D84412 /* IconButton.swift in Sources */,
 				61190E0B2D537FF90070CA8B /* CardCell.swift in Sources */,
 				61190E0C2D537FF90070CA8B /* StreamCell.swift in Sources */,
 				61190E0D2D537FF90070CA8B /* ListCell.swift in Sources */,

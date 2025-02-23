@@ -24,11 +24,20 @@ struct NavHeader: View, NavAnimation {
                 .ignoresSafeArea(.all)
 
             HStack {
-                SwiftUI.Image(app)
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: brandIconSize(), height: brandIconSize())
-                    .padding(.leading, 8)
+                if let appImage = UIImage(named: app) {
+                    SwiftUI.Image(uiImage: appImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(width: brandIconSize(), height: brandIconSize())
+                        .padding(.leading, 8)
+                } else {
+                    SwiftUI.Image(systemName: app)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: iconSize(), height: iconSize())
+                        .padding(.leading, 8)
+                        .foregroundColor(.white)
+                }
                 Spacer()
                 
                 HStack {

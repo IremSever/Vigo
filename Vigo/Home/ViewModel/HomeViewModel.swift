@@ -57,6 +57,7 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     @Published var homeModel: HomeModel?
+
     @Published var widgetTitle: String = ""
 
     func fetchHomeData(completion: @escaping () -> Void) {

@@ -23,7 +23,9 @@ struct SeriesCell: View {
                         
                         if newsItem.external.hasPrefix("apilink:///") {
                             let urlString = createDetailURL(from: newsItem.external)
-                            NavigationLink(destination: DetailView(viewModel: viewModel, newsItem: newsItem)) {
+                            NavigationLink(destination: DetailView(viewModel: viewModel, newsItem: newsItem)
+                                            .navigationBarBackButtonHidden(true)
+                                            .navigationBarItems(leading: CustomBackButton())) {
                                 VStack {
                                     if let imageUrl = URL(string: newsItem.image ?? "") {
                                         WebImage(url: imageUrl)
@@ -43,7 +45,6 @@ struct SeriesCell: View {
                 }
             }.padding(.horizontal, 12)
         }
-        
     }
 
     private func createDetailURL(from external: String) -> String {
