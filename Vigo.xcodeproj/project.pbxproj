@@ -34,13 +34,12 @@
 		61938F7A2D67CECF00D5E866 /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = 61938F792D67CECF00D5E866 /* home.json */; };
 		61A328912D5946D2004C384F /* AchiveCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A328902D5946D2004C384F /* AchiveCell.swift */; };
 		61E4D8982D6B70E200D84412 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8972D6B70E200D84412 /* CustomBackButton.swift */; };
-		61E4D89A2D6B71BB00D84412 /* ArtistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8992D6B71BB00D84412 /* ArtistCell.swift */; };
 		61E4D89C2D6B71F300D84412 /* TrailerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D89B2D6B71F300D84412 /* TrailerCell.swift */; };
 		61E4D89E2D6B720600D84412 /* CoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D89D2D6B720600D84412 /* CoverCell.swift */; };
-		61E4D8A02D6B724800D84412 /* InfoCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D89F2D6B724800D84412 /* InfoCardCell.swift */; };
 		61E4D8A32D6B861500D84412 /* ClearNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8A22D6B861500D84412 /* ClearNavBar.swift */; };
 		61E4D8A82D6B86A400D84412 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8A72D6B86A400D84412 /* IconButton.swift */; };
 		61E4D8AA2D6B86C300D84412 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8A92D6B86C300D84412 /* TagView.swift */; };
+		61E4D8AD2D6BD23300D84412 /* EpisodeSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E4D8AC2D6BD23300D84412 /* EpisodeSectionHeader.swift */; };
 		668188492D564E8800333EAB /* Backdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668188482D564E8800333EAB /* Backdrop.swift */; };
 		66CB543C2D5C88D4001166F4 /* NavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB543B2D5C88D4001166F4 /* NavHeader.swift */; };
 		66CB543E2D5C914B001166F4 /* CustomNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB543D2D5C914B001166F4 /* CustomNav.swift */; };
@@ -87,13 +86,12 @@
 		61938F792D67CECF00D5E866 /* home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		61A328902D5946D2004C384F /* AchiveCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchiveCell.swift; sourceTree = "<group>"; };
 		61E4D8972D6B70E200D84412 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
-		61E4D8992D6B71BB00D84412 /* ArtistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistCell.swift; sourceTree = "<group>"; };
 		61E4D89B2D6B71F300D84412 /* TrailerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerCell.swift; sourceTree = "<group>"; };
 		61E4D89D2D6B720600D84412 /* CoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverCell.swift; sourceTree = "<group>"; };
-		61E4D89F2D6B724800D84412 /* InfoCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCardCell.swift; sourceTree = "<group>"; };
 		61E4D8A22D6B861500D84412 /* ClearNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearNavBar.swift; sourceTree = "<group>"; };
 		61E4D8A72D6B86A400D84412 /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
 		61E4D8A92D6B86C300D84412 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		61E4D8AC2D6BD23300D84412 /* EpisodeSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeSectionHeader.swift; sourceTree = "<group>"; };
 		668188482D564E8800333EAB /* Backdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backdrop.swift; sourceTree = "<group>"; };
 		66CB543B2D5C88D4001166F4 /* NavHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavHeader.swift; sourceTree = "<group>"; };
 		66CB543D2D5C914B001166F4 /* CustomNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNav.swift; sourceTree = "<group>"; };
@@ -278,10 +276,8 @@
 		61E4D8962D6B637300D84412 /* DetailCell */ = {
 			isa = PBXGroup;
 			children = (
+				61E4D8AB2D6BD22700D84412 /* TrailerCell */,
 				61E4D8A42D6B868500D84412 /* CoverCell */,
-				61E4D89B2D6B71F300D84412 /* TrailerCell.swift */,
-				61E4D8992D6B71BB00D84412 /* ArtistCell.swift */,
-				61E4D89F2D6B724800D84412 /* InfoCardCell.swift */,
 			);
 			path = DetailCell;
 			sourceTree = "<group>";
@@ -294,6 +290,15 @@
 				61E4D89D2D6B720600D84412 /* CoverCell.swift */,
 			);
 			path = CoverCell;
+			sourceTree = "<group>";
+		};
+		61E4D8AB2D6BD22700D84412 /* TrailerCell */ = {
+			isa = PBXGroup;
+			children = (
+				61E4D8AC2D6BD23300D84412 /* EpisodeSectionHeader.swift */,
+				61E4D89B2D6B71F300D84412 /* TrailerCell.swift */,
+			);
+			path = TrailerCell;
 			sourceTree = "<group>";
 		};
 		66CB54362D5C87B1001166F4 /* AlbumCell */ = {
@@ -519,8 +524,8 @@
 				66CB544C2D5DD0FC001166F4 /* CategoryType.swift in Sources */,
 				61190E072D537FF90070CA8B /* HomeViewModel.swift in Sources */,
 				66CB54562D5E0193001166F4 /* SectionHeader.swift in Sources */,
-				61E4D89A2D6B71BB00D84412 /* ArtistCell.swift in Sources */,
 				61E4D89C2D6B71F300D84412 /* TrailerCell.swift in Sources */,
+				61E4D8AD2D6BD23300D84412 /* EpisodeSectionHeader.swift in Sources */,
 				61190E082D537FF90070CA8B /* IndicatorCell.swift in Sources */,
 				61E4D89E2D6B720600D84412 /* CoverCell.swift in Sources */,
 				616974DB2D628DB600803C5A /* DetailViewModel.swift in Sources */,
@@ -530,7 +535,6 @@
 				61A328912D5946D2004C384F /* AchiveCell.swift in Sources */,
 				668188492D564E8800333EAB /* Backdrop.swift in Sources */,
 				61190E0A2D537FF90070CA8B /* FavoritesView.swift in Sources */,
-				61E4D8A02D6B724800D84412 /* InfoCardCell.swift in Sources */,
 				66CB543C2D5C88D4001166F4 /* NavHeader.swift in Sources */,
 				61E4D8A82D6B86A400D84412 /* IconButton.swift in Sources */,
 				61190E0B2D537FF90070CA8B /* CardCell.swift in Sources */,
