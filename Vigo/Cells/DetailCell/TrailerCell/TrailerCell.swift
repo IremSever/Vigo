@@ -20,8 +20,8 @@ struct TrailerCell: View {
             switch selectedTab {
             case "Trailers":
                 if let trailers = newsItem.trailer, !trailers.isEmpty {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        VStack(spacing: 16) {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 16) {
                             ForEach(trailers, id: \.id) { trailer in
                                 HStack {
                                     if let trailerImageUrlString = trailer.image,
@@ -39,19 +39,20 @@ struct TrailerCell: View {
                                         
                                         Text(trailer.spot ?? "Unknown Trailer")
                                             .font(.system(size: 13))
-                                            .foregroundColor(.white)
+                                            .foregroundColor(.gray)
                                     }
                                 }
                             }
                         }
                         .padding(.horizontal, 12)
                     }
+                   
                 }
 
             case "Episodes":
                 if let episodes = newsItem.episode, !episodes.isEmpty {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        VStack(spacing: 16) {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 16) {
                             ForEach(episodes, id: \.id) { episode in
                                 HStack {
                                     if let episodeImageUrlString = episode.image,
@@ -69,7 +70,7 @@ struct TrailerCell: View {
                                         
                                         Text(episode.spot ?? "Unknown Trailer")
                                             .font(.system(size: 13))
-                                            .foregroundColor(.white)
+                                            .foregroundColor(.gray)
                                     }
                                 }
                             }
@@ -80,31 +81,32 @@ struct TrailerCell: View {
 
             case "Videos":
                 if let bestMoments = newsItem.bestMoments, !bestMoments.isEmpty {
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        VStack(spacing: 16) {
-                            ForEach(bestMoments, id: \.id) { moment in
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 16) {
+                            ForEach(bestMoments, id: \.id) { bestMoment in
                                 HStack {
-                                    if let momentImageUrlString = moment.image,
-                                       let momentImageUrl = URL(string: momentImageUrlString) {
-                                        WebImage(url: momentImageUrl)
+                                    if let bestMomentImageUrlString = bestMoment.image,
+                                       let bestMomentImageUrl = URL(string: bestMomentImageUrlString) {
+                                        WebImage(url: bestMomentImageUrl)
                                             .resizable()
                                             .scaledToFill()
                                             .frame(width: 180)
                                             .cornerRadius(20)
                                     }
                                     VStack(alignment: .leading) {
-                                        Text(moment.title ?? "Unknown Moment")
+                                        Text(bestMoment.title ?? "Unknown bestMoment")
                                             .font(.system(size: 15, weight: .medium))
                                             .foregroundColor(.white)
                                         
-                                        Text(moment.spot ?? "Unknown Moment")
+                                        Text(bestMoment.spot ?? "Unknown bestMoment")
                                             .font(.system(size: 13))
-                                            .foregroundColor(.white)
+                                            .foregroundColor(.gray)
                                     }
                                 }
                             }
                         }
                         .padding(.horizontal, 12)
+                    
                     }
                 }
 

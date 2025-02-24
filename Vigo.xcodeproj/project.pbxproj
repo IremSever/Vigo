@@ -55,7 +55,6 @@
 		66CB545E2D63668F001166F4 /* trending.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CB545D2D63668F001166F4 /* trending.json */; };
 		66CB54612D63790F001166F4 /* classics.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CB54602D63790F001166F4 /* classics.json */; };
 		66CB54632D637925001166F4 /* shows.json in Resources */ = {isa = PBXBuildFile; fileRef = 66CB54622D637925001166F4 /* shows.json */; };
-		66D7C4F92D562EB400D0D9DA /* InfoTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D7C4F82D562EB400D0D9DA /* InfoTop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,7 +106,6 @@
 		66CB545D2D63668F001166F4 /* trending.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trending.json; sourceTree = "<group>"; };
 		66CB54602D63790F001166F4 /* classics.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = classics.json; sourceTree = "<group>"; };
 		66CB54622D637925001166F4 /* shows.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = shows.json; sourceTree = "<group>"; };
-		66D7C4F82D562EB400D0D9DA /* InfoTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,7 +312,6 @@
 		66CB54382D5C87D9001166F4 /* NavBar */ = {
 			isa = PBXGroup;
 			children = (
-				66D7C4F82D562EB400D0D9DA /* InfoTop.swift */,
 				66CB543B2D5C88D4001166F4 /* NavHeader.swift */,
 				66CB543D2D5C914B001166F4 /* CustomNav.swift */,
 				66CB543F2D5C9359001166F4 /* ScrollOffsetBg.swift */,
@@ -513,7 +510,6 @@
 				61E4D8A32D6B861500D84412 /* ClearNavBar.swift in Sources */,
 				61190DED2D537FE80070CA8B /* VigoApp.swift in Sources */,
 				66CB54402D5C9359001166F4 /* ScrollOffsetBg.swift in Sources */,
-				66D7C4F92D562EB400D0D9DA /* InfoTop.swift in Sources */,
 				61190E042D537FF90070CA8B /* ExploreView.swift in Sources */,
 				66CB54582D5E19D8001166F4 /* BackgroundCell.swift in Sources */,
 				61938F752D667FD100D5E866 /* ScrollingHelper.swift in Sources */,

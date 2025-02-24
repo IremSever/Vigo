@@ -15,7 +15,7 @@ struct CustomBackButton: View {
             presentationMode.wrappedValue.dismiss()
         }) {
             SwiftUI.Image(systemName: "")
-                .font(.system(size: 20).bold())
+                .font(.system(size: 16).bold())
                 .foregroundColor(.white)
         }
     }

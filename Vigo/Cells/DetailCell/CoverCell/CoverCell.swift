@@ -22,7 +22,7 @@ struct CoverCell: View {
                     WebImage(url: imageUrl)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(height: 450)
+                        .frame(height: 400)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
                         .overlay(
@@ -33,7 +33,7 @@ struct CoverCell: View {
                             )
                             .cornerRadius(20)
                         )
-                        .padding(.horizontal, 12)
+                        .padding(.horizontal, 36)
                 } else {
                     Color.black.edgesIgnoringSafeArea(.all)
                 }

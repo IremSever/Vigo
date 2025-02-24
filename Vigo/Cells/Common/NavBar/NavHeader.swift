@@ -34,8 +34,8 @@ struct NavHeader: View, NavAnimation {
                     SwiftUI.Image(systemName: app)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .frame(width: iconSize(), height: iconSize())
-                        .padding(.leading, 8)
+                        .frame(width: iconSize() * 0.8, height: iconSize() * 0.8)
+                        .padding(.leading, 12)
                         .foregroundColor(.white)
                 }
                 Spacer()
