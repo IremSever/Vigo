@@ -28,8 +28,8 @@ struct NavHeader: View, NavAnimation {
                     SwiftUI.Image(uiImage: appImage)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: brandIconSize(), height: brandIconSize())
-                        .padding(.leading, 8)
+                        .frame(width: brandIconSize() + 10, height: brandIconSize() + 10)
+                        .padding(.leading, 12)
                 } else {
                     SwiftUI.Image(systemName: app)
                         .resizable()
@@ -53,10 +53,12 @@ struct NavHeader: View, NavAnimation {
                         .aspectRatio(contentMode: .fill)
                         .foregroundColor(.white)
                         .frame(width: iconSize(), height: iconSize())
+                        .padding(.trailing, 12)
                 }
             }
             .offset(y: pushupOffset())
             .padding(.top, 10)
+            .padding(.bottom, 10)
             .padding(.horizontal, 16)
         }
         .frame(maxHeight: .infinity, alignment: .top)

@@ -3,22 +3,21 @@
 //  Vigo
 //
 //  Created by İrem Sever on 23.02.2025.
-//
 
 import SwiftUI
 import SDWebImageSwiftUI
 
 struct TrailerCell: View {
     let newsItem: News
-    @State private var selectedTab = "Trailers"
-
+    @ObservedObject var viewModel = HomeViewModel()
+    @State private var selectedTab: DetailCategoryType = .trailers
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            
-            EpisodeSectionHeader(selectedTab: $selectedTab, tabs: ["Trailers", "Episodes", "Videos"])
+            SectionHeader(selectedCategory: $selectedTab, categories: DetailCategoryType.allCases, isExplore: false)
             
             switch selectedTab {
-            case "Trailers":
+            case .trailers:
                 if let trailers = newsItem.trailer, !trailers.isEmpty {
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack(alignment: .leading, spacing: 16) {
@@ -29,8 +28,8 @@ struct TrailerCell: View {
                                         WebImage(url: trailerImageUrl)
                                             .resizable()
                                             .scaledToFill()
-                                            .frame(width: 180)
-                                            .cornerRadius(20)
+                                            .frame(width: 150)
+                                            .cornerRadius(15)
                                     }
                                     VStack(alignment: .leading) {
                                         Text(trailer.title ?? "Unknown Trailer")
@@ -46,10 +45,10 @@ struct TrailerCell: View {
                         }
                         .padding(.horizontal, 12)
                     }
-                   
+                    .padding(.bottom, 66)
                 }
-
-            case "Episodes":
+                
+            case .episodes:
                 if let episodes = newsItem.episode, !episodes.isEmpty {
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack(alignment: .leading, spacing: 16) {
@@ -60,7 +59,7 @@ struct TrailerCell: View {
                                         WebImage(url: episodeImageUrl)
                                             .resizable()
                                             .scaledToFill()
-                                            .frame(width: 180)
+                                            .frame(width: 150)
                                             .cornerRadius(20)
                                     }
                                     VStack(alignment: .leading) {
@@ -68,7 +67,7 @@ struct TrailerCell: View {
                                             .font(.system(size: 15, weight: .medium))
                                             .foregroundColor(.white)
                                         
-                                        Text(episode.spot ?? "Unknown Trailer")
+                                        Text(episode.spot ?? "Unknown Episode")
                                             .font(.system(size: 13))
                                             .foregroundColor(.gray)
                                     }
@@ -77,9 +76,10 @@ struct TrailerCell: View {
                         }
                         .padding(.horizontal, 12)
                     }
+                    .padding(.bottom, 66)
                 }
-
-            case "Videos":
+                
+            case .videos:
                 if let bestMoments = newsItem.bestMoments, !bestMoments.isEmpty {
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack(alignment: .leading, spacing: 16) {
@@ -90,15 +90,15 @@ struct TrailerCell: View {
                                         WebImage(url: bestMomentImageUrl)
                                             .resizable()
                                             .scaledToFill()
-                                            .frame(width: 180)
+                                            .frame(width: 150)
                                             .cornerRadius(20)
                                     }
                                     VStack(alignment: .leading) {
-                                        Text(bestMoment.title ?? "Unknown bestMoment")
+                                        Text(bestMoment.title ?? "Unknown Best Moment")
                                             .font(.system(size: 15, weight: .medium))
                                             .foregroundColor(.white)
                                         
-                                        Text(bestMoment.spot ?? "Unknown bestMoment")
+                                        Text(bestMoment.spot ?? "Unknown Best Moment")
                                             .font(.system(size: 13))
                                             .foregroundColor(.gray)
                                     }
@@ -106,12 +106,10 @@ struct TrailerCell: View {
                             }
                         }
                         .padding(.horizontal, 12)
-                    
                     }
+                    .padding(.bottom, 66)
                 }
-
-            default:
-                EmptyView()
+                
             }
         }
     }

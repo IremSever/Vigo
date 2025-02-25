@@ -11,6 +11,7 @@ struct TrendingCell: View, ScrollingHelper {
     @ObservedObject var viewModel: ExploreViewModel
     @State private var selectedIndex: Int = 1
     @State private var scrollProxy: ScrollViewProxy?
+    @State private var isExpanded = false
     
     private var loopingData: [ExploreNews] {
         guard let exploreData = viewModel.exploreModel?.data else { return [] }
@@ -61,12 +62,12 @@ struct TrendingCell: View, ScrollingHelper {
                                                 WebImage(url: validUrl)
                                                     .resizable()
                                                     .scaledToFill()
-                                                    .frame(width: size, height: size)
+                                                    .frame(width: isExpanded ? size : size / 0.8 , height: size)
                                                     .clipShape(Circle())
                                                     .overlay(
                                                         Circle()
-                                                            .stroke(selectedIndex == index ? Color.orange.opacity(0.5) : Color.purple.opacity(0.3), lineWidth: 5)
-                                                            .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 5 : 2)
+                                                            .stroke(selectedIndex == index ? Color.orange.opacity(0.3) : Color.purple.opacity(0.3), lineWidth: 5)
+                                                            .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 3 : 1)
                                                     )
                                                     .padding(.bottom, 12)
                                                     .opacity(selectedIndex == index ? 1 : 0.8)
@@ -81,27 +82,39 @@ struct TrendingCell: View, ScrollingHelper {
 
                                             
                                             if selectedIndex == index {
-                                                Text(newsItem.spot ?? "")
-                                                    .font(.system(size: 18))
-                                                    .foregroundColor(.white.opacity(0.8))
-                                                    .lineLimit(12)
-                                                    .multilineTextAlignment(.center)
-                                                    .frame(alignment: .center)
-                                                    .padding(.bottom, 12)
-                                                
-                                                Button(action: { print("Episodes tapped") }) {
-                                           
-                                                        SwiftUI.Image(systemName: "chevron.down")
-                                                        .font(.headline).bold()
-                                                    
-                                                    .frame(width: 40, height: 40)
-                                                    .background(Color.orange)
-                                                    .foregroundColor(.white)
-                                                    .cornerRadius(20)
+                                                if isExpanded {
+                                                    Text(newsItem.spot ?? "")
+                                                        .font(.system(size: 14))
+                                                        .foregroundColor(.white.opacity(0.8))
+                                                        .lineLimit(nil)
+                                                        .multilineTextAlignment(.center)
+                                                        .frame(alignment: .center)
+                                                        .padding(.bottom, 8
+                                                        )
+                                                } else {
+                                                    Text(newsItem.spot?.prefix(100) ?? "")
+                                                        .font(.system(size: 14))
+                                                        .foregroundColor(.white.opacity(0.8))
+                                                        .lineLimit(3)
+                                                        .multilineTextAlignment(.center)
+                                                        .frame(alignment: .center)
+                                                        .padding(.bottom, 8)
                                                 }
-                                        
-                                                
+
+                                                if let selectedSpot = newsItem.spot, selectedSpot.count > 100 {
+                                                    Button(action: {
+                                                        isExpanded.toggle()
+                                                    }) {
+                                                        SwiftUI.Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                                                            .font(.headline).bold()
+                                                            .frame(width: 30, height: 30)
+//                                                            .background(Color.orange)
+                                                            .foregroundColor(.orange)
+//                                                            .cornerRadius(20)
+                                                    }
+                                                }
                                             }
+
                                         }
                                         .frame(width: selectedIndex == index ? 250 : 150, height: 470)
                                         .offset(y: yOffset)

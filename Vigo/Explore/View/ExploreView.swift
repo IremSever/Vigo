@@ -4,13 +4,12 @@
 //
 //  Created by İrem Sever on 5.02.2025.
 //
-
 import SwiftUI
 
 struct ExploreView: View {
     @ObservedObject var viewModel = ExploreViewModel()
     @State private var selectedCategory: CategoryType = .trending
-    
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -18,17 +17,26 @@ struct ExploreView: View {
                     .ignoresSafeArea(edges: .all)
                     .frame(maxHeight: .infinity, alignment: .center)
                     .background(Color.black)
-                
+
                 VStack {
-                    SectionHeader(viewModel: viewModel, selectedCategory: $selectedCategory)
-                        .padding(.top, 10)
-                        .background(Color.clear)
+                    SectionHeader(selectedCategory: $selectedCategory,
+                                  categories: CategoryType.allCases,
+                                  isExplore: true,
+                                  onCategorySelected: { selectedCategory in
+                       
+                        viewModel.fetchExploreData(for: selectedCategory) {
+//                            print("Data fetched for \(selectedCategory.displayName)")
+                        }
+                    })
+                    .padding(.top, 10)
+                    Spacer()
                 }
+
             }
             .onAppear {
                 viewModel.fetchExploreData(for: selectedCategory) {}
             }
-            .background(.black)
+            .background(Color.black)
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
         }

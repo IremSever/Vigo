@@ -62,10 +62,10 @@ struct CoverCell: View {
             VStack(alignment: .leading) {
                 Text(newsItem.detailDescription ?? "No description available.")
                     .foregroundColor(.white)
-                    .font(.body)
+                    .font(.system(size: 13))
                     .lineLimit(isExpanded ? nil : 2)
                     .padding(.top, 8)
-                    .padding(.horizontal, 12)
+                    .padding(.horizontal, 16)
                 
                 if let description = newsItem.detailDescription, description.split(separator: " ").count > 20 {
                     Button(action: {

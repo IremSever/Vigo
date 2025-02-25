@@ -29,7 +29,12 @@
 //        }
 //    }
 //}
-enum CategoryType: String, CaseIterable {
+
+protocol CategoryProtocol: Hashable, CaseIterable, RawRepresentable where RawValue == String {
+    var displayName: String { get }
+}
+
+enum CategoryType: String, CaseIterable, CategoryProtocol {
     case trending
     case classics
     case shows
@@ -51,5 +56,15 @@ enum CategoryType: String, CaseIterable {
         case .classics: return "Classics"
         case .shows: return "Shows"
         }
+    }
+}
+
+enum DetailCategoryType: String, CaseIterable, CategoryProtocol {
+    case trailers = "Trailers"
+    case episodes = "Episodes"
+    case videos = "Videos"
+    
+    var displayName: String {
+        return self.rawValue
     }
 }
