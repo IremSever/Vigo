@@ -3,7 +3,6 @@
 //  Vigo
 //
 //  Created by İrem Sever on 31.01.2025.
-
 import SwiftUI
 
 struct HomeView: View {
@@ -12,32 +11,26 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             CustomNav(app: "atv", live: " ", icon: "magnifyingglass") {
-            LazyVStack(alignment: .leading) {
-                if let homeData = viewModel.homeModel?.data {
-                    ForEach(homeData.indices, id: \.self) { index in
-                        if let widgetTitle = viewModel.homeModel?.data[index].config.widgetTitle?.text, !widgetTitle.isEmpty {
-                            let formattedTitle = NSString(string: widgetTitle)
-                                .lowercased(with: Locale(identifier: "tr_TR"))
-                                .replacingOccurrences(of: "i", with: "İ")
-                                .replacingOccurrences(of: "ı", with: "I")
-                                .capitalized(with: Locale(identifier: "tr_TR"))
+                LazyVStack(alignment: .leading) {
+                    if let homeData = viewModel.homeModel?.data {
+                        ForEach(homeData.indices, id: \.self) { index in
+                            if let widgetTitle = viewModel.homeModel?.data[index].config.widgetTitle?.text, !widgetTitle.isEmpty {
+                                Text(viewModel.formattedTurkishTitle(widgetTitle))
+                                    .font(.system(size: 18).bold())
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal)
+                                    .padding(.top)
+                                    .frame(height: 20)
+                            }
 
-                            Text(formattedTitle)
-                                .font(.system(size: 18).bold())
-                                .foregroundColor(.white)
-                                .padding(.horizontal)
-                                .padding(.top)
-                                .frame(height: 20)
+                            RowView(viewModel: viewModel, index: index)
                         }
-
-                        RowView(viewModel: viewModel, index: index)
                     }
                 }
+                .frame(maxWidth: .infinity)
             }
-            .frame(maxWidth: .infinity)
         }
-        
-    }.onAppear {
+        .onAppear {
             viewModel.fetchHomeData {}
         }
     }

@@ -52,7 +52,7 @@ struct SectionHeader<T: CategoryProtocol>: View {
             ForEach(categories, id: \.self) { category in
                 VStack {
                     Text(category.displayName)
-                        .font(.system(size: isExplore ? 22 : 16, weight: selectedCategory == category ? .bold : .regular))
+                        .font(.system(size: isExplore ? 20 : 16, weight: selectedCategory == category ? .bold : .regular))
                         .foregroundColor(selectedCategory == category ? .white : isExplore ? .orange : .purple)
 
                     Rectangle()

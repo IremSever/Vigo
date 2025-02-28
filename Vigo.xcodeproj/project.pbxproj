@@ -26,6 +26,7 @@
 		61190E102D537FF90070CA8B /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DF22D537FF90070CA8B /* TabBar.swift */; };
 		61190E112D537FF90070CA8B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DEE2D537FF90070CA8B /* HomeModel.swift */; };
 		61190E152D53814C0070CA8B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 61190E142D53814C0070CA8B /* SDWebImageSwiftUI */; };
+		614FC3682D6F4A340094835B /* TurkishTextFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FC3672D6F4A340094835B /* TurkishTextFormatter.swift */; };
 		616974D92D628DAD00803C5A /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616974D82D628DAD00803C5A /* DetailModel.swift */; };
 		616974DB2D628DB600803C5A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616974DA2D628DB600803C5A /* DetailViewModel.swift */; };
 		61938F722D658EBE00D5E866 /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61938F712D658EBE00D5E866 /* BottomButton.swift */; };
@@ -93,6 +94,7 @@
 		61190DFC2D537FF90070CA8B /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		61190E002D537FF90070CA8B /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		61190E022D537FF90070CA8B /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		614FC3672D6F4A340094835B /* TurkishTextFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurkishTextFormatter.swift; sourceTree = "<group>"; };
 		616974D82D628DAD00803C5A /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		616974DA2D628DB600803C5A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		61938F712D658EBE00D5E866 /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 				61190DF32D537FF90070CA8B /* TabBar */,
 				66CB54552D5E0193001166F4 /* SectionHeader.swift */,
 				61E4D8972D6B70E200D84412 /* CustomBackButton.swift */,
+				614FC3672D6F4A340094835B /* TurkishTextFormatter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -585,6 +588,7 @@
 				66CB54402D5C9359001166F4 /* ScrollOffsetBg.swift in Sources */,
 				61190E042D537FF90070CA8B /* ExploreView.swift in Sources */,
 				66CB54582D5E19D8001166F4 /* BackgroundCell.swift in Sources */,
+				614FC3682D6F4A340094835B /* TurkishTextFormatter.swift in Sources */,
 				61938F752D667FD100D5E866 /* ScrollingHelper.swift in Sources */,
 				61E4D8982D6B70E200D84412 /* CustomBackButton.swift in Sources */,
 				61E4D8AA2D6B86C300D84412 /* TagView.swift in Sources */,

@@ -11,6 +11,7 @@ struct NavHeader: View, NavAnimation {
     var app: String
     var live: String
     var icon: String
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         ZStack {
@@ -31,12 +32,16 @@ struct NavHeader: View, NavAnimation {
                         .frame(width: brandIconSize() + 10, height: brandIconSize() + 10)
                         .padding(.leading, 12)
                 } else {
-                    SwiftUI.Image(systemName: app)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: iconSize() * 0.8, height: iconSize() * 0.8)
-                        .padding(.leading, 12)
-                        .foregroundColor(.white)
+                    Button(action: {
+                        presentationMode.wrappedValue.dismiss()
+                    }) {
+                        SwiftUI.Image(systemName: app)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: iconSize() * 0.8, height: iconSize() * 0.8)
+                            .padding(.leading, 12)
+                            .foregroundColor(.white)
+                    }
                 }
                 Spacer()
                 

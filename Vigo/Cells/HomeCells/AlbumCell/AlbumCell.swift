@@ -46,9 +46,9 @@ struct AlbumCell: View {
                                 ZStack{
                                     WebImage(url: imageUrl)
                                         .resizable()
-                                        .aspectRatio(contentMode: .fill)
+                                        .scaledToFit()
                                         .containerRelativeFrame(.horizontal)
-                                        .frame(height: 450)
+                                        .frame(width: 320, height: 450, alignment: .center)
                                         .cornerRadius(12)
                                         .clipShape(RoundedRectangle(cornerRadius: 20))
                                         .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
@@ -75,9 +75,7 @@ struct AlbumCell: View {
                                             .lineLimit(1)
                                             .padding(.bottom, 16)
                                     }
-                                    
-                                    
-                                }
+                                }.frame(aligment: .center)
                             }
                             BottomButton()
                         }

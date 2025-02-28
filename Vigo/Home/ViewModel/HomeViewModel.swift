@@ -55,7 +55,7 @@
 import Foundation
 import SwiftUI
 
-class HomeViewModel: ObservableObject {
+class HomeViewModel: ObservableObject, TurkishTextFormatter {
     @Published var homeModel: HomeModel?
 
     @Published var widgetTitle: String = ""
