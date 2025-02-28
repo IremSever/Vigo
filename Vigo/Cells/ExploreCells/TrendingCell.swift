@@ -108,9 +108,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                         SwiftUI.Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
                                                             .font(.headline).bold()
                                                             .frame(width: 30, height: 30)
-//                                                            .background(Color.orange)
                                                             .foregroundColor(.orange)
-//                                                            .cornerRadius(20)
                                                     }
                                                 }
                                             }
@@ -160,3 +158,4 @@ struct TrendingCell: View, ScrollingHelper {
         }
     }
 }
+                
