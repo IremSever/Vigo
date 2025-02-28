@@ -75,7 +75,7 @@ struct AlbumCell: View {
                                             .lineLimit(1)
                                             .padding(.bottom, 16)
                                     }
-                                }.frame(aligment: .center)
+                                }
                             }
                             BottomButton()
                         }
