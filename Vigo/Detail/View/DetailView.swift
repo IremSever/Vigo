@@ -17,7 +17,7 @@ struct DetailView: View {
         CustomNav(app: buttonName, live: "", icon: "") {
             LazyVStack {
                 CoverCell(viewModel: viewModel, favoritesViewModel: favoritesViewModel, newsItem: newsItem)
-                TrailerCell(newsItem: newsItem)
+                TrailerCell(newsItem: newsItem, favoritesViewModel: favoritesViewModel)
             }
             
         }

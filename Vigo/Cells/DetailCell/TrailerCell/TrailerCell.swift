@@ -11,7 +11,7 @@ struct TrailerCell: View {
     let newsItem: News
     @ObservedObject var viewModel = HomeViewModel()
     @State private var selectedTab: DetailCategoryType = .trailers
-    
+    @ObservedObject var favoritesViewModel = FavoritesViewModel()
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             SectionHeader(selectedCategory: $selectedTab, categories: DetailCategoryType.allCases, isExplore: false)
@@ -40,6 +40,16 @@ struct TrailerCell: View {
                                             .font(.system(size: 13))
                                             .foregroundColor(.gray)
                                     }
+                                    Spacer()
+                                    
+                                    Button {
+                                        favoritesViewModel.downloadItem(trailer)
+                                    } label: {
+                                        SwiftUI.Image(systemName: favoritesViewModel.isDownload(trailer) ? "checkmark" : "square.and.arrow.down")
+                                            .foregroundColor(favoritesViewModel.isDownload(trailer) ? .purple : .orange)
+                                            .frame(height: 12)
+                                    }
+
                                 }
                             }
                         }
@@ -62,6 +72,7 @@ struct TrailerCell: View {
                                             .frame(width: 150)
                                             .cornerRadius(20)
                                     }
+                                    
                                     VStack(alignment: .leading) {
                                         Text(episode.title ?? "Unknown Episode")
                                             .font(.system(size: 15, weight: .medium))
@@ -70,6 +81,16 @@ struct TrailerCell: View {
                                         Text(episode.spot ?? "Unknown Episode")
                                             .font(.system(size: 13))
                                             .foregroundColor(.gray)
+                                    }
+                                    
+                                    Spacer()
+                                    
+                                    Button {
+                                        favoritesViewModel.downloadItem(episode)
+                                    } label: {
+                                        SwiftUI.Image(systemName: favoritesViewModel.isDownload(episode) ? "checkmark" : "square.and.arrow.down")
+                                            .foregroundColor(favoritesViewModel.isDownload(episode) ? .purple : .orange)
+                                            .frame(height: 12)
                                     }
                                 }
                             }
@@ -102,6 +123,16 @@ struct TrailerCell: View {
                                             .font(.system(size: 13))
                                             .foregroundColor(.gray)
                                     }
+                                    Spacer()
+                                    
+                                    Button {
+                                        favoritesViewModel.downloadItem(bestMoment)
+                                    } label: {
+                                        SwiftUI.Image(systemName: favoritesViewModel.isDownload(bestMoment) ? "checkmark" : "square.and.arrow.down")
+                                            .foregroundColor(favoritesViewModel.isDownload(bestMoment) ? .purple : .orange)
+                                            .frame(height: 12)
+                                    }
+                
                                 }
                             }
                         }
@@ -114,3 +145,5 @@ struct TrailerCell: View {
         }
     }
 }
+
+

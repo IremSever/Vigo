@@ -45,19 +45,20 @@ struct AlbumCell: View, ScrollingHelper {
                                     ZStack {
                                         WebImage(url: imageUrl)
                                             .resizable()
-                                            .scaledToFit()
+                                            .aspectRatio(contentMode: .fill)
                                             .frame(width: 320, height: 450)
                                             .cornerRadius(20)
                                             .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
                                             .overlay(
                                                 LinearGradient(
-                                                    gradient: Gradient(colors: [Color.black.opacity(0.9), Color.clear]),
+                                                    gradient: Gradient(colors: [Color.black.opacity(1), Color.clear]),
                                                     startPoint: .bottom,
-                                                    endPoint: .top
+                                                    endPoint: UnitPoint(x: 0.2, y: 0.2)
                                                 )
                                                 .cornerRadius(20)
                                             )
                                             .zIndex(0)
+                                            .padding(.top, 20)
                                         
                                         VStack {
                                             Spacer()
@@ -75,13 +76,15 @@ struct AlbumCell: View, ScrollingHelper {
                                                 .lineLimit(1)
                                                 .padding(.bottom, 16)
                                                 .zIndex(1)
-                                        }
+                                        }.padding(.bottom, 5)
+                                            .padding(.top, 10)
                                     }
                                 }
                                 BottomButton(favoritesViewModel: favoritesViewModel, newsItem: newsItem)
                                     .zIndex(0)
+                                    .padding(.bottom, 20)
                             }
-                            .frame(width: 320, height: 520)
+                            .frame(width: 320, height: 550)
                         }
                     }
                     .onAppear {
