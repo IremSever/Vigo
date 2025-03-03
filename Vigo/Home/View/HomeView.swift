@@ -7,7 +7,7 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var viewModel = HomeViewModel()
-
+    @StateObject private var favoriteViewModel = FavoritesViewModel()
     var body: some View {
         NavigationView {
             CustomNav(app: "atv", live: " ", icon: "magnifyingglass") {
@@ -23,7 +23,7 @@ struct HomeView: View {
                                     .frame(height: 20)
                             }
 
-                            RowView(viewModel: viewModel, index: index)
+                            RowView(viewModel: viewModel, favoriteViewModel: favoriteViewModel, index: index)
                         }
                     }
                 }

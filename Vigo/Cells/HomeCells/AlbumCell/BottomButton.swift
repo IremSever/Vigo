@@ -8,38 +8,36 @@
 import SwiftUI
 
 struct BottomButton: View {
+    @ObservedObject var favoritesViewModel: FavoritesViewModel
+    var newsItem: News
+    
     var body: some View {
-            HStack(spacing: 20) {
-                Button(action: { print("My List tapped") }) {
-//                    VStack {
-//                        SwiftUI.Image(systemName: "plus")
-//                            .font(.title2)
-//                            .foregroundColor(.white)
-//                        Text("My List")
-//                            .font(.caption)
-//                            .foregroundColor(.white)
-//                    }
-                    HStack {
-                        SwiftUI.Image(systemName: "plus")
-                        Text("List")
-                    }
-                    .frame(width: 100, height: 40)
-                    .background(Color.purple.opacity(0.35))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+        HStack(spacing: 20) {
+            Button(action: {
+                favoritesViewModel.toggleFavorite(item: newsItem)
+            }) {
+                HStack {
+                    SwiftUI.Image(systemName: favoritesViewModel.isFavorite(item: newsItem) ? "checkmark" : "plus")
+                    Text(favoritesViewModel.isFavorite(item: newsItem) ? "Added" : "List")
                 }
+                .frame(width: 100, height: 40)
+                .background(Color.purple.opacity(0.35))
+                .foregroundColor(.white)
+                .cornerRadius(10)
                 
-                Button(action: { print("Play tapped") }) {
-                    HStack {
-                        SwiftUI.Image(systemName: "play.fill")
-                        Text("Play")
-                    }
-                    .frame(width: 100, height: 40)
-                    .background(Color.purple.opacity(0.35))
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                }
             }
-            .padding(.top, 10)
+            
+            Button(action: { print("Play tapped") }) {
+                HStack {
+                    SwiftUI.Image(systemName: "play.fill")
+                    Text("Play")
+                }
+                .frame(width: 100, height: 40)
+                .background(Color.purple.opacity(0.35))
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            }
         }
+        .padding(.top, 10)
     }
+}

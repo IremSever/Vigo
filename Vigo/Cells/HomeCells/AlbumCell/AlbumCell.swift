@@ -9,6 +9,7 @@ import SDWebImageSwiftUI
 
 struct AlbumCell: View, ScrollingHelper {
     @ObservedObject var viewModel: HomeViewModel
+    @ObservedObject var favoritesViewModel: FavoritesViewModel
     var widgetTitle: String?
     
     @State private var scrollProgressX: CGFloat = 0
@@ -77,7 +78,7 @@ struct AlbumCell: View, ScrollingHelper {
                                         }
                                     }
                                 }
-                                BottomButton()
+                                BottomButton(favoritesViewModel: favoritesViewModel, newsItem: newsItem)
                                     .zIndex(0)
                             }
                             .frame(width: 320, height: 520)
@@ -127,8 +128,8 @@ struct AlbumCell: View, ScrollingHelper {
                 scrollProgressX = newValue
             }
         }
-        .frame(maxWidth: .infinity) // Ensure the cell doesn't overflow its parent width
-        .zIndex(0)  // Set Z-index of the entire cell if needed
+        .frame(maxWidth: .infinity)
+        .zIndex(0)
     }
 }
 

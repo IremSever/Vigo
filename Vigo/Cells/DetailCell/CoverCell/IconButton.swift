@@ -6,20 +6,21 @@
 //
 
 import SwiftUI
-
 struct IconButton: View {
     var icon: String
     var title: String?
+    var action: () -> Void
+    
     var body: some View {
-        Button(action: {}) {
+        Button(action: action) {
             HStack {
                 SwiftUI.Image(systemName: icon)
                     .foregroundColor(.white.opacity(0.8))
                     .font(.system(size: 20))
-                Text(title ?? "")
+                if let title = title {
+                    Text(title)
+                }
             }
         }
-            
-        
     }
 }

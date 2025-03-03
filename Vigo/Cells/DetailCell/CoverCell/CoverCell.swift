@@ -9,11 +9,26 @@ import SDWebImageSwiftUI
 
 struct CoverCell: View {
     @ObservedObject var viewModel: HomeViewModel
-    var newsItem: News
-    @State private var isExpanded = false
+    @ObservedObject var favoritesViewModel: FavoritesViewModel
     @State private var scrollProgressX: CGFloat = 0
     @State private var scrollOffsetY: CGFloat = 0
+    var newsItem: News
+    @State private var isExpanded = false
     
+    @State private var rating: Int = 0
+    @State private var showRatingPicker = false
+    var currentRating: Int {
+        favoritesViewModel.getRating(for: newsItem)
+    }
+    
+    var starIcon: String {
+        switch currentRating {
+        case 0..<2: return "star"
+        case 2..<4: return "star.leadinghalf.filled"
+        case 4...5: return "star.fill"
+        default: return "star"
+        }
+    }
     
     var body: some View {
         VStack {
@@ -44,11 +59,37 @@ struct CoverCell: View {
                         .font(.system(size: 26, weight: .bold))
                         .foregroundColor(.white)
                     HStack(spacing: 20) {
-                        IconButton(icon: "plus")
-                        IconButton(icon: "star")
-                        IconButton(icon: "square.and.arrow.down")
-                        IconButton(icon: "paperplane")
-                    }.padding(.bottom, 15)
+                        
+                        IconButton(
+                            icon: favoritesViewModel.isFavorite(item: newsItem) ? "checkmark" : "plus"
+                        ) {
+                            favoritesViewModel.toggleFavorite(item: newsItem)
+                        }
+                        IconButton(icon: starIcon) {
+                            withAnimation {
+                                showRatingPicker.toggle()
+                            }
+                        }
+                        IconButton(icon: "square.and.arrow.down") {}
+                        IconButton(icon: "paperplane") {}
+                    }
+                    .padding(.bottom, 15)
+                    if showRatingPicker {
+                        HStack {
+                            ForEach(1...5, id: \.self) { star in
+                                SwiftUI.Image(systemName: star <= currentRating ? "star.fill" : "star")
+                                    .foregroundColor(.orange.opacity(0.8))
+                                    .onTapGesture {
+                                        favoritesViewModel.updateRating(for: newsItem, rating: star)
+                                        withAnimation {
+                                            showRatingPicker = false
+                                        }
+                                    }
+                            }
+                        }
+                        .padding(.bottom, 15)
+                        .transition(.opacity)
+                    }
                 }
             }
             
@@ -118,11 +159,11 @@ struct CoverCell: View {
             }
         }
         .background(
-             Backdrop(
-                    images: viewModel.getBackdropImages(),
-                    scrollProgressX: $scrollProgressX,
-                    scrollOffsetY: $scrollOffsetY
-                )
+            Backdrop(
+                images: viewModel.getBackdropImages(),
+                scrollProgressX: $scrollProgressX,
+                scrollOffsetY: $scrollOffsetY
+            )
             .ignoresSafeArea()
         )
         .edgesIgnoringSafeArea(.all)

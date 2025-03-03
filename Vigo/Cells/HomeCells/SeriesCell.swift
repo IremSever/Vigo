@@ -9,6 +9,7 @@ import SDWebImageSwiftUI
 
 struct SeriesCell: View {
     @ObservedObject var viewModel: HomeViewModel
+    @ObservedObject var favoritesViewModel: FavoritesViewModel
     var widgetTitle: String
 
     var body: some View {
@@ -23,7 +24,7 @@ struct SeriesCell: View {
                         
                         if newsItem.external.hasPrefix("apilink:///") {
                             let urlString = createDetailURL(from: newsItem.external)
-                            NavigationLink(destination: DetailView(viewModel: viewModel, newsItem: newsItem)
+                            NavigationLink(destination: DetailView(viewModel: viewModel, favoritesViewModel: favoritesViewModel, newsItem: newsItem)
                                             .navigationBarBackButtonHidden(true)
                                             .navigationBarItems(leading: CustomBackButton())) {
                                 VStack {

@@ -8,6 +8,7 @@
 import SwiftUI
 struct RowView: View {
     let viewModel: HomeViewModel
+    let favoriteViewModel: FavoritesViewModel
     let index: Int
 
     var body: some View {
@@ -24,7 +25,7 @@ struct RowView: View {
                 if !externalNewsItems.isEmpty {
                     AchiveCell(viewModel: viewModel)
                 } else if !videoNewsItems.isEmpty {
-                    AlbumCell(viewModel: viewModel)
+                    AlbumCell(viewModel: viewModel, favoritesViewModel: favoriteViewModel)
                 } else {
                     Text("No news available")
                         .foregroundColor(.white)
@@ -32,14 +33,14 @@ struct RowView: View {
             case "broadcast":
                 StreamCell(viewModel: viewModel)
             case "cardFullImage1":
-                SeriesCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
+                SeriesCell(viewModel: viewModel, favoritesViewModel: favoriteViewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
             case "cardFullImage3":
                 CardCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
             case "cardTopImage1":
                 CardCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
                     .padding(.bottom, 40)
             default:
-                SeriesCell(viewModel: viewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
+                SeriesCell(viewModel: viewModel, favoritesViewModel: favoriteViewModel, widgetTitle: viewModel.homeModel?.data[index].config.widgetTitle?.text ?? "")
             }
         }
     }

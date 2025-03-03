@@ -9,13 +9,14 @@ import SDWebImageSwiftUI
 
 struct DetailView: View {
     @ObservedObject var viewModel: HomeViewModel
+    @ObservedObject var favoritesViewModel: FavoritesViewModel
     var newsItem: News
     var buttonName: String = "chevron.left"
 
     var body: some View {
         CustomNav(app: buttonName, live: "", icon: "") {
             LazyVStack {
-                CoverCell(viewModel: viewModel, newsItem: newsItem)
+                CoverCell(viewModel: viewModel, favoritesViewModel: favoritesViewModel, newsItem: newsItem)
                 TrailerCell(newsItem: newsItem)
             }
             
