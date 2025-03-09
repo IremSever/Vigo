@@ -16,7 +16,7 @@ struct StreamCell: View {
                                 let stream = streams[streamIndex]
                                 ZStack {
                                     Text("\(stream.hour):\(stream.minute)")
-                                        .font(.system(size: 50, weight: .bold))
+                                        .font(.exoBlack(size: 50))
                                         .foregroundColor(stream.isLive ? .orange.opacity(0.85) : .purple.opacity(0.5))
                                         .shadow(radius: 10)
                                         .rotationEffect(.degrees(270))
@@ -28,7 +28,6 @@ struct StreamCell: View {
                                             .scaledToFit()
                                             .frame(height: 200)
                                             .cornerRadius(20)
-//                                            .shadow(color: .black.opacity(0.8), radius: 50)
                                             .clipped()
                                             .overlay(
                                                 LinearGradient(
@@ -38,20 +37,11 @@ struct StreamCell: View {
                                                 )
                                                 .cornerRadius(20)
                                             )
-                                           
-//                                            .overlay(
-//                                                Rectangle()
-//                                                    .stroke(LinearGradient(
-//                                                        gradient: Gradient(colors: stream.isLive ? [Color.orange.opacity(0.1), Color.white.opacity(0.1)] : [Color.black.opacity(0.6), Color.black]),
-//                                                        startPoint: .top,
-//                                                        endPoint: .bottom
-//                                                    ), lineWidth: 3)
-//                                                    .cornerRadius(20)
-//                                            )
                                     }
                                     if stream.isLive {
                                         Text("LIVE")
-                                            .font(.system(size: 12).bold())
+                                            .font(.exoSemiBold(size: 14))
+                                            .font(.system(size: 12))
                                             .foregroundColor(.white)
                                             .padding(.vertical, 3)
                                             .padding(.horizontal, 8)

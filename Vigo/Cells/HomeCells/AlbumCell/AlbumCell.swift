@@ -28,8 +28,7 @@ struct AlbumCell: View, ScrollingHelper {
         VStack {
             if let widgetTitle = widgetTitle {
                 Text(widgetTitle)
-                    .font(.title2)
-                    .bold()
+                    .font(.exoBold(size: 24))
                     .foregroundColor(.white)
                     .padding(.horizontal)
             }
@@ -59,25 +58,23 @@ struct AlbumCell: View, ScrollingHelper {
                                             )
                                             .zIndex(0)
                                             .padding(.top, 20)
-                                        
                                         VStack {
                                             Spacer()
                                             Text(newsItem.title ?? " ")
-                                                .font(.system(size: 24, weight: .medium))
+                                                .font(.exoBold(size: 24))
                                                 .foregroundColor(.purple)
                                                 .frame(width: 300, height: 22)
                                                 .lineLimit(1)
                                                 .zIndex(1)
                                             
                                             Text(newsItem.spot ?? "")
-                                                .font(.system(size: 14, weight: .medium))
+                                                .font(.exoSemiBold(size: 14))
                                                 .foregroundColor(.white)
                                                 .frame(width: 300, height: 16)
                                                 .lineLimit(1)
                                                 .padding(.bottom, 16)
                                                 .zIndex(1)
-                                        }.padding(.bottom, 5)
-                                            .padding(.top, 10)
+                                        }
                                     }
                                 }
                                 BottomButton(favoritesViewModel: favoritesViewModel, newsItem: newsItem)
@@ -101,6 +98,7 @@ struct AlbumCell: View, ScrollingHelper {
                     scrollOffsetY: $scrollOffsetY
                 )
             )
+            .disabled(true)
             .gesture(
                 DragGesture()
                     .onEnded { value in

@@ -33,11 +33,11 @@ struct TrailerCell: View {
                                     }
                                     VStack(alignment: .leading) {
                                         Text(trailer.title ?? "Unknown Trailer")
-                                            .font(.system(size: 15, weight: .medium))
+                                            .font(.exoMedium(size: 15))
                                             .foregroundColor(.white)
                                         
                                         Text(trailer.spot ?? "Unknown Trailer")
-                                            .font(.system(size: 13))
+                                            .font(.exoRegular(size: 13))
                                             .foregroundColor(.gray)
                                     }
                                     Spacer()
@@ -70,16 +70,16 @@ struct TrailerCell: View {
                                             .resizable()
                                             .scaledToFill()
                                             .frame(width: 150)
-                                            .cornerRadius(20)
+                                            .cornerRadius(15)
                                     }
                                     
                                     VStack(alignment: .leading) {
                                         Text(episode.title ?? "Unknown Episode")
-                                            .font(.system(size: 15, weight: .medium))
+                                            .font(.exoMedium(size: 15))
                                             .foregroundColor(.white)
                                         
                                         Text(episode.spot ?? "Unknown Episode")
-                                            .font(.system(size: 13))
+                                            .font(.exoRegular(size: 13))
                                             .foregroundColor(.gray)
                                     }
                                     
@@ -112,15 +112,15 @@ struct TrailerCell: View {
                                             .resizable()
                                             .scaledToFill()
                                             .frame(width: 150)
-                                            .cornerRadius(20)
+                                            .cornerRadius(15)
                                     }
                                     VStack(alignment: .leading) {
                                         Text(bestMoment.title ?? "Unknown Best Moment")
-                                            .font(.system(size: 15, weight: .medium))
+                                            .font(.exoMedium(size: 15))
                                             .foregroundColor(.white)
                                         
                                         Text(bestMoment.spot ?? "Unknown Best Moment")
-                                            .font(.system(size: 13))
+                                            .font(.exoRegular(size: 13))
                                             .foregroundColor(.gray)
                                     }
                                     Spacer()

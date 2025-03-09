@@ -130,6 +130,7 @@ struct TrendingCell: View, ScrollingHelper {
                     }
                 }
             }
+            .disabled(true)
             .gesture(
                 DragGesture()
                     .onEnded { value in

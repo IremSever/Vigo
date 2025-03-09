@@ -23,7 +23,6 @@ struct SeriesCell: View {
                         let newsItem = newsItems[index]
                         
                         if newsItem.external.hasPrefix("apilink:///") {
-                            let urlString = createDetailURL(from: newsItem.external)
                             NavigationLink(destination: DetailView(viewModel: viewModel, favoritesViewModel: favoritesViewModel, newsItem: newsItem)
                                             .navigationBarBackButtonHidden(true)
                                             .navigationBarItems(leading: CustomBackButton())) {

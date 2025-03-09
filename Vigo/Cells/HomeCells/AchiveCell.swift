@@ -12,7 +12,6 @@ struct AchiveCell: View {
     var widgetTitle: String?
     
     @State private var currentIndex = 1
-    @State private var scrollProgressX: CGFloat = 0
     
     var body: some View {
         HStack(spacing: -30) {
@@ -31,7 +30,6 @@ struct AchiveCell: View {
                 let urlNewsItems = newsItems.filter { newsItem in
                     return newsItem.external.starts(with: "external://https:")
                 }
-                
                 Spacer()
                 
                 if !urlNewsItems.isEmpty {
@@ -68,8 +66,6 @@ struct AchiveCell: View {
                                         .rotationEffect(.degrees(10))
                                         .offset(y: -10)
                                         .padding(.horizontal, -30)
-                                       
-                        
                                 }.padding(.trailing, 50)
                             }
                         }
@@ -80,8 +76,5 @@ struct AchiveCell: View {
         }
         .frame(height: 250)
         .background(.clear)
-        .onChange(of: scrollProgressX) { newIndex in
-            currentIndex = Int(newIndex.rounded())
-        }
     }
 }

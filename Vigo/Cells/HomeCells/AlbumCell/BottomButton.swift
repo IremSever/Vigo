@@ -19,6 +19,7 @@ struct BottomButton: View {
                 HStack {
                     SwiftUI.Image(systemName: favoritesViewModel.isFavorite(item: newsItem) ? "checkmark" : "plus")
                     Text(favoritesViewModel.isFavorite(item: newsItem) ? "Added" : "List")
+                        .font(.exoRegular(size: 16))
                 }
                 .frame(width: 100, height: 40)
                 .background(Color.purple.opacity(0.35))
@@ -31,6 +32,7 @@ struct BottomButton: View {
                 HStack {
                     SwiftUI.Image(systemName: "play.fill")
                     Text("Play")
+                        .font(.exoRegular(size: 16))
                 }
                 .frame(width: 100, height: 40)
                 .background(Color.purple.opacity(0.35))

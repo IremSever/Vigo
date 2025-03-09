@@ -21,7 +21,7 @@ struct CardCell: View {
 
                     ForEach(newsItems.indices, id: \.self) { index in 
                         let newsItem = newsItems[index]
-//
+
 //                        NavigationLink(destination: DetailView(viewModel: viewModel, selectedIndex: index, widgetTitle: widgetTitle)) {
                             VStack {
                                 if let imageUrl = URL(string: newsItem.image) {
@@ -34,29 +34,27 @@ struct CardCell: View {
                                 }
                                 VStack {
                                     Text(newsItem.title)
-                                        .font(.system(size: 19))
+                                        .font(.exoSemiBold(size: 18))
                                         .foregroundColor(.purple)
                                         .frame(width: 150)
                                         .lineLimit(1)
                                     
                                     if let spot = newsItem.spot {
                                         Text(spot)
-                                            .font(.system(size: 12))
+                                            .font(.exoRegular(size: 14))
                                             .foregroundColor(.white.opacity(1))
                                             .frame(width: 150)
                                             .lineLimit(1)
                                         
                                     } else {
                                         Text(" ")
-                                            .font(.subheadline)
+                                            .font(.exoRegular(size: 14))
                                             .frame(width: 150, height: 18)
                                     }
                                 }
                                 
                             }
                             .frame(width: 200, height: 190 )
-//                            .frame(height: 180)
-                
 //                        }
                     }
                 }
