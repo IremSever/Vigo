@@ -15,11 +15,21 @@ struct NavHeader: View, NavAnimation {
 
     var body: some View {
         ZStack {
-            SwiftUI.Image("navbar")
+//            SwiftUI.Image("navbar")
+//                .resizable()
+//                .aspectRatio(contentMode: .fill)
+//                .frame(height: interpolatedHeight() + 30)
+//                .blur(radius: 50)
+//                .opacity(opacityView())
+//                .clipped()
+//                .ignoresSafeArea(.all)
+            
+            SwiftUI.Image("nax")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
+                .frame(maxWidth: .infinity)
                 .frame(height: interpolatedHeight() + 30)
-                .blur(radius: 50)
+                .blur(radius: 20)
                 .opacity(opacityView())
                 .clipped()
                 .ignoresSafeArea(.all)

@@ -75,16 +75,15 @@ struct TrendingCell: View, ScrollingHelper {
                                             
                                             
                                             Text(newsItem.title ?? "")
-                                                .font(.system(size: selectedIndex == index ? 24 : 15, weight: selectedIndex == index ? .bold : .regular))
+                                                .font(.exoBold(size: selectedIndex == index ? 24 : 15))
                                                 .foregroundColor(selectedIndex == index ? .orange : .purple.opacity(0.5))
                                                 .lineLimit(2)
                                                 .padding(.bottom, 8)
 
-                                            
                                             if selectedIndex == index {
                                                 if isExpanded {
                                                     Text(newsItem.spot ?? "")
-                                                        .font(.system(size: 14))
+                                                        .font(.exoMedium(size: 14))
                                                         .foregroundColor(.white.opacity(0.8))
                                                         .lineLimit(nil)
                                                         .multilineTextAlignment(.center)
@@ -93,7 +92,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                         )
                                                 } else {
                                                     Text(newsItem.spot?.prefix(100) ?? "")
-                                                        .font(.system(size: 14))
+                                                        .font(.exoMedium(size: 14))
                                                         .foregroundColor(.white.opacity(0.8))
                                                         .lineLimit(3)
                                                         .multilineTextAlignment(.center)

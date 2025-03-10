@@ -14,17 +14,17 @@ protocol NavAnimation {
     func iconSize() -> CGFloat
     func pushupOffset() -> CGFloat
     func interpolatedText() -> CGFloat
-    func opacityView() -> CGFloat 
+    func opacityView() -> CGFloat
 }
-    
-    extension NavAnimation {
-        func interpolatedHeight() -> CGFloat {
-            let startHeight: CGFloat = 100 
-            let endHeight: CGFloat = 85
-            let transtionOffset: CGFloat = 35
-            let progress = min(max(scrollOffset / transtionOffset, 0), 1)
-            return endHeight + (startHeight - endHeight) * progress
-        }
+
+extension NavAnimation {
+    func interpolatedHeight() -> CGFloat {
+        let startHeight: CGFloat = 100
+        let endHeight: CGFloat = 85
+        let transtionOffset: CGFloat = 35
+        let progress = min(max(scrollOffset / transtionOffset, 0), 1)
+        return endHeight + (startHeight - endHeight) * progress
+    }
     
     func brandIconSize() -> CGFloat {
         let startHeight: CGFloat = 40
@@ -33,7 +33,7 @@ protocol NavAnimation {
         let progress = min(max(scrollOffset / transtionOffset, 0), 1)
         return endHeight + (startHeight - endHeight) * progress
     }
-        
+    
     func liveIconSize() -> CGFloat {
         let startHeight: CGFloat = 55
         let endHeight: CGFloat = 60
@@ -73,4 +73,5 @@ protocol NavAnimation {
         let progress = min(max(scrollOffset / transtionOffset, 0), 1)
         return endOffset + (startOffset - endOffset) * progress
     }
+    
 }

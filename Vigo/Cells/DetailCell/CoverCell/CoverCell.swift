@@ -56,7 +56,7 @@ struct CoverCell: View {
                 VStack(alignment: .center, spacing: 12) {
                     Spacer()
                     Text(newsItem.title ?? "No Title")
-                        .font(.system(size: 26, weight: .bold))
+                        .font(.exoBold(size: 24))
                         .foregroundColor(.white)
                     HStack(spacing: 20) {
                         
@@ -103,7 +103,7 @@ struct CoverCell: View {
             VStack(alignment: .leading) {
                 Text(newsItem.detailDescription ?? "No description available.")
                     .foregroundColor(.white)
-                    .font(.system(size: 13))
+                    .font(.exoMedium(size: 14))
                     .lineLimit(isExpanded ? nil : 2)
                     .padding(.top, 8)
                     .padding(.horizontal, 16)
@@ -118,7 +118,7 @@ struct CoverCell: View {
                             .resizable()
                             .scaledToFit()
                             .frame(height: 12)
-                            .foregroundColor(Color.purple.opacity(0.7))
+                            .foregroundColor(Color.purple)
                             .padding(.top, 8)
                             .padding(.bottom, 8)
                     }
@@ -127,9 +127,10 @@ struct CoverCell: View {
                     if isExpanded {
                         if let artists = newsItem.artist, !artists.isEmpty {
                             Text("Artists")
-                                .font(.headline)
+                                .font(.exoBold(size: 18))
                                 .padding(.horizontal, 16)
-                                .foregroundColor(.purple.opacity(0.7))
+                                .foregroundColor(.purple)
+                            
                             ScrollView(.horizontal, showsIndicators: false) {
                                 HStack(spacing: 12) {
                                     ForEach(artists, id: \.title) { artist in
@@ -142,11 +143,13 @@ struct CoverCell: View {
                                                     .cornerRadius(45)
                                             }
                                             Text(artist.title ?? "Unknown Artist")
-                                                .font(.system(size: 11))
+                                                .font(.exoMedium(size: 14))
                                                 .multilineTextAlignment(.center)
                                                 .foregroundColor(Color.white)
+                                                .frame(width: 115)
+                                                .lineLimit(1)
                                             Text(artist.spot ?? "")
-                                                .font(.system(size: 10))
+                                                .font(.exoRegular(size: 14))
                                                 .foregroundColor(.purple)
                                         }
                                     }

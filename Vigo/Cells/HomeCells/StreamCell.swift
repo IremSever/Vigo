@@ -41,7 +41,6 @@ struct StreamCell: View {
                                     if stream.isLive {
                                         Text("LIVE")
                                             .font(.exoSemiBold(size: 14))
-                                            .font(.system(size: 12))
                                             .foregroundColor(.white)
                                             .padding(.vertical, 3)
                                             .padding(.horizontal, 8)

@@ -46,7 +46,7 @@ struct TrailerCell: View {
                                         favoritesViewModel.downloadItem(trailer)
                                     } label: {
                                         SwiftUI.Image(systemName: favoritesViewModel.isDownload(trailer) ? "checkmark" : "square.and.arrow.down")
-                                            .foregroundColor(favoritesViewModel.isDownload(trailer) ? .purple : .orange)
+                                            .foregroundColor(favoritesViewModel.isDownload(trailer) ? .purple : .purple)
                                             .frame(height: 12)
                                     }
 

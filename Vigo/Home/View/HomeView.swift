@@ -3,6 +3,7 @@
 //  Vigo
 //
 //  Created by İrem Sever on 31.01.2025.
+
 import SwiftUI
 
 struct HomeView: View {
@@ -16,7 +17,7 @@ struct HomeView: View {
                         ForEach(homeData.indices, id: \.self) { index in
                             if let widgetTitle = viewModel.homeModel?.data[index].config.widgetTitle?.text, !widgetTitle.isEmpty {
                                 Text(viewModel.formattedTurkishTitle(widgetTitle))
-                                    .font(.system(size: 18).bold())
+                                    .font(.exoBold(size: 18))
                                     .foregroundColor(.white)
                                     .padding(.horizontal)
                                     .padding(.top)

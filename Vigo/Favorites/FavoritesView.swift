@@ -92,7 +92,7 @@ struct FavoritesView: View {
             VStack(alignment: .leading, spacing: 20) {
                 Text("Your favourites")
                     .foregroundColor(.white)
-                    .font(.title2.bold())
+                    .font(.exoBold(size: 18))
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 15) {
@@ -126,7 +126,7 @@ struct FavoritesView: View {
                 
                 Text("Watched Trailer")
                     .foregroundColor(.white)
-                    .font(.title2.bold())
+                    .font(.exoBold(size: 18))
                 
                 LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 15) {
                     ForEach(viewModel.downloadedItems, id: \ .title) { item in
@@ -150,7 +150,7 @@ struct FavoritesView: View {
                 
                 Text("Rated")
                     .foregroundColor(.white)
-                    .font(.title2.bold())
+                    .font(.exoBold(size: 18))
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 15) {
@@ -170,8 +170,8 @@ struct FavoritesView: View {
 //                                                .foregroundColor(.white)
 //                                                .font(.caption)
                                             Text("\(rating)/5")
-                                                .foregroundColor(.white)
-                                                .font(.caption)
+                                                .foregroundColor(.orange)
+                                                .font(.exoMedium(size: 16))
                                         }
                                     }
                                 }

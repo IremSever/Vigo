@@ -16,7 +16,7 @@ struct IconButton: View {
             HStack {
                 SwiftUI.Image(systemName: icon)
                     .foregroundColor(.white.opacity(0.8))
-                    .font(.system(size: 20))
+                    .font(.exoRegular(size: 20))
                 if let title = title {
                     Text(title)
                 }

@@ -25,8 +25,24 @@ struct ExploreNews: Codable {
     let image: String?
     let title: String?
     let spot: String?
+    let artists: [Artists]?
+    let tags: [Tags]?
+    let exploreVideos: [ExploreVideos]?
 }
- 
+
+struct Artists: Codable {
+    let image, spot, title: String?
+}
+
+struct Tags: Codable {
+    let title: String?
+}
+
+struct ExploreVideos: Codable {
+    let external, id, image, spot, title: String?
+}
+
+
 // MARK: - Meta
 struct ExploreMeta: Codable {
     let statusCode: Int
