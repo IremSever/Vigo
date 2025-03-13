@@ -12,6 +12,7 @@ struct CoverCell: View {
     @ObservedObject var favoritesViewModel: FavoritesViewModel
     @State private var scrollProgressX: CGFloat = 0
     @State private var scrollOffsetY: CGFloat = 0
+    @State private var isUser: Bool = false
     var newsItem: News
     @State private var isExpanded = false
     
@@ -165,7 +166,7 @@ struct CoverCell: View {
             Backdrop(
                 images: viewModel.getBackdropImages(),
                 scrollProgressX: $scrollProgressX,
-                scrollOffsetY: $scrollOffsetY
+                scrollOffsetY: $scrollOffsetY, isUser: $isUser
             )
             .ignoresSafeArea()
         )

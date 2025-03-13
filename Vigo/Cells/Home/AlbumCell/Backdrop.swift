@@ -11,7 +11,7 @@ struct Backdrop: View {
     let images: [String]
     @Binding var scrollProgressX: CGFloat
     @Binding var scrollOffsetY: CGFloat
-    
+    @Binding var isUser: Bool
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -31,7 +31,9 @@ struct Backdrop: View {
                     .fill(Color.black.opacity(0.35))
             }
             .mask {
-                LinearGradient(gradient: Gradient(colors: [
+                LinearGradient(gradient: isUser ? Gradient(colors: [
+                    .white, .white, .white, .white, .white.opacity(0.5), .clear
+                ]): Gradient(colors: [
                     .black, .black, .black, .black, .black.opacity(0.5), .clear
                 ]), startPoint: .top, endPoint: .bottom)
             }

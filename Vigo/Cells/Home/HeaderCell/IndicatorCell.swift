@@ -32,7 +32,3 @@ struct IndicatorCell: View {
         .padding()
     }
 }
-//
-//#Preview {
-//    IndicatorCell(totalPages: 5, currentIndex: 2)
-//}

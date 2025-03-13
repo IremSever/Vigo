@@ -15,6 +15,7 @@ struct AlbumCell: View, ScrollingHelper {
     @State private var scrollProgressX: CGFloat = 0
     @State private var scrollOffsetY: CGFloat = 0
     @State private var scrollProxy: ScrollViewProxy?
+    @State private var isUser: Bool = false
     @State private var selectedIndex: Int = 1
     
     private var loopingData: [News] {
@@ -95,7 +96,7 @@ struct AlbumCell: View, ScrollingHelper {
                 Backdrop(
                     images: viewModel.getBackdropImages(),
                     scrollProgressX: $scrollProgressX,
-                    scrollOffsetY: $scrollOffsetY
+                    scrollOffsetY: $scrollOffsetY, isUser: $isUser
                 )
             )
             .disabled(true)
