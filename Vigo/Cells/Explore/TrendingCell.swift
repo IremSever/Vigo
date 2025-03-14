@@ -51,21 +51,21 @@ struct TrendingCell: View, ScrollingHelper {
                                         ForEach(loopingData.indices, id: \.self) { index in
                                             let newsItem = loopingData[index]
                                             let size = getSizeForIndex(index, selectedIndex: selectedIndex)
-                                            let yOffset = getYOffsetForIndex(index, selectedIndex: selectedIndex)
+//                                            let yOffset = getYOffsetForIndex(index, selectedIndex: selectedIndex)
 
                                             VStack {
                                                 if let imageUrl = newsItem.image, let validUrl = URL(string: imageUrl) {
                                                     WebImage(url: validUrl)
                                                         .resizable()
-                                                        .scaledToFill()
-                                                        .frame(width: isExpanded ? size : size / 0.8, height: size)
+                                                        .aspectRatio(contentMode: .fill)
+                                                        .frame(width: isExpanded ? size / 2 : size, height: isExpanded ? size / 2 : size )
                                                         .clipShape(Circle())
                                                         .overlay(
                                                             Circle()
                                                                 .stroke(selectedIndex == index ? Color.orange.opacity(0.3) : Color.purple.opacity(0.3), lineWidth: 5)
                                                                 .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 3 : 1)
                                                         )
-                                                        .padding(.bottom, 12)
+                                                       
                                                         .opacity(selectedIndex == index ? 1 : 0.8)
                                                 }
 
@@ -91,16 +91,17 @@ struct TrendingCell: View, ScrollingHelper {
                                                             .lineLimit(isExpanded ? nil : 10)
                                                             .fixedSize(horizontal: false, vertical: true)
                                                             .frame(maxHeight: isExpanded ? 300 : 200)
-                                                            .padding(.bottom, 8)
+                                                         
                                                     }
                                                 }
                                             }
                                             .frame(
                                                 width: selectedIndex == index ? 250 : 150,
-                                                height: isExpanded ? 700 : 720,
+                                                height: isExpanded ? 600 : 720,
                                                 alignment: .center
                                             )
-                                            .offset(y: isExpanded ? 120 : 100)
+                                            .offset(y: isExpanded ? 65
+                                                    : 100)
                                             .clipped()
                                         }
                                     }
@@ -128,55 +129,110 @@ struct TrendingCell: View, ScrollingHelper {
                             }
 
                             if isExpanded {
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    HStack {
-                                        if let exploreVideos = loopingData[selectedIndex].exploreVideos {
-                                            ForEach(exploreVideos, id: \.id) { video in
+                                VStack {
+                                    Text("Videos")
+                                        .font(.exoBold(size: 18))
+                                        .padding(.horizontal, 16)
+                                        .foregroundColor(.white)
+                                    
+                                    ScrollView(.horizontal, showsIndicators: false) {
+                                        
+                                        HStack {
+                                            if let exploreVideos = loopingData[selectedIndex].exploreVideos {
+                                                ForEach(exploreVideos, id: \.id) { video in
+                                                    VStack {
+                                                        if let imageUrl = video.image, let validUrl = URL(string: imageUrl) {
+                                                            WebImage(url: validUrl)
+                                                                .resizable()
+                                                                .aspectRatio(contentMode: .fill)
+                                                                .frame(width: 150, height: 100)
+                                                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                                                        }
+                                                        Text(video.title ?? "")
+                                                            .font(.exoRegular(size: 14))
+                                                            .foregroundColor(.orange)
+                                                            .lineLimit(1)
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .padding(.horizontal, 16)
+                                        .padding(.bottom, 16)
+                                    }
+                                    
+                                    Text("Artists")
+                                        .font(.exoBold(size: 18))
+                                        .padding(.horizontal, 16)
+                                        .foregroundColor(.white)
+                                    
+                                    ScrollView(.horizontal, showsIndicators: false) {
+                                        HStack {
+                                            if let artists = loopingData[selectedIndex].artists {
+                                                ForEach(artists, id: \.title) { artist in
+                                                    VStack {
+                                                        if let imageUrl = artist.image, let validUrl = URL(string: imageUrl) {
+                                                            WebImage(url: validUrl)
+                                                                .resizable()
+                                                                .aspectRatio(contentMode: .fill)
+                                                                .frame(width: 60, height: 60)
+                                                                .cornerRadius(45)
+                                                        }
+                                                        Text(artist.title ?? "")
+                                                            .font(.exoMedium(size: 14))
+                                                            .foregroundColor(.orange)
+                                                            .frame(width: 70)
+                                                            .lineLimit(1)
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .padding(.bottom, 16)
+                                        .padding(.horizontal, 16)
+                                    }
+                                    
+                                  
+                                    Text("Recommended")
+                                        .font(.exoBold(size: 18))
+                                        .padding(.horizontal, 16)
+                                        .foregroundColor(.white)
+                                    
+                                    ScrollView(.horizontal, showsIndicators: false) {
+                                        HStack {
+                                            let recommendedShows = loopingData.filter { show in
+                                                guard let selectedTags = selectedItem.tags else { return false }
+                                                guard let showTags = show.tags else { return false }
+
+                                                let selectedTagTitles = selectedTags.compactMap { $0.title }
+                                                let showTagTitles = showTags.compactMap { $0.title }
+
+                                                return selectedTagTitles.contains { showTagTitles.contains($0) }
+                                            }
+
+                                            ForEach(recommendedShows, id: \.title) { recommendedShow in
                                                 VStack {
-                                                    if let imageUrl = video.image, let validUrl = URL(string: imageUrl) {
+                                                    if let imageUrl = recommendedShow.image, let validUrl = URL(string: imageUrl) {
                                                         WebImage(url: validUrl)
                                                             .resizable()
+                                                            .frame(width: 130, height: 150)
                                                             .aspectRatio(contentMode: .fill)
-                                                            .frame(width: 150, height: 100)
-                                                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                                                            .cornerRadius(20)
                                                     }
-                                                    Text(video.title ?? "")
+                                                    Text(recommendedShow.title ?? "")
                                                         .font(.exoRegular(size: 14))
                                                         .foregroundColor(.orange)
+                                                        .frame(width: 100)
                                                         .lineLimit(1)
-                                                        .padding(.vertical, 8)
                                                 }
                                             }
-                                        }
-                                    }
-                                    .padding(.horizontal, 16)
-                                    .padding(.bottom, 16)
-                                }
 
-                                ScrollView(.horizontal, showsIndicators: false) {
-                                    HStack {
-                                        if let artists = loopingData[selectedIndex].artists {
-                                            ForEach(artists, id: \.title) { artist in
-                                                VStack {
-                                                    if let imageUrl = artist.image, let validUrl = URL(string: imageUrl) {
-                                                        WebImage(url: validUrl)
-                                                            .resizable()
-                                                            .aspectRatio(contentMode: .fill)
-                                                            .frame(width: 60, height: 60)
-                                                            .cornerRadius(45)
-                                                    }
-                                                    Text(artist.title ?? "")
-                                                        .font(.exoMedium(size: 14))
-                                                        .foregroundColor(.orange)
-                                                        .frame(width: 70)
-                                                        .lineLimit(1)
-                                                        .padding(.vertical, 8)
-                                                }
-                                            }
                                         }
+                                        .padding(.horizontal, 16)
+                                        .padding(.bottom, 110)
                                     }
-                                    .padding(.bottom, 100)
-                                    .padding(.horizontal, 16)
+
+                                    
                                 }
                             }
                         }
