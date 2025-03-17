@@ -24,27 +24,28 @@ struct TrendingCell: View, ScrollingHelper {
 
     var body: some View {
         GeometryReader { geometry in
-            ScrollView {
-                ZStack {
-                    if !loopingData.isEmpty {
-                        let selectedItem = loopingData[selectedIndex]
-                        
-                        if let imageUrl = selectedItem.image, let validUrl = URL(string: imageUrl) {
-                            WebImage(url: validUrl)
-                                .resizable()
-                                .scaledToFill()
-                                .frame(width: geometry.size.width, height: geometry.size.height)
-                                .clipped()
-                                .blur(radius: 30, opaque: true)
-                                .overlay {
-                                    Rectangle().fill(Color.black.opacity(0.35))
-                                }
-                                .mask {
-                                    LinearGradient(gradient: Gradient(colors: [
-                                        .black, .gray, .gray, .gray, .white.opacity(0.5), .clear
-                                    ]), startPoint: .top, endPoint: .bottom)
-                                }
+            ZStack{   if !loopingData.isEmpty {
+                let selectedItem = loopingData[selectedIndex]
+                
+                if let imageUrl = selectedItem.image, let validUrl = URL(string: imageUrl) {
+                    WebImage(url: validUrl)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: geometry.size.width, height: geometry.size.height)
+                        .clipped()
+                        .blur(radius: 30, opaque: true)
+                        .overlay {
+                            Rectangle().fill(Color.black.opacity(0.35))
                         }
+                        .mask {
+                            LinearGradient(gradient: Gradient(colors: [
+                                .black, .gray, .gray, .gray, .white.opacity(0.5), .clear
+                            ]), startPoint: .top, endPoint: .bottom)
+                        }.ignoresSafeArea(.all)
+                }
+                
+                ScrollView(showsIndicators: false) {
+                    ZStack {
                         
                         ScrollView(.vertical, showsIndicators: false) {
                             ScrollOffsetBg { offset in
@@ -59,7 +60,6 @@ struct TrendingCell: View, ScrollingHelper {
                                             ForEach(loopingData.indices, id: \.self) { index in
                                                 let newsItem = loopingData[index]
                                                 let size = getSizeForIndex(index, selectedIndex: selectedIndex)
-                                                //                                            let yOffset = getYOffsetForIndex(index, selectedIndex: selectedIndex)
                                                 
                                                 VStack {
                                                     if let imageUrl = newsItem.image, let validUrl = URL(string: imageUrl) {
@@ -103,14 +103,14 @@ struct TrendingCell: View, ScrollingHelper {
                                                         }
                                                     }
                                                 }
+                                                
                                                 .frame(
                                                     width: selectedIndex == index ? 250 : 150,
                                                     height: isExpanded ? 600 : 720,
                                                     alignment: .center
                                                 )
-                                                .offset(y: isExpanded ? 65
-                                                        : 100)
-                                                .clipped()
+                                                
+                                                
                                             }
                                         }
                                         .padding(.horizontal)
@@ -123,19 +123,18 @@ struct TrendingCell: View, ScrollingHelper {
                                 }
                                 .disabled(true)
                                 
-                                if let selectedSpot = loopingData[selectedIndex].spot, selectedSpot.count > 300 {
-                                    Button(action: {
-                                        withAnimation {
-                                            isExpanded.toggle()
-                                        }
-                                    }) {
-                                        SwiftUI.Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                                            .font(.headline).bold()
-                                            .frame(width: 30, height: 30, alignment: .center)
-                                            .foregroundColor(.orange)
-                                    }
-                                }
                                 
+                                Button(action: {
+                                    withAnimation {
+                                        isExpanded.toggle()
+                                    }
+                                }) {
+                                    SwiftUI.Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                                        .font(.headline).bold()
+                                        .frame(width: 30, height: 30, alignment: .center)
+                                        .foregroundColor(.orange)
+                                }.padding(.top, -60)
+
                                 if isExpanded {
                                     VStack {
                                         Text("Videos")
@@ -237,13 +236,14 @@ struct TrendingCell: View, ScrollingHelper {
                                             .padding(.horizontal, 16)
                                             .padding(.bottom, 110)
                                         }
-                                    }
+                                    }.padding(.top, -20)
+                                        .padding(.bottom, 50)
                                 }
                             }
                         }
                     }
                 }
-            }
+            } }
             .gesture(
                 DragGesture()
                     .onEnded { value in
@@ -270,10 +270,11 @@ struct TrendingCell: View, ScrollingHelper {
                               onCategorySelected: { selectedCategory in
                     viewModel.fetchExploreData(for: selectedCategory) {}
                 }, scrollOffset: $scrollOffset)
-                .padding(.top,40)
+                .padding(.top, 20)
                 .zIndex(1)
                 
             }
+            
             .frame(width: geometry.size.width, height: geometry.size.height)
             .background {
                 Rectangle()
@@ -284,6 +285,7 @@ struct TrendingCell: View, ScrollingHelper {
             .safeAreaInset(edge: .top, content: {
                 Color.clear.frame(height: 40)
             })
+        
         }
     }
 }
