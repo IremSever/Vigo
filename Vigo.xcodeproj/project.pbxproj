@@ -349,6 +349,14 @@
 			path = Favorite;
 			sourceTree = "<group>";
 		};
+		663D2F4C2D88028A00901F21 /* SectionHeader */ = {
+			isa = PBXGroup;
+			children = (
+				66CB54552D5E0193001166F4 /* SectionHeader.swift */,
+			);
+			path = SectionHeader;
+			sourceTree = "<group>";
+		};
 		6667323C2D6E0AA100AED0F0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,7 +475,7 @@
 				61938F732D667FB700D5E866 /* Scroll */,
 				66CB54382D5C87D9001166F4 /* NavBar */,
 				61190DF32D537FF90070CA8B /* TabBar */,
-				66CB54552D5E0193001166F4 /* SectionHeader.swift */,
+				663D2F4C2D88028A00901F21 /* SectionHeader */,
 				61E4D8972D6B70E200D84412 /* CustomBackButton.swift */,
 				614FC3672D6F4A340094835B /* TurkishTextFormatter.swift */,
 			);

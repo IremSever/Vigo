@@ -12,9 +12,11 @@ struct TrailerCell: View {
     @ObservedObject var viewModel = HomeViewModel()
     @State private var selectedTab: DetailCategoryType = .trailers
     @ObservedObject var favoritesViewModel = FavoritesViewModel()
+    @State var scrollOffset: CGFloat = 0
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            SectionHeader(selectedCategory: $selectedTab, categories: DetailCategoryType.allCases, isExplore: false)
+//            SectionHeader(selectedCategory: $selectedTab, categories: DetailCategoryType.allCases, isExplore: false, scrollOffset: $scrollOffset)
             
             switch selectedTab {
             case .trailers:
