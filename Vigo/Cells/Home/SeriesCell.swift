@@ -24,8 +24,8 @@ struct SeriesCell: View {
                         
                         if newsItem.external.hasPrefix("apilink:///") {
                             NavigationLink(destination: DetailView(viewModel: viewModel, favoritesViewModel: favoritesViewModel, newsItem: newsItem)
-                                            .navigationBarBackButtonHidden(true)
-                                            .navigationBarItems(leading: CustomBackButton())) {
+                                .navigationBarBackButtonHidden(true)
+                                .navigationBarItems(leading: CustomBackButton())) {
                                 VStack {
                                     if let imageUrl = URL(string: newsItem.image ?? "") {
                                         WebImage(url: imageUrl)

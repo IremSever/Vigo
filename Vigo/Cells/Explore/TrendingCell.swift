@@ -42,6 +42,7 @@ struct TrendingCell: View, ScrollingHelper {
                                 .black, .gray, .gray, .gray, .white.opacity(0.5), .clear
                             ]), startPoint: .top, endPoint: .bottom)
                         }.ignoresSafeArea(.all)
+                        .opacity(0.7)
                 }
                 
                 ScrollView(showsIndicators: false) {
@@ -70,47 +71,36 @@ struct TrendingCell: View, ScrollingHelper {
                                                             .clipShape(Circle())
                                                             .overlay(
                                                                 Circle()
-                                                                    .stroke(selectedIndex == index ? Color.orange.opacity(0.3) : Color.purple.opacity(0.3), lineWidth: 5)
+                                                                    .stroke(selectedIndex == index ? Color.orange.opacity(0.2) : Color.purple.opacity(0.2), lineWidth: 3)
                                                                     .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 3 : 1)
                                                             )
-                                                        
                                                             .opacity(selectedIndex == index ? 1 : 0.8)
                                                     }
                                                     
                                                     Text(newsItem.title ?? "")
                                                         .font(.exoBold(size: selectedIndex == index ? 24 : 15))
-                                                        .foregroundColor(selectedIndex == index ? .orange : .purple.opacity(0.5))
+                                                        .foregroundColor(selectedIndex == index ? .orange : .purple.opacity(0.8))
                                                         .lineLimit(2)
                                                         .padding(.bottom, 8)
                                                     
                                                     if selectedIndex == index {
-                                                        if isExpanded {
-                                                            Text(newsItem.spot ?? "")
-                                                                .font(.exoMedium(size: 14))
-                                                                .foregroundColor(.white.opacity(0.8))
-                                                                .multilineTextAlignment(.center)
-                                                                .frame(alignment: .center)
-                                                                .padding(.bottom, 8)
-                                                        } else {
-                                                            Text(newsItem.spot ?? "")
-                                                                .font(.exoMedium(size: 14))
-                                                                .foregroundColor(.white.opacity(0.8))
-                                                                .multilineTextAlignment(.center)
-                                                                .lineLimit(isExpanded ? nil : 10)
-                                                                .fixedSize(horizontal: false, vertical: true)
-                                                                .frame(maxHeight: isExpanded ? 300 : 200)
-                                                            
-                                                        }
+                                                        JustifiedText(
+                                                            newsItem.spot ?? "",
+                                                            isExpanded: $isExpanded,
+                                                            font: UIFont(name: "Exo2-SemiBold", size: 14) ?? UIFont.systemFont(ofSize: 14)
+                                                        )
+                                                        .frame(maxWidth: .infinity)
                                                     }
                                                 }
+                                                .frame(width: 220)
                                                 
                                                 .frame(
                                                     width: selectedIndex == index ? 250 : 150,
-                                                    height: isExpanded ? 600 : 720,
+                                                    height: isExpanded ? 515 : 600,
                                                     alignment: .center
                                                 )
                                                 
-                                                
+                                             
                                             }
                                         }
                                         .padding(.horizontal)
@@ -119,6 +109,7 @@ struct TrendingCell: View, ScrollingHelper {
                                             scrollProxy = proxy
                                             scrollToIndex(selectedIndex, proxy: scrollProxy)
                                         }
+                                        .offset(y: isExpanded ? 50 : 120)
                                     }
                                 }
                                 .disabled(true)
@@ -133,15 +124,31 @@ struct TrendingCell: View, ScrollingHelper {
                                         .font(.headline).bold()
                                         .frame(width: 30, height: 30, alignment: .center)
                                         .foregroundColor(.orange)
-                                }.padding(.top, -60)
+                                }.padding(.bottom, 20)
 
                                 if isExpanded {
                                     VStack {
-                                        Text("Videos")
-                                            .font(.exoBold(size: 18))
-                                            .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
-                                        
+                                       ZStack {
+                                            Spacer()
+                                            Text("Videos")
+                                                .font(.exoBold(size: 18))
+                                                .padding(.horizontal, 16)
+                                                .foregroundColor(.orange)
+                                            Spacer()
+                                           HStack {
+                                               Spacer()
+                                               
+                                               Button(action: {}) {
+                                                   //SwiftUI.Image(systemName: "chevron.right")
+                                                   Text("Show All")
+                                                       .font(.exoMedium(size: 14))
+                                                       .foregroundColor(.purple)
+                                                       .multilineTextAlignment(.trailing)
+                                                   
+                                               }
+                                           }
+                                           .padding(.trailing, 16)
+                                        }
                                         ScrollView(.horizontal, showsIndicators: false) {
                                             
                                             HStack {
@@ -153,12 +160,19 @@ struct TrendingCell: View, ScrollingHelper {
                                                                     .resizable()
                                                                     .aspectRatio(contentMode: .fill)
                                                                     .frame(width: 150, height: 100)
-                                                                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                                                                    .cornerRadius(10)
+                                                                    .shadow(color: .purple.opacity(0.35), radius: 2)
                                                             }
                                                             Text(video.title ?? "")
-                                                                .font(.exoRegular(size: 14))
+                                                                .font(.exoSemiBold(size: 14))
                                                                 .foregroundColor(.orange)
                                                                 .lineLimit(1)
+                                                            
+                                                            Text(video.spot ?? "")
+                                                                .font(.exoMedium(size: 12))
+                                                                .foregroundColor(.white)
+                                                                .lineLimit(1)
+                                                                .padding(.horizontal, 4)
                                                             
                                                         }
                                                     }
@@ -168,10 +182,10 @@ struct TrendingCell: View, ScrollingHelper {
                                             .padding(.bottom, 16)
                                         }
                                         
-                                        Text("Artists")
+                                        Text("Cast")
                                             .font(.exoBold(size: 18))
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            .foregroundColor(.orange)
                                         
                                         ScrollView(.horizontal, showsIndicators: false) {
                                             HStack {
@@ -182,14 +196,22 @@ struct TrendingCell: View, ScrollingHelper {
                                                                 WebImage(url: validUrl)
                                                                     .resizable()
                                                                     .aspectRatio(contentMode: .fill)
-                                                                    .frame(width: 60, height: 60)
+                                                                    .frame(width: 80, height: 80)
                                                                     .cornerRadius(45)
+                                                                    .shadow(color: .purple.opacity(0.35), radius: 2)
                                                             }
                                                             Text(artist.title ?? "")
-                                                                .font(.exoMedium(size: 14))
+                                                                .font(.exoSemiBold(size: 14))
                                                                 .foregroundColor(.orange)
-                                                                .frame(width: 70)
+                                                                .frame(width: 90)
                                                                 .lineLimit(1)
+                                                        
+                                                            Text(artist.spot ?? "")
+                                                                .font(.exoMedium(size: 12))
+                                                                .foregroundColor(.white)
+                                                                .frame(width: 90)
+                                                                .lineLimit(1)
+                                                                .padding(.horizontal, 4)
                                                             
                                                         }
                                                     }
@@ -198,13 +220,15 @@ struct TrendingCell: View, ScrollingHelper {
                                             .padding(.bottom, 16)
                                             .padding(.horizontal, 16)
                                         }
+                                        
                                         Text("Recommended")
                                             .font(.exoBold(size: 18))
                                             .padding(.horizontal, 16)
-                                            .foregroundColor(.white)
+                                            .foregroundColor(.orange)
                                         
                                         ScrollView(.horizontal, showsIndicators: false) {
                                             HStack {
+                                                
                                                 let recommendedShows = loopingData.filter { show in
                                                     guard let selectedTags = selectedItem.tags else { return false }
                                                     guard let showTags = show.tags else { return false }
@@ -214,20 +238,24 @@ struct TrendingCell: View, ScrollingHelper {
                                                     
                                                     return selectedTagTitles.contains { showTagTitles.contains($0) }
                                                 }
-                                                
+                                                .filter { $0.title != selectedItem.title }
+                                                 
+                                                    
                                                 ForEach(recommendedShows, id: \.title) { recommendedShow in
                                                     VStack {
+                                                        
                                                         if let imageUrl = recommendedShow.image, let validUrl = URL(string: imageUrl) {
                                                             WebImage(url: validUrl)
                                                                 .resizable()
-                                                                .frame(width: 130, height: 130)
                                                                 .aspectRatio(contentMode: .fill)
+                                                                .frame(width: 100, height: 150)
                                                                 .cornerRadius(20)
+                                                                .shadow(color: .purple.opacity(0.35), radius: 2)
                                                         }
                                                         Text(recommendedShow.title ?? "")
-                                                            .font(.exoRegular(size: 14))
-                                                            .foregroundColor(.orange)
-                                                            .frame(width: 100)
+                                                            .font(.exoMedium(size: 12))
+                                                            .foregroundColor(.white)
+                                                            .frame(width: 110)
                                                             .lineLimit(1)
                                                     }
                                                 }
@@ -236,8 +264,9 @@ struct TrendingCell: View, ScrollingHelper {
                                             .padding(.horizontal, 16)
                                             .padding(.bottom, 110)
                                         }
-                                    }.padding(.top, -20)
-                                        .padding(.bottom, 50)
+                                    }
+                                    .padding(.top, -20)
+                                    .padding(.bottom, 50)
                                 }
                             }
                         }
@@ -289,7 +318,3 @@ struct TrendingCell: View, ScrollingHelper {
         }
     }
 }
-
-                
-
-        
