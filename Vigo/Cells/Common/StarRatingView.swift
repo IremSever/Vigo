@@ -16,11 +16,11 @@ struct StarRatingView: View {
     @State private var animatedRating: Int = 0
 
     var body: some View {
-        VStack(spacing: 5) {
+        HStack(spacing: 4) {
             ForEach(0..<maxRating, id: \.self) { index in
                 SwiftUI.Image(systemName: index < animatedRating ? "star.fill" : "star")
                     .foregroundColor(.orange.opacity(1))
-                    .font(.system(size: 20))
+                    .font(.system(size: 12))
                     .scaleEffect(index < animatedRating ? 1.2 : 1.0)
                     .animation(.easeInOut(duration: 0.8), value: animatedRating)
                     .shadow(color: .purple.opacity(0.35), radius: 5)

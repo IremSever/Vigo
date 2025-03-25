@@ -83,6 +83,7 @@ struct AlbumCell: View, ScrollingHelper {
                                     .padding(.bottom, 20)
                             }
                             .frame(width: 320, height: 550)
+                            .allowsHitTesting(true) // Vertical scroll'un çalışmasını sağlar
                         }
                     }
                     .onAppear {
@@ -99,29 +100,31 @@ struct AlbumCell: View, ScrollingHelper {
                     scrollOffsetY: $scrollOffsetY, isUser: $isUser
                 )
             )
-            .disabled(true)
-            .gesture(
+            .disabled(true) 
+            .simultaneousGesture(
                 DragGesture()
+                    .onChanged { _ in }
                     .onEnded { value in
                         let threshold: CGFloat = 50
-                        
                         withAnimation {
                             if value.translation.width < -threshold {
                                 selectedIndex += 1
                             } else if value.translation.width > threshold {
                                 selectedIndex -= 1
                             }
-                            
+
                             if selectedIndex >= loopingData.count - 1 {
                                 selectedIndex = 1
                             } else if selectedIndex <= 0 {
                                 selectedIndex = loopingData.count - 2
                             }
-                            
+
                             scrollToIndex(selectedIndex, proxy: scrollProxy)
                         }
                     }
             )
+
+           
             .onScrollGeometryChange(for: CGFloat.self) {
                 let offset = $0.contentOffset.x + $0.contentInsets.leading
                 let width = $0.containerSize.width + 10

@@ -38,16 +38,12 @@ struct SectionHeader<T: CategoryProtocol>: View, NavAnimation {
                     }
                 }
             }
- 
-           
         }
         .background(
-            Color.black.opacity(opacityView())
-                .frame(maxWidth: .infinity)
-                .frame(height: interpolatedHeight() + 50)
-                .blur(radius: 20)
-                .clipped()
-                .ignoresSafeArea(.all)
+            BlurView(style: .systemMaterialDark)
+                .frame(height: interpolatedHeight() + 30)
+                .opacity(opacityView())
+                .ignoresSafeArea(edges: .top)
         )
         .frame(maxHeight: .infinity, alignment: .top)
         .animation(.easeIn, value: scrollOffset)

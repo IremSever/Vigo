@@ -12,28 +12,15 @@ struct NavHeader: View, NavAnimation {
     var live: String
     var icon: String
     @Environment(\.presentationMode) var presentationMode
-
+    
     var body: some View {
         ZStack {
-//            SwiftUI.Image("navbar")
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//                .frame(height: interpolatedHeight() + 30)
-//                .blur(radius: 50)
-//                .opacity(opacityView())
-//                .clipped()
-//                .ignoresSafeArea(.all)
             
-            SwiftUI.Image("nax")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: .infinity)
+            BlurView(style: .systemMaterialDark)
                 .frame(height: interpolatedHeight() + 30)
-                .blur(radius: 20)
                 .opacity(opacityView())
-                .clipped()
-                .ignoresSafeArea(.all)
-
+                .ignoresSafeArea(edges: .top)
+            
             HStack {
                 if let appImage = UIImage(named: app) {
                     SwiftUI.Image(uiImage: appImage)
@@ -61,8 +48,8 @@ struct NavHeader: View, NavAnimation {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: liveIconSize(), height: liveIconSize())
                         .padding(16)
-                   
-
+                    
+                    
                     SwiftUI.Image(systemName: icon)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -75,8 +62,12 @@ struct NavHeader: View, NavAnimation {
             .padding(.top, 10)
             .padding(.bottom, 10)
             .padding(.horizontal, 16)
+            
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .animation(.easeIn, value: scrollOffset)
+        
     }
 }
+
+

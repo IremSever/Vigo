@@ -16,7 +16,7 @@ struct TrailerCell: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-//            SectionHeader(selectedCategory: $selectedTab, categories: DetailCategoryType.allCases, isExplore: false, scrollOffset: $scrollOffset)
+            SectionHeader(selectedCategory: $selectedTab, categories: DetailCategoryType.allCases, isExplore: false, scrollOffset: $scrollOffset)
             
             switch selectedTab {
             case .trailers:

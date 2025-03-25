@@ -10,7 +10,7 @@ struct UserCard: View {
     @State private var scrollProgressX: CGFloat = 0
     @State private var scrollOffsetY: CGFloat = 0
     @State private var isUser: Bool = true
-    @State private var showUsers: Bool = false // Yeni eklenen state
+    @State private var showUsers: Bool = false
 
     var body: some View {
         VStack {
