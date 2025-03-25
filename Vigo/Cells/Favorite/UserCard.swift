@@ -19,13 +19,13 @@ struct UserCard: View {
                     .resizable()
                     .cornerRadius(20)
                     .scaledToFill()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 90, height: 90)
                     .padding(.top, 20)
                     .padding(.bottom, 0)
 
                 VStack {
                     Text("User-1")
-                        .font(.exoBold(size: 20))
+                        .font(.exoBold(size: 16))
                         .foregroundColor(.orange)
                         .padding(.bottom, 12)
 
@@ -36,7 +36,7 @@ struct UserCard: View {
                     }) {
                         SwiftUI.Image(systemName: "chevron.down")
                             .foregroundColor(.orange)
-                            .font(.system(size: 20))
+                            .font(.system(size: 14))
                             .rotationEffect(.degrees(showUsers ? 180 : 0))
                     }
                 }
@@ -45,16 +45,16 @@ struct UserCard: View {
             if showUsers {
                 VStack {
                     Text("User-2")
-                        .font(.exoMedium(size: 20))
+                        .font(.exoMedium(size: 16))
                         .foregroundColor(.purple)
                     Text("User-3")
-                        .font(.exoMedium(size: 20))
+                        .font(.exoMedium(size: 16))
                         .foregroundColor(.purple)
                 }
                 .transition(.opacity)
             }
         }
-        .frame(width: UIScreen.main.bounds.width, height: showUsers ? 200 : 150)
+        .frame(width: UIScreen.main.bounds.width, height: showUsers ? 200 : 120)
         .background(
             Backdrop(
                 images: ["https://t4.ftcdn.net/jpg/09/04/60/51/360_F_904605193_o8KuD3pemsdxabWvwi41YraFy6kmUyHX.jpg"],

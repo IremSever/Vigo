@@ -28,7 +28,7 @@ struct DownloadedView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: 160, height: 120)
-                                    .cornerRadius(10)
+                                    .cornerRadius(20)
                                 Text(item.title)
                                     .font(.exoSemiBold(size: 14))
                                     .foregroundColor(.orange)

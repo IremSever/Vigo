@@ -29,7 +29,7 @@ struct RatedView: View {
                     }
                 }
                 .padding(.horizontal, 16)
-                .frame(height: 235)
+                .frame(height: 165)
             }
         }
     }

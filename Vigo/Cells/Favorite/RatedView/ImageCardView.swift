@@ -15,24 +15,25 @@ struct ImageCardView: View {
     let rating: Double
     
     var body: some View {
-        VStack {
+       ZStack {
             WebImage(url: imageUrl)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(width: 140, height: 200)
+                .frame(width: 120, height: 160)
                 .cornerRadius(20)
-                .shadow(color: .purple.opacity(0.35), radius: 5)
+                .shadow(color: .purple.opacity(0.35), radius: 2)
                 .overlay(
                     LinearGradient(
-                        gradient: Gradient(colors: [Color.black.opacity(0.5), Color.clear]),
+                        gradient: Gradient(colors: [Color.black.opacity(1), Color.clear]),
                         startPoint: .bottom,
-                        endPoint: UnitPoint(x: 0.2, y: 0.2)
+                        endPoint: .center /*UnitPoint(x: 1, y: 0.8)*/
                     )
                     .cornerRadius(20)
                 )
             StarRatingView(rating: Int(rating))
                 .padding(.horizontal, 16)
                 .padding(.top, 2)
+                .position(x: 60, y: 145)
         }
     }
 }

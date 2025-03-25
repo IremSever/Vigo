@@ -22,11 +22,19 @@ struct FavoritesListView: View {
                 HStack(spacing: 12) {
                     ForEach(viewModel.favoriteItems, id: \ .title) { item in
                         if let imageUrl = URL(string: item.image ?? "") {
+                            VStack {
                             WebImage(url: imageUrl)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
-                                .frame(width: 100, height: 150)
+                                .frame(width: 160, height: 120)
                                 .cornerRadius(20)
+                         
+                                Text(item.title ?? "")
+                                    .font(.exoSemiBold(size: 14))
+                                    .foregroundColor(.orange)
+                                    .frame(width: 150)
+                                    .lineLimit(1)
+                            }
                         }
                     }
                 }

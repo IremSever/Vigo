@@ -39,12 +39,17 @@ struct SectionHeader<T: CategoryProtocol>: View, NavAnimation {
                 }
             }
         }
-        .background(
-            BlurView(style: .systemMaterialDark)
-                .frame(height: interpolatedHeight() + 30)
-                .opacity(opacityView())
-                .ignoresSafeArea(edges: .top)
-        )
+        .background {
+            if isExplore {
+                BlurView(style: .systemMaterialDark)
+                    .frame(height: interpolatedHeight() + 30)
+                    .opacity(opacityView())
+                    .ignoresSafeArea(edges: .top)
+            } else {
+                Color.clear
+            }
+        }
+
         .frame(maxHeight: .infinity, alignment: .top)
         .animation(.easeIn, value: scrollOffset)
     }

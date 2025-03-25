@@ -75,6 +75,8 @@ struct TrendingCell: View, ScrollingHelper {
                                                                     .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 3 : 1)
                                                             )
                                                             .opacity(selectedIndex == index ? 1 : 0.8)
+                                                          
+                                                        
                                                     }
                                                     
                                                     Text(newsItem.title ?? "")
@@ -88,7 +90,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                                 .font(.exoSemiBold(size: 14))
                                                                 .foregroundColor(.white)
                                                                 .padding(.bottom, 8)
-                                                                .lineLimit(isExpanded ? 8 : 3)
+                                                                .lineLimit(8)
                                                                 .multilineTextAlignment(.center)
 
                                                             
@@ -96,10 +98,10 @@ struct TrendingCell: View, ScrollingHelper {
                                                     }
                                                 }
                                                 .frame(width: 220)
-                                                
+                                                .offset(y: (selectedIndex == index ? -50 : 0))
                                                 .frame(
                                                     width: selectedIndex == index ? 250 : 150,
-                                                    height: isExpanded ? 390 : 600,
+                                                    height: isExpanded ? 430 : 548,
                                                     alignment: .center
                                                 )
                                                 
@@ -112,7 +114,7 @@ struct TrendingCell: View, ScrollingHelper {
                                             scrollProxy = proxy
                                             scrollToIndex(selectedIndex, proxy: scrollProxy)
                                         }
-                                        .offset(y: isExpanded ? 40 : 100)
+                                        .offset(y: isExpanded ? 100 : 180)
                                     }
                                 }
                                 .disabled(true)

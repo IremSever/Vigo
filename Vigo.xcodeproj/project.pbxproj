@@ -386,6 +386,7 @@
 		663D2F552D929AFB00901F21 /* RatedView */ = {
 			isa = PBXGroup;
 			children = (
+				610B2F552D8C22E3003C0149 /* StarRatingView.swift */,
 				663D2F582D929B2B00901F21 /* ImageCardView.swift */,
 				663D2F562D929B1800901F21 /* RatedView.swift */,
 			);
@@ -514,7 +515,6 @@
 				663D2F4C2D88028A00901F21 /* SectionHeader */,
 				610B2F572D925934003C0149 /* Text */,
 				61E4D8972D6B70E200D84412 /* CustomBackButton.swift */,
-				610B2F552D8C22E3003C0149 /* StarRatingView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
