@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610B2F562D8C22E3003C0149 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B2F552D8C22E3003C0149 /* StarRatingView.swift */; };
 		61190DEA2D537FE80070CA8B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61190DE42D537FE80070CA8B /* Preview Assets.xcassets */; };
 		61190DEB2D537FE80070CA8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61190DE62D537FE80070CA8B /* Assets.xcassets */; };
 		61190DEC2D537FE80070CA8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61190DE72D537FE80070CA8B /* ContentView.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		610B2F552D8C22E3003C0149 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		61190DD22D537FDA0070CA8B /* Vigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61190DE42D537FE80070CA8B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		61190DE62D537FE80070CA8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -163,6 +165,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		610B2F572D925934003C0149 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				614FC3672D6F4A340094835B /* TurkishTextFormatter.swift */,
+				663D2F4F2D898F0E00901F21 /* JustifiedText.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		61190DC92D537FDA0070CA8B = {
 			isa = PBXGroup;
 			children = (
@@ -478,9 +489,9 @@
 				66CB54382D5C87D9001166F4 /* NavBar */,
 				61190DF32D537FF90070CA8B /* TabBar */,
 				663D2F4C2D88028A00901F21 /* SectionHeader */,
+				610B2F572D925934003C0149 /* Text */,
 				61E4D8972D6B70E200D84412 /* CustomBackButton.swift */,
-				663D2F4F2D898F0E00901F21 /* JustifiedText.swift */,
-				614FC3672D6F4A340094835B /* TurkishTextFormatter.swift */,
+				610B2F552D8C22E3003C0149 /* StarRatingView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -626,6 +637,7 @@
 				61190DED2D537FE80070CA8B /* VigoApp.swift in Sources */,
 				66CB54402D5C9359001166F4 /* ScrollOffsetBg.swift in Sources */,
 				61190E042D537FF90070CA8B /* ExploreView.swift in Sources */,
+				610B2F562D8C22E3003C0149 /* StarRatingView.swift in Sources */,
 				66CB54582D5E19D8001166F4 /* BackgroundCell.swift in Sources */,
 				614FC3682D6F4A340094835B /* TurkishTextFormatter.swift in Sources */,
 				61938F752D667FD100D5E866 /* ScrollingHelper.swift in Sources */,
