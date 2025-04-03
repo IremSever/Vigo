@@ -20,3 +20,19 @@ struct TagView: View {
             .foregroundColor(.white)
     }
 }
+
+
+struct TagViewOrange: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.exoRegular(size: 12))
+            .padding(.horizontal, 10)
+            .padding(.vertical, 10)
+            .background(Color.orange.opacity(0.35))
+            .cornerRadius(10)
+            .foregroundColor(.white)
+    }
+}
+

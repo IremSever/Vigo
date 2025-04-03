@@ -27,6 +27,7 @@ struct FavoritesView: View {
                 viewModel.loadDownload()
             }
         }
+        
         .background {
             Rectangle()
                 .fill(.black.gradient)

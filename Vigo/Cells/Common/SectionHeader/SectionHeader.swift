@@ -21,7 +21,7 @@ struct SectionHeader<T: CategoryProtocol>: View, NavAnimation {
                     VStack {
                         Text(category.displayName)
                             .font(.exoBold(size: isExplore ? 20 : 16))
-                            .foregroundColor(selectedCategory == category ? .white : isExplore ? .orange : .purple)
+                            .foregroundColor(selectedCategory == category ? .white : isExplore ? .orange.opacity(0.5) : .purple)
                         
                         Rectangle()
                             .frame(height: 1)

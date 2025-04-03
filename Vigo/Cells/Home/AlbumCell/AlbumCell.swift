@@ -83,7 +83,7 @@ struct AlbumCell: View, ScrollingHelper {
                                     .padding(.bottom, 20)
                             }
                             .frame(width: 320, height: 550)
-                            .allowsHitTesting(true) // Vertical scroll'un çalışmasını sağlar
+                            .allowsHitTesting(true)
                         }
                     }
                     .onAppear {

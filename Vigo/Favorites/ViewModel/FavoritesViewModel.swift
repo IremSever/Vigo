@@ -124,5 +124,6 @@ class FavoritesViewModel: ObservableObject {
            let decodedItems = try? JSONDecoder().decode([DownloadableItem].self, from: savedData) {
             downloadedItems = decodedItems
         }
+        
     }
 }
