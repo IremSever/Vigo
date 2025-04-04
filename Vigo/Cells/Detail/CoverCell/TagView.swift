@@ -12,9 +12,10 @@ struct TagView: View {
     
     var body: some View {
         Text(text)
+            .frame(width: 55)
             .font(.exoRegular(size: 12))
-            .padding(.horizontal, 10)
-            .padding(.vertical, 10)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 8)
             .background(Color.purple.opacity(0.35))
             .cornerRadius(10)
             .foregroundColor(.white)
@@ -27,9 +28,10 @@ struct TagViewOrange: View {
     
     var body: some View {
         Text(text)
+            .frame(width: 48)
             .font(.exoRegular(size: 12))
-            .padding(.horizontal, 10)
-            .padding(.vertical, 10)
+            .padding(.horizontal, 8)
+            .padding(.vertical, 8)
             .background(Color.orange.opacity(0.35))
             .cornerRadius(10)
             .foregroundColor(.white)

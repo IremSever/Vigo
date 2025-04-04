@@ -19,7 +19,7 @@ struct TrendingCell: View, ScrollingHelper {
     @State private var scrollProgressX: CGFloat = 0
     @State private var scrollOffsetY: CGFloat = 0
     @State private var isUser: Bool = false
- 
+    
     
     private var loopingData: [ExploreNews] {
         guard let exploreData = viewModel.exploreModel?.data else { return [] }
@@ -75,32 +75,31 @@ struct TrendingCell: View, ScrollingHelper {
                                                                     .lineLimit(2)
                                                                     .padding(.bottom, 8)
                                                                 if selectedIndex == index {
-                                                                Text(newsItem.spot ?? "")
-                                                                    .font(.exoMedium(size: 12))
-                                                                    .foregroundColor(.white)
-                                                                    .lineLimit(3)
-                                                                    .padding(.bottom, 8)
-                                                                    .frame(width: 250, alignment: .center)
-                                                                    .multilineTextAlignment(.center)
-                                                            }
+                                                                    Text(newsItem.spot ?? "")
+                                                                        .font(.exoMedium(size: 12))
+                                                                        .foregroundColor(.white)
+                                                                        .lineLimit(3)
+                                                                        .padding(.bottom, 8)
+                                                                        .frame(width: 250, alignment: .center)
+                                                                        .multilineTextAlignment(.center)
+                                                                }
                                                                 if let tags = newsItem.tags, !tags.isEmpty {
                                                                     HStack {
                                                                         ForEach(tags, id: \.title) { tag in
                                                                             TagViewOrange(text: tag.title ?? "")
                                                                         }
                                                                     }
+                                                                    .padding(.top, 8)
                                                                 }
                                                                 
-                                                                HStack(spacing: 30) {
-//                                                                    ZStack {
-                                                                    VStack {
+                                                                HStack(spacing: 10) {
+                                                                    ZStack {
                                                                         SwiftUI.Image("romanleaves")
                                                                             .resizable()
                                                                             .aspectRatio(contentMode: .fill)
-                                                                            .frame(width: 25, height: 20)
-//                                                                            .opacity(0.1)
-                                                                      
-                                                                       
+                                                                            .frame(width: 40, height: 35)
+                                                                            .opacity(0.3)
+                                                                        VStack{
                                                                             Text("6.8")
                                                                                 .font(.exoSemiBold(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
@@ -109,24 +108,17 @@ struct TrendingCell: View, ScrollingHelper {
                                                                                 .font(.exoMedium(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
                                                                         }
-//                                                                    }
-                                                                    
-                                                                    
-                                                                    
-//                                                                    ZStack {
-                                                                    VStack {
-                                                                        SwiftUI.Image(systemName: "hand.thumbsup")
-                                                                        .resizable()
-                                                                        .aspectRatio(contentMode: .fill)
-                                                                        .frame(width: 17, height: 17)
-//                                                                            .resizable()
-//                                                                            .aspectRatio(contentMode: .fill)
-//                                                                            .frame(width: 30, height: 30)
-                                                                            .foregroundColor(.gray)
-//                                                                            .opacity(0.1)
-                                                                            .padding(.top, 2)
-                                                                            .padding(.bottom, 1)
-                                                                   
+                                                                    }  .frame(width: 60, alignment: .center)
+                                                                    ZStack {
+                                                                        
+                                                                        SwiftUI.Image("favorite")
+                                                                            .resizable()
+                                                                            .aspectRatio(contentMode: .fill)
+                                                                            .frame(width: 30, height: 30)
+                                                               
+                                                                            .opacity(0.2)
+                                                                           
+                                                                        VStack {
                                                                             Text("96%")
                                                                                 .font(.exoSemiBold(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
@@ -134,21 +126,21 @@ struct TrendingCell: View, ScrollingHelper {
                                                                                 .font(.exoMedium(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
                                                                         }
-//                                                                    }
+                                                                    } .frame(width: 60, alignment: .center)
                                                                     
-//                                                                    ZStack {
-                                                                    VStack {
-                                                                        SwiftUI.Image(systemName: "clock")
+                                                                    ZStack {
+                                                                        SwiftUI.Image(systemName: "play")
                                                                             .resizable()
                                                                             .aspectRatio(contentMode: .fill)
-                                                                            .frame(width: 17, height: 17)
-//                                                                            .resizable()
-//                                                                            .aspectRatio(contentMode: .fill)
-//                                                                            .frame(width: 30, height: 30)
-                                                                            .foregroundColor(.gray)
-//                                                                            .opacity(0.1)
-                                                                            .padding(.top, 2)
-                                                                            .padding(.bottom, 1)
+                                                                            .frame(width: 20, height: 20)
+                                                                        
+                                                                        //                                                                            .resizable()
+                                                                        //                                                                            .aspectRatio(contentMode: .fill)
+                                                                        //                                                                            .frame(width: 30, height: 30)
+                                                                            .foregroundColor(.gray.opacity(0.2))
+                                                                            .fontWeight(.light)
+                                                                     
+                                                                        VStack {
                                                                             Text("1H 58M")
                                                                                 .font(.exoSemiBold(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
@@ -156,10 +148,12 @@ struct TrendingCell: View, ScrollingHelper {
                                                                                 .font(.exoMedium(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
                                                                         }
-//                                                                    }
+                                                                    } .frame(width: 60, alignment: .center)
+                                                                    //                                                                    }
                                                                     
                                                                 } .frame(width: 200)
                                                                     .padding(.bottom, 30)
+                                                                    .padding(.top, 10)
                                                             }
                                                             .frame(width: 350, height: 350)
                                                             .background(
@@ -174,7 +168,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                                     .stroke(Color.orange.opacity(0.3), lineWidth: 3)
                                                             )
                                                             
-                                                        
+                                                            
                                                             .padding(.top, 120)
                                                             .padding(.bottom, -80)
                                                         }
@@ -187,15 +181,26 @@ struct TrendingCell: View, ScrollingHelper {
                                                             .clipShape(Circle())
                                                             .overlay(
                                                                 Circle()
-                                                                    .stroke(selectedIndex == index ? Color.orange.opacity(0.2) : Color.purple.opacity(0.2), lineWidth: 3)
-                                                                    .shadow(color: selectedIndex == index ? .orange : .purple, radius: selectedIndex == index ? 3 : 1)
+                                                                    .stroke(selectedIndex == index ? Color.orange.opacity(0.4) : Color.purple.opacity(0.3), lineWidth: 4)
+                                                                    .shadow(color: selectedIndex == index ? .orange.opacity(0.6) : .purple.opacity(0.3), radius: 4, x: 2, y: 2) // Hafif 3D gölge
                                                             )
-                                                            .opacity(selectedIndex == index ? 1 : 0.8)
+                                                            .background(
+                                                                Circle()
+                                                                    .fill(LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.2), Color.black.opacity(0.1)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                                                                    .shadow(color: .black.opacity(0.15), radius: 10, x: -5, y: -5) // İç gölge efekti
+                                                            )
+                                                            .overlay(
+                                                                Circle()
+                                                                    .stroke(Color.white.opacity(0.2), lineWidth: 2)
+                                                                    .blur(radius: 10) // Hafif kabartma efekti
+                                                            )
+                                                            .opacity(selectedIndex == index ? 1 : 0.85)
                                                             .shadow(
-                                                                color: selectedIndex == index ? .orange.opacity(0.35) : .purple.opacity(0.1),
-                                                                radius: selectedIndex == index ? (isExpanded ? 10 : 15) : 10)
-                                                        
+                                                                color: selectedIndex == index ? .orange.opacity(0.45) : .purple.opacity(0.2),
+                                                                radius: selectedIndex == index ? (isExpanded ? 12 : 18) : 12
+                                                            )
                                                     }
+
                                                     
                                                     if isExpanded {
                                                         Text(newsItem.title ?? "")
@@ -268,11 +273,11 @@ struct TrendingCell: View, ScrollingHelper {
                                                                     .cornerRadius(10)
                                                                     .shadow(color: .purple.opacity(0.35), radius: 2)
                                                             }
-//                                                            Text(video.title ?? "")
-//                                                                .font(.exoSemiBold(size: 14))
-//                                                                .foregroundColor(.orange)
-//                                                                .lineLimit(1)
-//                                                            
+                                                            // Text(video.title ?? "")
+                                                            //                                                              .font(.exoSemiBold(size: 14))
+                                                            //  .foregroundColor(.orange)
+                                                            //  .lineLimit(1)
+                                                            
                                                             Text(video.spot ?? "")
                                                                 .font(.exoMedium(size: 12))
                                                                 .foregroundColor(.white)
@@ -312,17 +317,15 @@ struct TrendingCell: View, ScrollingHelper {
                                                                 .frame(width: 90)
                                                                 .lineLimit(1)
                                                                 .padding(.horizontal, 4)
-//                                                                .font(.exoSemiBold(size: 14))
-//                                                                .foregroundColor(.orange)
-//                                                                .frame(width: 90)
-//                                                                .lineLimit(1)
                                                             
-//                                                            Text(artist.spot ?? "")
-//                                                                .font(.exoMedium(size: 12))
-//                                                                .foregroundColor(.white)
-//                                                                .frame(width: 90)
-//                                                                .lineLimit(1)
-//                                                                .padding(.horizontal, 4)
+                                                            //  .font(.exoSemiBold(size: 14))                                  .foregroundColor(.orange)
+                                                            //  .frame(width: 90)
+                                                            //  .lineLimit(1)
+                                                            
+                                                            // Text(artist.spot ?? "")                                                            .font(.exoMedium(size: 12))                                                  .foregroundColor(.white)
+                                                            //  .frame(width: 90)
+                                                            //  .lineLimit(1)
+                                                            //  .padding(.horizontal, 4)
                                                             
                                                         }
                                                     }
@@ -337,7 +340,7 @@ struct TrendingCell: View, ScrollingHelper {
                                             .font(.exoBold(size: 18))
                                             .padding(.horizontal, 16)
                                             .foregroundColor(.orange)
-                                       
+                                        
                                         
                                         ScrollView(.horizontal, showsIndicators: false) {
                                             HStack {
@@ -426,7 +429,6 @@ struct TrendingCell: View, ScrollingHelper {
             .safeAreaInset(edge: .top, content: {
                 Color.clear.frame(height: 40)
             })
-            
         }
     }
 }
