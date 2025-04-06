@@ -167,8 +167,6 @@ struct TrendingCell: View, ScrollingHelper {
                                                                 RoundedRectangle(cornerRadius: 175)
                                                                     .stroke(Color.orange.opacity(0.3), lineWidth: 3)
                                                             )
-                                                            
-                                                            
                                                             .padding(.top, 120)
                                                             .padding(.bottom, -80)
                                                         }
@@ -182,17 +180,17 @@ struct TrendingCell: View, ScrollingHelper {
                                                             .overlay(
                                                                 Circle()
                                                                     .stroke(selectedIndex == index ? Color.orange.opacity(0.4) : Color.purple.opacity(0.3), lineWidth: 4)
-                                                                    .shadow(color: selectedIndex == index ? .orange.opacity(0.6) : .purple.opacity(0.3), radius: 4, x: 2, y: 2) // Hafif 3D gölge
+                                                                    .shadow(color: selectedIndex == index ? .orange.opacity(0.6) : .purple.opacity(0.3), radius: 4, x: 2, y: 2)
                                                             )
                                                             .background(
                                                                 Circle()
                                                                     .fill(LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.2), Color.black.opacity(0.1)]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                                                                    .shadow(color: .black.opacity(0.15), radius: 10, x: -5, y: -5) // İç gölge efekti
+                                                                    .shadow(color: .black.opacity(0.15), radius: 10, x: -5, y: -5)
                                                             )
                                                             .overlay(
                                                                 Circle()
-                                                                    .stroke(Color.white.opacity(0.2), lineWidth: 2)
-                                                                    .blur(radius: 10) // Hafif kabartma efekti
+                                                                    .stroke(Color.white.opacity(0.8), lineWidth: 1)
+                                                                    .blur(radius: 5)
                                                             )
                                                             .opacity(selectedIndex == index ? 1 : 0.85)
                                                             .shadow(
@@ -201,7 +199,6 @@ struct TrendingCell: View, ScrollingHelper {
                                                             )
                                                     }
 
-                                                    
                                                     if isExpanded {
                                                         Text(newsItem.title ?? "")
                                                             .font(.exoBold(size: selectedIndex == index ? 24 : 15))
