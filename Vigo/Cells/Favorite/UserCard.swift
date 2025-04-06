@@ -24,7 +24,7 @@ struct UserCard: View {
                     .padding(.bottom, 0)
 
                 VStack {
-                    Text("User-1")
+                    Text("irem")
                         .font(.exoBold(size: 16))
                         .foregroundColor(.orange)
                         .padding(.bottom, 12)
