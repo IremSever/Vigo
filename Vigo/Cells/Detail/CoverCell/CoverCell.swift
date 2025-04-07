@@ -127,7 +127,7 @@ struct CoverCell: View {
                     
                     if isExpanded {
                         if let artists = newsItem.artist, !artists.isEmpty {
-                            Text("Artists")
+                            Text("Cast")
                                 .font(.exoBold(size: 18))
                                 .padding(.horizontal, 16)
                                 .foregroundColor(.purple)
