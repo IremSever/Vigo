@@ -30,7 +30,7 @@ struct TrailerCell: View {
                                         WebImage(url: trailerImageUrl)
                                             .resizable()
                                             .scaledToFill()
-                                            .frame(width: 150)
+                                            .frame(width: 150, height: 90)
                                             .cornerRadius(15)
                                     }
                                     VStack(alignment: .leading) {
@@ -71,7 +71,7 @@ struct TrailerCell: View {
                                         WebImage(url: episodeImageUrl)
                                             .resizable()
                                             .scaledToFill()
-                                            .frame(width: 150)
+                                            .frame(width: 150, height: 90)
                                             .cornerRadius(15)
                                     }
                                     
@@ -91,7 +91,7 @@ struct TrailerCell: View {
                                         favoritesViewModel.downloadItem(episode)
                                     } label: {
                                         SwiftUI.Image(systemName: favoritesViewModel.isDownload(episode) ? "checkmark" : "square.and.arrow.down")
-                                            .foregroundColor(favoritesViewModel.isDownload(episode) ? .purple : .orange)
+                                            .foregroundColor(favoritesViewModel.isDownload(episode) ? .purple : .purple)
                                             .frame(height: 12)
                                     }
                                 }
@@ -113,7 +113,7 @@ struct TrailerCell: View {
                                         WebImage(url: bestMomentImageUrl)
                                             .resizable()
                                             .scaledToFill()
-                                            .frame(width: 150)
+                                            .frame(width: 150, height: 90)
                                             .cornerRadius(15)
                                     }
                                     VStack(alignment: .leading) {
@@ -131,7 +131,7 @@ struct TrailerCell: View {
                                         favoritesViewModel.downloadItem(bestMoment)
                                     } label: {
                                         SwiftUI.Image(systemName: favoritesViewModel.isDownload(bestMoment) ? "checkmark" : "square.and.arrow.down")
-                                            .foregroundColor(favoritesViewModel.isDownload(bestMoment) ? .purple : .orange)
+                                            .foregroundColor(favoritesViewModel.isDownload(bestMoment) ? .purple : .purple)
                                             .frame(height: 12)
                                     }
                 

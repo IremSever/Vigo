@@ -1,1266 +1,1171 @@
 {
-  "meta": {
-    "status_code": 200,
-    "message": "",
-    "description": "Core V2 - Anasayfa",
-    "brand": "Atv",
-    "redirect": ""
-  },
-  "data": [
-    {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF383A40",
-          "bgColorLight": "FF172338",
-          "borderColor": "1AFFFFFF",
-          "borderIsActive": false,
-          "radius": 0,
-          "ratio": 1
-        },
-        "icon": {
-          "isActive": true,
-          "position": "center",
-          "size": 60,
-          "type": "play"
-        },
-        "image": {
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "radius": 0,
-          "size": "752x1000",
-          "weight": 1
-        },
-        "indicator": {
-          "borderColor": "00FFFFFF",
-          "borderColorDark": "00FFFFFF",
-          "height": 28,
-          "isActive": true,
-          "isOverImage": true,
-          "selectedColor": "FFCB2C1E",
-          "showIndex": false,
-          "type": "ellipse",
-          "unselectedColor": "FFA2A3A5",
-          "unselectedColorDark": "FFA2A3A5"
-        },
-        "spot": {
-          "align": "center",
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 20,
-          "fontType": "Overpass-bold",
-          "gradient": true,
-          "isActive": true,
-          "maxLines": 1,
-          "scrollBehaviour": "paging"
-        },
-        "title": {
-          "align": "center",
-          "checkShowTitle": false,
-          "fontColorDark": "FFCB2C1E",
-          "fontColorLight": "FFCB2C1E",
-          "fontSize": 25,
-          "fontType": "Overpass-bold",
-          "gradient": true,
-          "isActive": true,
-          "isDynamicLines": true,
-          "maxLines": 2,
-          "scrollBehaviour": "paging"
-        },
-        "widget": {
-          "autoSlide": false,
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "infinityLoop": true,
-          "interval": 8,
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "scrollBehaviour": "paging",
-          "template": "headlines",
-          "type": "horizontal"
-        }
-      },
-      "news": [
-        {
-          "external": "video://f9e87488-0461-41b8-bdee-91a92e273da7",
-          "image": "https://iaatv.tmgrup.com.tr/9d96c7/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/25/zembilli-1737797680815.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/zembilli-1737797680815.jpg",
-          "spot": "Yeni Bölüm I Bu Akşam 20.00",
-          "title": "Zembilli"
-        },
-        {
-          "external": "video://dd4117f6-0b35-482e-80cd-c1ace8475b53",
-          "image": "https://iaatv.tmgrup.com.tr/e5cb04/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/12/11/can-borcu-1733931859587.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2024/12/11/can-borcu-1733931859587.jpg",
-          "spot": "Yeni Bölüm I Cumartesi 20.00",
-          "title": "Can Borcu"
-        },
-        {
-          "external": "video://f20a85dd-f34c-4a13-9116-5224004828e6",
-          "image": "https://iaatv.tmgrup.com.tr/bed332/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/06/kardelenler-1736186633875.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/06/kardelenler-1736186633875.jpg",
-          "spot": "Yeni Bölüm I Pazar 20.00",
-          "title": "Kardelenler"
-        },
-        {
-          "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
-          "image": "https://iaatv.tmgrup.com.tr/2f3435/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/10/21/bir-gece-masali-1729501115912.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2024/10/21/bir-gece-masali-1729501115912.jpg",
-          "spot": "Yeni Bölüm I Salı 20.00",
-          "title": "Bir Gece Masalı"
-        },
-        {
-            "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
-            "image": "https://iaatv.tmgrup.com.tr/eef9ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
-            "imageBig": "https://iatv.tmgrup.com.tr/2024/10/23/1729661525698.jpg",
-            "spot": "Yeni Bölüm | Çarşamba 20.00",
-            "title": "Kuruluş Osman"
-        },
-        {
-            "external": "video://74f48b37-6773-49aa-a3d9-edc42357edd8",
-            "image": "https://iaatv.tmgrup.com.tr/2307ec/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
-            "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/baska-bir-gun-1737797742160.jpg",
-            "spot": "Yeni Bölüm | Perşembe 20.00",
-            "title": "Başka Bir Gün"
-        },
-        {
-          "external": "video://46af6954-4826-4f50-a576-99eec9fe1f7e",
-          "image": "https://iaatv.tmgrup.com.tr/1510be/750/1000/0/0/750/1000?u=https://iatv.tmgrup.com.tr/2025/02/20/sustali-ceylan-1740062036075.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/20/sustali-ceylan-1740062036075.jpg",
-          "spot": "Yakında atv'de",
-          "title": "Sustalı Ceylan"
-        }
-      ]
+    "meta": {
+        "status_code": 200,
+        "message": "",
+        "description": "Core V2 - Anasayfa",
+        "brand": "Atv",
+        "redirect": ""
     },
-    {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF0E0F14",
-          "bgColorDarkDeselect": "FF0E0F14",
-          "bgColorLight": "FF0E0F14",
-          "bgColorLightDeselect": "FF0E0F14",
-          "borderColor": "1AFFFFFF",
-          "borderIsActive": false,
-          "itemSpacer": 0,
-          "radius": 0,
-          "ratio": 0.5,
-          "shadowIsActive": true
+    "data": [
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF383A40",
+                    "bgColorLight": "FF172338",
+                    "borderColor": "1AFFFFFF",
+                    "borderIsActive": false,
+                    "radius": 0,
+                    "ratio": 1
+                },
+                "icon": {
+                    "isActive": true,
+                    "position": "center",
+                    "size": 60,
+                    "type": "play"
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "radius": 0,
+                    "size": "752x1000",
+                    "weight": 1
+                },
+                "indicator": {
+                    "borderColor": "00FFFFFF",
+                    "borderColorDark": "00FFFFFF",
+                    "height": 28,
+                    "isActive": true,
+                    "isOverImage": true,
+                    "selectedColor": "FFCB2C1E",
+                    "showIndex": false,
+                    "type": "ellipse",
+                    "unselectedColor": "FFA2A3A5",
+                    "unselectedColorDark": "FFA2A3A5"
+                },
+                "spot": {
+                    "align": "center",
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 20,
+                    "fontType": "Overpass-bold",
+                    "gradient": true,
+                    "isActive": true,
+                    "maxLines": 1,
+                    "scrollBehaviour": "paging"
+                },
+                "title": {
+                    "align": "center",
+                    "checkShowTitle": false,
+                    "fontColorDark": "FFCB2C1E",
+                    "fontColorLight": "FFCB2C1E",
+                    "fontSize": 25,
+                    "fontType": "Overpass-bold",
+                    "gradient": true,
+                    "isActive": true,
+                    "isDynamicLines": true,
+                    "maxLines": 2,
+                    "scrollBehaviour": "paging"
+                },
+                "widget": {
+                    "autoSlide": false,
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "infinityLoop": true,
+                    "interval": 8,
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "scrollBehaviour": "paging",
+                    "template": "headlines",
+                    "type": "horizontal"
+                }
+            },
+            "news": [
+                {
+                    "external": "video://f20a85dd-f34c-4a13-9116-5224004828e6",
+                    "image": "https://i0.wp.com/awardsradar.com/wp-content/uploads/2025/03/Clarksons-Farm.jpg?fit=2000%2C1332&ssl=1",
+                    "imageBig": "https://m.media-amazon.com/images/M/MV5BZTQ4ZjQzNTAtNzA3OC00N2YzLWIxNmUtMzMwODdiZDY1NTAzXkEyXkFqcGdeQXVyNjg3MDM4Mzc@._V1_.jpg",
+                    "spot": "New Episode | Sunday 8 PM",
+                    "title": "Clarkson's Farm"
+                },
+                {
+                    "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                    "image": "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "imageBig": "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "spot": "New Episode | Tuesday 8 PM",
+                    "title": "The Office"
+                },
+                {
+                    "external": "video://74f48b37-6773-49aa-a3d9-edc42357edd8",
+                    "image": "https://www.donanimhaber.com/images/images/haber/185916/1400x1400peaky-blinders-filminin-devami-gelecek.jpg",
+                    "imageBig": "https://m.media-amazon.com/images/M/MV5BZGYyYTMyODItMmY2OS00YTg5LTk5MzEtMTU3Mjk1YzVmNzRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+                    "spot": "New Episode | Thursday 8 PM",
+                    "title": "Peaky Blinders"
+                },
+                {
+                    "external": "video://46af6954-4826-4f50-a576-99eec9fe1f7e",
+                    "image": "https://ca-times.brightspotcdn.com/dims4/default/737ba39/2147483647/strip/true/crop/6000x4000+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7b%2F4f%2F8f82339e4960a25cd38d4a056f3b%2Fsquidgame-unit-103-1076.jpg",
+                    "imageBig": "https://m.media-amazon.com/images/M/MV5BZGQyZGRkZjktZThmYy00N2JlLTk5NzUtMzkwYjBiZjVjZThmXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_.jpg",
+                    "spot": "Coming Soon",
+                    "title": "Squid Game"
+                },
+                {
+                    "external": "video://dd4117f6-0b35-482e-80cd-c1ace8475b53",
+                    "image": "https://people.com/thmb/ke4dDwn2IZDb4PLxahYo4CLYsv0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(665x0:667x2)/tthewitcher2-2000-6091f91ab5b545cd9c68450ac341a337.jpg",
+                    "imageBig": "https://m.media-amazon.com/images/M/MV5BMjA4MDgxOTcwNF5BMl5BanBnXkFtZTgwNjI3MDg2NzM@._V1_.jpg",
+                    "spot": "New Episode | Saturday 8 PM",
+                    "title": "The Witcher"
+                },
+                {
+                    "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
+                    "image": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/b/b5/Loki_Infobox.png/revision/latest?cb=20250203204518",
+                    "imageBig": "https://m.media-amazon.com/images/M/MV5BZDk2MDU0YzgtM2MxNS00ZmViLWJjNTYtZTgzOTYzOTYzNjQ0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
+                    "spot": "New Episode | Wednesday 8 PM",
+                    "title": "Loki"
+                }
+                
+            ]
         },
-        "date": {
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 16,
-          "fontType": "Overpass-semibold",
-          "isActive": true,
-          "maxLines": 1
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF0E0F14",
+                    "bgColorDarkDeselect": "FF0E0F14",
+                    "bgColorLight": "FF0E0F14",
+                    "bgColorLightDeselect": "FF0E0F14",
+                    "borderColor": "1AFFFFFF",
+                    "borderIsActive": false,
+                    "itemSpacer": 0,
+                    "radius": 0,
+                    "ratio": 0.5,
+                    "shadowIsActive": true
+                },
+                "date": {
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 16,
+                    "fontType": "Overpass-semibold",
+                    "isActive": true,
+                    "maxLines": 1
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 10,
+                        "left": 10,
+                        "right": 8,
+                        "top": 10
+                    },
+                    "radius": 6,
+                    "size": "295x410",
+                    "weight": 0.45
+                },
+                "title": {
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 12,
+                    "fontType": "Overpass-semibold",
+                    "isActive": true,
+                    "isDynamicLines": true,
+                    "maxLines": 4
+                },
+                "widget": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "decorationView": {
+                        "isActive": false,
+                        "type": "first"
+                    },
+                    "padding": {
+                        "bottom": 24,
+                        "left": 16,
+                        "right": 0,
+                        "top": 24
+                    },
+                    "template": "broadcast",
+                    "type": "horizontal"
+                },
+                "widgetTitle": {
+                    "fontColorDark": "FFA2A3A5",
+                    "fontColorLight": "FFA2A3A5",
+                    "fontSize": 18,
+                    "fontType": "Overpass-bold",
+                    "spacer": 12,
+                    "text": "Schedule"
+                }
+            },
+            "streams": [
+                {
+                    "dayName": "Perşembe",
+                    "external": "selected://broadcast",
+                    "hour": "08",
+                    "isLive": false,
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnqBnjOXTtbpX6ILjnFSSlJLAbZ9935IxaqeAX20py_Owsi71NgvgmZZotUroSAnSibZY&usqp=CAU",
+                    "minute": "00",
+                    "text": "08:00",
+                    "title": "Openheimer"
+                },
+                {
+                    "dayName": "Perşembe",
+                    "external": "selected://broadcast",
+                    "hour": "10",
+                    "isLive": true,
+                    "image": "https://m.media-amazon.com/images/M/MV5BYWU5OGMxYjktMWY5Ny00NDJhLTgwMDktNjVmMTExZGIyODljXkEyXkFqcGc@._V1_.jpg",
+                    "minute": "00",
+                    "text": "10:00",
+                    "title": "My Octapus Teacher"
+                },
+                {
+                    "dayName": "Perşembe",
+                    "external": "selected://broadcast",
+                    "hour": "13",
+                    "isLive": false,
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Fpop0SrIfFncUTB_IO0lnUXaPyjSaOCXvg&s",
+                    "minute": "00",
+                    "text": "13:00",
+                    "title": "Mobland"
+                },
+                {
+                    "dayName": "Perşembe",
+                    "external": "selected://broadcast",
+                    "hour": "14",
+                    "isLive": false,
+                    "image": "https://m.media-amazon.com/images/M/MV5BNTEwNTFkZTktMzI1OC00YmRjLWE5NTUtYmZhMmJlNGUxMWU1XkEyXkFqcGc@._V1_.jpg",
+                    "minute": "00",
+                    "text": "14:00",
+                    "title": "Succesion"
+                }
+            ]
         },
-        "image": {
-          "padding": {
-            "bottom": 10,
-            "left": 10,
-            "right": 8,
-            "top": 10
-          },
-          "radius": 6,
-          "size": "295x410",
-          "weight": 0.45
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "borderColor": "1AFFFFFF",
+                    "borderIsActive": false,
+                    "itemSpacer": 12,
+                    "radius": 8,
+                    "ratio": 0.41
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "radius": 0,
+                    "size": "295x410",
+                    "weight": 1
+                },
+                "title": {
+                    "align": "left",
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 16,
+                    "fontType": "Overpass-bold",
+                    "isActive": false,
+                    "maxLines": 2
+                },
+                "widget": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "padding": {
+                        "bottom": 24,
+                        "left": 16,
+                        "right": 16,
+                        "top": 0
+                    },
+                    "rowCount": 1,
+                    "template": "cardFullImage1",
+                    "type": "horizontal"
+                },
+                "widgetTitle": {
+                    "fontColorDark": "FFA2A3A5",
+                    "fontColorLight": "FFA2A3A5",
+                    "fontSize": 18,
+                    "fontType": "Overpass-semibold",
+                    "spacer": 12,
+                    "text": "TV Shows"
+                }
+            },
+            "news": [
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=a65a5c3d-1a33-46b1-8ff9-fb1a855808e4",
+                    "image": "https://m.media-amazon.com/images/M/MV5BODcxMWI2NDMtYTc3NC00OTZjLWFmNmUtM2NmY2I1ODkxYzczXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "title": "Black Mirror",
+                    "detailDescription": "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company.",
+                    "artist": [
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNzVjMWZlNGMtZjJhOS00NzBhLWEyZTUtNTM3NDk0M2NlMzZiXkEyXkFqcGc@._V1_.jpg",
+                            "spot": "Greg Hirsch",
+                            "title": "Nicholas Braun"
+                        },
+                        {
+                            "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/13/11/brian-cox.jpg",
+                            "spot": "Logan Roy",
+                            "title": "Brian Cox"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNjZlNWRkMDQtNGNlYi00YTczLThjODYtMWE4ZDFmYTE3ZTkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Roman Roy",
+                            "title": "Kieran Culkin"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMTcyMDc5OTE4OF5BMl5BanBnXkFyZXN1bWU@._V1_.jpg",
+                            "spot": "Frank Vernon",
+                            "title": "Peter Friedman"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Tom Wambsgans",
+                            "title": "Matthew Macfadyen"
+                        }
+                    ],
+                    "episode": [
+                        {
+                            "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "image": "https://cdn.theatlantic.com/thumbor/Z7e5qBkfi6K7dbg-J37KTm5zHxU=/0x0:1920x1080/960x540/media/img/mt/2021/12/jeremy_strong_sarah_snook_kieran_culkin-1/original.jpg",
+                            "spot": "2h 15m",
+                            "title": "S4.E10 ∙ With Open Eyes"
+                        },
+                        {
+                            "external": "video://6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                            "id": "6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                            "image": "https://media.npr.org/assets/img/2023/05/25/succession---justine-lupe-alan-ruck-kieran-culkin-jeremy-strong-sarah-snook_custom-033cda452062211fb2c1ac9a3accc5dc8fce4a04.jpg?s=1100&c=50&f=jpeg",
+                            "spot": "2h 12m",
+                            "title": "S4.E9 ∙ Church and State"
+                        },
+                        {
+                            "external": "video://27deb789-e7d1-4e26-9448-e96d6239eb08",
+                            "id": "27deb789-e7d1-4e26-9448-e96d6239eb08",
+                            "image": "https://media.npr.org/assets/img/2023/04/14/sarah-snook-jeremy-strong-kieran-culkin_wide-0c63d941ecbf9745761020751fb28ff8cd7788a3.jpg?s=1100&c=50&f=jpeg",
+                            "spot": "2h 21m",
+                            "title": "S4.E8 ∙ America Decides"
+                        },
+                        {
+                            "external": "video://d3de77b3-cfd3-4add-be59-233db3cf3015",
+                            "id": "d3de77b3-cfd3-4add-be59-233db3cf3015",
+                            "image": "https://media.altyazi.net/wp-content/uploads/2023/06/kjghkjn-1600x900.jpg",
+                            "spot": "2h 14m",
+                            "title": "S4.E7 ∙ Tailgate Party"
+                        },
+                        {
+                            "external": "video://3ee3ea94-e207-427f-8b01-164fbf574165",
+                            "id": "3ee3ea94-e207-427f-8b01-164fbf574165",
+                            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxY1flqepPp7qP972XVOKbwP7MnxZfMjLgw&s",
+                            "spot": "2h 19m",
+                            "title": "S4.E6 ∙ Living+"
+                        }
+                    ],
+                    "trailer": [
+                        {
+                            "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                            "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e063",
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQwMTM1MjczOF5BMl5BanBnXkFtZTgwNDAzMDQxNTM@._V1_.jpg",
+                            "spot": "1m 18s",
+                            "title": "Succession: Season 4"
+                        },
+                        {
+                            "external": "video://76ad9b99-ca46-4426-abbe-a61c92f733d7",
+                            "id": "76ad9b99-ca46-4426-abbe-a61c92f733d72",
+                            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaI0HglrO2oTwq4C7YD2Ng0KU7gLI3G_SZC3P2NJ6JXOWonk9ZAZH_BZL3CS1PleifALU&usqp=CAU",
+                            "spot": "1m 23s",
+                            "title": "Succession: Season 4"
+                        },
+                        {
+                            "external": "video://554e46be-f56f-430a-becb-06c35170392a",
+                            "id": "554e46be-f56f-430a-becb-06c35170392a1",
+                            "image": "https://hips.hearstapps.com/hmg-prod/images/c5ca1e50042bedf41561b34afb89bb35a3cfacc2d7ef2faaaca25ab7d0f0a82be325aedb5252a8dd59f91a54a10c601d-1565546387.jpg",
+                            "spot": "1m 57s",
+                            "title": "Succession: Season 4"
+                        },
+                        {
+                            "external": "video://d37eb2ec-40b2-483f-bbc5-b751aa22ab86",
+                            "id": "d37eb2ec-40b2-483f-bbc5-b751aa22ab864",
+                            "image": "https://hips.hearstapps.com/hmg-prod/images/succession-season-4-1639428728.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*",
+                            "spot": "1m 37s",
+                            "title": "Succession: Season 3"
+                        },
+                        {
+                            "external": "video://27d1ef66-f348-4023-9b6a-8c2332c0cff4",
+                            "id": "27d1ef66-f348-4023-9b6a-8c2332c0cff46",
+                            "image": "https://parade.com/.image/w_3840,q_auto:good,c_fill,ar_4:3/MTkwNTgxNDMxODE2NTYxNzg5/succession-season-4-162991.jpg",
+                            "spot": "1m 50s",
+                            "title": "Succession: Season 3"
+                        }
+                    ],
+                    "bestMoments": [
+                        {
+                            "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "image": "https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24636367/matthew_macfadyen_sarah_snook.jpeg?quality=90&strip=all&crop=0.094696969696969,0,99.810606060606,100",
+                            "spot": "11m 35s",
+                            "title": "Succession: Connor's Wedding"
+                        },
+                        {
+                            "external": "video://8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                            "id": "8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                            "image": "https://images.bauerhosting.com/empire/2023/05/succession-3.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
+                            "spot": "12m 57s",
+                            "title": "Succession: Inside Tailgate Party"
+                        },
+                        {
+                            "external": "video://f75e221c-5c21-47e3-8c32-e5fe90835461",
+                            "id": "f75e221c-5c21-47e3-8c32-e5fe90835461",
+                            "image": "https://media.houseandgarden.co.uk/photos/6422ed9d5e33bf61bce4d156/16:9/w_2560%2Cc_limit/matthew-macfadyen.jpg",
+                            "spot": "18m 45s",
+                            "title": "Succession: Opening Credits"
+                        },
+                        {
+                            "external": "video://4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                            "id": "4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                            "image": "https://cdn.britannica.com/09/247309-050-63A0FA2A/publicity-still-Succession-Jeremy-Strong-Alan-Ruck.jpgg",
+                            "spot": "21m 30s",
+                            "title": "Succession: Inside With Open Eyes"
+                        }
+                    ]
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=c1b98ccb-7b8f-454d-8310-01630af904ca",
+                    "image": "https://upload.wikimedia.org/wikipedia/en/3/3f/Succession_season_1.jpg",
+                    "title": "Succesion",
+                    "detailDescription": "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company.",
+                    "artist": [
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNzVjMWZlNGMtZjJhOS00NzBhLWEyZTUtNTM3NDk0M2NlMzZiXkEyXkFqcGc@._V1_.jpg",
+                            "spot": "Greg Hirsch",
+                            "title": "Nicholas Braun"
+                        },
+                        {
+                            "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/13/11/brian-cox.jpg",
+                            "spot": "Logan Roy",
+                            "title": "Brian Cox"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNjZlNWRkMDQtNGNlYi00YTczLThjODYtMWE4ZDFmYTE3ZTkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Roman Roy",
+                            "title": "Kieran Culkin"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMTcyMDc5OTE4OF5BMl5BanBnXkFyZXN1bWU@._V1_.jpg",
+                            "spot": "Frank Vernon",
+                            "title": "Peter Friedman"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Tom Wambsgans",
+                            "title": "Matthew Macfadyen"
+                        }
+                    ],
+                    "episode": [
+                        {
+                            "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "image": "https://cdn.theatlantic.com/thumbor/Z7e5qBkfi6K7dbg-J37KTm5zHxU=/0x0:1920x1080/960x540/media/img/mt/2021/12/jeremy_strong_sarah_snook_kieran_culkin-1/original.jpg",
+                            "spot": "2h 15m",
+                            "title": "S4.E10 ∙ With Open Eyes"
+                        },
+                        {
+                            "external": "video://6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                            "id": "6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                            "image": "https://media.npr.org/assets/img/2023/05/25/succession---justine-lupe-alan-ruck-kieran-culkin-jeremy-strong-sarah-snook_custom-033cda452062211fb2c1ac9a3accc5dc8fce4a04.jpg?s=1100&c=50&f=jpeg",
+                            "spot": "2h 12m",
+                            "title": "S4.E9 ∙ Church and State"
+                        },
+                        {
+                            "external": "video://27deb789-e7d1-4e26-9448-e96d6239eb08",
+                            "id": "27deb789-e7d1-4e26-9448-e96d6239eb08",
+                            "image": "https://media.npr.org/assets/img/2023/04/14/sarah-snook-jeremy-strong-kieran-culkin_wide-0c63d941ecbf9745761020751fb28ff8cd7788a3.jpg?s=1100&c=50&f=jpeg",
+                            "spot": "2h 21m",
+                            "title": "S4.E8 ∙ America Decides"
+                        },
+                        {
+                            "external": "video://d3de77b3-cfd3-4add-be59-233db3cf3015",
+                            "id": "d3de77b3-cfd3-4add-be59-233db3cf3015",
+                            "image": "https://media.altyazi.net/wp-content/uploads/2023/06/kjghkjn-1600x900.jpg",
+                            "spot": "2h 14m",
+                            "title": "S4.E7 ∙ Tailgate Party"
+                        },
+                        {
+                            "external": "video://3ee3ea94-e207-427f-8b01-164fbf574165",
+                            "id": "3ee3ea94-e207-427f-8b01-164fbf574165",
+                            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStxY1flqepPp7qP972XVOKbwP7MnxZfMjLgw&s",
+                            "spot": "2h 19m",
+                            "title": "S4.E6 ∙ Living+"
+                        }
+                    ],
+                    "trailer": [
+                        {
+                            "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                            "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e063",
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQwMTM1MjczOF5BMl5BanBnXkFtZTgwNDAzMDQxNTM@._V1_.jpg",
+                            "spot": "1m 18s",
+                            "title": "Succession: Season 4"
+                        },
+                        {
+                            "external": "video://76ad9b99-ca46-4426-abbe-a61c92f733d7",
+                            "id": "76ad9b99-ca46-4426-abbe-a61c92f733d72",
+                            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaI0HglrO2oTwq4C7YD2Ng0KU7gLI3G_SZC3P2NJ6JXOWonk9ZAZH_BZL3CS1PleifALU&usqp=CAU",
+                            "spot": "1m 23s",
+                            "title": "Succession: Season 4"
+                        },
+                        {
+                            "external": "video://554e46be-f56f-430a-becb-06c35170392a",
+                            "id": "554e46be-f56f-430a-becb-06c35170392a1",
+                            "image": "https://hips.hearstapps.com/hmg-prod/images/c5ca1e50042bedf41561b34afb89bb35a3cfacc2d7ef2faaaca25ab7d0f0a82be325aedb5252a8dd59f91a54a10c601d-1565546387.jpg",
+                            "spot": "1m 57s",
+                            "title": "Succession: Season 4"
+                        },
+                        {
+                            "external": "video://d37eb2ec-40b2-483f-bbc5-b751aa22ab86",
+                            "id": "d37eb2ec-40b2-483f-bbc5-b751aa22ab864",
+                            "image": "https://hips.hearstapps.com/hmg-prod/images/succession-season-4-1639428728.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=1200:*",
+                            "spot": "1m 37s",
+                            "title": "Succession: Season 3"
+                        },
+                        {
+                            "external": "video://27d1ef66-f348-4023-9b6a-8c2332c0cff4",
+                            "id": "27d1ef66-f348-4023-9b6a-8c2332c0cff46",
+                            "image": "https://parade.com/.image/w_3840,q_auto:good,c_fill,ar_4:3/MTkwNTgxNDMxODE2NTYxNzg5/succession-season-4-162991.jpg",
+                            "spot": "1m 50s",
+                            "title": "Succession: Season 3"
+                        }
+                    ],
+                    "bestMoments": [
+                        {
+                            "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "image": "https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24636367/matthew_macfadyen_sarah_snook.jpeg?quality=90&strip=all&crop=0.094696969696969,0,99.810606060606,100",
+                            "spot": "11m 35s",
+                            "title": "Succession: Connor's Wedding"
+                        },
+                        {
+                            "external": "video://8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                            "id": "8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                            "image": "https://images.bauerhosting.com/empire/2023/05/succession-3.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
+                            "spot": "12m 57s",
+                            "title": "Succession: Inside Tailgate Party"
+                        },
+                        {
+                            "external": "video://f75e221c-5c21-47e3-8c32-e5fe90835461",
+                            "id": "f75e221c-5c21-47e3-8c32-e5fe90835461",
+                            "image": "https://media.houseandgarden.co.uk/photos/6422ed9d5e33bf61bce4d156/16:9/w_2560%2Cc_limit/matthew-macfadyen.jpg",
+                            "spot": "18m 45s",
+                            "title": "Succession: Opening Credits"
+                        },
+                        {
+                            "external": "video://4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                            "id": "4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                            "image": "https://cdn.britannica.com/09/247309-050-63A0FA2A/publicity-still-Succession-Jeremy-Strong-Alan-Ruck.jpgg",
+                            "spot": "21m 30s",
+                            "title": "Succession: Inside With Open Eyes"
+                        }
+                    ]
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Fpop0SrIfFncUTB_IO0lnUXaPyjSaOCXvg&s",
+                    "title": "Mobland",
+                    "detailDescription": "Power is up for grabs as two warring crime families clash in a battle that threatens to topple empires. In the crossfire stands Harry Da Souza, a street-smart 'fixer' who knows too well where loyalties lie when opposing forces collide.",
+                    "artist": [
+                        {
+                            "image": "https://hips.hearstapps.com/hmg-prod/images/9th-annual-ves-awards---red-carpet.jpg?resize=980:*",
+                            "spot": "Harry Da Souza",
+                            "title": "Tom Hardy"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMTMwMjMxNzM4OV5BMl5BanBnXkFtZTcwNDM5NzkxMw@@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Conrad Harrigan",
+                            "title": "Pierce Brosnan"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BYjExZDAyZjYtNDUzNi00ZjIxLWE1MWYtZGExMmVhOTBmMTEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Jan Da Souza",
+                            "title": "Joanne Froggatt"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMzJiYTk5YmYtNmI0Ni00YTIxLWIyMmQtYzQ5ZmQwZmYxMmRmXkEyXkFqcGc@._V1_.jpg",
+                            "spot": "Eddie Harrigan",
+                            "title": "Anson Boon"
+                        },
+                        {
+                            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5DZuij8rF14O6u-aH6M1--NQHZEIXO2KtZg&s",
+                            "spot": "Bella Harrigan",
+                            "title": "Lara Pulver"
+                        }
+                    ],
+                    "episode": [
+                        {
+                            "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "image": "https://iaatv.tmgrup.com.tr/a8420b/500/281/0/0/1280/719?u=https://iatv.tmgrup.com.tr/2025/02/17/bir-gece-masali-1739779663101.jpg",
+                            "spot": "2h 15m",
+                            "title": "22. Bölüm"
+                        },
+                        {
+                            "external": "video://6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                            "id": "6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
+                            "image": "https://iaatv.tmgrup.com.tr/9b8ac8/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/10/bir-gece-masali-1739174632960.jpg",
+                            "spot": "2h 12m",
+                            "title": "21. Bölüm"
+                        },
+                        {
+                            "external": "video://27deb789-e7d1-4e26-9448-e96d6239eb08",
+                            "id": "27deb789-e7d1-4e26-9448-e96d6239eb08",
+                            "image": "https://iaatv.tmgrup.com.tr/0a1a77/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/03/bir-gece-masali-1738570678624.jpg",
+                            "spot": "2h 21m",
+                            "title": "20. Bölüm"
+                        },
+                        {
+                            "external": "video://d3de77b3-cfd3-4add-be59-233db3cf3015",
+                            "id": "d3de77b3-cfd3-4add-be59-233db3cf3015",
+                            "image": "https://iaatv.tmgrup.com.tr/c41388/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/01/29/bir-gece-masali-1738099134048.jpg",
+                            "spot": "2h 14m",
+                            "title": "19. Bölüm"
+                        },
+                        {
+                            "external": "video://3ee3ea94-e207-427f-8b01-164fbf574165",
+                            "id": "3ee3ea94-e207-427f-8b01-164fbf574165",
+                            "image": "https://iaatv.tmgrup.com.tr/b59694/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/01/13/bir-gece-masali-1736756841160.jpg",
+                            "spot": "2h 19m",
+                            "title": "18. Bölüm"
+                        }
+                    ],
+                    "trailer": [
+                        {
+                            "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                            "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e063",
+                            "image": "https://iaatv.tmgrup.com.tr/a40605/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/19/bir-gece-masali-1739947039195.jpg",
+                            "spot": "1m 18s",
+                            "title": "23. Bölüm Fragmanı"
+                        },
+                        {
+                            "external": "video://76ad9b99-ca46-4426-abbe-a61c92f733d7",
+                            "id": "76ad9b99-ca46-4426-abbe-a61c92f733d72",
+                            "image": "https://iaatv.tmgrup.com.tr/fe9014/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/14/bir-gece-masali-2-fragman-1739559125396.jpg",
+                            "spot": "1m 23s",
+                            "title": "22. Bölüm 2.Fragmanı "
+                        },
+                        {
+                            "external": "video://554e46be-f56f-430a-becb-06c35170392a",
+                            "id": "554e46be-f56f-430a-becb-06c35170392a1",
+                            "image": "https://iaatv.tmgrup.com.tr/6be4a2/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/12/bir-gece-masali-1739308463358.jpg",
+                            "spot": "1m 57s",
+                            "title": "22. Bölüm Fragmanı"
+                        },
+                        {
+                            "external": "video://d37eb2ec-40b2-483f-bbc5-b751aa22ab86",
+                            "id": "d37eb2ec-40b2-483f-bbc5-b751aa22ab864",
+                            "image": "https://iaatv.tmgrup.com.tr/06ccbd/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/09/bir-gece-masali-2-fragmani-1739132220778.jpg",
+                            "spot": "1m 37s",
+                            "title": "21. Bölüm 2. Fragmanı"
+                        },
+                        {
+                            "external": "video://27d1ef66-f348-4023-9b6a-8c2332c0cff4",
+                            "id": "27d1ef66-f348-4023-9b6a-8c2332c0cff46",
+                            "image": "https://iaatv.tmgrup.com.tr/fe0c30/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/05/bir-gece-masali-1738703520719.jpg",
+                            "spot": "1m 50s",
+                            "title": "21. Bölüm Fragmanı"
+                        }
+                    ],
+                    "bestMoments": [
+                        {
+                            "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "image": "https://iaatv.tmgrup.com.tr/cc371f/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/22/bir-gece-masali-on-izleme-1740247046958.jpg",
+                            "spot": "11m 35s",
+                            "title": "23. Bölüm Ön İzleme"
+                        },
+                        {
+                            "external": "video://8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                            "id": "8395ef78-c161-4e8d-869d-62e0e6f5fca4",
+                            "image": "https://iaatv.tmgrup.com.tr/18812a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/kim-oldu-1739910442969.jpg",
+                            "spot": "12m 57s",
+                            "title": "Kim öldü?"
+                        },
+                        {
+                            "external": "video://f75e221c-5c21-47e3-8c32-e5fe90835461",
+                            "id": "f75e221c-5c21-47e3-8c32-e5fe90835461",
+                            "image": "https://iaatv.tmgrup.com.tr/2553e3/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/ruh-esi-1739909284943.jpg",
+                            "spot": "18m 45s",
+                            "title": "Ruh eşi"
+                        },
+                        {
+                            "external": "video://4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                            "id": "4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
+                            "image": "https://iaatv.tmgrup.com.tr/6ddffe/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/yaziklar-olsun-1739909120706.jpg",
+                            "spot": "21m 30s",
+                            "title": "Yazıklar olsun"
+                        },
+                        {
+                            "external": "video://fc7aeb4c-3ba8-47c1-bbea-0f2f73dfd8fc",
+                            "id": "fc7aeb4c-3ba8-47c1-bbea-0f2f73dfd8fc",
+                            "image": "https://iaatv.tmgrup.com.tr/ff0b5a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/16/bir-gece-masali-22-bolum-on-izleme-1739737669460.jpg",
+                            "spot": "12m 50s",
+                            "title": "22.⁠ ⁠⁠Bölüm Ön İzleme"
+                        }
+                    ]
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
+                    "image": "https://images04.kaleidescape.com/transformed/covers/450x642s/430/43007739.jpg",
+                    "title": "Brookly Nine Nine"
+                }
+            ]
         },
-        "title": {
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 12,
-          "fontType": "Overpass-semibold",
-          "isActive": true,
-          "isDynamicLines": true,
-          "maxLines": 4
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "borderColor": "1AFFFFFF",
+                    "borderIsActive": false,
+                    "itemSpacer": 12,
+                    "radius": 8,
+                    "ratio": 0.41
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "radius": 0,
+                    "size": "295x410",
+                    "weight": 1
+                },
+                "title": {
+                    "align": "left",
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 16,
+                    "fontType": "Overpass-bold",
+                    "isActive": false,
+                    "maxLines": 2
+                },
+                "widget": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "padding": {
+                        "bottom": 24,
+                        "left": 16,
+                        "right": 16,
+                        "top": 0
+                    },
+                    "rowCount": 1,
+                    "template": "cardFullImage1",
+                    "type": "horizontal"
+                },
+                "widgetTitle": {
+                    "fontColorDark": "FFA2A3A5",
+                    "fontColorLight": "FFA2A3A5",
+                    "fontSize": 18,
+                    "fontType": "Overpass-bold",
+                    "spacer": 12,
+                    "text": "Movies"
+                }
+            },
+            "news": [
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=c79f4908-5896-45d6-aa90-1248b4d4934e",
+                    "image": "https://m.media-amazon.com/images/M/MV5BMDBkZDNjMWEtOTdmMi00NmExLTg5MmMtNTFlYTJlNWY5YTdmXkEyXkFqcGc@._V1_.jpg",
+                    "title": "Top Gun"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=9fe6a82c-f95c-4b03-ad40-25edf101ab18",
+                    "image": "https://m.media-amazon.com/images/M/MV5BMmNmMTEzODQtNmExMS00OGUxLWFkNTItMTM3NzBlNDk0YWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "title": "Matrix"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=114a51ee-ff4f-43f6-a557-38d4e169d67d",
+                    "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg",
+                    "title": "Inception"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=2b887db6-4ac7-43b2-abc7-bc7f6d57050e",
+                    "image": "https://upload.wikimedia.org/wikipedia/tr/7/73/Mad_Max_Fury_Road_%28film%2C_2015%29.jpg",
+                    "title": "Mad Max"
+                }
+        
+          
+               
+               
+            ]
         },
-        "widget": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "decorationView": {
-            "isActive": false,
-            "type": "first"
-          },
-          "padding": {
-            "bottom": 24,
-            "left": 16,
-            "right": 0,
-            "top": 24
-          },
-          "template": "broadcast",
-          "type": "horizontal"
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF383A40",
+                    "bgColorLight": "FF172338",
+                    "borderColor": "1AFFFFFF",
+                    "borderIsActive": false,
+                    "radius": 0,
+                    "ratio": 1
+                },
+                "icon": {
+                    "isActive": true,
+                    "position": "center",
+                    "size": 60,
+                    "type": "play"
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "radius": 0,
+                    "size": "752x1000",
+                    "weight": 1
+                },
+                "indicator": {
+                    "borderColor": "00FFFFFF",
+                    "borderColorDark": "00FFFFFF",
+                    "height": 28,
+                    "isActive": true,
+                    "isOverImage": true,
+                    "selectedColor": "FFCB2C1E",
+                    "showIndex": false,
+                    "type": "ellipse",
+                    "unselectedColor": "FFA2A3A5",
+                    "unselectedColorDark": "FFA2A3A5"
+                },
+                "spot": {
+                    "align": "center",
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 20,
+                    "fontType": "Overpass-bold",
+                    "gradient": true,
+                    "isActive": true,
+                    "maxLines": 1,
+                    "scrollBehaviour": "paging"
+                },
+                "title": {
+                    "align": "center",
+                    "checkShowTitle": false,
+                    "fontColorDark": "FFCB2C1E",
+                    "fontColorLight": "FFCB2C1E",
+                    "fontSize": 25,
+                    "fontType": "Overpass-bold",
+                    "gradient": true,
+                    "isActive": true,
+                    "isDynamicLines": true,
+                    "maxLines": 2,
+                    "scrollBehaviour": "paging"
+                },
+                "widget": {
+                    "autoSlide": false,
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "infinityLoop": true,
+                    "interval": 8,
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "scrollBehaviour": "paging",
+                    "template": "headlines",
+                    "type": "horizontal"
+                }
+            },
+            "news": [
+                {
+                    "external": "external://https://f9e87488-0461-41b8-bdee-91a92e273da7",
+                    "image": " ",
+                    "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/zembilli-1737797680815.jpg",
+                    "spot": " ",
+                    "title": " "
+                },
+                {
+                    "external": "external://https://dd4117f6-0b35-482e-80cd-c1ace8475b53",
+                    "image": " ",
+                    "imageBig": "https://iatv.tmgrup.com.tr/2024/12/11/can-borcu-1733931859587.jpg",
+                    "spot": " ",
+                    "title": " "
+                }
+            ]
         },
-        "widgetTitle": {
-          "fontColorDark": "FFA2A3A5",
-          "fontColorLight": "FFA2A3A5",
-          "fontSize": 18,
-          "fontType": "Overpass-bold",
-          "spacer": 12,
-          "text": "YAYIN AKIŞI"
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "borderColor": "1AFFFFFF",
+                    "borderIsActive": false,
+                    "itemSpacer": 12,
+                    "radius": 8,
+                    "ratio": 0.41
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "radius": 0,
+                    "size": "295x410",
+                    "weight": 1
+                },
+                "title": {
+                    "align": "left",
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 16,
+                    "fontType": "Overpass-bold",
+                    "isActive": false,
+                    "maxLines": 2
+                },
+                "widget": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "padding": {
+                        "bottom": 24,
+                        "left": 16,
+                        "right": 16,
+                        "top": 0
+                    },
+                    "rowCount": 1,
+                    "template": "cardFullImage1",
+                    "type": "horizontal"
+                },
+                "widgetTitle": {
+                    "fontColorDark": "FFA2A3A5",
+                    "fontColorLight": "FFA2A3A5",
+                    "fontSize": 18,
+                    "fontType": "Overpass-bold",
+                    "spacer": 12,
+                    "text": "Documentaries"
+                }
+            },
+            "news": [
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=95d098f3-b364-4f97-9fff-e92d1928f2dd",
+                    "image": "https://m.media-amazon.com/images/M/MV5BYWU5OGMxYjktMWY5Ny00NDJhLTgwMDktNjVmMTExZGIyODljXkEyXkFqcGc@._V1_.jpg",
+                    "title": "My Octapus Teacher"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=96cc82ab-fc20-4cd4-8be1-9266434ef754",
+                    "image": "https://m.media-amazon.com/images/M/MV5BYjgyODJmY2YtZTk4Yy00MjBlLWFlM2YtNDIyMDk5YmQxMTllXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "title": "The Blue Planet"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=075e6976-b2e3-4996-a93c-f1f44d4796eb",
+                    "image": "https://m.media-amazon.com/images/M/MV5BMzY4NDBkMWYtYzdkYy00YzBjLWJmODctMWM4YjYzZTdjNWE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "title": "Planet II"
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=b154ab4a-b910-4397-b49c-7a02a3aa36b5",
+                    "image": "https://m.media-amazon.com/images/I/91PAi3dYluL._AC_UF894,1000_QL80_.jpg",
+                    "title": "The Cove"
+                }
+            ]
+        },
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "borderColor": "1AFFFFFF",
+                    "borderIsActive": false,
+                    "itemSpacer": 12,
+                    "radius": 8,
+                    "ratio": 0.76
+                },
+                "date": {
+                    "fontColorDark": "99ffffff",
+                    "fontColorLight": "99ffffff",
+                    "fontSize": 12,
+                    "fontType": "Overpass-regular",
+                    "isActive": false,
+                    "maxLines": 1
+                },
+                "icon": {
+                    "isActive": true,
+                    "position": "topRight",
+                    "size": 40,
+                    "type": "play"
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 0,
+                        "left": 0,
+                        "right": 0,
+                        "top": 0
+                    },
+                    "radius": 8,
+                    "size": "500x281",
+                    "weight": 1
+                },
+                "spot": {
+                    "align": "center",
+                    "fontColorDark": "FFFFFFFF",
+                    "fontColorLight": "FFFFFFFF",
+                    "fontSize": 15,
+                    "fontType": "Overpass-bold",
+                    "gradient": true,
+                    "isActive": true,
+                    "isDynamicLines": true,
+                    "maxLines": 1
+                },
+                "title": {
+                    "align": "center",
+                    "fontColorDark": "FFE97B40",
+                    "fontColorLight": "FFE97B40",
+                    "fontSize": 18,
+                    "fontType": "Overpass-bold",
+                    "gradient": true,
+                    "isActive": true,
+                    "isDynamicLines": true,
+                    "maxLines": 2
+                },
+                "widget": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "isPlaylist": true,
+                    "padding": {
+                        "bottom": 24,
+                        "left": 16,
+                        "right": 16,
+                        "top": 0
+                    },
+                    "rowCount": 1,
+                    "template": "cardFullImage3",
+                    "type": "horizontal"
+                },
+                "widgetTitle": {
+                    "fontColorDark": "FFA2A3A5",
+                    "fontColorLight": "FFA2A3A5",
+                    "fontSize": 18,
+                    "fontType": "Overpass-bold",
+                    "text": "Most Watched"
+                }
+            },
+            "videos": [
+                {
+                    "episode": 182,
+                    "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
+                    "image": "https://coastalcourier.cdn-anvilcms.net/media/images/2018/04/23/images/ddd3950d7be66176c30809d2478f1eff92.fe2b50e8.fill-250x250.jpg",
+                    "season": 6,
+                    "showAd": false,
+                    "spot": "A Quiet Place",
+                    "title": "The Office",
+                    "videoTypeId": 11
+                },
+                {
+                    "episode": 181,
+                    "external": "video://f7c54da7-6978-44b9-84bc-47691d056728",
+                    "image": "https://m.media-amazon.com/images/M/MV5BMTJiMzgwZTktYzZhZC00YzhhLWEzZDUtMGM2NTE4MzQ4NGFmXkEyXkFqcGdeQWpybA@@._V1_QL75_UX500_CR0,0,500,281_.jpg",
+                    "season": 6,
+                    "showAd": true,
+                    "spot": "Say My Name",
+                    "title": "Breaking Bad",
+                    "videoTypeId": 11
+                },
+                {
+                    "episode": 182,
+                    "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
+                    "image": "data:image/jpeg;base64,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",
+                    "season": 6,
+                    "showAd": false,
+                    "spot": "The Final Reckoning",
+                    "title": "Mission: Impossible",
+                    "videoTypeId": 11
+                }
+            ]
+        },
+        {
+            "config": {
+                "cell": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "borderColor": "0AFFFFFF",
+                    "borderIsActive": false,
+                    "itemSpacer": 12,
+                    "radius": 0,
+                    "ratio": 0.46
+                },
+                "image": {
+                    "padding": {
+                        "bottom": 9,
+                        "left": 1,
+                        "right": 1,
+                        "top": 1
+                    },
+                    "radius": 8,
+                    "size": "500x281",
+                    "weight": 1
+                },
+                "title": {
+                    "align": "left",
+                    "fontColorDark": "FFE97B40",
+                    "fontColorLight": "FFE97B40",
+                    "fontSize": 16,
+                    "fontType": "Overpass-bold",
+                    "isActive": true,
+                    "maxLines": 3,
+                    "verticalAlignment": "top"
+                },
+                "widget": {
+                    "bgColorDark": "FF171920",
+                    "bgColorLight": "FF171920",
+                    "columnCount": 1,
+                    "padding": {
+                        "bottom": 16,
+                        "left": 16,
+                        "right": 16,
+                        "top": 0
+                    },
+                    "rowCount": 1,
+                    "template": "cardTopImage1",
+                    "type": "horizontal"
+                },
+                "widgetTitle": {
+                    "fontColorDark": "FFA2A3A5",
+                    "fontColorLight": "FFA2A3A5",
+                    "fontSize": 18,
+                    "fontType": "Overpass-bold",
+                    "text": "Editor’s Picks"
+                }
+            },
+            "videos": [
+                {
+                    "external": "video://518c3074-63ce-4c0c-9231-9317d79dc501",
+                    "image": "http://m.media-amazon.com/images/M/MV5BZGY5MTgwOGItN2Q5My00MWZhLTkzMWEtYzEzYTZkNjBmN2RiXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg",
+                    "imageBig": "http://m.media-amazon.com/images/M/MV5BZGY5MTgwOGItN2Q5My00MWZhLTkzMWEtYzEzYTZkNjBmN2RiXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg",
+                    "showAd": true,
+                    "title": "Friends 30th Anniversary"
+                },
+                {
+                    "external": "video://a5460702-4989-4a82-842a-900d00a1f253",
+                    "image": "https://image.chitra.live/api/v1/wps/71ff28b/6e9b0a00-4fbb-40b2-a0e2-37d8d5b673e0/13/Clarkson-s-Farm-Series-3-Prime-Video-Ellis-O-Brien-679x419.jpg",
+                    "imageBig": "https://image.chitra.live/api/v1/wps/71ff28b/6e9b0a00-4fbb-40b2-a0e2-37d8d5b673e0/13/Clarkson-s-Farm-Series-3-Prime-Video-Ellis-O-Brien-679x419.jpg",
+                    "showAd": true,
+                    "title": "Clarkson's Farm"
+                }
+            ]
         }
-      },
-      "streams": [
-        {
-          "dayName": "Perşembe",
-          "external": "selected://broadcast",
-          "hour": "08",
-          "isLive": false,
-          "image": "https://iaatv.tmgrup.com.tr/98a93b/295/410/852/0/1628/1080?u=https://iatv.tmgrup.com.tr/2025/02/20/kahvalti-haberleri-1740038904487.jpg",
-          "minute": "00",
-          "text": "08:00",
-          "title": "Kahvaltı Haberleri"
-        },
-        {
-          "dayName": "Perşembe",
-          "external": "selected://broadcast",
-          "hour": "10",
-          "isLive": true,
-          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661956802814.jpg",
-          "minute": "00",
-          "text": "10:00",
-          "title": "Müge Anlı ile Tatlı Sert"
-        },
-        {
-          "dayName": "Perşembe",
-          "external": "selected://broadcast",
-          "hour": "13",
-          "isLive": false,
-          "image": "https://iaatv.tmgrup.com.tr/a1dcf0/295/410/572/0/1347/1080?u=https://iatv.tmgrup.com.tr/2025/02/20/atv-gun-ortasi-1740050584684.jpg",
-          "minute": "00",
-          "text": "13:00",
-          "title": "atv Gün Ortası"
-        },
-        {
-          "dayName": "Perşembe",
-          "external": "selected://broadcast",
-          "hour": "14",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2024/12/26/295x410/1735234804084.jpg",
-          "minute": "00",
-          "text": "14:00",
-          "title": "Zembilli"
-        },
-        {
-          "dayName": "Perşembe",
-          "external": "selected://broadcast",
-          "hour": "16",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2024/08/30/295x410/1725043866987.jpg",
-          "minute": "00",
-          "text": "16:00",
-          "title": "Esra Erol'da"
-        },
-        {
-          "dayName": "Perşembe",
-          "external": "selected://broadcast",
-          "hour": "19",
-          "isLive": false,
-          "image": "https://iaatv.tmgrup.com.tr/a7132e/295/410/557/0/1142/813?u=https://iatv.tmgrup.com.tr/2025/02/20/atv-ana-haber-1740073945559.jpg",
-          "minute": "00",
-          "text": "19:00",
-          "title": "atv Ana Haber"
-        },
-        {
-          "dayName": "Perşembe",
-          "external": "selected://broadcast",
-          "hour": "20",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
-          "minute": "00",
-          "text": "20:00",
-          "title": "Başka Bir Gün"
-        },
-        {
-          "dayName": "Perşembe",
-          "external": "selected://livestream",
-          "hour": "23",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
-          "minute": "45",
-          "text": "23:45",
-          "title": "Başka Bir Gün"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "02",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2024/09/05/295x410/1725545448317.jpg",
-          "minute": "30",
-          "text": "02:30",
-          "title": "Bir Gece Masalı"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "05",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2021/06/04/295x410/1622803859586.jpg",
-          "minute": "20",
-          "text": "05:20",
-          "title": "Hercai"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "07",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2023/09/14/295x410/1694690182502.jpg",
-          "minute": "00",
-          "text": "07:00",
-          "title": "Kahvaltı Haberleri"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "08",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2022/08/30/295x410/1661875829987.jpg",
-          "minute": "30",
-          "text": "08:30",
-          "title": "Nihat Hatipoğlu Sorularınızı Cevaplıyor"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "10",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661956802814.jpg",
-          "minute": "00",
-          "text": "10:00",
-          "title": "Müge Anlı ile Tatlı Sert"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "13",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2024/08/22/295x410/1724334019089.jpg",
-          "minute": "00",
-          "text": "13:00",
-          "title": "atv Gün Ortası"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "14",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2025/01/06/295x410/1736186866547.jpg",
-          "minute": "00",
-          "text": "14:00",
-          "title": "Kardelenler"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "16",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2024/08/30/295x410/1725043866987.jpg",
-          "minute": "00",
-          "text": "16:00",
-          "title": "Esra Erol'da"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "19",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2023/09/15/295x410/1694770645150.jpg",
-          "minute": "00",
-          "text": "19:00",
-          "title": "atv Ana Haber"
-        },
-        {
-          "dayName": "Cuma",
-          "external": "selected://broadcast",
-          "hour": "20",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2024/12/26/295x410/1735234804084.jpg",
-          "minute": "00",
-          "text": "20:00",
-          "title": "Zembilli"
-        },
-        {
-          "dayName": "Cumartesi",
-          "external": "selected://broadcast",
-          "hour": "00",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2024/12/11/295x410/1733939159777.jpg",
-          "minute": "20",
-          "text": "00:20",
-          "title": "Can Borcu"
-        },
-        {
-          "dayName": "Cumartesi",
-          "external": "selected://broadcast",
-          "hour": "03",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
-          "minute": "00",
-          "text": "03:00",
-          "title": "Başka Bir Gün"
-        },
-        {
-          "dayName": "Cumartesi",
-          "external": "selected://broadcast",
-          "hour": "05",
-          "isLive": false,
-          "image": "https://iatv.tmgrup.com.tr/2021/06/04/295x410/1622803859586.jpg",
-          "minute": "30",
-          "text": "05:30",
-          "title": "Hercai"
-        }
-      ]
-    },
-    {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "borderColor": "1AFFFFFF",
-          "borderIsActive": false,
-          "itemSpacer": 12,
-          "radius": 8,
-          "ratio": 0.41
-        },
-        "image": {
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "radius": 0,
-          "size": "295x410",
-          "weight": 1
-        },
-        "title": {
-          "align": "left",
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 16,
-          "fontType": "Overpass-bold",
-          "isActive": false,
-          "maxLines": 2
-        },
-        "widget": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "padding": {
-            "bottom": 24,
-            "left": 16,
-            "right": 16,
-            "top": 0
-          },
-          "rowCount": 1,
-          "template": "cardFullImage1",
-          "type": "horizontal"
-        },
-        "widgetTitle": {
-          "fontColorDark": "FFA2A3A5",
-          "fontColorLight": "FFA2A3A5",
-          "fontSize": 18,
-          "fontType": "Overpass-semibold",
-          "spacer": 12,
-          "text": "DİZİLER"
-        }
-      },
-      "news": [
-          {
-              "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
-              "image": "https://iatv.tmgrup.com.tr/2024/09/05/295x410/1725545448317.jpg",
-              "title": "Bir Gece Masalı",
-              "detailDescription": "Bir Gece Masalı, komiser Mahir ile Yörük kızı Canfeza'nın Pamukkale'nin büyülü atmosferinde başlayıp İstanbul'da Asaf Bey konağına uzanan imkânsız aşklarını masalsı bir anlatımla ekrana taşıyor.",
-              "artist": [
-                  {
-                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214455571.jpg",
-                      "spot": "Mahir Yılmaz",
-                      "title": "Burak Deniz"
-                  },
-                  {
-                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214343274.jpg",
-                      "spot": "Canfeza Kilimci",
-                      "title": "Su Burcu Yazgı Coşkun"
-                  },
-                  {
-                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214543042.jpg",
-                      "spot": "Kürşat Kilimci ",
-                      "title": "Gürkan Uygun"
-                  },
-                  {
-                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214754574.jpg",
-                      "spot": "Raşit Kara",
-                      "title": "Mesut Akusta"
-                  },
-                  {
-                      "image": "https://iatv.tmgrup.com.tr/2024/08/29/288x401/1724934311787.jpg",
-                      "spot": "Süreyya Yılmaz",
-                      "title": "Özlem Türkad"
-                  },
-                  {
-                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214872069.jpg",
-                      "spot": "Selim Allame",
-                      "title": "Eren Vurdem"
-                  },
-                  {
-                      "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723215189301.jpg",
-                      "spot": "Sevde Yılmaz",
-                      "title": "İrem Altuğ"
-                  }
-              ],
-              "episode": [
-                  {
-                      "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
-                      "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
-                      "image": "https://iaatv.tmgrup.com.tr/a8420b/500/281/0/0/1280/719?u=https://iatv.tmgrup.com.tr/2025/02/17/bir-gece-masali-1739779663101.jpg",
-                      "spot": "2h 15m",
-                      "title": "22. Bölüm"
-                  },
-                  {
-                      "external": "video://6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
-                      "id": "6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
-                      "image": "https://iaatv.tmgrup.com.tr/9b8ac8/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/10/bir-gece-masali-1739174632960.jpg",
-                      "spot": "2h 12m",
-                      "title": "21. Bölüm"
-                  },
-                  {
-                      "external": "video://27deb789-e7d1-4e26-9448-e96d6239eb08",
-                      "id": "27deb789-e7d1-4e26-9448-e96d6239eb08",
-                      "image": "https://iaatv.tmgrup.com.tr/0a1a77/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/03/bir-gece-masali-1738570678624.jpg",
-                      "spot": "2h 21m",
-                      "title": "20. Bölüm"
-                  },
-                  {
-                      "external": "video://d3de77b3-cfd3-4add-be59-233db3cf3015",
-                      "id": "d3de77b3-cfd3-4add-be59-233db3cf3015",
-                      "image": "https://iaatv.tmgrup.com.tr/c41388/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/01/29/bir-gece-masali-1738099134048.jpg",
-                      "spot": "2h 14m",
-                      "title": "19. Bölüm"
-                  },
-                  {
-                      "external": "video://3ee3ea94-e207-427f-8b01-164fbf574165",
-                      "id": "3ee3ea94-e207-427f-8b01-164fbf574165",
-                      "image": "https://iaatv.tmgrup.com.tr/b59694/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/01/13/bir-gece-masali-1736756841160.jpg",
-                      "spot": "2h 19m",
-                      "title": "18. Bölüm"
-                  }
-              ],
-              "trailer": [
-                  {
-                      "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
-                      "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e063",
-                      "image": "https://iaatv.tmgrup.com.tr/a40605/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/19/bir-gece-masali-1739947039195.jpg",
-                      "spot": "1m 18s",
-                      "title": "23. Bölüm Fragmanı"
-                  },
-                  {
-                      "external": "video://76ad9b99-ca46-4426-abbe-a61c92f733d7",
-                      "id": "76ad9b99-ca46-4426-abbe-a61c92f733d72",
-                      "image": "https://iaatv.tmgrup.com.tr/fe9014/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/14/bir-gece-masali-2-fragman-1739559125396.jpg",
-                      "spot": "1m 23s",
-                      "title": "22. Bölüm 2.Fragmanı "
-                  },
-                  {
-                      "external": "video://554e46be-f56f-430a-becb-06c35170392a",
-                      "id": "554e46be-f56f-430a-becb-06c35170392a1",
-                      "image": "https://iaatv.tmgrup.com.tr/6be4a2/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/12/bir-gece-masali-1739308463358.jpg",
-                      "spot": "1m 57s",
-                      "title": "22. Bölüm Fragmanı"
-                  },
-                  {
-                      "external": "video://d37eb2ec-40b2-483f-bbc5-b751aa22ab86",
-                      "id": "d37eb2ec-40b2-483f-bbc5-b751aa22ab864",
-                      "image": "https://iaatv.tmgrup.com.tr/06ccbd/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/09/bir-gece-masali-2-fragmani-1739132220778.jpg",
-                      "spot": "1m 37s",
-                      "title": "21. Bölüm 2. Fragmanı"
-                  },
-                  {
-                      "external": "video://27d1ef66-f348-4023-9b6a-8c2332c0cff4",
-                      "id": "27d1ef66-f348-4023-9b6a-8c2332c0cff46",
-                      "image": "https://iaatv.tmgrup.com.tr/fe0c30/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/05/bir-gece-masali-1738703520719.jpg",
-                      "spot": "1m 50s",
-                      "title": "21. Bölüm Fragmanı"
-                  }
-              ],
-              "bestMoments": [
-                  {
-                      "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
-                      "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
-                      "image": "https://iaatv.tmgrup.com.tr/cc371f/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/22/bir-gece-masali-on-izleme-1740247046958.jpg",
-                      "spot": "11m 35s",
-                      "title": "23. Bölüm Ön İzleme"
-                  },
-                  {
-                      "external": "video://8395ef78-c161-4e8d-869d-62e0e6f5fca4",
-                      "id": "8395ef78-c161-4e8d-869d-62e0e6f5fca4",
-                      "image": "https://iaatv.tmgrup.com.tr/18812a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/kim-oldu-1739910442969.jpg",
-                      "spot": "12m 57s",
-                      "title": "Kim öldü?"
-                  },
-                  {
-                      "external": "video://f75e221c-5c21-47e3-8c32-e5fe90835461",
-                      "id": "f75e221c-5c21-47e3-8c32-e5fe90835461",
-                      "image": "https://iaatv.tmgrup.com.tr/2553e3/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/ruh-esi-1739909284943.jpg",
-                      "spot": "18m 45s",
-                      "title": "Ruh eşi"
-                  },
-                  {
-                      "external": "video://4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
-                      "id": "4a4fe7a1-5e03-42bb-bd1f-2345d96cd9f7",
-                      "image": "https://iaatv.tmgrup.com.tr/6ddffe/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/yaziklar-olsun-1739909120706.jpg",
-                      "spot": "21m 30s",
-                      "title": "Yazıklar olsun"
-                  },
-                  {
-                      "external": "video://fc7aeb4c-3ba8-47c1-bbea-0f2f73dfd8fc",
-                      "id": "fc7aeb4c-3ba8-47c1-bbea-0f2f73dfd8fc",
-                      "image": "https://iaatv.tmgrup.com.tr/ff0b5a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/16/bir-gece-masali-22-bolum-on-izleme-1739737669460.jpg",
-                      "spot": "12m 50s",
-                      "title": "22.⁠ ⁠⁠Bölüm Ön İzleme"
-                  }
-              ]
-          },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
-          "image": "https://iatv.tmgrup.com.tr/2024/09/24/295x410/1727165971183.jpg",
-          "title": "Kuruluş Osman"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
-          "image": "https://iatv.tmgrup.com.tr/2025/01/24/295x410/1737750246209.jpg",
-          "title": "Başka Bir Gün"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=13d19b42-519a-46f0-9fd7-606a9fcdec3b",
-          "image": "https://iatv.tmgrup.com.tr/2024/12/26/295x410/1735234804084.jpg",
-          "title": "Zembilli"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=4a8459e8-ba0c-4eb8-a7d3-3982cea3a8a2",
-          "image": "https://iatv.tmgrup.com.tr/2024/12/11/295x410/1733939159777.jpg",
-          "title": "Can Borcu"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=c1b98ccb-7b8f-454d-8310-01630af904ca",
-          "image": "https://iatv.tmgrup.com.tr/2025/01/06/295x410/1736186866547.jpg",
-          "title": "Kardelenler"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=a65a5c3d-1a33-46b1-8ff9-fb1a855808e4",
-          "image": "https://iaatv.tmgrup.com.tr/6bd7dc/295/410/0/0/295/410?u=https://iatv.tmgrup.com.tr/2025/02/20/1740062377419.jpg",
-          "title": "Sustalı Ceylan"
-        }
-      ]
-    },
-    {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "borderColor": "1AFFFFFF",
-          "borderIsActive": false,
-          "itemSpacer": 12,
-          "radius": 8,
-          "ratio": 0.41
-        },
-        "image": {
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "radius": 0,
-          "size": "295x410",
-          "weight": 1
-        },
-        "title": {
-          "align": "left",
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 16,
-          "fontType": "Overpass-bold",
-          "isActive": false,
-          "maxLines": 2
-        },
-        "widget": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "padding": {
-            "bottom": 24,
-            "left": 16,
-            "right": 16,
-            "top": 0
-          },
-          "rowCount": 1,
-          "template": "cardFullImage1",
-          "type": "horizontal"
-        },
-        "widgetTitle": {
-          "fontColorDark": "FFA2A3A5",
-          "fontColorLight": "FFA2A3A5",
-          "fontSize": 18,
-          "fontType": "Overpass-bold",
-          "spacer": 12,
-          "text": "PROGRAMLAR"
-        }
-      },
-      "news": [
-        {
-          "external": "apilink:///v2/link/105099330a?cid=114a51ee-ff4f-43f6-a557-38d4e169d67d",
-          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661956802814.jpg",
-          "title": "Müge Anlı ile Tatlı Sert"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=9fe6a82c-f95c-4b03-ad40-25edf101ab18",
-          "image": "https://iatv.tmgrup.com.tr/2024/08/30/295x410/1725043866987.jpg",
-          "title": "Esra Erol'da"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=c79f4908-5896-45d6-aa90-1248b4d4934e",
-          "image": "https://iatv.tmgrup.com.tr/2024/09/06/295x410/1725655689063.jpg",
-          "title": "Kim Milyoner Olmak İster?"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=2b887db6-4ac7-43b2-abc7-bc7f6d57050e",
-          "image": "https://iatv.tmgrup.com.tr/2022/08/30/295x410/1661875893876.jpg",
-          "title": "Nihat Hatipoğlu ile Dosta Doğru"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=9e142aa5-67c1-49a9-9677-3b074c30590b",
-          "image": "https://iatv.tmgrup.com.tr/2022/08/30/295x410/1661875829987.jpg",
-          "title": "Nihat Hatipoğlu Sorularınızı Cevaplıyor"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=f09ca990-5f30-452c-b500-08741d68ddf7",
-          "image": "https://iatv.tmgrup.com.tr/2024/06/04/295x410/1717493399832.jpg",
-          "title": "Dizi TV"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=7ab560e4-2a7f-43cf-862f-fb8083076120",
-          "image": "https://iatv.tmgrup.com.tr/2022/08/31/295x410/1661941969908.jpg",
-          "title": "Nihat Hatipoğlu ile Kur'an ve Sünnet"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=780e11de-70f1-4cac-a822-5056af2a4648",
-          "image": "https://iatv.tmgrup.com.tr/2024/04/09/295x410/1712643832543.jpg",
-          "title": "Filmler"
-        }
-      ]
-    },
-    {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF383A40",
-          "bgColorLight": "FF172338",
-          "borderColor": "1AFFFFFF",
-          "borderIsActive": false,
-          "radius": 0,
-          "ratio": 1
-        },
-        "icon": {
-          "isActive": true,
-          "position": "center",
-          "size": 60,
-          "type": "play"
-        },
-        "image": {
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "radius": 0,
-          "size": "752x1000",
-          "weight": 1
-        },
-        "indicator": {
-          "borderColor": "00FFFFFF",
-          "borderColorDark": "00FFFFFF",
-          "height": 28,
-          "isActive": true,
-          "isOverImage": true,
-          "selectedColor": "FFCB2C1E",
-          "showIndex": false,
-          "type": "ellipse",
-          "unselectedColor": "FFA2A3A5",
-          "unselectedColorDark": "FFA2A3A5"
-        },
-        "spot": {
-          "align": "center",
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 20,
-          "fontType": "Overpass-bold",
-          "gradient": true,
-          "isActive": true,
-          "maxLines": 1,
-          "scrollBehaviour": "paging"
-        },
-        "title": {
-          "align": "center",
-          "checkShowTitle": false,
-          "fontColorDark": "FFCB2C1E",
-          "fontColorLight": "FFCB2C1E",
-          "fontSize": 25,
-          "fontType": "Overpass-bold",
-          "gradient": true,
-          "isActive": true,
-          "isDynamicLines": true,
-          "maxLines": 2,
-          "scrollBehaviour": "paging"
-        },
-        "widget": {
-          "autoSlide": false,
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "infinityLoop": true,
-          "interval": 8,
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "scrollBehaviour": "paging",
-          "template": "headlines",
-          "type": "horizontal"
-        }
-      },
-      "news": [
-        {
-          "external": "external://https://f9e87488-0461-41b8-bdee-91a92e273da7",
-          "image": " ",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/01/25/zembilli-1737797680815.jpg",
-          "spot": " ",
-          "title": " "
-        },
-        {
-          "external": "external://https://dd4117f6-0b35-482e-80cd-c1ace8475b53",
-          "image": " ",
-          "imageBig": "https://iatv.tmgrup.com.tr/2024/12/11/can-borcu-1733931859587.jpg",
-          "spot": " ",
-          "title": " "
-        }
-      ]
-    },
-   {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "borderColor": "1AFFFFFF",
-          "borderIsActive": false,
-          "itemSpacer": 12,
-          "radius": 8,
-          "ratio": 0.41
-        },
-        "image": {
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "radius": 0,
-          "size": "295x410",
-          "weight": 1
-        },
-        "title": {
-          "align": "left",
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 16,
-          "fontType": "Overpass-bold",
-          "isActive": false,
-          "maxLines": 2
-        },
-        "widget": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "padding": {
-            "bottom": 24,
-            "left": 16,
-            "right": 16,
-            "top": 0
-          },
-          "rowCount": 1,
-          "template": "cardFullImage1",
-          "type": "horizontal"
-        },
-        "widgetTitle": {
-          "fontColorDark": "FFA2A3A5",
-          "fontColorLight": "FFA2A3A5",
-          "fontSize": 18,
-          "fontType": "Overpass-bold",
-          "spacer": 12,
-          "text": "atv KLASİKLERİ"
-        }
-      },
-      "news": [
-        {
-          "external": "apilink:///v2/link/105099330a?cid=95d098f3-b364-4f97-9fff-e92d1928f2dd",
-          "image": "https://iatv.tmgrup.com.tr/2021/03/25/295x410/1616672071318.jpg",
-          "title": "Sen Anlat Karadeniz"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=075e6976-b2e3-4996-a93c-f1f44d4796eb",
-          "image": "https://iatv.tmgrup.com.tr/2021/10/26/295x410/1635252285226.jpg",
-          "title": "Eşkıya Dünyaya Hükümdar Olmaz"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=96cc82ab-fc20-4cd4-8be1-9266434ef754",
-          "image": "https://iatv.tmgrup.com.tr/2021/03/25/295x410/1616673694917.jpg",
-          "title": "Karadayı"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=b154ab4a-b910-4397-b49c-7a02a3aa36b5",
-          "image": "https://iatv.tmgrup.com.tr/2021/06/04/295x410/1622803859586.jpg",
-          "title": "Hercai"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=3e6f97ea-ad61-4629-9927-16e63e97d0df",
-          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622730381231.jpg",
-          "title": "Ezel"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=64c31827-2fb9-43e3-9e3c-1666ffc2d846",
-          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622729644120.jpg",
-          "title": "Kara Para Aşk"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=de68e8b2-4ec5-4321-8e81-1bfa2cef2a3f",
-          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622731252683.jpg",
-          "title": "Avrupa Yakası"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=459ef907-b5d8-4d72-aa7f-fc1d289ef93d",
-          "image": "https://iatv.tmgrup.com.tr/2024/02/21/295x410/1708517624712.jpg",
-          "title": "Kardeşlerim"
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=6c756a59-bea8-4de3-974a-7fc1c5d4fb9d",
-          "image": "https://iatv.tmgrup.com.tr/2021/07/28/295x410/1627473372309.jpg",
-          "title": "Kertenkele "
-        },
-        {
-          "external": "apilink:///v2/link/105099330a?cid=58b8a11c-dfb3-4907-82c8-f27727cfe4c5",
-          "image": "https://iatv.tmgrup.com.tr/2021/06/03/295x410/1622733692103.jpg",
-          "title": "Kara Ekmek"
-        }
-      ]
-    },
-    {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "borderColor": "1AFFFFFF",
-          "borderIsActive": false,
-          "itemSpacer": 12,
-          "radius": 8,
-          "ratio": 0.76
-        },
-        "date": {
-          "fontColorDark": "99ffffff",
-          "fontColorLight": "99ffffff",
-          "fontSize": 12,
-          "fontType": "Overpass-regular",
-          "isActive": false,
-          "maxLines": 1
-        },
-        "icon": {
-          "isActive": true,
-          "position": "topRight",
-          "size": 40,
-          "type": "play"
-        },
-        "image": {
-          "padding": {
-            "bottom": 0,
-            "left": 0,
-            "right": 0,
-            "top": 0
-          },
-          "radius": 8,
-          "size": "500x281",
-          "weight": 1
-        },
-        "spot": {
-          "align": "center",
-          "fontColorDark": "FFFFFFFF",
-          "fontColorLight": "FFFFFFFF",
-          "fontSize": 15,
-          "fontType": "Overpass-bold",
-          "gradient": true,
-          "isActive": true,
-          "isDynamicLines": true,
-          "maxLines": 1
-        },
-        "title": {
-          "align": "center",
-          "fontColorDark": "FFE97B40",
-          "fontColorLight": "FFE97B40",
-          "fontSize": 18,
-          "fontType": "Overpass-bold",
-          "gradient": true,
-          "isActive": true,
-          "isDynamicLines": true,
-          "maxLines": 2
-        },
-        "widget": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "isPlaylist": true,
-          "padding": {
-            "bottom": 24,
-            "left": 16,
-            "right": 16,
-            "top": 0
-          },
-          "rowCount": 1,
-          "template": "cardFullImage3",
-          "type": "horizontal"
-        },
-        "widgetTitle": {
-          "fontColorDark": "FFA2A3A5",
-          "fontColorLight": "FFA2A3A5",
-          "fontSize": 18,
-          "fontType": "Overpass-bold",
-          "text": "EN ÇOK İZLENENLER"
-        }
-      },
-      "videos": [
-        {
-          "episode": 182,
-          "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
-          "image": "https://iaatv.tmgrup.com.tr/1397ff/500/281/0/0/1596/897?u=https://iatv.tmgrup.com.tr/2025/02/19/kurulus-osman-1739995185926.jpeg",
-          "season": 6,
-          "showAd": false,
-          "spot": "182. Bölüm Fragmanı",
-          "title": "Kuruluş Osman",
-          "videoTypeId": 11
-        },
-        {
-          "episode": 181,
-          "external": "video://f7c54da7-6978-44b9-84bc-47691d056728",
-          "image": "https://iaatv.tmgrup.com.tr/d8d016/500/281/0/0/1596/897?u=https://iatv.tmgrup.com.tr/2025/02/17/kurulus-osman-2-fragman-1739783422206.jpeg",
-          "season": 6,
-          "showAd": true,
-          "spot": "181. Bölüm Fragmanı",
-          "title": "Kuruluş Osman - 2. Fragman",
-          "videoTypeId": 11
-        },
-        {
-          "episode": 4,
-          "external": "video://d4532d9d-5914-4b29-bedb-3d4e1b9c561c",
-          "image": "https://iaatv.tmgrup.com.tr/0ce7f0/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/14/baska-bir-gun-1739559420191.jpg",
-          "season": 1,
-          "showAd": true,
-          "spot": "4. Bölüm Fragmanı",
-          "title": "Başka Bir Gün",
-          "videoTypeId": 11
-        },
-        {
-          "episode": 22,
-          "external": "video://76ad9b99-ca46-4426-abbe-a61c92f733d7",
-          "image": "https://iaatv.tmgrup.com.tr/fe9014/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/14/bir-gece-masali-2-fragman-1739559125396.jpg",
-          "season": 1,
-          "showAd": true,
-          "spot": "22. Bölüm Fragmanı",
-          "title": "Bir Gece Masalı - 2. Fragman",
-          "videoTypeId": 11
-        },
-        {
-          "episode": 181,
-          "external": "video://695739fc-651e-4afe-8796-0f81775c2cb6",
-          "image": "https://iaatv.tmgrup.com.tr/7b7f60/500/281/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/18/kurulus-osman-1739867376773.jpg",
-          "season": 6,
-          "showAd": true,
-          "spot": "181. Bölüm",
-          "title": "Kuruluş Osman",
-          "videoTypeId": 10
-        },
-        {
-          "episode": 3491,
-          "external": "video://e3e00d9b-260e-4369-9f34-98932acf757b",
-          "image": "https://iaatv.tmgrup.com.tr/f5435b/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/19/muge-anli-ile-tatli-sert-1739953260002.jpg",
-          "season": 17,
-          "showAd": true,
-          "spot": "3491. Bölüm",
-          "title": "Müge Anlı ile Tatlı Sert",
-          "videoTypeId": 10
-        },
-        {
-          "episode": 22,
-          "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
-          "image": "https://iaatv.tmgrup.com.tr/a8420b/500/281/0/0/1280/719?u=https://iatv.tmgrup.com.tr/2025/02/17/bir-gece-masali-1739779663101.jpg",
-          "season": 1,
-          "showAd": true,
-          "spot": "22. Bölüm",
-          "title": "Bir Gece Masalı",
-          "videoTypeId": 10
-        },
-        {
-          "episode": 3490,
-          "external": "video://7472d876-4fc5-48e0-9571-ed916cbe864e",
-          "image": "https://iaatv.tmgrup.com.tr/d924de/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/18/muge-anli-ile-tatli-sert-1739867864951.jpg",
-          "season": 17,
-          "showAd": true,
-          "spot": "3490. Bölüm",
-          "title": "Müge Anlı İle Tatlı Sert",
-          "videoTypeId": 10
-        },
-        {
-          "episode": 2046,
-          "external": "video://c3194c10-a636-4a77-84c8-9ef16ba5fb63",
-          "image": "https://iaatv.tmgrup.com.tr/316709/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/17/esra-erolda-1739812756337.jpg",
-          "season": 10,
-          "showAd": true,
-          "spot": "2046. Bölüm",
-          "title": "Esra Erol'da",
-          "videoTypeId": 10
-        },
-        {
-          "episode": 3489,
-          "external": "video://729adc96-94ad-44c6-b119-21a78e44ecdf",
-          "image": "https://iaatv.tmgrup.com.tr/0c5d19/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/17/muge-anli-ile-tatli-sert-1739777170866.jpg",
-          "season": 17,
-          "showAd": true,
-          "spot": "3489. Bölüm",
-          "title": "Müge Anlı ile Tatlı Sert",
-          "videoTypeId": 10
-        }
-      ]
-    },
-    {
-      "config": {
-        "cell": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "borderColor": "0AFFFFFF",
-          "borderIsActive": false,
-          "itemSpacer": 12,
-          "radius": 0,
-          "ratio": 0.46
-        },
-        "image": {
-          "padding": {
-            "bottom": 9,
-            "left": 1,
-            "right": 1,
-            "top": 1
-          },
-          "radius": 8,
-          "size": "500x281",
-          "weight": 1
-        },
-        "title": {
-          "align": "left",
-          "fontColorDark": "FFE97B40",
-          "fontColorLight": "FFE97B40",
-          "fontSize": 16,
-          "fontType": "Overpass-bold",
-          "isActive": true,
-          "maxLines": 3,
-          "verticalAlignment": "top"
-        },
-        "widget": {
-          "bgColorDark": "FF171920",
-          "bgColorLight": "FF171920",
-          "columnCount": 1,
-          "padding": {
-            "bottom": 16,
-            "left": 16,
-            "right": 16,
-            "top": 0
-          },
-          "rowCount": 1,
-          "template": "cardTopImage1",
-          "type": "horizontal"
-        },
-        "widgetTitle": {
-          "fontColorDark": "FFA2A3A5",
-          "fontColorLight": "FFA2A3A5",
-          "fontSize": 18,
-          "fontType": "Overpass-bold",
-          "text": "EDİTÖRÜN SEÇTİKLERİ"
-        }
-      },
-      "videos": [
-        {
-          "external": "video://518c3074-63ce-4c0c-9231-9317d79dc501",
-          "image": "https://iaatv.tmgrup.com.tr/ce3c4b/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/20/serdar-katil-mi-1740075390649.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/20/serdar-katil-mi-1740075390649.jpg",
-          "showAd": true,
-          "title": "’'Serdar katil mi?''"
-        },
-        {
-          "external": "video://a5460702-4989-4a82-842a-900d00a1f253",
-          "image": "https://iaatv.tmgrup.com.tr/79c2b4/500/281/0/0/834/468?u=https://iatv.tmgrup.com.tr/2025/02/14/ortalik-karisti-1739561008134.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/14/ortalik-karisti-1739561008134.jpg",
-          "showAd": true,
-          "title": "Ortalık karıştı"
-        },
-        {
-          "external": "video://f4d5d15c-100d-4486-845e-85ce024c0972",
-          "image": "https://iaatv.tmgrup.com.tr/0aace0/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/16/raci-korayin-oyununa-ortak-oldu-1739735721216.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/16/raci-korayin-oyununa-ortak-oldu-1739735721216.jpg",
-          "showAd": true,
-          "title": "Raci, Koray'ın oyununa ortak oldu!"
-        },
-        {
-          "external": "video://23510956-9ba3-46c0-bdff-12aa2cf68cc4",
-          "image": "https://iaatv.tmgrup.com.tr/eaa62a/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/16/yankinin-aysele-surprizi-1739735191764.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/16/yankinin-aysele-surprizi-1739735191764.jpg",
-          "showAd": true,
-          "title": "Yankı'nın, Aysel'e sürprizi..."
-        },
-        {
-          "external": "video://4e8e2804-4f38-42c5-a23a-c8029c6f2952",
-          "image": "https://iaatv.tmgrup.com.tr/74875c/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/13/nehir-tunayla-yuzlesiyor-1739469480481.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/13/nehir-tunayla-yuzlesiyor-1739469480481.jpg",
-          "showAd": true,
-          "title": "Kocama ne yaptın söyle?"
-        },
-        {
-          "external": "video://9b5079a3-1675-4c70-9165-bd00208b8b15",
-          "image": "https://iaatv.tmgrup.com.tr/c2a157/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/13/nehir-serdarin-ailesinden-hesap-soruyor-1739469022252.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/13/nehir-serdarin-ailesinden-hesap-soruyor-1739469022252.jpg",
-          "showAd": true,
-          "title": "Nehir, Serdar’ın ailesinden hesap soruyor"
-        },
-        {
-          "external": "video://f13da9b2-2fe2-4758-8864-75d60fb9dd44",
-          "image": "https://iaatv.tmgrup.com.tr/9a9f58/500/281/0/0/834/469?u=https://iatv.tmgrup.com.tr/2025/02/11/gergin-anlar-1739301430759.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/11/gergin-anlar-1739301430759.jpg",
-          "showAd": true,
-          "title": "Gergin anlar"
-        },
-        {
-          "external": "video://00295c56-dc47-4ef8-8b80-2d07e31e24da",
-          "image": "https://iaatv.tmgrup.com.tr/ed2fdf/500/281/0/0/883/495?u=https://iatv.tmgrup.com.tr/2025/02/11/koz-verme-1739301527618.jpg",
-          "imageBig": "https://iatv.tmgrup.com.tr/2025/02/11/koz-verme-1739301527618.jpg",
-          "showAd": true,
-          "title": "Koz verme"
-        }
-      ]
-    }
-  ]
-
+    ]
+    
 }

@@ -49,7 +49,7 @@ struct AchiveCell: View {
                                     .animation(.spring(), value: currentIndex)
                             } else if index == 0 {
                                 HStack {
-                                    SwiftUI.Image("atv2")
+                                    SwiftUI.Image("oscar")
                                         .resizable()
                                         .scaledToFill()
                                         .frame(width: 120, height: 200)
@@ -57,7 +57,7 @@ struct AchiveCell: View {
                                         .shadow(color: .purple.opacity(0.4), radius: 3)
                                         .rotationEffect(.degrees(-10))
                                         .offset(y: 10)
-                                    SwiftUI.Image("atv1")
+                                    SwiftUI.Image("cannes")
                                         .resizable()
                                         .scaledToFill()
                                         .frame(width: 150, height: 200)
