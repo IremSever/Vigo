@@ -52,9 +52,9 @@ enum CategoryType: String, CaseIterable, CategoryProtocol {
     
     var displayName: String {
         switch self {
-        case .trending: return "Trending"
-        case .classics: return "Classics"
-        case .shows: return "Shows"
+        case .trending: return "Trending Now"
+        case .classics: return "Top Rated"
+        case .shows: return "New Releases"
         }
     }
 }

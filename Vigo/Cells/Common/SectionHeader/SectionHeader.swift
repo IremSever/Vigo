@@ -20,8 +20,8 @@ struct SectionHeader<T: CategoryProtocol>: View, NavAnimation {
                 ForEach(categories, id: \.self) { category in
                     VStack {
                         Text(category.displayName)
-                            .font(.exoBold(size: isExplore ? 20 : 16))
-                            .foregroundColor(selectedCategory == category ? .white : isExplore ? .orange.opacity(0.5) : .purple)
+                            .font(.exoBold(size: isExplore ? 14 : 14))
+                            .foregroundColor(selectedCategory == category ? .white : isExplore ? .orange.opacity(0.9) : .purple)
                         
                         Rectangle()
                             .frame(height: 1)

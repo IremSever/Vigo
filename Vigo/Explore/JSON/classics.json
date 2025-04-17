@@ -2,8 +2,8 @@
     "meta": {
         "status_code": 200,
         "message": "",
-        "description": "Core V2 - Keşfet - Klasik Diziler",
-        "brand": "Atv",
+        "description": "C",
+        "brand": "Vigo",
         "redirect": ""
     },
     "data": [
@@ -13,71 +13,121 @@
         {
             "news": [
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=95d098f3-b364-4f97-9fff-e92d1928f2dd",
-                    "image": "https://iatv.tmgrup.com.tr/2019/03/27/435x287/1553674949854.jpg",
-                    "title": "Sen Anlat Karadeniz",
-                    "spot": "Şiddet gören bir kadının özgürlük mücadelesi! Nefes, kocası Vedat’tan gördüğü şiddetten kaçmaya çalışan genç bir kadındır. Karadeniz'in sert doğasında, Tahir’in yardımıyla yeni bir hayata adım atmaya çalışır."
+                    "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
+                    "image": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/breaking_bad_4.png",
+                    "title": "Breaking Bad",
+                    "imdb": "9.8",
+                    "liked": "97%",
+                    "duration": "1H 02M",
+                    "spot": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.",
+                    "tags": [
+                        {
+                            "title": "epic"
+                        },
+                        {
+                            "title": "tragedy"
+                        },
+                        {
+                            "title": "crime"
+                        }
+                    ],
                 },
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=075e6976-b2e3-4996-a93c-f1f44d4796eb",
-                    "image": "https://iatv.tmgrup.com.tr/2021/03/30/435x287/1617121835552.jpg",
-                    "title": "Eşkıya Dünyaya Hükümdar Olmaz",
-                    "spot": "Yeraltı dünyasının acımasız kurallarına meydan okuyan bir adam! Hızır Çakırbeyli, ailesini korumak ve güç savaşlarının içinde hayatta kalmak için zorlu mücadelelere girer."
-                },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=96cc82ab-fc20-4cd4-8be1-9266434ef754",
-                    "image": "https://iatv.tmgrup.com.tr/2021/06/03/435x287/1622727286649.jpg",
-                    "title": "Karadayı",
-                    "spot": "Bir babanın suçsuzluğunu kanıtlamak için verilen mücadele! Mahir Kara, babasının işlemediği bir cinayet yüzünden hapse girmesini engellemek için adalet peşinde koşar."
+                    "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
+                    "image": "https://upload.wikimedia.org/wikipedia/pt/9/92/PosterChernobyl.jpg",
+                    "title": "Chernobyl",
+                    "imdb": "9.3",
+                    "liked": "94%",
+                    "duration": "55M",
+                    "spot": "In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line in the following days, weeks and months.",
+                    "tags": [
+                        {
+                            "title": "series"
+                        },
+                        {
+                            "title": "drama"
+                        },
+                        {
+                            "title": "history"
+                        }
+                    ],
                 },
                 {
                     "external": "apilink:///v2/link/105099330a?cid=b154ab4a-b910-4397-b49c-7a02a3aa36b5",
-                    "image": "https://iatv.tmgrup.com.tr/2019/09/18/435x287/1568796810230.jpg",
-                    "title": "Hercai",
-                    "spot": "İmkansız bir aşkın hikayesi! Miran, ailesinin intikamını almak için Reyyan’a yaklaşırken, gerçek aşk ve geçmişin sırları arasında kalır."
+                    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8433ca97660509.5ecaa1535113d.png",
+                    "title": "The Last Dance",
+                    "imdb": "9.0",
+                    "liked": "92%",
+                    "duration": "45M",
+                    "spot": "Led by Michael Jordan, the 1990s Chicago Bulls establish themselves as one of the most notable dynasties in sports history."
                 },
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=3e6f97ea-ad61-4629-9927-16e63e97d0df",
-                    "image": "https://iatv.tmgrup.com.tr/2021/05/24/435x287/1621857642875.jpg",
-                    "title": "Ezel",
-                    "spot": "İhanet, intikam ve aşkın iç içe geçtiği unutulmaz bir hikaye! Ömer, en yakın dostlarının ihanetiyle hapse düşer ve yıllar sonra Ezel kimliğiyle geri döner."
+                    "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
+                    "image": "https://upload.wikimedia.org/wikipedia/en/3/3f/Succession_season_1.jpg",
+                    "title": "Succession",
+                    "spot": "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company.",
+                    "artists": [
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNzVjMWZlNGMtZjJhOS00NzBhLWEyZTUtNTM3NDk0M2NlMzZiXkEyXkFqcGc@._V1_.jpg",
+                            "spot": "Greg Hirsch",
+                            "title": "Nicholas Braun"
+                        },
+                        {
+                            "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/13/11/brian-cox.jpg",
+                            "spot": "Logan Roy",
+                            "title": "Brian Cox"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNjZlNWRkMDQtNGNlYi00YTczLThjODYtMWE4ZDFmYTE3ZTkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Roman Roy",
+                            "title": "Kieran Culkin"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMTcyMDc5OTE4OF5BMl5BanBnXkFyZXN1bWU@._V1_.jpg",
+                            "spot": "Frank Vernon",
+                            "title": "Peter Friedman"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Tom Wambsgans",
+                            "title": "Matthew Macfadyen"
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "title": "epic"
+                        },
+                        {
+                            "title": "tragedy"
+                        },
+                        {
+                            "title": "drama"
+                        }
+                    ],
+                    "exploreVideos": [
+                        {
+                            "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "image": "https://cdn.theatlantic.com/thumbor/Z7e5qBkfi6K7dbg-J37KTm5zHxU=/0x0:1920x1080/960x540/media/img/mt/2021/12/jeremy_strong_sarah_snook_kieran_culkin-1/original.jpg",
+                            "spot": "S4.E10 ∙ With Open Eyes",
+                            "title": "Succesion"
+                        },
+                        {
+                            "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                            "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e063",
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQwMTM1MjczOF5BMl5BanBnXkFtZTgwNDAzMDQxNTM@._V1_.jpg",
+                            "spot": "Season 4",
+                            "title": "Succesion"
+                        },
+                        {
+                            "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "image": "https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24636367/matthew_macfadyen_sarah_snook.jpeg?quality=90&strip=all&crop=0.094696969696969,0,99.810606060606,100",
+                            "spot": "Connor's Wedding",
+                            "title": "Succesion"
+                        }
+                    ]
                 },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=64c31827-2fb9-43e3-9e3c-1666ffc2d846",
-                    "image": "https://iatv.tmgrup.com.tr/2021/06/03/435x287/1622728675981.jpg",
-                    "title": "Kara Para Aşk",
-                    "spot": "Bir polis ve bir kadının kesişen yolları! Ömer, nişanlısının ölümünün ardındaki gerçeği araştırırken, Elif ile kaderleri birleşir."
-                },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=de68e8b2-4ec5-4321-8e81-1bfa2cef2a3f",
-                    "image": "https://iatv.tmgrup.com.tr/2021/05/24/435x287/1621857490970.jpg",
-                    "title": "Avrupa Yakası",
-                    "spot": "İstanbul’un en eğlenceli semtinde geçen unutulmaz bir komedi! Avrupa Yakası, modern şehir hayatı ile geleneksel değerler arasındaki çatışmayı mizahi bir dille ele alıyor."
-                },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=459ef907-b5d8-4d72-aa7f-fc1d289ef93d",
-                    "image": "https://iatv.tmgrup.com.tr/2024/02/21/435x287/1708517680929.jpg",
-                    "title": "Kardeşlerim",
-                    "spot": "Hayatta kalma mücadelesi veren dört kardeşin dokunaklı hikayesi! Anne ve babalarını kaybeden kardeşler, birbirlerine tutunarak yaşam mücadelesi verir."
-                },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=6c756a59-bea8-4de3-974a-7fc1c5d4fb9d",
-                    "image": "https://iatv.tmgrup.com.tr/2017/06/28/435x287/1498666128964.jpg",
-                    "title": "Kertenkele",
-                    "spot": "Suç dünyasında kaybolan bir adamın sıra dışı hikayesi! Kertenkele lakaplı bir suçlu, sahte imam kimliğiyle kaçarken yeni bir hayat kurmaya çalışır."
-                },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=58b8a11c-dfb3-4907-82c8-f27727cfe4c5",
-                    "image": "https://iatv.tmgrup.com.tr/2017/06/28/435x287/1498673778319.jpg",
-                    "title": "Kara Ekmek",
-                    "spot": "Zor bir hayattan kurtulmak isteyen genç bir kadının mücadelesi! Asiye, zengin ve rahat bir hayatın peşinden giderken, kendisini büyük bir girdabın içinde bulur."
-                },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=37c1311d-fadc-435f-a8f7-2f6b900cdafd",
-                    "image": "https://iatv.tmgrup.com.tr/2017/10/12/435x287/1507797567441.jpg",
-                    "title": "Kırgın Çiçekler",
-                    "spot": "Yetimhanede büyüyen genç kızların dram dolu hayatı! Eylül ve arkadaşları, zorluklarla dolu hayatlarında ayakta kalmaya çalışır."
-                }
             ]
 
         }

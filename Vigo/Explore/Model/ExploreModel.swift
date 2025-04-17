@@ -24,6 +24,9 @@ struct ExploreNews: Codable {
     let external: String?
     let image: String?
     let title: String?
+    let imdb: String?
+    let liked: String?       
+    let duration: String?
     let spot: String?
     let artists: [Artists]?
     let tags: [Tags]?

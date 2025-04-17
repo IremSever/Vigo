@@ -100,7 +100,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                                             .frame(width: 40, height: 35)
                                                                             .opacity(0.3)
                                                                         VStack{
-                                                                            Text("6.8")
+                                                                            Text(newsItem.imdb ?? "")
                                                                                 .font(.exoSemiBold(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
                                                                             
@@ -119,7 +119,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                                             .opacity(0.2)
                                                                            
                                                                         VStack {
-                                                                            Text("96%")
+                                                                            Text(newsItem.liked ?? "")
                                                                                 .font(.exoSemiBold(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
                                                                             Text("Liked")
@@ -133,15 +133,11 @@ struct TrendingCell: View, ScrollingHelper {
                                                                             .resizable()
                                                                             .aspectRatio(contentMode: .fill)
                                                                             .frame(width: 20, height: 20)
-                                                                        
-                                                                        //                                                                            .resizable()
-                                                                        //                                                                            .aspectRatio(contentMode: .fill)
-                                                                        //                                                                            .frame(width: 30, height: 30)
                                                                             .foregroundColor(.gray.opacity(0.2))
                                                                             .fontWeight(.light)
                                                                      
                                                                         VStack {
-                                                                            Text("1H 58M")
+                                                                            Text(newsItem.duration ?? "")
                                                                                 .font(.exoSemiBold(size: 14))
                                                                                 .foregroundColor(.white.opacity(0.8))
                                                                             Text("Duration")
@@ -270,10 +266,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                                     .cornerRadius(10)
                                                                     .shadow(color: .purple.opacity(0.35), radius: 2)
                                                             }
-                                                            // Text(video.title ?? "")
-                                                            //                                                              .font(.exoSemiBold(size: 14))
-                                                            //  .foregroundColor(.orange)
-                                                            //  .lineLimit(1)
+                                                     
                                                             
                                                             Text(video.spot ?? "")
                                                                 .font(.exoMedium(size: 12))
@@ -314,15 +307,7 @@ struct TrendingCell: View, ScrollingHelper {
                                                                 .frame(width: 90)
                                                                 .lineLimit(1)
                                                                 .padding(.horizontal, 4)
-                                                            
-                                                            //  .font(.exoSemiBold(size: 14))                                  .foregroundColor(.orange)
-                                                            //  .frame(width: 90)
-                                                            //  .lineLimit(1)
-                                                            
-                                                            // Text(artist.spot ?? "")                                                            .font(.exoMedium(size: 12))                                                  .foregroundColor(.white)
-                                                            //  .frame(width: 90)
-                                                            //  .lineLimit(1)
-                                                            //  .padding(.horizontal, 4)
+                                      
                                                             
                                                         }
                                                     }

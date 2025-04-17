@@ -13,141 +13,223 @@
         {
             "news": [
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
-                    "image": "https://pbs.twimg.com/profile_images/1819412380436070400/gzjL_Z_8_400x400.jpg",
-                    "title": "Bir Gece Masalı",
-                    "spot": "Babası görev yeri Denizli'de bir suikast sonucunda şehit edilen Mahir, yirmi yıl sonra bir komiser olarak babasının katilinden intikam almak için şehre döner. Ancak şehre geldiği ilk gün mistik bir şekilde tanıştığı güzeller güzeli bir Yörük kızına aşık olur.",
+                    "external": "apilink:///v2/link/105099330a?cid=b154ab4a-b910-4397-b49c-7a02a3aa36b5",
+                    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8433ca97660509.5ecaa1535113d.png",
+                    "title": "The Last Dance",
+                    "imdb": "9.0",
+                    "liked": "92%",
+                    "duration": "45M",
+                    "spot": "Led by Michael Jordan, the 1990s Chicago Bulls establish themselves as one of the most notable dynasties in sports history.",
                     "artists": [
                         {
-                            "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214455571.jpg",
-                            "spot": "Mahir Yılmaz",
-                            "title": "Burak Deniz"
+                            "image": "https://hips.hearstapps.com/hmg-prod/images/michael-jordan-attends-a-press-conference-before-the-nba-news-photo-1680539665.jpg",
+                            "spot": "Self",
+                            "title": "Michael Jordan"
                         },
                         {
-                            "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214343274.jpg",
-                            "spot": "Canfeza Kilimci",
-                            "title": "Su Burcu Yazgı Coşkun"
+                            "image": "https://cdn.aarp.net/content/dam/aarpe/en/home/entertainment/books/info-01-2014/phil-jackson-basketball-coach-legend/_jcr_content/root/container_main/container_body_main/container_body1/container_body_cf/container_image/articlecontentfragment/cfimage.coreimg.50.932.jpeg/content/dam/aarp/entertainment/books/2013-12/1140-phil-jackson-aarp-conversation.jpg",
+                            "spot": "Bulls Head Coach",
+                            "title": "Phil Jackson"
                         },
                         {
-                            "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214543042.jpg",
-                            "spot": "Kürşat Kilimci ",
-                            "title": "Gürkan Uygun"
+                            "image": "https://media.gq.com/photos/60d4c1833d607a4b2eb61c80/16:9/w_2560%2Cc_limit/scottie-pippen-has-something-to-say-01.jpg",
+                            "spot": "Bulls Forward",
+                            "title": "Scottie Pippen"
                         },
                         {
-                            "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214754574.jpg",
-                            "spot": "Raşit Kara",
-                            "title": "Mesut Akusta"
-                        },
-                        {
-                            "image": "https://iatv.tmgrup.com.tr/2024/08/29/288x401/1724934311787.jpg",
-                            "spot": "Süreyya Yılmaz",
-                            "title": "Özlem Türkad"
-                        },
-                        {
-                            "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723214872069.jpg",
-                            "spot": "Selim Allame",
-                            "title": "Eren Vurdem"
-                        },
-                        {
-                            "image": "https://iatv.tmgrup.com.tr/2024/08/09/288x401/1723215189301.jpg",
-                            "spot": "Sevde Yılmaz",
-                            "title": "İrem Altuğ"
+                            "image": "https://cdn.vox-cdn.com/thumbor/DdEfzR8ao34HJAsN3QUHJ-RwUP8=/0x652:2400x1852/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/19916801/537573472.jpg.jpg",
+                            "spot": "ESPN Reporter",
+                            "title": "David Aldridge"
                         }
                     ],
                     "tags": [
                         {
-                            "title": "series"
+                            "title": "biography"
                         },
                         {
-                            "title": "drama"
+                            "title": "documentary"
                         },
                         {
-                            "title": "romance"
+                            "title": "sport"
                         }
                     ],
                     "exploreVideos": [
                         {
                             "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
                             "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
-                            "image": "https://iaatv.tmgrup.com.tr/a8420b/500/281/0/0/1280/719?u=https://iatv.tmgrup.com.tr/2025/02/17/bir-gece-masali-1739779663101.jpg",
-                            "spot": "22. Bölüm",
-                            "title": "Bir Gece Masalı"
+                            "image": "https://i.ytimg.com/vi/HMApzrTHP5Q/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDg-8goLjggS4kU8Nb2LTKFAsExPg",
+                            "spot": "Relive The Phenomenon",
+                            "title": "The Last Dance"
                         },
                         {
                             "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
                             "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e063",
-                            "image": "https://iaatv.tmgrup.com.tr/a40605/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/19/bir-gece-masali-1739947039195.jpg",
-                            "spot": "23. Bölüm Fragmanı",
-                            "title": "Bir Gece Masalı"
+                            "image": "https://nypost.com/wp-content/uploads/sites/2/2020/04/michael-jordan-last-dance-documentary-horrible-guy.jpg?quality=75&strip=all&w=1200",
+                            "spot": "Season 1",
+                            "title": "The Last Dance"
                         },
                         {
                             "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
                             "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
-                            "image": "https://iaatv.tmgrup.com.tr/cc371f/500/281/0/0/1920/1080?u=https://iatv.tmgrup.com.tr/2025/02/22/bir-gece-masali-on-izleme-1740247046958.jpg",
-                            "spot": "23. Bölüm Ön İzleme",
-                            "title": "Bir Gece Masalı"
+                            "image": "https://media.newyorker.com/photos/5e9df8b7ac4b8100087487d5/master/pass/Thomas-TheLastDanceMJ.jpg",
+                            "spot": "Scottie Pippen downplays",
+                            "title": "The Last Dance"
                         }
                     ]
                 },
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
-                    "image": "https://iaatv.tmgrup.com.tr/34081a/400/225/0/0/2048/1151?u=https://iatv.tmgrup.com.tr/2025/02/04/kurulus-osman-1738668332817.jpg",
-                    "title": "Kuruluş Osman",
-                    "spot": "Obasını, Yenişehir'e taşıyan Osman Bey, bu şehirde kuracağı devletin temellerini atacaktır. Bu uğurda atılan adımlardan biri 'divan' kurmak olacaktır. Osman Bey, Bey'leri ile 'divan' kuracak burada istişarelerde bulunacaktır.",
-                    "tags": [
-                        {
-                            "title": "series"
-                        },
-                        {
-                            "title": "drama"
-                        },
-                        {
-                            "title": "history"
-                        }
-                    ],
-                },
-                {
-                    "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
-                    "image": "https://www.turkgun.com/cropImages/1280x/uploads/haberler/2025/1/224-baska-bir-gun-dizisi-konusu-ne-baska-bir-gun-dizisi-oyunculari-kimler.jpg",
-                    "title": "Başka Bir Gün",
-                    "spot": "Çocuklarına bakmak için mesleği olan avukatlığa ara veren Nehir'in, kocası Serdar ile mutlu giden evliliğinde bir gün Serdar'ın ortadan kaybolmasıyla gelişen olayları konu alıyor..."
-                },
-                {
                     "external": "apilink:///v2/link/105099330a?cid=13d19b42-519a-46f0-9fd7-606a9fcdec3b",
-                    "image": "https://www.tvreklam.com.tr/wp-content/uploads/2025/01/zembilli_.jpg",
-                    "title": "Zembilli",
-                    "spot": "Zembilli, Toros Dağları'nın eteklerinde bir Yörük kasabasındaki insanların acı, tatlı ve sürükleyici hikâyesini konu alıyor. Güçlü ve sıcak anlatımıyla Zembilli, Anadolu'nun kalbindeki bir kasabanın, aslında ne kadar derin ve dokunaklı hikâyeler barındırdığını gözler önüne seriyor.",
+                    "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2025/03/mobland-series-premiere.jpg",
+                    "title": "Mobland",
+                    "imdb": "8.2",
+                    "liked": "87%",
+                    "duration": "1H 25M",
+                    "spot": "Power is up for grabs as two warring crime families clash in a battle that threatens to topple empires. In the crossfire stands Harry Da Souza, a street-smart 'fixer' who knows too well where loyalties lie when opposing forces collide.",
                     "tags": [
                         {
-                            "title": "series"
+                            "title": "crime"
                         },
                         {
                             "title": "drama"
                         },
                         {
-                            "title": "history"
+                            "title": "epic"
                         }
                     ],
                     
                 },
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=4a8459e8-ba0c-4eb8-a7d3-3982cea3a8a2",
-                    "image": "https://im.haberturk.com/l/2024/12/20/ver1734688303/3748626/jpg/1280x1280",
-                    "title": "Can Borcu",
-                    "spot": "Başarılı bir avukat olan Mehmet'in, annesinin ölümünden sonra kendisinden uzaklaşan genç kızı Doğa ile yeniden bağ kurma çabasını anlatan bu sürükleyici yapım, aynı zamanda yıllardır saklanan sırları da gün yüzüne çıkaracak. Celal'in gizlediği bir ilişki tüm dengeleri sarsarken, Celal'in eşi Handan ise bu çözülmenin farkında olmadan ailesini bir arada tutmak için çabalayacak."
+                    "external": "apilink:///v2/link/105099330a?cid=de359413-a741-4b81-a1d1-09184023a604",
+                    "image": "https://m.media-amazon.com/images/M/MV5BNTEwNTFkZTktMzI1OC00YmRjLWE5NTUtYmZhMmJlNGUxMWU1XkEyXkFqcGc@._V1_.jpg",
+                    "title": "Succession",
+                    "spot": "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company.",
+                    "imdb": "8.8",
+                    "liked": "92%",
+                    "duration": "1H 05M",
+                    "artists": [
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNzVjMWZlNGMtZjJhOS00NzBhLWEyZTUtNTM3NDk0M2NlMzZiXkEyXkFqcGc@._V1_.jpg",
+                            "spot": "Greg Hirsch",
+                            "title": "Nicholas Braun"
+                        },
+                        {
+                            "image": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/12/13/11/brian-cox.jpg",
+                            "spot": "Logan Roy",
+                            "title": "Brian Cox"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BNjZlNWRkMDQtNGNlYi00YTczLThjODYtMWE4ZDFmYTE3ZTkzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Roman Roy",
+                            "title": "Kieran Culkin"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMTcyMDc5OTE4OF5BMl5BanBnXkFyZXN1bWU@._V1_.jpg",
+                            "spot": "Frank Vernon",
+                            "title": "Peter Friedman"
+                        },
+                        {
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQ1ODY2ODA5MV5BMl5BanBnXkFtZTgwNDA3MzkxNzM@._V1_FMjpg_UX1000_.jpg",
+                            "spot": "Tom Wambsgans",
+                            "title": "Matthew Macfadyen"
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "title": "epic"
+                        },
+                        {
+                            "title": "documentary"
+                        },
+                        {
+                            "title": "drama"
+                        }
+                    ],
+                    "exploreVideos": [
+                        {
+                            "external": "video://f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "id": "f2916b12-e7ff-43a0-a37b-2ae0d87674b0",
+                            "image": "https://cdn.theatlantic.com/thumbor/Z7e5qBkfi6K7dbg-J37KTm5zHxU=/0x0:1920x1080/960x540/media/img/mt/2021/12/jeremy_strong_sarah_snook_kieran_culkin-1/original.jpg",
+                            "spot": "S4.E10 ∙ With Open Eyes",
+                            "title": "Succesion"
+                        },
+                        {
+                            "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
+                            "id": "3bf2bbaf-1362-4d25-a679-9534a62c6e063",
+                            "image": "https://m.media-amazon.com/images/M/MV5BMjQwMTM1MjczOF5BMl5BanBnXkFtZTgwNDAzMDQxNTM@._V1_.jpg",
+                            "spot": "Season 4",
+                            "title": "Succesion"
+                        },
+                        {
+                            "external": "video://fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "id": "fcf7a01a-db2a-4b0f-89e2-dab0ca7b295c",
+                            "image": "https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/24636367/matthew_macfadyen_sarah_snook.jpeg?quality=90&strip=all&crop=0.094696969696969,0,99.810606060606,100",
+                            "spot": "Connor's Wedding",
+                            "title": "Succesion"
+                        }
+                    ]
                 },
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=c1b98ccb-7b8f-454d-8310-01630af904ca",
-                    "image": "https://iaatv.tmgrup.com.tr/45634f/820/547/203/0/1676/983?u=https://iatv.tmgrup.com.tr/2025/01/22/1737547436240.jpg",
-                    "title": "Kardelenler",
-                    "spot": "Parçalanan bir ailenin yeniden bir araya gelişinin sarsıcı öyküsü ekrana taşıyacak. hikayesi, güçlü çatışmaları ve etkileyici diliyle izleyicileri büyüleyecek."
+                    "external": "apilink:///v2/link/105099330a?cid=13d19b42-519a-46f0-9fd7-606a9fcdec3b",
+                    "image": "https://tr.web.img2.acsta.net/pictures/19/06/05/14/11/0714172.jpg",
+                    "title": "Black Mirror",
+                    "imdb": "8.7",
+                    "liked": "89%",
+                    "duration": "45M",
+                    "spot": "Featuring stand-alone dramas -- sharp, suspenseful, satirical tales that explore techno-paranoia - Black Mirror is a contemporary reworking of The Twilight Zone with stories that tap into the collective unease about the modern world.",
+                    "tags": [
+                        {
+                            "title": "crime"
+                        },
+                        {
+                            "title": "history"
+                        },
+                        {
+                            "title": "documentary"
+                        }
+                    ],
+                    
                 },
                 {
-                    "external": "apilink:///v2/link/105099330a?cid=a65a5c3d-1a33-46b1-8ff9-fb1a855808e4",
-                    "image": "https://tr.web.img4.acsta.net/c_300_300/img/be/8a/be8a21d961d1e025a4ced2ab3fb44903.jpg",
-                    "title": "Sustalı Ceylan",
-                    "spot": "Ceylan adlı güçlü bir kadının erkek egemen bir toplumda, kendi kimliğini bulma ve hayatını yeniden inşa etme mücadelesi anlatacak."
+                    "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
+                    "image": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/breaking_bad_4.png",
+                    "title": "Breaking Bad",
+                    "imdb": "9.8",
+                    "liked": "97%",
+                    "duration": "1H 02M",
+                    "spot": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.",
+                    "tags": [
+                        {
+                            "title": "epic"
+                        },
+                        {
+                            "title": "tragedy"
+                        },
+                        {
+                            "title": "documentary"
+                        }
+                    ],
+                },
+                {
+                    "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
+                    "image": "https://upload.wikimedia.org/wikipedia/pt/9/92/PosterChernobyl.jpg",
+                    "title": "Chernobyl",
+                    "imdb": "9.3",
+                    "liked": "94%",
+                    "duration": "55M",
+                    "spot": "In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line in the following days, weeks and months.",
+                    "tags": [
+                        {
+                            "title": "series"
+                        },
+                        {
+                            "title": "drama"
+                        },
+                        {
+                            "title": "history"
+                        }
+                    ],
                 }
+                
             ]
         }
     ]

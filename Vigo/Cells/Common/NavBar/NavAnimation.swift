@@ -27,8 +27,8 @@ extension NavAnimation {
     }
     
     func brandIconSize() -> CGFloat {
-        let startHeight: CGFloat = 40
-        let endHeight: CGFloat = 45
+        let startHeight: CGFloat = 50
+        let endHeight: CGFloat = 55
         let transtionOffset: CGFloat = 35
         let progress = min(max(scrollOffset / transtionOffset, 0), 1)
         return endHeight + (startHeight - endHeight) * progress

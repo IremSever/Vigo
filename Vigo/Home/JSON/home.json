@@ -91,15 +91,15 @@
             "news": [
                 {
                     "external": "video://f20a85dd-f34c-4a13-9116-5224004828e6",
-                    "image": "https://i0.wp.com/awardsradar.com/wp-content/uploads/2025/03/Clarksons-Farm.jpg?fit=2000%2C1332&ssl=1",
+                    "image": "https://deadline.com/wp-content/uploads/2023/02/TELEMMGLPICT000260203605_1_trans_NvBQzQNjv4BqBDCnIxthzPLaVuHdTEmpqJ73dq_ohU5dG7pZOyOIh3g.webp",
                     "imageBig": "https://m.media-amazon.com/images/M/MV5BZTQ4ZjQzNTAtNzA3OC00N2YzLWIxNmUtMzMwODdiZDY1NTAzXkEyXkFqcGdeQXVyNjg3MDM4Mzc@._V1_.jpg",
                     "spot": "New Episode | Sunday 8 PM",
                     "title": "Clarkson's Farm"
                 },
                 {
                     "external": "video://3bf2bbaf-1362-4d25-a679-9534a62c6e06",
-                    "image": "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-                    "imageBig": "https://m.media-amazon.com/images/M/MV5BZjQwYzBlYzUtZjhhOS00ZDQ0LWE0NzAtYTk4MjgzZTNkZWEzXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "image": "https://m.media-amazon.com/images/S/pv-target-images/e21f0419cb6857972c872359f8c34ae437ee0c7445b9ae9e2219a75e4061bbac.jpg",
+                    "imageBig": "https://m.media-amazon.com/images/S/pv-target-images/e21f0419cb6857972c872359f8c34ae437ee0c7445b9ae9e2219a75e4061bbac.jpg",
                     "spot": "New Episode | Tuesday 8 PM",
                     "title": "The Office"
                 },
@@ -112,10 +112,9 @@
                 },
                 {
                     "external": "video://46af6954-4826-4f50-a576-99eec9fe1f7e",
-                    "image": "https://ca-times.brightspotcdn.com/dims4/default/737ba39/2147483647/strip/true/crop/6000x4000+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F7b%2F4f%2F8f82339e4960a25cd38d4a056f3b%2Fsquidgame-unit-103-1076.jpg",
-                    "imageBig": "https://m.media-amazon.com/images/M/MV5BZGQyZGRkZjktZThmYy00N2JlLTk5NzUtMzkwYjBiZjVjZThmXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_.jpg",
+                    "image": "https://www.lanacion.com.ar/resizer/v2/friend-6W227B72X5EIDGYN6TX7OND3SQ.jpg?auth=b885453e088d655b0f7bc082a29ed5ceeb2169a105c4f6c9cb1b086818a9aeef&width=420&height=630&quality=70&smart=true",
                     "spot": "Coming Soon",
-                    "title": "Squid Game"
+                    "title": "Friends"
                 },
                 {
                     "external": "video://dd4117f6-0b35-482e-80cd-c1ace8475b53",
@@ -343,7 +342,7 @@
                         {
                             "external": "video://6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
                             "id": "6c37eb8a-2073-47c5-95e2-65eb6b49cb83",
-                            "image": "https://media.npr.org/assets/img/2023/05/25/succession---justine-lupe-alan-ruck-kieran-culkin-jeremy-strong-sarah-snook_custom-033cda452062211fb2c1ac9a3accc5dc8fce4a04.jpg?s=1100&c=50&f=jpeg",
+                            "image": "https://m.media-amazon.com/images/M/MV5BNTEwNTFkZTktMzI1OC00YmRjLWE5NTUtYmZhMmJlNGUxMWU1XkEyXkFqcGc@._V1_.jpg",
                             "spot": "2h 12m",
                             "title": "S4.E9 ∙ Church and State"
                         },
@@ -439,7 +438,7 @@
                 },
                 {
                     "external": "apilink:///v2/link/105099330a?cid=c1b98ccb-7b8f-454d-8310-01630af904ca",
-                    "image": "https://upload.wikimedia.org/wikipedia/en/3/3f/Succession_season_1.jpg",
+                    "image": "https://m.media-amazon.com/images/M/MV5BNTEwNTFkZTktMzI1OC00YmRjLWE5NTUtYmZhMmJlNGUxMWU1XkEyXkFqcGc@._V1_.jpg",
                     "title": "Succesion",
                     "detailDescription": "The Roy family is known for controlling the biggest media and entertainment company in the world. However, their world changes when their father steps down from the company.",
                     "artist": [
@@ -787,7 +786,7 @@
                 },
                 {
                     "external": "apilink:///v2/link/105099330a?cid=9fe6a82c-f95c-4b03-ad40-25edf101ab18",
-                    "image": "https://m.media-amazon.com/images/M/MV5BMmNmMTEzODQtNmExMS00OGUxLWFkNTItMTM3NzBlNDk0YWU5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+                    "image": "https://upload.wikimedia.org/wikipedia/tr/3/36/Matrix-film.jpg",
                     "title": "Matrix"
                 },
                 {
@@ -1066,7 +1065,7 @@
                 {
                     "episode": 182,
                     "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
-                    "image": "https://coastalcourier.cdn-anvilcms.net/media/images/2018/04/23/images/ddd3950d7be66176c30809d2478f1eff92.fe2b50e8.fill-250x250.jpg",
+                    "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/dwight-schrute-office-featured.jpg",
                     "season": 6,
                     "showAd": false,
                     "spot": "A Quiet Place",
@@ -1152,16 +1151,18 @@
             "videos": [
                 {
                     "external": "video://518c3074-63ce-4c0c-9231-9317d79dc501",
-                    "image": "http://m.media-amazon.com/images/M/MV5BZGY5MTgwOGItN2Q5My00MWZhLTkzMWEtYzEzYTZkNjBmN2RiXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg",
-                    "imageBig": "http://m.media-amazon.com/images/M/MV5BZGY5MTgwOGItN2Q5My00MWZhLTkzMWEtYzEzYTZkNjBmN2RiXkEyXkFqcGdeQXNvbG5vbXM@._V1_.jpg",
+                    "image": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-141326447.jpg?c=16x9&q=h_833,w_1480,c_fill",
+                    "imageBig": "https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-141326447.jpg?c=16x9&q=h_833,w_1480,c_fill",
                     "showAd": true,
-                    "title": "Friends 30th Anniversary"
+                    "spot": "30th Anniversary",
+                    "title": "Friends"
                 },
                 {
                     "external": "video://a5460702-4989-4a82-842a-900d00a1f253",
                     "image": "https://image.chitra.live/api/v1/wps/71ff28b/6e9b0a00-4fbb-40b2-a0e2-37d8d5b673e0/13/Clarkson-s-Farm-Series-3-Prime-Video-Ellis-O-Brien-679x419.jpg",
                     "imageBig": "https://image.chitra.live/api/v1/wps/71ff28b/6e9b0a00-4fbb-40b2-a0e2-37d8d5b673e0/13/Clarkson-s-Farm-Series-3-Prime-Video-Ellis-O-Brien-679x419.jpg",
                     "showAd": true,
+                    "spot": "BIGGEST Mishaps",
                     "title": "Clarkson's Farm"
                 }
             ]

@@ -93,11 +93,11 @@ struct CoverCell: View {
                     }
                 }
             }
-            
+   
             HStack {
-                TagView(text: "Series")
-                TagView(text: "Drama")
-                TagView(text: "Romance")
+                TagView(text: "epic")
+                TagView(text: "tragedy")
+                TagView(text: "drama")
             }
             .padding(.top, 20)
             
