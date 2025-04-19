@@ -20,5 +20,6 @@ All page layouts and UI components have been custom-designed to deliver a clean,
 
 ### 🎨 Design Showcase:
 You can view the full UI/UX design of Vigo on:
-Behance
-Dribbble
+
+Behance:
+Dribbble: 
