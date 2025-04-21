@@ -1,3 +1,4 @@
+
 {
     "meta": {
         "status_code": 200,
@@ -14,47 +15,47 @@
             "news": [
                 {
                     "external": "apilink:///v2/link/105099330a?cid=8e8dd321-1e95-42e0-b968-41dba6d8d13b",
-                    "image": "https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/breaking_bad_4.png",
-                    "title": "Breaking Bad",
-                    "imdb": "9.8",
-                    "liked": "97%",
-                    "duration": "1H 02M",
-                    "spot": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student to secure his family's future.",
+                    "image": "https://www.bakbuolur.com/wp-content/uploads/2024/10/unnamed-scaled-1600x900.jpg",
+                    "title": "Inception",
+                    "imdb": "8.8",
+                    "liked": "92%",
+                    "duration": "1H 42M",
+                    "spot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
                     "tags": [
                         {
                             "title": "epic"
                         },
                         {
-                            "title": "tragedy"
+                            "title": "action"
                         },
                         {
-                            "title": "crime"
+                            "title": "sci-fi"
                         }
                     ],
                 },
                 {
                     "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
-                    "image": "https://upload.wikimedia.org/wikipedia/pt/9/92/PosterChernobyl.jpg",
-                    "title": "Chernobyl",
-                    "imdb": "9.3",
-                    "liked": "94%",
-                    "duration": "55M",
-                    "spot": "In April 1986, the city of Chernobyl in the Soviet Union suffers one of the worst nuclear disasters in the history of mankind. Consequently, many heroes put their lives on the line in the following days, weeks and months.",
+                    "image": "https://v.wpimg.pl/eS0wMTQuSjJRFTtnfg5HJxJNbz04V0lxRVV3dn4WSmICT30sfh8EIEQFNzUzBQogRFo9OH8CFTBUGWMkPVoMPldYf2RgQ0pjAlgZOyFYIjZRBWAhPxEAIR0FKCI4EBJ-Ug5gZGBBSzlAEG8p",
+                    "title": "Top Gear",
+                    "imdb": "8.7",
+                    "liked": "88%",
+                    "duration": "57M",
+                    "spot": "The hosts talk about everything car-related. From new cars to how they're fueled, this show has it all.",
                     "tags": [
                         {
-                            "title": "series"
+                            "title": "sport"
                         },
                         {
-                            "title": "drama"
+                            "title": "travel"
                         },
                         {
-                            "title": "history"
+                            "title": "comedy"
                         }
                     ],
                 },
                 {
                     "external": "apilink:///v2/link/105099330a?cid=b154ab4a-b910-4397-b49c-7a02a3aa36b5",
-                    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8433ca97660509.5ecaa1535113d.png",
+                    "image": "https://i.pinimg.com/1200x/0c/44/30/0c4430ee8fbddd9d6fb8a957a0990bdd.jpg",
                     "title": "The Last Dance",
                     "imdb": "9.0",
                     "liked": "92%",
@@ -128,6 +129,7 @@
                         }
                     ]
                 },
+               
             ]
 
         }

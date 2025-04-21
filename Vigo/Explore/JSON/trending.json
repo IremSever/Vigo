@@ -3,7 +3,7 @@
         "status_code": 200,
         "message": "",
         "description": "Core V2 - Keşfet - Güncel Diziler",
-        "brand": "Atv",
+        "brand": "Vigo",
         "redirect": ""
     },
     "data": [
@@ -14,7 +14,7 @@
             "news": [
                 {
                     "external": "apilink:///v2/link/105099330a?cid=b154ab4a-b910-4397-b49c-7a02a3aa36b5",
-                    "image": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8433ca97660509.5ecaa1535113d.png",
+                    "image": "https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2017/10/26/59f20af3c5ff3.jpeg",
                     "title": "The Last Dance",
                     "imdb": "9.0",
                     "liked": "92%",
@@ -44,10 +44,10 @@
                     ],
                     "tags": [
                         {
-                            "title": "biography"
+                            "title": "drama"
                         },
                         {
-                            "title": "documentary"
+                            "title": "history"
                         },
                         {
                             "title": "sport"
@@ -79,7 +79,7 @@
                 },
                 {
                     "external": "apilink:///v2/link/105099330a?cid=13d19b42-519a-46f0-9fd7-606a9fcdec3b",
-                    "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2025/03/mobland-series-premiere.jpg",
+                    "image": "https://i.ytimg.com/vi/oe9Q8wp_wjw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAj_uv3mzFYD483W8tAImYnX18VyQ",
                     "title": "Mobland",
                     "imdb": "8.2",
                     "liked": "87%",
@@ -211,7 +211,7 @@
                 },
                 {
                     "external": "apilink:///v2/link/105099330a?cid=bac8d6b2-5d0f-41c1-bb26-b2e924b2f7fb",
-                    "image": "https://upload.wikimedia.org/wikipedia/pt/9/92/PosterChernobyl.jpg",
+                    "image": "https://img.hulu.com/user/v3/artwork/849bed9a-2da8-484b-8cdf-d7000090fc5d?base_image_bucket_name=image_manager&base_image=13838b81-75b1-4782-977d-03d47c19285a&size=458x687&format=webp",
                     "title": "Chernobyl",
                     "imdb": "9.3",
                     "liked": "94%",
@@ -234,3 +234,4 @@
         }
     ]
 }
+
