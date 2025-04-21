@@ -51,9 +51,9 @@ struct AlbumCell: View, ScrollingHelper {
                                             .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
                                             .overlay(
                                                 LinearGradient(
-                                                    gradient: Gradient(colors: [Color.black.opacity(1), Color.clear]),
+                                                    gradient: Gradient(colors: [Color.black.opacity(0.80), Color.clear]),
                                                     startPoint: .bottom,
-                                                    endPoint: UnitPoint(x: 0.2, y: 0.2)
+                                                    endPoint: .center
                                                 )
                                                 .cornerRadius(20)
                                             )

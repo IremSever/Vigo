@@ -50,7 +50,7 @@ struct NavHeader: View, NavAnimation {
                         .padding(16)
                     
                     
-                    SwiftUI.Image(systemName: icon)
+                    SwiftUI.Image(icon)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .foregroundColor(.white)

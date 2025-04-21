@@ -47,9 +47,10 @@ struct TrailerCell: View {
                                     Button {
                                         favoritesViewModel.downloadItem(trailer)
                                     } label: {
-                                        SwiftUI.Image(systemName: favoritesViewModel.isDownload(trailer) ? "checkmark" : "square.and.arrow.down")
-                                            .foregroundColor(favoritesViewModel.isDownload(trailer) ? .purple : .purple)
-                                            .frame(height: 12)
+                                        SwiftUI.Image(favoritesViewModel.isDownload(trailer) ? "downloaded" : "download")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 20, height: 20)
                                     }
 
                                 }
@@ -90,9 +91,10 @@ struct TrailerCell: View {
                                     Button {
                                         favoritesViewModel.downloadItem(episode)
                                     } label: {
-                                        SwiftUI.Image(systemName: favoritesViewModel.isDownload(episode) ? "checkmark" : "square.and.arrow.down")
-                                            .foregroundColor(favoritesViewModel.isDownload(episode) ? .purple : .purple)
-                                            .frame(height: 12)
+                                        SwiftUI.Image(favoritesViewModel.isDownload(episode) ? "downloaded" : "download")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 20, height: 20)
                                     }
                                 }
                             }
@@ -130,9 +132,10 @@ struct TrailerCell: View {
                                     Button {
                                         favoritesViewModel.downloadItem(bestMoment)
                                     } label: {
-                                        SwiftUI.Image(systemName: favoritesViewModel.isDownload(bestMoment) ? "checkmark" : "square.and.arrow.down")
-                                            .foregroundColor(favoritesViewModel.isDownload(bestMoment) ? .purple : .purple)
-                                            .frame(height: 12)
+                                        SwiftUI.Image(favoritesViewModel.isDownload(bestMoment) ? "downloaded" : "download")
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fill)
+                                            .frame(width: 20, height: 20)
                                     }
                 
                                 }

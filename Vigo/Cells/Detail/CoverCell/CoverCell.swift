@@ -39,6 +39,7 @@ struct CoverCell: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(height: 400)
+                        .scaleEffect(x: 1.2, y: 1.2, anchor: .center)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .shadow(color: .purple.opacity(0.35), radius: 15, y: 12)
                         .overlay(
@@ -50,6 +51,7 @@ struct CoverCell: View {
                             .cornerRadius(20)
                         )
                         .padding(.horizontal, 36)
+
                 } else {
                     Color.black.edgesIgnoringSafeArea(.all)
                 }
@@ -60,26 +62,29 @@ struct CoverCell: View {
                         .font(.exoBold(size: 24))
                         .foregroundColor(.white)
                     HStack(spacing: 20) {
-                        
                         IconButton(
-                            icon: favoritesViewModel.isFavorite(item: newsItem) ? "checkmark" : "plus"
+                            icon: favoritesViewModel.isFavorite(item: newsItem) ? "added" : "add"
                         ) {
                             favoritesViewModel.toggleFavorite(item: newsItem)
                         }
-                        IconButton(icon: starIcon) {
+                        
+                        IconButton(icon: starIcon, isSystemImage: true) {
                             withAnimation {
                                 showRatingPicker.toggle()
                             }
                         }
-                        IconButton(icon: "square.and.arrow.down") {}
-                        IconButton(icon: "paperplane") {}
+                        
+                        IconButton(icon: "share") {}
                     }
-                    .padding(.bottom, 15)
+                    .padding(.bottom, showRatingPicker ? 2 : 15)
+                    
                     if showRatingPicker {
                         HStack {
                             ForEach(1...5, id: \.self) { star in
                                 SwiftUI.Image(systemName: star <= currentRating ? "star.fill" : "star")
-                                    .foregroundColor(.orange.opacity(0.8))
+                                    .resizable()
+                                    .frame(width: 12, height: 12)
+                                    .foregroundColor(Color(hex: "#d9d9d9").opacity(0.8))
                                     .onTapGesture {
                                         favoritesViewModel.updateRating(for: newsItem, rating: star)
                                         withAnimation {
@@ -91,6 +96,7 @@ struct CoverCell: View {
                         .padding(.bottom, 15)
                         .transition(.opacity)
                     }
+
                 }
             }
    

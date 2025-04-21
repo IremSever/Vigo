@@ -11,7 +11,7 @@ struct HomeView: View {
     @StateObject private var favoriteViewModel = FavoritesViewModel()
     var body: some View {
         NavigationView {
-            CustomNav(app: "atv", live: " ", icon: "magnifyingglass") {
+            CustomNav(app: "atv", live: " ", icon: "search") {
                 LazyVStack(alignment: .leading) {
                     if let homeData = viewModel.homeModel?.data {
                         ForEach(homeData.indices, id: \.self) { index in
