@@ -18,8 +18,4 @@ Each user has a personalized profile to keep track of their activity. View your 
 ### Custom UI Design
 All page layouts and UI components have been custom-designed to deliver a clean, engaging interface. From vibrant cover previews to intuitive navigation, every detail enhances the user journey.
 
-### 🎨 Design Showcase:
-You can view the full UI/UX design of Vigo on:
-
-Behance:
-Dribbble: 
+![E2E3F4BF-AC86-4F4B-B8B8-BA8DEAF9B495_4_5005_c](https://github.com/user-attachments/assets/88cf71a4-b2af-495d-98d4-538d6b793ab0)
