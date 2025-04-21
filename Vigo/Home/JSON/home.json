@@ -1063,16 +1063,6 @@
             },
             "videos": [
                 {
-                    "episode": 182,
-                    "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
-                    "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/dwight-schrute-office-featured.jpg",
-                    "season": 6,
-                    "showAd": false,
-                    "spot": "A Quiet Place",
-                    "title": "The Office",
-                    "videoTypeId": 11
-                },
-                {
                     "episode": 181,
                     "external": "video://f7c54da7-6978-44b9-84bc-47691d056728",
                     "image": "https://m.media-amazon.com/images/M/MV5BMTJiMzgwZTktYzZhZC00YzhhLWEzZDUtMGM2NTE4MzQ4NGFmXkEyXkFqcGdeQWpybA@@._V1_QL75_UX500_CR0,0,500,281_.jpg",
@@ -1090,6 +1080,16 @@
                     "showAd": false,
                     "spot": "The Final Reckoning",
                     "title": "Mission: Impossible",
+                    "videoTypeId": 11
+                },
+                {
+                    "episode": 182,
+                    "external": "video://c31a8ac9-13f0-4a86-9406-6150d8307838",
+                    "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2020/01/dwight-schrute-office-featured.jpg",
+                    "season": 6,
+                    "showAd": false,
+                    "spot": "A Quiet Place",
+                    "title": "The Office",
                     "videoTypeId": 11
                 }
             ]

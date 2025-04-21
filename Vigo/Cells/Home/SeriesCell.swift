@@ -32,12 +32,12 @@ struct SeriesCell: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(height: 200)
-                                            .cornerRadius(20)
+                                            .cornerRadius(15)
                                             .shadow(color: .purple.opacity(0.35), radius: 3)
                                     }
                                 }
                                 .frame(width: 150, height: 220)
-                                .cornerRadius(20)
+                                .cornerRadius(15)
                             }
 
                         }

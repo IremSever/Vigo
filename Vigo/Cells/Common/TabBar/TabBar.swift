@@ -22,11 +22,11 @@ struct TabBar: View {
             tabButton(for: .favorites, imageName: "user_")
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 15)
+        .padding(.vertical, 8)
         .background(Color.black)
         .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .shadow(color: Color.white.opacity(0.5), radius: 5, x: 0, y: 0)
-        .padding(.horizontal, 40)
+        .padding(.horizontal, 30)
         .padding(.vertical, 30)
         .opacity(1)
     }
@@ -38,7 +38,7 @@ struct TabBar: View {
             let image = SwiftUI.Image(imageName)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 35, height: 35)
+                .frame(width: 25, height: 25)
             
             if imageName == "user_" {
                 image
@@ -52,7 +52,7 @@ struct TabBar: View {
                         }
                     )
                     .frame(maxWidth: .infinity)
-                    .opacity(selectedTab == tab ? 1 : 0.5)
+                    .opacity(selectedTab == tab ? 0.8 : 0.5)
             } else if imageName == "tabexplore2" {
                 image
                     .frame(width: 40, height: 35)

@@ -20,7 +20,7 @@ struct ImageCardView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 120, height: 160)
-                .cornerRadius(20)
+                .cornerRadius(15)
                 .shadow(color: .purple.opacity(0.35), radius: 2)
                 .overlay(
                     LinearGradient(
@@ -28,7 +28,7 @@ struct ImageCardView: View {
                         startPoint: .bottom,
                         endPoint: .center /*UnitPoint(x: 1, y: 0.8)*/
                     )
-                    .cornerRadius(20)
+                    .cornerRadius(15)
                 )
             StarRatingView(rating: Int(rating))
                 .padding(.horizontal, 16)

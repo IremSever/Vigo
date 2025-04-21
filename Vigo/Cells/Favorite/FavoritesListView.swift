@@ -27,7 +27,7 @@ struct FavoritesListView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .frame(width: 160, height: 120)
-                                .cornerRadius(20)
+                                .cornerRadius(15)
                          
                                 Text(item.title ?? "")
                                     .font(.exoSemiBold(size: 14))

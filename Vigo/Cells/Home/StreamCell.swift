@@ -27,7 +27,7 @@ struct StreamCell: View {
                                             .resizable()
                                             .scaledToFit()
                                             .frame(height: 200)
-                                            .cornerRadius(20)
+                                            .cornerRadius(15)
                                             .clipped()
                                             .overlay(
                                                 LinearGradient(
@@ -35,7 +35,7 @@ struct StreamCell: View {
                                                     startPoint: .bottom,
                                                     endPoint: stream.isLive ? UnitPoint(x: 0.5, y: 0.5) : .top
                                                 )
-                                                .cornerRadius(20)
+                                                .cornerRadius(15)
                                             )
                                     }
                                     if stream.isLive {
@@ -55,7 +55,7 @@ struct StreamCell: View {
                                     
                                 }
                                 .frame(width: 210, height: 220)
-                                .cornerRadius(20)
+                                .cornerRadius(15)
                                 .shadow(radius: 5)
                             }
                         }

@@ -29,7 +29,7 @@ struct CardCell: View {
                                         .resizable()
                                         .scaledToFit()
                                         .frame(height: 110)
-                                        .cornerRadius(20)
+                                        .cornerRadius(15)
                                         .shadow(color: .purple.opacity(0.35), radius: 3)
                                 }
                                 VStack {
